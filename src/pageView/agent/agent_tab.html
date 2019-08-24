@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<style>
+    /*my promotion */
+  body{margin: 0;padding: 0;}
+  #agent_popup_01{position: fixed;}
+  #icon_close{position: fixed;top: 30px;left: 1660px;cursor: pointer;}
+  #agent_QRCode_300x300{position: fixed;top: 260px;left: 917px;cursor: pointer;}
+  #agent_icon_share01{position: fixed;top: 265px;left: 1294px;cursor: pointer;}
+  #agent_icon_share02{position: fixed;top: 485px;left: 1294px;cursor: pointer;}
+  #agent_icon_help{position: fixed;top: 738px;left: 1267px;cursor: pointer;}
+  #agent_icon_getRecord{position: fixed;top: 738px;left: 892px;cursor: pointer;}
+  #agent_tab_01_hover{position: fixed;top: 91px;left: 494px;}
+  #agent_tab_02{position: fixed;top: 91px;left: 794px;cursor: pointer;}
+  #agent_tab_02_hover{position: fixed;top: 91px;left: 794px;cursor: pointer;}
+  #agent_tab_03{position: fixed;top: 91px;left: 1064px;cursor: pointer;}
+  #agent_tab_04{position: fixed;top: 91px;left: 1334px;cursor: pointer;}
+  #firstArea{font-family:"LanTingChungHei";font-size: 40px;color: #fbe9ca;width: 750px;position: fixed;top: 255px;left: 87px;}
+  #firstArea div{margin-bottom: 25px;}
+  #firstArea .number{ font-family: "LanTingChungHei";font-size: 40px;color: #FFFFFF;width: 400px;display: inline-block;text-align: center;position: relative;left: -10px;float: right;}
+  #seconedArea{position: fixed;font-family:"LanTingChungHei";font-size: 36px;color:#cfd9e8;}
+  #seconedArea .history{position: fixed;top: 640px;left: 177px;}
+  #seconedArea .reward{position: fixed;top: 640px;left: 537px;}
+  #thirdArea{position: fixed;font-family:"LanTingChungHei";font-size: 38px;color:#f7efd8;}
+  #thirdArea .history{position: fixed;top: 715px;left: 95px; width: 330px; text-align: center;}
+  #thirdArea .reward{position: fixed;top: 715px;left: 465px; width: 330px; text-align: center;}
+  #thirdArea .dolor{font-family:"LanTingChungHei";font-size: 34px;color:#f7efd8;}
+  #agent_icon_getGift{position: fixed;top: 820px;left: 244px;cursor: pointer;}
+  #clickToBigSize{position: fixed;top: 600px;left: 970px;font-family: 'LanTingChungHei';font-size: 34px;color: #9e9597;}
+  /* promotion tutorial */
+  #agent_popup_02{position: fixed;}
+  #icon_close{position: fixed;top: 30px;left: 1660px;cursor: pointer;}
+  #agent_banner01{position: fixed;top: 260px;left: 82px;}
+  #agent_tab_01{position: fixed;top: 91px;left: 494px;cursor: pointer;}
+  #agent_tab_02{position: fixed;top: 91px;left: 794px;cursor: pointer;}
+  #agent_tab_03_hover{position: fixed;top: 91px;left: 1064px;}
+  #agent_tab_04{position: fixed;top: 91px;left: 1335px;cursor: pointer;}
+  
+  #examleArea{position: fixed;top: 695px;left: 145px;line-height: 50px;}
+  #forExample{font-family: 'LanTingChungHei';font-size: 36px;color: #f3ccb8;margin-bottom: 5px;}
+  #exapmle{font-family: 'LanTingChungHei';font-size: 36px;color:#FFFFFF;}
+  .blue{color: #a3c1f8;}
+  .red{color: #f75050;}
+  .green{color: #9fca52;}
+
+/*promotionWeeklyRank */
+  #agent_popup_03{position: fixed;}
+  #icon_close{position: fixed;top: 30px;left: 1660px;cursor: pointer;}
+  #agent_tab_01{position: fixed;top: 91px;left: 494px;cursor: pointer;}
+  #agent_tab_02{position: fixed;top: 91px;left: 794px;cursor: pointer;}
+  #agent_tab_03{position: fixed;top: 91px;left: 1064px;cursor: pointer;}
+  #agent_tab_04_hover{position: fixed;top: 91px;left: 1334px;}
+  label{color: #e5b79f;font-size: 40px;font-family: 'LanTingChungHei';}
+  #rank{position: fixed;top: 275px;left: 275px;letter-spacing: 20px;}
+  #msg{position: fixed;top: 275px;left: 785px;}
+  #profit{position: fixed;top: 275px;left: 1315px;}
+  #first{position: fixed;top: 354px;left: 274px;}
+  #second{position: fixed;top: 462px;left: 274px;}
+  #third{position: fixed;top: 570px;left: 274px;}
+  #fourth{position: fixed;top: 708px;left: 310px;color: #FFFFFF;font-size: 42px;font-family: 'LanTingChungHei';}
+  #fivth{position: fixed;top: 818px;left: 310px;color: #FFFFFF;font-size: 42px;font-family: 'LanTingChungHei';}
+  #profit_award_form_row_even2{position: fixed;top: 463px;left: 60px;}
+  #profit_award_form_row_even4{position: fixed;top: 679px;left: 60px;}
+  #profit_award_form_header01{position: fixed;top: 245px;left: 60px;}
+  #weeklyTable {border-collapse: collapse;position: fixed;top: 359px;left: 456px;text-align: center;font-size: 24px;color: #c7af7a;width: 1205px;}
+  #weeklyTable td, #weeklyTable th {padding: 8px;}
+  #weeklyTable tr {height: 108px;}
+  #weeklyTable td:nth-child(1){width: 800px;font-family: 'LanTingChungHei';color:#c7af7a;font-size:42px;}
+  #weeklyTable td:nth-child(2){width: 10px;position: relative;left: 10px;top: 4px;}
+  #weeklyTable td:nth-child(3){font-family: 'LanTingChungHei';color:#fdefac;font-size:42px;text-align: left;left: 20px;position: relative;}
+  #weeklyTable tr:nth-child(5){height: 140px;}
+
+  /**extract_record */
+  #agent_popup_extract{position: absolute;top: 30px;}
+  #icon_close_extract{position: fixed;top: 50px;left: 1380px;cursor: pointer;}
+  #title_extract{position: absolute;top: 56px;left: 415px;font-size: 56px;color: #ffefb5;font-family: 'LanTingChungHei'; width:280px;}
+  #hint_extract{position: absolute;top: 770px;left: 370px;font-size: 36px;color: #f3ccb8;font-family: 'LanTingChungHei'; width:300px;}
+  #agent_form_draw_header_extract{position: absolute;top: 145px;left: 40px;}
+  #agent_form_draw_data_extract_1{position: absolute;top: 207px;left: 40px;}
+  #agent_form_draw_data_extract_2{position: absolute;top: 289px;left: 40px;}
+  #agent_form_draw_data_extract_3{position: absolute;top: 371px;left: 40px;}
+  #agent_form_draw_data_extract_4{position: absolute;top: 453px;left: 40px;}
+  #agent_form_draw_data_extract_5{position: absolute;top: 535px;left: 40px;}
+  #agent_form_draw_data_extract_6{position: absolute;top: 617px;left: 40px;}
+  #agent_form_draw_bottom_extract{position: absolute;top: 727px;left: 40px;}
+  #box_extract {position: absolute;top: 227px;left: 40px;height: 500px;width: 1000px;overflow-y: auto;}
+  #title_detail {display:table;font-size: 40px;color: #e5b79f;text-align: center;font-family: 'LanTingChungHei';position: fixed;top: 270px;left: 60px;}
+  #css_table {display:table;font-size: 35px;color: whitesmoke;text-align: center;cursor: pointer;font-family: 'LanTingChungHei';}
+  .css_tr {display: table-row;background-image: url('@/../../../assets/lobby/agent/agent_form_draw_data.png')}
+  .css_td {display: table-cell;width: 450px;height: 82px;line-height: 82px;}
+  #css_table .odd{width: 550px;}
+  /** agentpromot */
+  #agent_table {display:table;font-size: 35px;color: whitesmoke;text-align: center;font-family: 'LanTingChungHei';position: fixed;top: 360px;left: 60px;}
+  #agent_detail {display:table;font-size: 40px;color: #e5b79f;text-align: center;font-family: 'LanTingChungHei';position: fixed;top: 240px;left: 60px;}
+  .agent_tr {display: table-row;}
+  .agent_tr:nth-child(even) {background-image: url('@/../../../assets/lobby/promotion/promote_form_data_even.png'); } 
+  .agent_td {display: table-cell;width: 400px;height: 108px;line-height: 108px;}
+
+  
+  @font-face {font-family: 'LanTingChungHei';src: url('/src/font/LanTingChungHei.ttf')  format("truetype"); font-display:swap;}
+  div,span{
+    font-family: 'LanTingChungHei';
+  }
+  /**msg_help */
+  #agent_popup_msg_help{position: absolute;top: 30px;}
+  #icon_close_msg_help{position: fixed;top: 50px;left: 1450px;cursor: pointer;}
+  #msg_help{position: absolute;top: 200px;left: 60px;color: #FFFFFF;line-height: 58px;font-size: 36px;font-family: 'LanTingChungHei';width: 1080px;}
+  #msg_help ul{list-style-type: decimal;list-style-position: inside}
+  #msg_help li{margin-bottom: 25px;} 
+  ::-webkit-scrollbar {
+        width: 0px;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+        scrollbar-width: none;
+  }
+  .loadFont {
+      font-family: 'LanTingChungHei';
+      position: absolute;
+  }
+  #getBonus{
+    position: fixed;
+    top: 350px;
+    left: 500px;
+    display: none;
+    height: 550px;
+    width: 1000px;
+    background: url('/src/assets/lobby/agent/popup.png') no-repeat;
+  }
+  #getBonus_close{
+    position: fixed;
+    top: 300px;
+    left: 1430px;
+    cursor: pointer;
+  }
+  #getBonus_confirm{
+    position: fixed;
+    top: 650px;
+    left: 880px;
+    cursor: pointer;
+  }
+  .content{
+    position: fixed;
+    width: 300px;
+    font-size: 36px;
+    text-align: center;
+    top: 500px;
+    left: 850px;
+    font-family: 'LanTingChungHei';
+    color: #FFFFFF;
+  }
+  #showQRcode{
+    position: fixed;
+    top: 50px;
+    left: 330px;
+    display: none;
+    height: 820px;
+    width: 1076px;
+    background: url('/src/assets/lobby/agent/agent_popup_04.png') no-repeat;
+  }
+  #showQRcode_close{
+    position: fixed;
+    top: 30px;
+    left: 1330px;
+    cursor: pointer;
+  }
+</style>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <div class="loadFont">.</div>
+  <div id="my_promotion" style="display:none;">
+        <img id="agent_popup_01" src="@../../../../assets/lobby/agent/agent_popup_01.png">
+        <img id="icon_close" src="@/../../../assets/lobby/agent/icon_close.png">
+
+        <img id="agent_tab_01_hover" src="@/../../../assets/lobby/agent/agent_tab_01_hover.png">
+        <img id="agent_tab_02" src="@/../../../assets/lobby/agent/agent_tab_02.png">
+        <img id="agent_tab_03" src="@/../../../assets/lobby/agent/agent_tab_03.png">
+        <img id="agent_tab_04" src="@/../../../assets/lobby/agent/agent_tab_04.png">
+
+
+        <img id="agent_QRCode_300x300" src="@/../../../assets/lobby/agent/agent_QRCode_300x300.png">
+        <img id="agent_icon_share01" src="@/../../../assets/lobby/agent/agent_icon_share01.png">
+        <img id="agent_icon_share02" src="@/../../../assets/lobby/agent/agent_icon_share02.png">
+        <img id="agent_icon_help" src="@/../../../assets/lobby/agent/agent_icon_help.png">
+        <img id="agent_icon_getRecord" src="@/../../../assets/lobby/agent/agent_icon_getRecord.png">
+
+        <img id="agent_icon_getGift" src="@/../../../assets/lobby/agent/agent_icon_getGift.png">
+
+        <div id="clickToBigSize">
+            点击放大图片
+        </div>
+
+        <div id="firstArea">
+            <div id="yesterdayTotal">
+            <span>昨日总奖励:</span>
+            <span class="number" id="total_reward_yes">
+               
+            </span>
+            </div>
+            <div id="childPeopleCount">
+                <span >直属下级人数:</span>
+                <span class="number" id="child_number">
+                
+                </span>
+            </div>
+            <div id="otherPeopleCount">
+                <span>其他下级人数:</span>
+                <span class="number" id="other_number">
+               
+                </span>
+            </div>
+            <div id="yesterdayChildPeopleReward">
+                <span>昨日直属下级奖励:</span>
+                <span class="number" id="reward_yes">
+                
+                </span>
+            </div>
+            <div id="yesterdayOtherPeopleReward">
+                <span>昨日其他下级奖励:</span>
+                <span class="number" id="people_reward_yes">
+                
+                </span>
+            </div>
+        </div>
+        <div id="seconedArea">
+            <div class="history">历史总奖励</div>
+            <div class="reward">可领取奖励</div>
+        </div>
+        <div id="thirdArea">
+            <div class="history" id="history_reward"><span class="dolor">元</span></div>
+            <div class="reward" id="available_reward"><span class="dolor">元</span></div>
+        </div>
+  </div>
+  <div id="agent_promo" style="display: none">
+        <img id="agent_popup_03" src="@/../../../assets/lobby/agent/agent_popup_03.png">
+        <img id="icon_close" src="@/../../../assets/lobby/agent/icon_close.png">
+        <img id="profit_award_form_header01" src="@/../../../assets/lobby/agent/agent_detail_header.png">
+
+        <img id="agent_tab_01" src="@/../../../assets/lobby/agent/agent_tab_01.png">
+        <img id="agent_tab_02_hover" src="@/../../../assets/lobby/agent/agent_tab_02_hover.png">
+        <img id="agent_tab_03" src="@/../../../assets/lobby/agent/agent_tab_03.png">
+        <img id="agent_tab_04" src="@/../../../assets/lobby/agent/agent_tab_04.png">
+        <div id="agent_detail" >
+          <div class="agent_tr">
+            <div class="agent_td">时间</div>
+            <div class="agent_td">昵称</div>
+            <div class="agent_td">直属/其他</div>
+            <div class="agent_td">可领取状励</div>
+          </div>
+        </div>
+        <div id="agent_table"></div>
+  </div>
+  <div id ="promotion_tutorial" style="display:none;">
+        <img id="agent_popup_02" src="@/../../../assets/lobby/agent/agent_popup_02.png">
+        <img id="icon_close" src="@/../../../assets/lobby/agent/icon_close.png">
+      
+        <img id="agent_tab_01" src="@/../../../assets/lobby/agent/agent_tab_01.png">
+        <img id="agent_tab_02" src="@/../../../assets/lobby/agent/agent_tab_02.png">
+        <img id="agent_tab_03_hover" src="@/../../../assets/lobby/agent/agent_tab_03_hover.png">
+        <img id="agent_tab_04" src="@/../../../assets/lobby/agent/agent_tab_04.png">
+      
+      
+        <img id="agent_banner01" src="@/../../../assets/lobby/agent/agent_banner01.png">
+            <div id="examleArea">
+                <div id="forExample">
+                您的返利 = 1级返利+2级返利+...N级返利。 每级返利 = 对应下线的X*(30%)。
+                </div>
+                <div id="exapmle">
+                举例说明:  <br>
+                <span class="blue">B=您的1级下线, 税收为10000</span> <br>
+                </span><span class="red">B1=B的1级下线,</span>  您的2级下线, 税收为20000 <br>
+                您的返利 = <span class="green">10000*30%+(20000*30%)*30%</span>
+                </div>
+            </div>
+  </div>
+  <div id="promotion_weekly_rank" style="display:none; ">
+          <img id="agent_popup_03" src="@/../../../assets/lobby/agent/agent_popup_03.png">
+          <img id="icon_close" src="@/../../../assets/lobby/agent/icon_close.png">
+        
+          <img id="agent_tab_01" src="@/../../../assets/lobby/agent/agent_tab_01.png">
+          <img id="agent_tab_02" src="@/../../../assets/lobby/agent/agent_tab_02.png">
+          <img id="agent_tab_03" src="@/../../../assets/lobby/agent/agent_tab_03.png">
+          <img id="agent_tab_04_hover" src="@/../../../assets/lobby/agent/agent_tab_04_hover.png">
+        
+          <img id="profit_award_form_header01" src="@/../../../assets/lobby/agent/agent_award_header.png">
+          <img id="profit_award_form_row_even2" src="@/../../../assets/lobby/agent/agent_award_row_even.png">
+          <img id="profit_award_form_row_even4" src="@/../../../assets/lobby/agent/agent_award_row_even.png">
+        
+          <label id="rank">排名</label>
+          <label id="msg">玩家信息</label>
+          <label id="profit">本周奖励</label>
+          
+          <img id="first" src="@/../../../assets/lobby/agent/agent_award_medal_1.png">
+          <img id="second" src="@/../../../assets/lobby/agent/agent_award_medal_2.png">
+          <img id="third" src="@/../../../assets/lobby/agent/agent_award_medal_3.png">
+          <span id="fourth">4</span>
+          <span id="fivth">5</span>    
+  </div>
+  <div id="extract_record" style="display: none;position: fixed; left: 360px;top: 60px;">
+          <img id="agent_popup_extract" src="@/../../../assets/lobby/agent/agent_popup_04.png">
+          <img id="icon_close_extract" src="@/../../../assets/lobby/agent/icon_close.png">
+          <div id="title_extract">提取紀錄</div>
+          <img id="agent_form_draw_header_extract" src="@/../../../assets/lobby/agent/agent_form_draw_header.png">
+          <img id="agent_form_draw_bottom_extract" src="@/../../../assets/lobby/agent/agent_form_draw_bottom.png">
+          
+          <div id="box_extract">
+              <div id="css_table"></div>
+          </div>
+          <div id="hint_extract">最多保存30條紀錄</div>
+  </div>
+  <div id ="msg_help" style="display: none;position: fixed; left: 290px;top: 60px;">
+      <img id="agent_popup_msg_help" src="@/../../../assets/lobby/agent/agent_popup_05.png">
+      <img id="icon_close_msg_help" src="@/../../../assets/lobby/agent/icon_close.png">
+      <div id="msg_help">
+        <ul>
+          <li>您新玩家使用您的推广链接或二维码下载游戏并登入，即可成为您的直属玩家。</li>
+          <li>通过您直属玩家的推广链接或二维码下载并登入的新玩家，即可成为您的2级（其他）玩家。以此类推您的2级（其他）推广玩家也将与您产生联系喔!</li>
+          <li>任意游戏中的有效下注，您都可以获得相对应的利反。</li>
+        </ul>
+      </div>
+  </div>
+  <div id="getBonus">
+    <img id="getBonus_close" src="/src/assets//lobby/agent/icon_close.png">
+    <img id="getBonus_confirm" src="/src/assets//lobby/agent/confirm.png">
+    <div class="content"></div>
+  </div>
+  <div id="showQRcode">
+    <img id="showQRcode_close" src="/src/assets//lobby/agent/icon_close.png">
+  </div>
+</body>
+</html>

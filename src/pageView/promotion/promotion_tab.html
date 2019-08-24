@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body{margin: 0;padding: 0;}
+
+  /** promote_popup_detail*/
+  #promote_popup_detail{position: fixed;}
+  #icon_close_detail{cursor: pointer;position: fixed;top: 30px;left: 1650px;}
+  #promote_tab_01_detail{position: fixed;top: 91px;left: 497px;cursor: pointer;}
+  #promote_tab_02_detail{position: fixed;top: 91px;left: 797px;cursor: pointer;}
+  #promote_tab_03_detail{cursor: pointer;position: fixed;top: 91px;left: 1067px;}
+  #promote_tab_04_detail{cursor: pointer;position: fixed;top: 91px;left: 1337px;}
+  #promote_form_header_detail {position: fixed;top: 270px;left: 70px;}
+  #css_table {display:table;font-size: 35px;color: whitesmoke;text-align: center;font-family: 'LanTingChungHei';position: fixed;top: 400px;left: 60px;}
+  #title_detail {display:table;font-size: 40px;color: #e5b79f;text-align: center;font-family: 'LanTingChungHei';position: fixed;top: 270px;left: 60px;}
+  .css_tr {display: table-row;}
+  .css_tr:nth-child(even) {background-image: url('@/../../../assets/lobby/promotion/promote_form_data_even.png');}
+  .css_td {display: table-cell;width: 310px;height: 108px;line-height: 108px;}
+  #promote_QRCode_detail{position: fixed;top: 235px;left: 1385px;cursor: pointer;}
+  #promote_weibo_detail{position: fixed;top: 513px;left: 1357px;cursor: pointer;}
+  #promote_friend_detail{position: fixed;top: 513px;left: 1525px;cursor: pointer;}
+  #current_reward_detail{position: fixed;top: 730px;left: 1375px;font-size: 38px;color: #f7efd8;width: 290px;text-align: center;}
+  #current_rewardTilte_detail{position: fixed;top: 805px;left: 1365px;font-size: 38px;color: #f7efd8;font-family: 'LanTingChungHei';}
+  #get_rewardNumber_detail{position: fixed;top: 805px;left: 1540px;text-align: center;font-size: 38px;color: #f7efd8;width: 155px;}
+  #get_reward_detail{position: fixed;top: 882px;left: 1383px;cursor: pointer;}
+
+  #title01_detail {display:table;font-size: 40px;color: #e5b79f;text-align: center;font-family: 'LanTingChungHei';position: fixed;top: 270px;left: 60px;}
+  #title02_detail {display:table;font-size: 40px;color: #e5b79f;text-align: center;font-family: 'LanTingChungHei';position: fixed;top: 670px;left: 60px;}
+  #title01_content_detail {position: fixed;top: 360px;left: 60px;font-size: 36px;color: #FFFFFF;font-family: 'LanTingChungHei';line-height: 58px;width: 1200px;}
+  #title02_content_detail {position: fixed;top: 760px;left: 60px;font-size: 36px;color: #FFFFFF;font-family: 'LanTingChungHei';line-height: 58px;width: 1200px;}
+  #title01_content_detail li, #title02_content_detail li{list-style:none;margin-top: 15px;}
+  #title_share {display:table;font-size: 40px;color: #e5b79f;text-align: center;font-family: 'LanTingChungHei';position: fixed;top: 270px;left: 60px;}
+  #promote_rule_heading_bg02_detail {position: fixed;top: 670px;left: 70px; display: none;}
+
+  @font-face {font-family: 'LanTingChungHei';src: url('/src/font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+  div,span{
+    font-family: 'LanTingChungHei';
+  }
+  .loadFont {
+    font-family: 'LanTingChungHei';
+    position: absolute;
+  }
+</style>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <div class="loadFont">.</div>
+  <img id="promote_popup_detail" src="@../../../../assets/lobby/promotion/promote_popup01.png">
+  <img id="icon_close_detail" src="@../../../../assets/lobby/promotion/icon_close.png">
+  <img id="promote_tab_01_detail" src="@../../../../assets/lobby/promotion/promote_tab_01_hover.png">
+  <img id="promote_tab_02_detail" src="@../../../../assets/lobby/promotion/promote_tab_02.png">
+  <img id="promote_tab_03_detail" src="@../../../../assets/lobby/promotion/promote_tab_03.png">
+  <img id="promote_tab_04_detail" src="@../../../../assets/lobby/promotion/promote_tab_04.png">
+  <img id="promote_form_header_detail" src="@../../../../assets/lobby/promotion/promote_form_header.png">
+  <img id="promote_rule_heading_bg02_detail" src="@../../../../assets/lobby/promotion/promote_rule_heading_bg.png">
+
+  <div id="detail_promo" style="display: none">
+    <div id="title_detail" >
+      <div class="css_tr">
+        <div class="css_td">时间</div>
+        <div class="css_td">玩家信息</div>
+        <div class="css_td">奖励内容</div>
+        <div class="css_td">奖励奖金</div>
+      </div>
+    </div>
+    <div id="css_table">
+      <div class="css_tr">
+        <div class="css_td">2019-01-15</div>
+        <div class="css_td">10000</div>
+        <div class="css_td">QQQ</div>
+        <div class="css_td">10000</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">2019-01-15</div>
+        <div class="css_td">10000</div>
+        <div class="css_td">QQQ</div>
+        <div class="css_td">10000</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">2019-01-15</div>
+        <div class="css_td">10000</div>
+        <div class="css_td">QQQ</div>
+        <div class="css_td">10000</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">2019-01-15</div>
+        <div class="css_td">10000</div>
+        <div class="css_td">QQQ</div>
+        <div class="css_td">10000</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">2019-01-15</div>
+        <div class="css_td">10000</div>
+        <div class="css_td">QQQ</div>
+        <div class="css_td">10000</div>
+      </div>
+    </div>
+  </div>
+  <div id="record_promo" style="display: none">
+    <div id="title_detail">
+      <div class="css_tr">
+        <div class="css_td">时间</div>
+        <div class="css_td">原有金额</div>
+        <div class="css_td">领取奖励</div>
+        <div class="css_td">剩余奖励</div>
+      </div>
+    </div>
+    <div id="css_table">
+      <div class="css_tr">
+        <div class="css_td">2019-01-15</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">555555</div>
+          <div class="css_td">10000</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">2019-01-15</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">555555</div>
+          <div class="css_td">10000</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">2019-01-15</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">555555</div>
+          <div class="css_td">10000</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">2019-01-15</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">555555</div>
+          <div class="css_td">10000</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">2019-01-15</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">555555</div>
+          <div class="css_td">10000</div>
+        </div>
+      </div>
+  </div>
+  <div id ="rule_promo" style="display: none">
+      <div id="title01_detail">
+          <div class="css_tr">
+            <div class="css_td">分享方法</div>
+          </div>
+      </div>
+      <div id="title01_content_detail">
+        <ul>
+          <li><span class="listStart">★</span> 您的好友通过 "浏览器专属二维码" ， 下载注册游戏并登入成功， 即可获得游戏奖励。</li>
+          <li><span class="listStart">★</span>点击 "分享好友" 进行分享， 好友下载注册并登入成功， 即可获得游戏奖励</li>
+        </ul>
+      </div>
+      <div id="title02_detail">
+        <div class="css_tr">
+          <div class="css_td">奖励说明</div>
+        </div>
+      </div>
+      <div id="title02_content_detail">
+        <ul>
+          <li><span class="listStart">★</span>邀请好友即可获得20元基础奖励， 好友在游戏中有任何下注行为，您都可获得0.5%奖励; 单个好有奖励满88元后， 即可领取该好友产出的<span class="anyReward">任意奖励</span>。</li>
+        </ul>
+      </div>
+  </div>
+  <div id ="share_promo" style="display: none">
+      <div id="title_share">
+        <div class="css_tr">
+          <div class="css_td">昵称</div>
+          <div class="css_td">ID</div>
+          <div class="css_td">累计奖励</div>
+          <div class="css_td">可领取奖励</div>
+        </div>
+      </div>
+      <div id="css_table">
+        <div class="css_tr">
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+          <div class="css_td">123</div>
+          <div class="css_td">10000</div>
+        </div>
+      </div>
+  </div>
+  <img id="promote_QRCode_detail" src="@../../../../assets/lobby/promotion/promote_QRCode_270x270.png">
+  <img id="promote_weibo_detail" src="@../../../../assets/lobby/promotion/promote_icon_share01.png">
+  <img id="promote_friend_detail" src="@../../../../assets/lobby/promotion/promote_icon_share02.png">
+  <span id="current_reward_detail">0</span>
+  <span id="current_rewardTilte_detail">可领奖励 : </span>
+  <span id="get_rewardNumber_detail">0</span>
+  <img id="get_reward_detail" src="@../../../../assets/lobby/promotion/promote_icon_get.png">
+</body>
+</html>

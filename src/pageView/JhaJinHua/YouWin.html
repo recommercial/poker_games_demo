@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  #BG{
+    position: fixed;
+  }
+  #Left_Top_Button{
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  #Button_Love_Money{
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  #Pot_BG{
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    left: 750px;
+  }
+  #top_info{
+    position: fixed;
+    top: 50px;
+    left: 850px;
+  }
+  #Total_Chip_BG{
+    position: fixed;
+    top: 260px;
+    left: 850px;
+  }
+  #user_avatar_01{
+    position: fixed;
+    top: 924px;
+    left: 800px;
+    width: 130px;
+  }
+  #BG_Under_Character_01{
+    position: fixed;
+    top: 920px;
+    left: 800px;
+  }
+  #user_avatar_02{
+    position: fixed;
+    top: 625px;
+    left: 60px;
+    width: 130px;
+  }
+  #BG_Under_Character_02{
+    position: fixed;
+    top: 620px;
+    left: 60px;
+  }
+  #user_avatar_03{
+    position: fixed;
+    top: 294px;
+    left: 170px;
+    width: 130px;
+  }
+  #BG_Under_Character_03{
+    position: fixed;
+    top: 290px;
+    left: 170px;
+  }
+  #user_avatar_04{
+    position: fixed;
+    top: 294px;
+    left: 1415px;
+    width: 130px;
+  }
+  #BG_Under_Character_04{
+    position: fixed;
+    top: 290px;
+    left: 1410px;
+  }
+  #user_avatar_05{
+    position: fixed;
+    top: 623px;
+    left: 1525px;
+    width: 130px;
+  }
+  #BG_Under_Character_05{
+    position: fixed;
+    top: 620px;
+    left: 1520px;
+  }
+  #Wait_Time_Light{
+    position: fixed;
+    top: 914px;
+    left: 797px;
+  }
+  .dolorSymbole{
+   position: relative;
+   top: 10px;
+  }
+  div img{
+    display: block;
+  }
+  #getBIGnumber_1{
+    position: fixed;
+    top: 980px;
+    left: 710px;
+  }
+  #getBIGnumber_2{
+    position: fixed;
+    top: 550px;
+    left: 140px;
+  }
+  #Light_BG{
+    position: fixed;
+    top: 530px;
+    left: -50px;
+  }
+  #getBIGnumber_2 .symbo{
+    position: relative;
+    left: -20px;
+  }
+  #getBIGnumber_3{
+    position: fixed;
+    top: 240px;
+    left: 290px;
+  }
+  #getBIGnumber_4{
+    position: fixed;
+    top: 240px;
+    left: 1535px;
+  }
+  #getBIGnumber_5{
+    position: fixed;
+    top: 570px;
+    left: 1640px;
+  }
+  .number{
+    position: relative;
+    top: -60px;
+    left: 30px;
+    display: inline-block;
+  }
+  #buttons{
+    position: fixed;
+    top: 935px;
+    left: 30px;
+  }
+  #buttons img{
+    display: inline-block;
+  }
+  .raise_number{
+    position: relative;
+    top: -31px;
+    left: 475px;
+    cursor: pointer;
+  }
+  .Follow_Raise_number{
+    position: relative;
+    top: -31px;
+    left: 214px;
+  }
+  .Checked__Prevent_OverTime_Fold{
+    top: -30px;
+    left: -40px;
+    position: relative;
+  }
+  .Button_Fold{
+    cursor: pointer;
+  }
+  .Button_Raise{
+    position: relative;
+    left: 485px;
+    cursor: pointer;
+  }
+  .Button__Prevent_OverTime_Fold{
+    position: relative;
+    left: 40px;
+    cursor: pointer;
+  }
+  .Button_Compate{
+    position: relative;
+    left: 510px;
+    cursor: pointer;
+  }
+  .Button_Follow_Raise{
+    position: relative;
+    left: 530px;
+    cursor: pointer;
+  }
+  #You_Win{
+    position: fixed;
+    top: 330px;
+    left: 670px;
+  }
+  #Win_border_2{
+    position: fixed;
+    top: 620px;
+    left: 770px;
+  }
+  #Cards_Back_1{
+    position: fixed;
+    top: 230px;
+    left: 540px;
+  }
+  #Cards_Back_2{
+    position: fixed;
+    top: 230px;
+    left: 580px;
+  }
+  #Cards_Back_3{
+    position: fixed;
+    top: 230px;
+    left: 620px;
+  }
+  #Fold{
+    position: fixed;
+    top: 238px;
+    left: 546px;
+  }
+  #Clubs_2{
+    position: fixed;
+    top: 570px;
+    left: 435px;
+  }
+  #Clubs_3{
+    position: fixed;
+    top: 570px;
+    left: 470px;
+  }
+  #Clubs_4{
+    position: fixed;
+    top: 570px;
+    left: 505px;
+  }
+  #Pair{
+    position: fixed;
+    top: 635px;
+    left: 415px;
+  }
+  #Diamond_2{
+    position: fixed;
+    top: 238px;
+    left: 1200px;
+  }
+  #Diamond_3{
+    position: fixed;
+    top: 238px;
+    left: 1240px;
+  }
+  #Diamond_4{
+    position: fixed;
+    top: 238px;
+    left: 1280px;
+  }
+  #Already_Look_Cards{
+    position: fixed;
+    top: 301px;
+    left: 1220px;
+  }
+  #Heart_2{
+    position: fixed;
+    top: 570px;
+    left: 1300px;
+  }
+  #Heart_3{
+    position: fixed;
+    top: 570px;
+    left: 1340px;
+  }
+  #Heart_4{
+    position: fixed;
+    top: 570px;
+    left: 1380px;
+  }
+  #Compare_Lose{
+    position: fixed;
+    top: 636px;
+    left: 1285px;
+  }
+  #Heart_Q{
+    position: fixed;
+    top: 700px;
+    left: 800px;
+  }
+  #Heart_K{
+    position: fixed;
+    top: 700px;
+    left: 915px;
+  }
+  #Heart_A{
+    position: fixed;
+    top: 700px;
+    left: 1030px;
+  }
+  #Jing_Hua{
+    position: fixed;
+    top: 720px;
+    left: 810px;
+  }
+  #Chip_BG_1{
+    position: fixed;
+    top: 400px;
+    left: 545px;
+  }
+  #Chip_BG_2{
+    position: fixed;
+    top: 730px;
+    left: 425px;
+  }
+  #Chip_BG_3{
+    position: fixed;
+    top: 400px;
+    left: 1200px;
+  }
+  #Chip_BG_4{
+    position: fixed;
+    top: 725px;
+    left: 1300px;
+  }
+  #Chip_BG_5{
+    position: fixed;
+    top: 870px;
+    left: 880px;
+  }
+  #Chip_BG_1_number{
+    color: #fed800;
+    font-family: 'ArialRegular';
+    font-size: 20px;
+    position: fixed;
+    top: 403px;
+    left: 635px;
+  }
+  #Chip_BG_2_number{
+    color: #fed800;
+    font-family: 'ArialRegular';
+    font-size: 20px;
+    position: fixed;
+    top: 733px;
+    left: 515px;
+  }
+  #Chip_BG_3_number{
+    color: #fed800;
+    font-family: 'ArialRegular';
+    font-size: 20px;
+    position: fixed;
+    top: 403px;
+    left: 1290px;
+  }
+  #Chip_BG_4_number{
+    color: #fed800;
+    font-family: 'ArialRegular';
+    font-size: 20px;
+    position: fixed;
+    top: 728px;
+    left: 1390px;
+  }
+  #Chip_BG_5_number{
+    color: #fed800;
+    font-family: 'ArialRegular';
+    font-size: 20px;
+    position: fixed;
+    top: 873px;
+    left: 970px;
+  }
+  /*****/
+  @font-face {
+      font-family: 'HuaKangXiHeiTi';
+      src: url('@../../../../font/HuaKangXiHeiTi.ttc');
+  }
+  @font-face {
+      font-family: 'LanTingChungHei';
+      src: url('@../../../../font/LanTingChungHei.ttf');
+  }
+  @font-face {
+      font-family: 'ArialRegular';
+      src: url('@../../../../font/ArialRegular.ttf');
+  }
+#top_info span{
+    font-size: 28px;/*7pt => 9px*/
+    color: #c6c6c6;
+    font-family: 'LanTingChungHei';
+  }
+  #round_set{
+    color: #c6c6c6;
+    font-family: 'LanTingChungHei';
+    font-size: 28px; /*7pt => 9px*/
+    position: fixed;
+    top: 190px;
+    left: 900px;
+  }
+#total_number{
+    font-family: 'ArialRegular';
+    color: #fed800;
+    font-size: 28px; /*7pt => 9px*/
+    position: fixed;
+    top: 263px;
+    left: 947px;
+  }
+  #user_info_1{
+    position: fixed;
+    top: 955px;
+    left: 960px;
+  }
+  #user_info_2{
+    position: fixed;
+    top: 660px;
+    left: 220px;
+  }
+  #user_info_3{
+    position: fixed;
+    top: 325px;
+    left: 325px;
+  }
+  #user_info_4{
+    position: fixed;
+    top: 325px;
+    left: 1570px;
+  }
+  #user_info_5{
+    position: fixed;
+    top: 660px;
+    left: 1680px;
+  }
+div span{
+    font-size: 22px;
+    color: #ccc6a4;
+    font-family: 'ArialRegular';
+  }
+.dolors{
+    position: relative;
+    top: -25px;
+    padding-left: 32px;
+    font-size: 20px;
+    color: #ffd900;
+    font-family: 'ArialRegular';
+  }
+  </style>
+  <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <img id="BG" src="@../../../../assets/game/JhaJinHua/BG.png">
+    <img id="Left_Top_Button" src="@../../../../assets/game/JhaJinHua/Left_Top_Button.png">
+    <img id="Button_Love_Money" src="@../../../../assets/game/JhaJinHua/Button_Love_Money.png">
+    <img id="Pot_BG" src="@../../../../assets/game/JhaJinHua/Pot_BG.png">
+    <div id="top_info">
+      <span>底注: 1</span>
+      <span style="padding-left:40px;">顶注: 14</span>
+    </div>
+    <div id="round_set">
+      第2/20轮
+    </div>
+    <img id="Total_Chip_BG" src="@../../../../assets/game/JhaJinHua/Total_Chip_BG.png">
+    <div id="total_number">11</div>
+
+    <img id="BG_Under_Character_01" src="@../../../../assets/game/JhaJinHua/BG_Under_Character.png">
+    <img id="user_avatar_01" src="@../../../../assets/avatar/user_avatar_01.png">
+    <img id="BG_Under_Character_02" src="@../../../../assets/game/JhaJinHua/BG_Under_Character.png">
+    <img id="user_avatar_02" src="@../../../../assets/avatar/user_avatar_02.png">
+    <img id="BG_Under_Character_03" src="@../../../../assets/game/JhaJinHua/BG_Under_Character.png">
+    <img id="user_avatar_03" src="@../../../../assets/avatar/user_avatar_03.png">
+    <img id="BG_Under_Character_04" src="@../../../../assets/game/JhaJinHua/BG_Under_Character.png">
+    <img id="user_avatar_04" src="@../../../../assets/avatar/user_avatar_04.png">
+    <img id="BG_Under_Character_05" src="@../../../../assets/game/JhaJinHua/BG_Under_Character.png">
+    <img id="user_avatar_05" src="@../../../../assets/avatar/user_avatar_05.png">
+    <img id="Wait_Time_Light" src="@../../../../assets/game/JhaJinHua/Wait_Time_Light.png">
+
+    <div id="user_info_1">
+      <span>***1223</span>
+      <span class="dolorSymbole">
+        <img src="@../../../../assets/game/JhaJinHua/Coin.png">
+        <span class="dolors">123,456,789</span>
+      </span>
+    </div>
+    <div id="user_info_2">
+      <span>***1234</span>
+      <span class="dolorSymbole">
+        <img src="@../../../../assets/game/JhaJinHua/Coin.png">
+        <span class="dolors">123,456,789</span>
+      </span>
+    </div>
+    <div id="user_info_3">
+      <span>***1235</span>
+      <span class="dolorSymbole">
+        <img src="@../../../../assets/game/JhaJinHua/Coin.png">
+        <span class="dolors">123,456,789</span>
+      </span>
+    </div>
+    <div id="user_info_4">
+      <span>***5678</span>
+      <span class="dolorSymbole">
+        <img src="@../../../../assets/game/JhaJinHua/Coin.png">
+        <span class="dolors">123,456,789</span>
+      </span>
+    </div>
+    <div id="user_info_5">
+      <span>***abcd</span>
+      <span class="dolorSymbole">
+        <img src="@../../../../assets/game/JhaJinHua/Coin.png">
+        <span class="dolors">123,456,789</span>
+      </span>
+    </div>
+
+    <div id="getBIGnumber_1">
+      <img class="symbo" src="@../../../../assets/game/JhaJinHua/-.png">
+      <img class="number" src="@../../../../assets/game/JhaJinHua/-1.png">
+    </div>
+    <img id="Light_BG" src="@../../../../assets/game/JhaJinHua/Light_BG.png">
+    <div id="getBIGnumber_2">
+      <img class="symbo" src="@../../../../assets/game/JhaJinHua/+.png">
+      <img class="number" src="@../../../../assets/game/JhaJinHua/+8.png">
+      <img class="number" src="@../../../../assets/game/JhaJinHua/+Dot.png">
+      <img class="number" src="@../../../../assets/game/JhaJinHua/+7.png">
+    </div>
+    <div id="getBIGnumber_3">
+      <img class="symbo" src="@../../../../assets/game/JhaJinHua/-.png">
+      <img class="number" src="@../../../../assets/game/JhaJinHua/-1.png">
+    </div>
+    <div id="getBIGnumber_4">
+      <img class="symbo" src="@../../../../assets/game/JhaJinHua/-.png">
+      <img class="number" src="@../../../../assets/game/JhaJinHua/-1.png">
+    </div>
+    <div id="getBIGnumber_5">
+      <img class="symbo" src="@../../../../assets/game/JhaJinHua/-.png">
+      <img class="number" src="@../../../../assets/game/JhaJinHua/-1.png">
+    </div>
+    
+    
+    <div id="buttons">
+        <img class="Button_Fold" src="@../../../../assets/game/JhaJinHua/Button_Fold.png">
+        <img class="Button__Prevent_OverTime_Fold" src="@../../../../assets/game/JhaJinHua/Button__Prevent_OverTime_Fold.png">
+        <img class="Checked__Prevent_OverTime_Fold" src="@../../../../assets/game/JhaJinHua/Checked__Prevent_OverTime_Fold.png">
+        <img class="Button_Raise" src="@../../../../assets/game/JhaJinHua/Button_Raise.png">
+        <img class="Button_Compate" src="@../../../../assets/game/JhaJinHua/Button_Compate.png">
+        <img class="Button_Follow_Raise" src="@../../../../assets/game/JhaJinHua/Button_Follow_Raise.png">
+
+        <img class="raise_number" src="@../../../../assets/game/JhaJinHua/1.png">
+        <img class="Follow_Raise_number" src="@../../../../assets/game/JhaJinHua/1.png">
+      </div>
+      
+      
+      <img id="Win_border_2" src="@../../../../assets/game/JhaJinHua/Win_border_2.png">
+      
+      <img id="Cards_Back_1" src="@../../../../assets/game/JhaJinHua/Cards_Back.png">
+      <img id="Cards_Back_2" src="@../../../../assets/game/JhaJinHua/Cards_Back.png">
+      <img id="Cards_Back_3" src="@../../../../assets/game/JhaJinHua/Cards_Back.png">
+      <img id="Fold" src="@../../../../assets/game/JhaJinHua/Fold.png">
+      
+      <img id="Clubs_2" src="@../../../../assets/game/JhaJinHua/Clubs_2.png">
+      <img id="Clubs_3" src="@../../../../assets/game/JhaJinHua/Clubs_3.png">
+      <img id="Clubs_4" src="@../../../../assets/game/JhaJinHua/Clubs_4.png">
+      <img id="Pair" src="@../../../../assets/game/JhaJinHua/Pair.png">
+      
+      <img id="Diamond_2" src="@../../../../assets/game/JhaJinHua/Diamond_2.png">
+      <img id="Diamond_3" src="@../../../../assets/game/JhaJinHua/Diamond_3.png">
+      <img id="Diamond_4" src="@../../../../assets/game/JhaJinHua/Diamond_4.png">
+      <img id="Already_Look_Cards" src="@../../../../assets/game/JhaJinHua/Already_Look_Cards.png">
+      
+      <img id="Heart_2" src="@../../../../assets/game/JhaJinHua/Heart_2.png">
+      <img id="Heart_3" src="@../../../../assets/game/JhaJinHua/Heart_3.png">
+      <img id="Heart_4" src="@../../../../assets/game/JhaJinHua/Heart_4.png">
+      <img id="Compare_Lose" src="@../../../../assets/game/JhaJinHua/Compare_Lose.png">
+      
+      <img id="Heart_Q" src="@../../../../assets/game/JhaJinHua/Heart_Q.png">
+      <img id="Heart_K" src="@../../../../assets/game/JhaJinHua/Heart_K.png">
+      <img id="Heart_A" src="@../../../../assets/game/JhaJinHua/Heart_A.png">
+      <img id="Jing_Hua" src="@../../../../assets/game/JhaJinHua/Jing_Hua.png">
+      
+      <img id="Chip_BG_1" src="@../../../../assets/game/JhaJinHua/Chip_BG.png">
+      <img id="Chip_BG_2" src="@../../../../assets/game/JhaJinHua/Chip_BG.png">
+      <img id="Chip_BG_3" src="@../../../../assets/game/JhaJinHua/Chip_BG.png">
+      <img id="Chip_BG_4" src="@../../../../assets/game/JhaJinHua/Chip_BG.png">
+      <img id="Chip_BG_5" src="@../../../../assets/game/JhaJinHua/Chip_BG.png">
+      
+      <div id="Chip_BG_1_number">1</div>
+      <div id="Chip_BG_2_number">1</div>
+      <div id="Chip_BG_3_number">1</div>
+      <div id="Chip_BG_4_number">1</div>
+      <div id="Chip_BG_5_number">1</div>
+      <img id="You_Win" src="@../../../../assets/game/JhaJinHua/You_Win.png">
+    </body>
+    </html>

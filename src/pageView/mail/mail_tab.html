@@ -1,0 +1,130 @@
+<html>
+<style>
+    /*mail list */
+    body{margin: 0;padding: 0;}
+    #mail_bg,#mail_mail_mask01{position: fixed;}
+    #main_close{position: fixed;top: 30px;left: 1350px;cursor: pointer;}
+    #row1{position: fixed;top: 210px;left: 30px;}
+    #row1_mail_img_unread{position: fixed;top: 258px;left: 90px;}
+    #row1_mail_img_read{position: fixed;top: 258px;left: 90px;}
+    #row1_mail_icon_detail{position: fixed;top: 253px;left: 1060px;cursor:pointer;}
+    #row2{position: fixed;top: 390px;left: 30px;}
+    #row2_mail_img_unread{position: fixed;top: 432px;left: 90px;}
+    #row2_mail_img_read{position: fixed;top: 432px;left: 90px;}
+    #row2_mail_icon_detail{position: fixed;top: 432px;left: 1060px;cursor:pointer;}
+    #row3{position: fixed;top: 570px;left: 30px;}
+    #row3_mail_img_unread{position: fixed;top: 612px;left: 90px;}
+    #row3_mail_img_read{position: fixed;top: 612px;left: 90px;}
+    #row3_mail_icon_detail{position: fixed;top: 612px;left: 1060px;cursor:pointer;}
+    #row4{position: fixed;top: 750px;left: 30px;}
+    #row4_mail_img_unread{position: fixed;top: 792px;left: 90px;}
+    #row4_mail_img_read{position: fixed;top: 792px;left: 90px;}
+    #row4_mail_icon_detail{position: fixed;top: 792px;left: 1060px;cursor:pointer;}
+    #row1_message{position: fixed;top: 245px;left: 200px;}
+    #row2_message{position: fixed;top: 430px;left: 200px;}
+    #row3_message{position: fixed;top: 610px;left: 200px;}
+    #row4_message{position: fixed;top: 790px;left: 200px;}
+    #row1_message div,
+    #row2_message div,
+    #row3_message div,
+    #row4_message div{margin-top:5px;color: #FFFFFF;font-size: 30px;font-family: 'LanTingChungHei';}
+    .title{color: #c7af7a;font-size: 42px;font-family: 'LanTingChungHei'; position:absolute; left:150px;}
+    .message{margin-top: 5px;color: #FFFFFF;font-size: 36px;font-family: 'LanTingChungHei'; position:absolute; left:510px;}
+    /*mail detail */
+    #mailDetail_bg, #mailDetail_mail_mask02{position: fixed;}
+    #mailDetail_bg{top: 100px; left:65px}
+    #message_close{position: fixed;top: 60px;left: 1310px;cursor: pointer;}
+    #mail_icon_delete{position: fixed;top: 660px;left: 600px;cursor: pointer;}
+    #message{position: fixed;top: 370px;left: 170px;font-size: 34px;color: whitesmoke;font-family: 'LanTingChungHei';}
+    .partOne{width: 1190px;}
+    .partTwo{width: 1190px;margin-top: 30px;}
+    .title{color: #c7af7a;font-family: 'LanTingChungHei';font-size: 40px;}
+    .content{line-height: 58px;color: #FFFFFF;font-family: 'LanTingChungHei';font-size: 40px;}
+    .vipRecharge{color: #f3ccb8;font-family: 'LanTingChungHei';font-size: 40px;}
+    /* mail hint */
+    #close_btn{position: fixed;top: 210px;left: 1200px;cursor: pointer;}
+    #mail_mask02,#mail_popup03{position: fixed;}
+    #mail_popup03{top: 250px;left:260;}
+    #mail_input_01{position: fixed;top: 410px;left: 370px;}
+    #mail_icon_confirm{position: fixed;top: 550px;left: 760px;cursor: pointer;}
+    #mail_icon_cancel{position: fixed;top: 550px;left: 450px;cursor: pointer;}
+    #confirm_msg{position: fixed;top: 440px;left: 590px;color: #FFFFFF;font-family: 'LanTingChungHei';font-size: 40px;}
+    /*show message*/
+    #show_label {
+      position: absolute; left: 92px; top: 212px; width: 792px; height: 100px; text-align: center; color: #ffffff; font-size: 36px; background: transparent; border: none;
+    }
+    #show_img {
+      position: absolute; left: 0px; top: 20px; 
+    }
+    #show_close {
+      position: fixed; left: 1210px; top: 210px;
+    }
+    #show_btn {
+      position: absolute; left: 360px; top: 310px; 
+    }
+
+    #mail_infinite{position: fixed; left:32px; top:225px; max-height:650px; width:1350px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+    .mailWay {  background: url('@/../../../assets/lobby/mail/mail_box01.png') no-repeat; height: 140px; width: 1350px; font-weight: bold; padding-top: 30px; letter-spacing: 3px;}
+    .mailWay div{  position: absolute;left: 170px; margin-top:60px; color: #FFFFFF;font-size: 30px;font-family: 'LanTingChungHei';}
+    .mail_detail{left: 1030px;cursor: pointer;position:absolute;margin-top: 15px;}
+    .email {position:absolute; left: 66px; margin-top: 15px;}
+    ::-webkit-scrollbar {
+      width: 0px;  /* Remove scrollbar space */
+      background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    .loadFont {
+      font-family: 'LanTingChungHei';
+      position: absolute;
+    }
+    @font-face {font-family: 'LanTingChungHei';src: url('/src/font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+      
+</style>
+ <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+        <div class="loadFont">.</div>
+        <div id="mail_list" style="display: none;">
+        <!-- <img id="mail_mail_mask01" src="@/../../../assets/lobby/mail/mail_mask01.png"> -->
+        <img id="mail_bg" src="@/../../../assets/lobby/mail/mail_popup01.png">
+        <img id="main_close" src="@/../../../assets/lobby/mail/icon_close.png">
+        <div id="mail_infinite"></div>
+    
+    </div>
+    <div id="mail_detail" style="display: none;">
+            <!-- <img id="mailDetail_mail_mask02" src="@/../../../assets/lobby/mail/mail_mask02.png"> -->
+            <img id="mailDetail_bg" src="@/../../../assets/lobby/mail/mail_popup02.png">
+            <img id="message_close" src="@/../../../assets/lobby/mail/icon_close.png">
+            <img id="mail_icon_delete" src="@/../../../assets/lobby/mail/mail_icon_delete.png">
+            <div id="message">
+              <!-- <div class="partOne">
+                  <span class="title">亲爱的玩家:</span>
+                  <div class="content">
+                    推荐您使用 <span class="vipRecharge">【VIP充值】</span>, VIP充值是官方为您制定的安全快捷充值方式, 3-5秒快速到账。
+                  </div>
+              </div>
+              <div class="partTwo">
+                  <span class="title">使用方法:</span>
+                  <div class="content">
+                    在游戏内添加官方认证的代理为信或QQ, 联系蛋里进行充值, 之职支付宝, 微信, QQ钱包, 云闪付, 网银转账等多种支付方式。客服24小时在线服务, 大额无忧, 秒充秒到!
+                  </div> -->
+              </div>
+            </div>
+        </div>
+    <div id="mail_hint" style="display: none;">
+            <!-- <img id="mail_mask02" src="@/../../../assets/lobby/mail/mail_mask02.png"> -->
+            <img id="mail_popup03" src="@/../../../assets/lobby/mail/mail_popup03.png">
+            <img id="close_btn" src="@/../../../assets/lobby/mail/icon_close.png">
+            <img id="mail_input_01" src="@/../../../assets/lobby/mail/mail_input_01.png">
+            <img id="mail_icon_confirm" src="@/../../../assets/lobby/mail/mail_icon_confirm.png">
+            <img id="mail_icon_cancel" src="@/../../../assets/lobby/mail/mail_icon_cancel.png">
+            <input type="hidden" id="del_mail_id">
+            <label id="confirm_msg">确定要删除该邮件吗?</label>
+    </div>
+
+    <div id="show_message" style="display: none; position: fixed; left: 260px; top:230px;">
+      <img id="show_img" src="@../../../../assets/iframeuser/user_popup02.png">
+      <img id="show_close" src="@../../../../assets/iframeuser/icon_close.png">
+      <label id="show_label"></label>
+      <img id="show_btn" src="@../../../../assets/iframeuser/user_icon_confirm02.png">
+    </div>
+      </body>
+
+</html>

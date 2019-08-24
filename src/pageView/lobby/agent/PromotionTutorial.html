@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  #agent_popup_02{
+    position: fixed;
+  }
+  #icon_close{
+    position: fixed;
+    top: 30px;
+    left: 1660px;
+    cursor: pointer;
+  }
+  #agent_banner01{
+    position: fixed;
+    top: 260px;
+    left: 82px;
+  }
+  
+  #agent_tab_01{
+    position: fixed;
+    top: 92px;
+    left: 494px;
+    cursor: pointer;
+  }
+  #agent_tab_02{
+    position: fixed;
+    top: 92px;
+    left: 794px;
+    cursor: pointer;
+  }
+  #agent_tab_03_hover{
+    position: fixed;
+    top: 92px;
+    left: 1064px;
+  }
+  #agent_tab_04{
+    position: fixed;
+    top: 92px;
+    left: 1335px;
+    cursor: pointer;
+  }
+  @font-face {
+      font-family: 'LanTingHei';
+      src: url('@../../../../../font/LanTingHei.ttf');
+  }
+  @font-face {
+      font-family: 'LanTingChungHei';
+      src: url('@../../../../../font/LanTingChungHei.ttf');
+  }
+  #examleArea{
+    position: fixed;
+    top: 695px;
+    left: 145px;
+    line-height: 50px;
+  }
+  #forExample{
+    font-family: 'LanTingChungHei';
+    font-size: 36px;
+    color: #f3ccb8;
+    margin-bottom: 5px;
+  }
+  #exapmle{
+    font-family: 'LanTingHei';
+    font-size: 36px;
+    color:#FFFFFF;
+  }
+  .blue{
+    color: #a3c1f8;
+  }
+  .red{
+    color: #f75050;
+  }
+  .green{
+    color: #9fca52;
+  }
+</style>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <img id="agent_popup_02" src="@/../../../../assets/lobby/agent/agent_popup_02.png">
+  <img id="icon_close" src="@/../../../../assets/lobby/agent/icon_close.png">
+
+  <img id="agent_tab_01" src="@/../../../../assets/lobby/agent/agent_tab_01.png">
+  <img id="agent_tab_02" src="@/../../../../assets/lobby/agent/agent_tab_02.png">
+  <img id="agent_tab_03_hover" src="@/../../../../assets/lobby/agent/agent_tab_03_hover.png">
+  <img id="agent_tab_04" src="@/../../../../assets/lobby/agent/agent_tab_04.png">
+
+
+  <img id="agent_banner01" src="@/../../../../assets/lobby/agent/agent_banner01.png">
+  <div id="examleArea">
+      <div id="forExample">
+        您的返利 = 1级返利+2级返利+...N级返利。 每级返利 = 对应下线的X*(30%)。
+      </div>
+      <div id="exapmle">
+       举例说明:  <br>
+       <span class="blue">B=您的1级下线, 税收为10000</span> <br>
+      </span><span class="red">B1=B的1级下线,</span>  您的2级下线, 税收为20000 <br>
+        您的返利 = <span class="green">10000*30%+(20000*30%)*30%</span>
+      </div>
+  </div>
+</body>
+</html>

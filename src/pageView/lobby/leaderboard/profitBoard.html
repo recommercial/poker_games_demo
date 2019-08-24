@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<style>
+   body{
+    margin: 0;
+    padding: 0;
+  }
+  #profit_award_popup01{
+    position: fixed;
+  }
+  #profit_close{
+    position: fixed;
+    top: 30px;
+    left: 1648px;
+    cursor: pointer;
+  }
+  #profit_award_tab_01_hover{
+    position: fixed;
+    top: 85px;
+    left: 580px;
+  }
+  #profit_award_tab_02{
+    position: fixed;
+    top: 85px;
+    left: 860px;
+    cursor: pointer;
+  }
+  #profit_award_form_header01{
+    position: fixed;
+    top: 245px;
+    left: 60px;
+  }
+
+  #profit_award_form_row_even1{
+    position: fixed;
+    top: 355px;
+    left: 60px;
+  }
+  #profit_award_form_row_even2{
+    position: fixed;
+    top: 463px;
+    left: 60px;
+  }
+  #profit_award_form_row_even3{
+    position: fixed;
+    top: 571px;
+    left: 60px;
+  }
+  #profit_award_form_row_even4{
+    position: fixed;
+    top: 679px;
+    left: 60px;
+  }
+  #profit_award_form_row_even5{
+    position: fixed;
+    top: 787px;
+    left: 60px;
+  }
+  label{
+    color: #e5b79f;
+    font-size: 40px;
+    font-family: 'LanTingChungHei';
+  }
+  #rank{
+    position: fixed;
+    top: 270px;
+    left: 275px;
+    letter-spacing: 20px;
+  }
+  #msg{
+    position: fixed;
+    top: 278px;
+    left: 785px;
+
+  }
+  #profit{
+    position: fixed;
+    top: 278px;
+    left: 1355px;
+
+  }
+  #first{
+    position: fixed;
+    top: 354px;
+    left: 274px;
+  }
+  #second{
+    position: fixed;
+    top: 462px;
+    left: 274px;
+  }
+  #third{
+    position: fixed;
+    top: 570px;
+    left: 274px;
+  }
+  #fourth{
+    position: fixed;
+    top: 708px;
+    left: 310px;
+
+    color: #FFFFFF;
+    font-size: 42px;
+    font-family: 'ArialRegular';
+  }
+  #self{
+    position: fixed;
+    top: 835px;
+    left: 257px;
+  }
+  #award_form_row_mark{
+    position: fixed;
+    top: 805px;
+    left: 63px;
+  }
+  #ps{
+    position: fixed;
+    top: 925px;
+    left: 63px;
+
+    color: #FFFFFF;
+    font-size: 32px;
+    font-family: 'LanTingHei';
+  }
+
+  #customers {
+    border-collapse: collapse;
+    position: fixed;
+    top: 359px;
+    left: 456px;
+    text-align: center;
+    font-size: 24px;
+    color: #c7af7a;
+    width: 1205px;
+  }
+
+  #customers td, #customers th {
+    padding: 8px;
+  }
+  #customers tr {
+    height: 108px;
+  }
+  #customers td:nth-child(1){
+    width: 800px;
+    font-family: 'LanTingHei';
+    color:#c7af7a;
+    font-size:42px;
+  }
+  #customers td:nth-child(2){
+    width: 10px;
+    position: relative;
+    left: 10px;
+    top: 4px;
+  }
+  #customers td:nth-child(3){
+    font-family: 'ArialRegular';
+    color:#fdefac;
+    font-size:42px;
+    text-align: left;
+    left: 20px;
+    position: relative;
+
+  }
+  #customers tr:nth-child(5){
+    height: 140px;
+  }
+  @font-face {
+      font-family: 'LanTingChungHei';
+      src: url('@../../../../../font/LanTingChungHei.ttf');
+  }
+  @font-face {
+      font-family: 'ArialRegular';
+      src: url('@../../../../../font/ArialRegular.ttf');
+  }
+  @font-face {
+      font-family: 'LanTingHei';
+      src: url('@../../../../../font/LanTingHei.ttf');
+  }
+</style>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <img id="profit_award_popup01" src="@/../../../../assets/lobby/leaderboard/award_popup01.png">
+    <img id="profit_close" src="@/../../../../assets/lobby/leaderboard/icon_close.png">
+    <img id="profit_award_tab_01_hover" src="@/../../../../assets/lobby/leaderboard/award_tab_01_hover.png">
+    <img id="profit_award_tab_02" src="@/../../../../assets/lobby/leaderboard/award_tab_02.png">
+    <img id="profit_award_form_header01" src="@/../../../../assets/lobby/leaderboard/award_form_header01.png">
+
+    <img id="profit_award_form_row_even2" src="@/../../../../assets/lobby/leaderboard/award_form_row_even.png">
+    <img id="profit_award_form_row_even4" src="@/../../../../assets/lobby/leaderboard/award_form_row_even.png">
+    
+    <label id="rank">排名</label>
+    <label id="msg">玩家信息</label>
+    <label id="profit">盈利</label>
+    
+    <img id="award_form_row_mark" src="@/../../../../assets/lobby/leaderboard/award_form_row_mark.png">
+    <img id="first" src="@/../../../../assets/lobby/leaderboard/award_medal_1.png">
+    <img id="second" src="@/../../../../assets/lobby/leaderboard/award_medal_2.png">
+    <img id="third" src="@/../../../../assets/lobby/leaderboard/award_medal_3.png">
+    <span id="fourth">4</span>
+    <img id="self" src="@/../../../../assets/lobby/leaderboard/award_text_out.png">
+    <div id="ps">*玩家盈利排行榜, 每日0点重置｡</div>
+
+    <table id="customers">
+      <tbody>
+        <tr>
+          <td>li***01</td>
+          <td><img src="@/../../../../assets/lobby/leaderboard/award_img_coin.png"></td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>li***01</td>
+          <td><img src="@/../../../../assets/lobby/leaderboard/award_img_coin.png"></td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>li***01</td>
+          <td><img src="@/../../../../assets/lobby/leaderboard/award_img_coin.png"></td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>li***01</td>
+          <td><img src="@/../../../../assets/lobby/leaderboard/award_img_coin.png"></td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>li***01</td>
+          <td><img src="@/../../../../assets/lobby/leaderboard/award_img_coin.png"></td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>

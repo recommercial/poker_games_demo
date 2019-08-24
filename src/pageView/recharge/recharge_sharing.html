@@ -1,0 +1,441 @@
+<html>
+   <style>
+       #icon_close{
+            background:url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_new/account/icon_close.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 4%;
+            left: 97%;
+            height:50px;
+            width:50px;
+       }
+
+       #div2{
+            background:url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_nav_top.png) no-repeat;
+            background-size: 100%;
+            position: fixed;
+            top: 6%;
+            left:1.2%;
+            height:26vw;
+            width:26vw;
+       }
+      
+        #pay1{
+            position: absolute;
+            top: 21%;
+            left:1.2%;
+            height: 6vw;
+            width:25.7vw;
+        }
+        #pay2{
+            position: absolute;
+            top: 32.5%;
+            left:1.2%;
+            height: 6vw;
+            width:25.7vw;
+        }
+        /* #pay3{
+            position: absolute;
+            top: 44%;
+            left:1.2%;
+            height: 6vw;
+            width:26vw;
+        }
+        #pay4{
+            position: absolute;
+            top: 55.5%;
+            left:1.2%;
+            height: 6vw;
+            width:26vw;
+        }
+        #pay5{
+            position: absolute;
+            top: 67%;
+            left:1.2%;
+            height: 6vw;
+            width:26vw;
+        }
+        #pay6{
+            position: absolute;
+            top: 78.5%;
+            left:1.2%;
+            height: 6vw;
+            width:26vw
+        }
+        #pay7{
+            position: absolute;
+            top: 90%;
+            left:1.2%;
+            height: 6vw;
+            width:26vw;
+        } */
+        #back{
+            position: absolute;
+            top: 39%;
+            left:80%;
+            height: 5vw;
+            width:7vw;
+        }
+        #confirmRecharge{
+            position: absolute;
+            top: 77%;
+            left:56.5%;
+            height: 7vw;
+            width:13vw;
+            font-size: 40;
+            padding-top: 30;
+            
+            color: #702414;
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+        }
+        #title1{
+            position: absolute;
+            top: 9%;
+            left:19%;
+            height: 6vw;
+            width:18vw;
+        }
+        #title2{
+            position: absolute;
+            top: 9%;
+            left:37%;
+            height: 6vw;
+            width:18vw;
+        }
+        #title3{
+            position: absolute;
+            top: 9%;
+            left:55%;
+            height: 6vw;
+            width:18vw;
+        }
+        #title4{
+            position: absolute;
+            top: 9%;
+            left:73%;
+            height: 6vw;
+            width:18vw;
+        }
+
+        #img1{
+            position: absolute;
+            top: 22%;
+            left:30%;
+            height: 8vw;
+            width:65vw;
+        }
+
+        #img2{
+            position: absolute;
+            top: 21.2%;
+            left:84.5%;
+            height: 9vw;
+            width:9vw;
+        }
+
+        #img3{
+            position: absolute;
+            top: 45%;
+            left:31.5%;
+            height: 22vw;
+            width:23vw;
+        }
+
+        #img4{
+            position: absolute;
+            top: 38%;
+            left:45.5%;
+            height: 6.5vw;
+            width:42vw;
+        }
+
+
+        #lab1{
+            position: absolute;
+            top: 41%;
+            left:35.5%;
+            text-align: center;
+            font-size: 30;
+            color: aliceblue;
+            line-height: 1.3;
+            letter-spacing: 3;
+
+        }
+
+        #lab2{
+            position: absolute;
+            top: 58%;
+            left:60%;
+            text-align: center;
+            font-size: 48;
+            color: aliceblue;
+            line-height: 1.3;
+            letter-spacing: 3;
+
+        }
+
+        #name1{
+            position: absolute;
+            top: 41%;
+            left:46.5%;
+            /* top: 40.5vw; 
+            left: 43.5vw; */
+            font-size: 29;
+            color: whitesmoke; 
+            background: none; 
+            border: none; 
+            outline: none;
+        }
+
+        #payMoney0{
+            position: absolute;
+            /* display: none; */
+            top: 52.5%;
+            left:30.5%;
+            height: 6vw;
+            width:12vw;
+            font-size: 40;
+            padding-top: 30;
+
+            
+            color: #702414;
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+           
+        }
+        #payMoney1{
+            position: absolute;
+            /* display: none; */
+            top: 52.5%;
+            left:43.5%;
+            height: 6vw;
+            width:12vw;
+            padding-top: 30;
+            font-size: 40;
+            
+            color: #702414;
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+
+           
+        }
+        #payMoney2{
+            position: absolute;
+            /* display: none; */
+            top: 52.5%;
+            left:56.5%;
+            height: 6vw;
+            width:12vw;
+            padding-top: 30;
+            font-size: 40;
+            color: #702414;
+            
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+
+           
+        }
+        #payMoney3{
+            position: absolute;
+            /* display: none; */
+            top: 52.5%;
+            left:69.5%;
+            height: 6vw;
+            width:12vw;
+            padding-top: 30;
+            font-size: 40;
+            color: #702414;
+            
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+
+           
+        }
+        #payMoney4{
+            position: absolute;
+            /* display: none; */
+            top: 52.5%;
+            left:82.5%;
+            height: 6vw;
+            width:12vw;
+            padding-top: 30;
+            font-size: 40;
+            color: #702414;
+            
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+
+           
+        }
+        #payMoney5{
+            position: absolute;
+            /* display: none; */
+            top: 65.5%;
+            left:30.5%;
+            height: 6vw;
+            width:12vw;
+            padding-top: 30;
+            font-size: 40;
+            color: #702414;
+            
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+
+        }
+        #payMoney6{
+            position: absolute;
+            /* display: none; */
+            top: 65.5%;
+            left:43.5%;
+            height: 6vw;
+            width:12vw;
+            padding-top: 30;
+            font-size: 40;
+            color: #702414;
+            
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+
+           
+        }
+        #payMoney7{
+            position: absolute;
+            /* display: none; */
+            top: 65.5%;
+            left:56.5%;
+            height: 6vw;
+            width:12vw;
+            padding-top: 30;
+            font-size: 40;
+            color: #702414;
+            
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+
+           
+        }
+        #payMoney8{
+            position: absolute;
+            display: none;
+            top: 65.5%;
+            left:69.5%;
+            height: 6vw;
+            width:12vw;
+            padding-top: 30;
+            font-size: 40;
+            color: #702414;
+            
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+
+           
+        }
+        #payMoney9{
+            position: absolute;
+            display: none;
+            top: 65.5%;
+            left:82.5%;
+            height: 6vw;
+            width:12vw;
+            padding-top: 30;
+            font-size: 40;
+            color: #702414;
+            
+            text-align: center;
+            background: url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_money.png) no-repeat;
+
+           
+        }
+
+        #container1{
+            position: relative;
+            left:0.5%;
+            top:2.5%;
+            height: 85%;
+            width: 28%;
+            overflow: hidden;
+        }
+
+        #container2{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: -17px;
+            bottom: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        .payWay{ 
+        
+        
+            /* background: -webkit-linear-gradient(180deg, rgb(38, 39, 39), rgb(0, 0, 0));
+            background: linear-gradient(180deg, rgb(38, 39, 39), rgb(0, 0, 0)); */
+
+        }
+     
+       
+
+     
+       
+   </style>
+   <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+        <div style="position:relative ;"></div>
+        <img src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_popup07.png" style="text-align:center;display: block; width:99%; height:auto; position:fixed; ">
+        <div id="icon_close"></div>
+        <div id="div2"></div>
+        <img id="img1" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_banner_03.png">
+        <img id="img2" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_service.png">
+        <img id="img4" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_input_002.png">
+        <div id="container1" >
+            <div id="container2">
+            <input id="pay1" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_nav_01.png">
+            <input id="pay2" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_nav_02.png"> 
+            <!-- <input id="pay3" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_nav_03.png"> 
+            <input id="pay4" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_nav_04_hover.png"> 
+            <input id="pay5" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_nav_05.png"> 
+            <input id="pay6" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_nav_06.png">
+            <input id="pay7" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_nav_07.png"> -->
+        </div>
+        </div>
+        <input id="back" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/icon_backspace.png">
+        <div id="confirmRecharge">充值</div>
+        <input id="title1" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_tab_01_hover.png"> 
+        <input id="title2" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_tab_02.png">  
+        <input id="title3" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_tab_03.png">
+        <input id="title4" type="image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/recharge/pay_tab_04.png">
+        <label id="lab1"></label>
+        <label id="lab2"></label>
+        <input id="name1" type="text" placeholder="请输入存款金额, 最低100元">
+        <div id="amount">
+            <div id="payMoney0"></div>
+            <div id="payMoney1"></div>
+            <div id="payMoney2"></div>
+            <div id="payMoney3"></div>
+            <div id="payMoney4"></div>
+            <div id="payMoney5"></div>
+            <div id="payMoney6"></div>
+            <div id="payMoney7"></div>
+            <div id="payMoney8"></div>
+            <div id="payMoney9"></div>
+
+        </div>
+
+    </body>
+<script>
+    window.onload = function(){
+            let context1 = '充值金额';
+           
+            let lab1 = document.getElementById("lab1");
+            
+            lab1.innerText = context1;
+
+            
+            
+    }
+            
+
+</script>
+   
+
+</html>

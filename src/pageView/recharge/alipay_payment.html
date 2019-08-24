@@ -1,0 +1,295 @@
+<html>
+    <style>
+        #div1 {
+            background-size: 100%;
+            position: fixed;
+            top: 40px;
+            left: 1655px;
+            cursor: pointer;
+        }
+
+        #div2 {
+            background-size: 100%;
+            position: fixed;
+            top: 65px;
+            left: 30px;
+        }
+
+        #pay1 {
+            cursor: pointer;
+            position: fixed;
+            top: 214px;
+            left: 32px;
+        }
+
+        #pay2 {
+            cursor: pointer;
+            position: fixed;
+            top: 324px;
+            left: 32px;
+        }
+
+        #pay3 {
+            cursor: pointer;
+            position: fixed;
+            top: 434px;
+            left: 32px;
+        }
+
+        #pay4 {
+            cursor: pointer;
+            position: fixed;
+            top: 544px;
+            left: 32px;
+        }
+
+        #pay5 {
+            cursor: pointer;
+            position: fixed;
+            top: 654px;
+            left: 32px;
+        }
+
+        #pay6 {
+            cursor: pointer;
+            position: fixed;
+            top: 764px;
+            left: 32px;
+        }
+
+        #pay7 {
+            cursor: pointer;
+            position: fixed;
+            top: 874px;
+            left: 32px;
+        }
+
+        #pay8 {
+            cursor: pointer;
+            position: fixed;
+						top: 460px;
+    				left: 1400px;
+        }
+
+        #pay9 {
+					cursor: pointer;
+					position: fixed;
+					top: 735px;
+					left: 1060px;
+        }
+
+        #pay10 {
+            position: fixed;
+            top: 440px;
+            left: 905px;
+        }
+
+        #title1 {
+            cursor: pointer;
+            position: fixed;
+            top: 98px;
+            left: 326px;
+        }
+
+        #title2 {
+            cursor: pointer;
+            position: fixed;
+            top: 98px;
+            left: 606px;
+        }
+
+        #title3 {
+            cursor: pointer;
+            position: fixed;
+            top: 98px;
+            left: 876px;
+        }
+
+        #title4 {
+            cursor: pointer;
+            position: fixed;
+            top: 98px;
+            left: 1146px;
+        }
+
+        #img1 {
+            position: fixed;
+            top: 250px;
+            left: 535px;
+        }
+
+        #img2 {
+            position: fixed;
+            top: 250px;
+            left: 1490px;
+            cursor: pointer;
+        }
+
+        #img3 {
+            position: fixed;
+            top: 45%;
+            left: 31.5%;
+        }
+
+        #img4 {
+            position: fixed;
+            top: 38%;
+            left: 45.5%;
+        }
+
+
+        #lab1 {
+            position: fixed;
+            top: 475px;
+            left: 640px;
+            text-align: center;
+            font-size: 30px;
+            color: aliceblue;
+            letter-spacing: 3;
+
+        }
+
+        #lab2 {
+            position: fixed;
+            top: 58%;
+            left: 60%;
+            text-align: center;
+            font-size: 48px;
+            color: aliceblue;
+            letter-spacing: 3;
+
+        }
+
+        #name1 {
+            font-size: 29px;
+            color: whitesmoke;
+            border: none;
+            outline: none;
+            background: transparent;
+            height: 110px;
+            left: 910px;
+            position: fixed;
+            top: 440px;
+            width: 620px;
+        }
+
+       
+        #container1 {
+            position: relative;
+            left: 0.5%;
+            top: 2.5%;
+            overflow: hidden;
+        }
+
+        #container2 {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: -17px;
+            bottom: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+				#pay_pic{
+					position: fixed;
+					top: 440px;
+					left: 535px;
+				}
+				h1{
+					color: whitesmoke;
+				}
+				.slogan{
+					position: fixed;
+					top: 520px;
+					left: 955px;
+					font-size: 65px;
+				}
+				.officeal_link{
+					position: fixed;
+					top: 590px;
+					left: 1060px;
+					font-size: 75px;
+				}
+				.officeal_link a{
+					text-decoration: none;
+				}
+				.officeal_link a:link{
+					color: whitesmoke;
+				}
+        input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+			-webkit-transition-delay: 99999s;
+			-o-transition-delay: 99999s;
+			transition-delay: 99999s;
+			-webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+			-o-transition: color 99999s ease-out, background-color 99999s ease-out;
+			transition: color 99999s ease-out, background-color 99999s ease-out;
+		}
+        input{
+			font-family: 'LanTingHei';
+		}
+		@font-face {
+				font-family: 'LanTingHei';
+				src: url('@../../../../font/LanTingHei.ttf');
+		}
+		::-webkit-input-placeholder { /* Edge */
+			color: #acacac ;
+			font-weight: 100;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+		}
+		input::-moz-placeholder  { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+		}
+
+		::placeholder {
+			color: #acacac ;
+			font-weight: 100;
+		}
+    </style>
+    <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+			<img src="@/../../../assets/recharge/pay_popup01.png" style="position:fixed;">
+			<img id="div1" src="@/../../../assets/recharge/icon_close.png">
+			<img id="div2" src="@/../../../assets/recharge/pay_nav_top.png">
+			<img id="img1" src="@/../../../assets/recharge/pay_banner_01.png">
+			<img id="img2" src="@/../../../assets/recharge/icon_service.png">
+
+			<img id="pay1" src="@/../../../assets/recharge/pay_nav_01.png">
+			<img id="pay2" src="@/../../../assets/recharge/pay_nav_02_hover.png">
+			<img id="pay3" src="@/../../../assets/recharge/pay_nav_03.png">
+			<img id="pay4" src="@/../../../assets/recharge/pay_nav_04.png">
+			<img id="pay5" src="@/../../../assets/recharge/pay_nav_05.png">
+			<img id="pay6" src="@/../../../assets/recharge/pay_nav_06.png">
+			<img id="pay7" src="@/../../../assets/recharge/pay_nav_07.png">
+
+			<img id="pay10" src="@/../../../assets/recharge/pay_input_002.png">
+			<img id="pay8" src="@/../../../assets/recharge/icon_copy01.png">
+			<img id="pay9" src="@/../../../assets/recharge/icon_addCredit01.png">
+			<img id="title1" src="@/../../../assets/recharge/pay_tab_01_hover.png">
+			<img id="title2" src="@/../../../assets/recharge/pay_tab_02.png">
+			<img id="title3" src="@/../../../assets/recharge/pay_tab_03.png">
+			<img id="title4" src="@/../../../assets/recharge/pay_tab_04.png">
+			
+			<img id="pay_pic" src="@/../../../assets/recharge/pay_pic_001.png">
+			<input type="text" id="name1" placeholder="   ID : " autocomplete="off" value="live006">
+			<h1 class="slogan">
+				请认准官方充值网址
+			</h1>
+			<h1 class="officeal_link">
+					67888zf.com
+			</h1>
+    </body>
+    <script>
+        window.onload = function () {
+            let context1 = '充值金额';
+            let lab1 = document.getElementById("lab1");
+            lab1.innerText = context1;
+        }
+    </script>
+</html>

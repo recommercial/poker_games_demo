@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+#user_popup01 {
+    position: fixed; left: 0px; top: 0px; 
+}
+#icon_close {
+    position: fixed; left: 1340px; top: 30px; 
+}
+#user_tab_01 {
+    position: fixed; left: 160px; top: 100px; 
+}
+#user_tab_02 {
+    position: fixed; left: 440px; top: 100px;  
+}
+#user_tab_03 {
+    position: fixed; left: 710px; top: 100px; 
+}
+#user_tab_04 {
+    position: fixed; left: 980px; top: 100px; 
+}
+#user_avatar {
+    position: fixed; left: 170px; top: 240px; 
+}
+#change_avatar {
+    position: fixed; left: 175px; top: 450px; 
+}
+#user_input_01 {
+    position: fixed; left: 110px; top: 560px; 
+}
+#copy {
+    position: fixed; left: 1065px; top: 255px; 
+}
+#edit {
+    position: fixed; left: 1065px; top: 347px; 
+}
+#login_key {
+    position: fixed; left: 400px; top: 730px; 
+}
+#security_key {
+    position: fixed; left: 750px; top: 730px; 
+}
+
+#label_account {
+    position: fixed; left: 540px; top: 275px; width: 460px; font-size: 40px; color: #ffffff
+}
+#label_nickname {
+    position: fixed; left: 540px; top: 360px; width: 460px; font-size: 40px; color: #ffffff
+}
+#label_title {
+    position: fixed; left: 540px; top: 450px; width: 460px; font-size: 40px; color: #ffffff
+}
+#label_wallet {
+    position: fixed; left: 400px; top: 590px; width: 250px; font-size: 40px; color: #a49a74
+}
+#label_points {
+    position: fixed; left: 1000px; top: 590px; width: 250px; font-size: 40px; color: #a49a74
+}
+
+
+
+#head_account {
+    position: fixed; left: 420px; top: 275px; width: 100px; font-size: 40px; color:#a49a74
+}
+#head_nickname {
+    position: fixed; left: 420px; top: 360px; width: 100px; font-size: 40px; color: #a49a74
+}
+#head_title {
+    position: fixed; left: 420px; top: 450px; width: 100px; font-size: 40px; color: #a49a74
+}
+
+#head_wallet {
+    position: fixed; left: 220px; top: 590px; width: 190px; font-size: 40px; color: rgb(219, 167, 34)
+}
+#head_points {
+    position: fixed; left: 820px; top: 590px; width: 190px; font-size: 40px; color: rgb(219, 167, 34)
+}
+
+#copy_line {
+    position: fixed; left: 390px; top: 335px; width:885px; border-bottom: 1px solid rgb(219, 167, 34)
+}
+#edit_line {
+    position: fixed; left: 390px; top: 425px; width:885px; border-bottom: 1px solid rgb(219, 167, 34)
+}
+
+#root { margin: 0; padding: 0; height: 100%; width: 100%;}
+.for_data {
+    position: fixed; left: 0px; top: 0px; display: none;
+}
+</style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+<div id="root">
+    <!-- display only -->
+    <img id="user_popup01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_popup01.png">
+    <img id="icon_close" name="icon_close" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_close.png">
+	
+	
+	<img id="user_input_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_01.png">
+    <div id="copy_line"></div>
+    <div id="edit_line"></div>
+	
+    <img id="user_tab_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_01_hover.png">
+    <img id="user_tab_02" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_02.png">
+    <img id="user_tab_03" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_03.png">
+    <img id="user_tab_04" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_04.png">
+    <img id="user_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_avatar_01.png">
+    <img id="change_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_replace.png">
+    <img id="copy" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_copy.png">
+    <img id="edit" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_edit01.png">
+    <img id="login_key" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_loginKey.png">
+    <img id="security_key" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_securityKey.png">
+	
+	
+	
+
+    <div id="label_account">162680162680</div>
+    <div id="label_nickname">惊奇队长</div>
+    <div id="label_title">惊奇队长</div>
+    <div id="head_account">帐号:</div>
+    <div id="head_nickname">昵称:</div>
+    <div id="head_title">头衔:</div>
+
+    <div id="label_wallet">50000000.15</div>
+    <div id="label_points">65600000</div>
+    <div id="head_wallet">我的钱包:</div>
+    <div id="head_points">我的积分:</div>
+
+
+</div>
+
+<!-- for-data -->
+<img id="avatar_woman_01" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_01.png">
+<img id="avatar_woman_02" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_02.png">
+<img id="avatar_woman_03" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_03.png">
+<img id="avatar_woman_04" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_04.png">
+<img id="avatar_woman_05" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_05.png">
+<img id="avatar_woman_06" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_06.png">
+<img id="avatar_woman_07" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_07.png">
+<img id="avatar_woman_08" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_08.png">
+<img id="avatar_woman_09" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_09.png">
+<img id="avatar_woman_10" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_10.png">
+<img id="avatar_woman_11" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_11.png">
+<img id="avatar_woman_12" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_12.png">
+<img id="avatar_man_01" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_01.png">
+<img id="avatar_man_02" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_02.png">
+<img id="avatar_man_03" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_03.png">
+<img id="avatar_man_04" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_04.png">
+<img id="avatar_man_05" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_05.png">
+<img id="avatar_man_06" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_06.png">
+<img id="avatar_man_07" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_07.png">
+<img id="avatar_man_08" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_08.png">
+<img id="avatar_man_09" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_09.png">
+<img id="avatar_man_10" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_10.png">
+<img id="avatar_man_11" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_11.png">
+<img id="avatar_man_12" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_12.png">
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {font-family: 'LanTingChungHei'; src: url('@/../../../../font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+    body{margin: 0;padding: 0;}
+    #bai_ren_bg{position: fixed;}
+    #bai_ren_nav_bg{position: fixed;top: 0;left: 0;}
+    #bai_ren_pic{position: fixed;top: 3px;left: 40px;}
+    #bai_ren_userInfo{position: fixed;top: 3px;left: 40px;}
+    #bai_ren_userName{position: fixed;color: #fdfdfd;font-size: 36px;font-family: 'LanTingChungHei';top: 25px;left: 220px;}
+    #bai_ren_money{position: fixed;color: #ff6c00;font-size: 36px;font-family: 'LanTingChungHei';top: 80px;left: 300px;}
+    #bai_ren_iconMoney{position: fixed;top: 78px;left: 220px;}
+    #bai_ren_logo{position: fixed;left: 785px;}
+    #bai_ren_help{position: fixed;top: 8px;left: 1460px;cursor: pointer;}
+    #bai_ren_record{position: fixed;top: 8px;left: 1620px;cursor: pointer;}
+    #bai_ren_back{position: fixed;top: 8px;left: 1770px;cursor: pointer;}
+    #bai_ren_model{position: fixed;top: 162px;left: 40px;}
+    #bai_ren_speaker{position: fixed;top: 115px;left: 545px;}
+    #bai_ren_speaker_content{position: fixed;top: 115px;left: 615px;font-size: 30px;color: #fcfcfc;font-family: 'LanTingChungHei';}
+    #bai_ren_board_bg{position: fixed;top: 155px;left: 725px;}
+
+    #bai_ren_experience{position: fixed;top: 165px;left: 760px;}
+    #bai_ren_experience .bai_ren_second_box{position: fixed;top: 180px;left: 840px;}
+    #bai_ren_experience .bai_ren_second_text{position: fixed;top: 184px;left: 855px;color: #90f371;font-size: 24px;}
+    #bai_ren_experience .room_limit{position: fixed;top: 321px;left: 940px; color: #ffffff; font-size: 24px;}
+    #bai_ren_experience .area_tian{position: fixed;top: 177px;left: 1125px;}
+    #bai_ren_experience .area_dee{position: fixed;top: 232px;left: 1125px;}
+    #bai_ren_experience .area_shuain{position: fixed;top: 288px;left: 1125px;}
+    #bai_ren_experience .area_huang{position: fixed;top: 343px;left: 1125px;}
+
+    #bai_ren_experience .set1_1{position: fixed;top: 180px;left: 1207px;}
+    #bai_ren_experience .set1_2{position: fixed;top: 235px;left: 1207px;}
+    #bai_ren_experience .set1_3{position: fixed;top: 290px;left: 1207px;}
+    #bai_ren_experience .set1_4{position: fixed;top: 345px;left: 1207px;}
+    #bai_ren_experience .set2_1{position: fixed;top: 180px;left: 1267px;}
+    #bai_ren_experience .set2_2{position: fixed;top: 235px;left: 1267px;}
+    #bai_ren_experience .set2_3{position: fixed;top: 290px;left: 1267px;}
+    #bai_ren_experience .set2_4{position: fixed;top: 345px;left: 1267px;}
+
+    #bai_ren_primary{position: fixed;top: 390px;left: 760px;}
+    #bai_ren_primary .bai_ren_second_box{position: fixed;top: 405px;left: 840px; color: #ffffff; font-size: 24px;}
+    #bai_ren_primary .bai_ren_second_text{position: fixed;top: 409px;left: 855px; color: #90f371; font-size: 24px;}
+    #bai_ren_primary .room_limit{position: fixed;top: 545px;left: 934px; color: #ffffff; font-size: 24px;}
+    #bai_ren_primary .area_tian{position: fixed;top: 405px;left: 1125px;}
+    #bai_ren_primary .area_dee{position: fixed;top: 460px;left: 1125px;}
+    #bai_ren_primary .area_shuain{position: fixed;top: 515px;left: 1125px;}
+    #bai_ren_primary .area_huang{position: fixed;top: 570px;left: 1125px;}
+
+    #bai_ren_intermediate{position: fixed;top: 625px;left: 760px;}
+    #bai_ren_intermediate .bai_ren_second_box{position: fixed;top: 633px;left: 840px; color: #ffffff; font-size: 24px;}
+    #bai_ren_intermediate .bai_ren_second_text{position: fixed;top: 636px;left: 855px; color: #90f371; font-size: 24px;}
+    #bai_ren_intermediate .room_limit{position: fixed;top: 775px;left: 930px; color: #ffffff; font-size: 24px;}
+    #bai_ren_intermediate .area_tian{position: fixed;top: 633px;left: 1125px;}
+    #bai_ren_intermediate .area_dee{position: fixed;top: 687px;left: 1125px;}
+    #bai_ren_intermediate .area_shuain{position: fixed;top: 743px;left: 1125px;}
+    #bai_ren_intermediate .area_huang{position: fixed;top: 800px;left: 1125px;}
+
+    #bai_ren_advanced{position: fixed;top: 845px;left: 760px;}
+    #bai_ren_advanced .bai_ren_second_box{position: fixed;top: 860px;left: 840px; color: #ffffff; font-size: 24px;}
+    #bai_ren_advanced .bai_ren_second_text{position: fixed;top: 866px;left: 855px; color: #90f371; font-size: 24px;}
+    #bai_ren_advanced .room_limit{position: fixed;top: 995px;left: 930px; color: #ffffff; font-size: 24px;}
+    #bai_ren_advanced .area_tian{position: fixed;top: 860px;left: 1125px;}
+    #bai_ren_advanced .area_dee{position: fixed;top: 914px;left: 1125px;}
+    #bai_ren_advanced .area_shuain{position: fixed;top: 969px;left: 1125px;}
+    #bai_ren_advanced .area_huang{position: fixed;top: 1025px;left: 1125px;}
+
+  </style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <img id="bai_ren_bg" src="@/../../../../assets/hall/bai.ren.niou.niou/bg.png">
+  <img id="bai_ren_nav_bg" src="@/../../../../assets/hall/bai.ren.niou.niou/nav_bg.png">
+  <img id="bai_ren_pic" src="@/../../../../assets/hall/bai.ren.niou.niou/pic.png">
+  <div id="bai_ren_userInfo">
+    <span id="bai_ren_userName">GUEST1322</span>
+    <img id="bai_ren_iconMoney" src="@/../../../../assets/hall/bai.ren.niou.niou/coin.png">
+    <span id="bai_ren_money">19,300</span>
+  </div>
+  <img id="bai_ren_logo" src="@/../../../../assets/hall/bai.ren.niou.niou/logo.png">
+  <img id="bai_ren_help" src="@/../../../../assets/hall/bai.ren.niou.niou/btn_help.png">
+  <img id="bai_ren_record" src="@/../../../../assets/hall/bai.ren.niou.niou/btn_record.png">
+  <img id="bai_ren_back" src="@/../../../../assets/hall/bai.ren.niou.niou/btn_back.png">
+  <img id="bai_ren_model" src="@/../../../../assets/hall/bai.ren.niou.niou/model.png">
+  <img id="bai_ren_speaker" src="@/../../../../assets/hall/bai.ren.niou.niou/speaker.png">
+  <div id="bai_ren_speaker_content">欢迎来到棋牌试玩中心, 打造属于您自己的游戏专属品牌</div>
+  <img id="bai_ren_board_bg" src="@/../../../../assets/hall/bai.ren.niou.niou/board_bg.png">
+  <div id="bai_ren_experience">
+    <img id="bai_ren_experience_room" src="@/../../../../assets/hall/bai.ren.niou.niou/room_experience.png">
+    <span class="room_limit">6</span>
+    <img class="bai_ren_second_box" src="@/../../../../assets/hall/bai.ren.niou.niou/second_text.png">
+    <span class="bai_ren_second_text">发牌中... 3s</span>
+    <img class="area_tian" src="@/../../../../assets/hall/bai.ren.niou.niou/area_tian.png">
+    <img class="area_dee" src="@/../../../../assets/hall/bai.ren.niou.niou/area_dee.png">
+    <img class="area_shuain" src="@/../../../../assets/hall/bai.ren.niou.niou/area_shuain.png">
+    <img class="area_huang" src="@/../../../../assets/hall/bai.ren.niou.niou/area_huang.png">
+    
+    <img class="set1_1" src="@/../../../../assets/hall/bai.ren.niou.niou/no.png">
+    <img class="set1_2" src="@/../../../../assets/hall/bai.ren.niou.niou/no.png">
+    <img class="set1_3" src="@/../../../../assets/hall/bai.ren.niou.niou/no.png">
+    <img class="set1_4" src="@/../../../../assets/hall/bai.ren.niou.niou/no.png">
+    <img class="set2_1" src="@/../../../../assets/hall/bai.ren.niou.niou/yes.png">
+    <img class="set2_2" src="@/../../../../assets/hall/bai.ren.niou.niou/yes.png">
+    <img class="set2_3" src="@/../../../../assets/hall/bai.ren.niou.niou/no.png">
+    <img class="set2_4" src="@/../../../../assets/hall/bai.ren.niou.niou/no.png">
+
+  </div>
+  <div id="bai_ren_primary">
+      <img id="bai_ren_primary_room" src="@/../../../../assets/hall/bai.ren.niou.niou/room_primary.png">
+      <span class="room_limit">30</span>
+      <img class="bai_ren_second_box" src="@/../../../../assets/hall/bai.ren.niou.niou/second_text.png">
+      <span class="bai_ren_second_text">发牌中... 3s</span>
+      <img class="area_tian" src="@/../../../../assets/hall/bai.ren.niou.niou/area_tian.png">
+      <img class="area_dee" src="@/../../../../assets/hall/bai.ren.niou.niou/area_dee.png">
+      <img class="area_shuain" src="@/../../../../assets/hall/bai.ren.niou.niou/area_shuain.png">
+      <img class="area_huang" src="@/../../../../assets/hall/bai.ren.niou.niou/area_huang.png">
+    </div>
+  <div id="bai_ren_intermediate">
+      <img id="bai_ren_intermediate_room" src="@/../../../../assets/hall/bai.ren.niou.niou/room_intermediate.png">
+      <span class="room_limit">150</span>
+      <img class="bai_ren_second_box" src="@/../../../../assets/hall/bai.ren.niou.niou/second_text.png">
+      <span class="bai_ren_second_text">发牌中... 3s</span>
+      <img class="area_tian" src="@/../../../../assets/hall/bai.ren.niou.niou/area_tian.png">
+      <img class="area_dee" src="@/../../../../assets/hall/bai.ren.niou.niou/area_dee.png">
+      <img class="area_shuain" src="@/../../../../assets/hall/bai.ren.niou.niou/area_shuain.png">
+      <img class="area_huang" src="@/../../../../assets/hall/bai.ren.niou.niou/area_huang.png">
+  </div>
+  <div id="bai_ren_advanced">
+      <img id="bai_ren_advanced_room" src="@/../../../../assets/hall/bai.ren.niou.niou/room_advanced.png">
+      <span class="room_limit">600</span>
+      <img class="bai_ren_second_box" src="@/../../../../assets/hall/bai.ren.niou.niou/second_text.png">
+      <span class="bai_ren_second_text">发牌中... 3s</span>
+      <img class="area_tian" src="@/../../../../assets/hall/bai.ren.niou.niou/area_tian.png">
+      <img class="area_dee" src="@/../../../../assets/hall/bai.ren.niou.niou/area_dee.png">
+      <img class="area_shuain" src="@/../../../../assets/hall/bai.ren.niou.niou/area_shuain.png">
+      <img class="area_huang" src="@/../../../../assets/hall/bai.ren.niou.niou/area_huang.png">
+  </div>
+</body>
+</html>

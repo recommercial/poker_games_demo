@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>.</title>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {font-family: 'LanTingChungHei'; src: url('@/../../../../font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+    body{margin: 0;padding: 0; scrollbar-width: none; -ms-overflow-style: none;}
+    ::-webkit-scrollbar {width: 0px;background: transparent; scrollbar-width: none; }
+    textarea:focus, input:focus { outline: none; }
+    textarea, input { background: transparent; border: none; }
+    .red{color: #ff0000;}
+    .green{color: #00ff00;}
+    ::-webkit-input-placeholder { color: #e46f2173; }
+    :-ms-input-placeholder { color: #e46f2173;}
+    ::placeholder { color: #e46f2173;}
+  </style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <!-- start record -->
+  <style>
+    #GBJ_record_panel{display: none;}
+    #GBJ_record_board{position: fixed; top: 0px; left: 0px;}
+    #GBJ_record_cancel{position: fixed; top: 45px; left: 895px; cursor: pointer;}
+    #GBJ_record_list_container {position: fixed;top: 160px; left: 30px; height: 310px; width: 910px;overflow-y: auto;}
+    .css_tr {display: table-row;}
+    .css_td {display: table-cell;}
+    
+    #css_tableTitle {position: fixed; top: 110px; left: 30px; display:table; text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse; font-size: 32px;line-height: 50px; width: 910px; color: #c0acff;}
+    #css_tableTitle .css_td:nth-child(1){width: 60px; }
+    #css_tableTitle .css_td:nth-child(2){width: 330px; }
+    #css_tableTitle .css_td:nth-child(3){width: 90px; }
+    #css_tableTitle .css_td:nth-child(4){width: 150px; }
+    #css_tableTitle .css_td:nth-child(5){width: 280px; }
+
+    #GBJ_record_list {display:table;text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse;font-size: 20px; line-height: 50px; width: 910px; color: #FFFFFF;}
+    #GBJ_record_list .css_td,#css_tableTitle .css_td{text-align: center;}
+    #GBJ_record_list .css_td:nth-child(1){width: 60px;}
+    #GBJ_record_list .css_td:nth-child(2){width: 330px;}
+    #GBJ_record_list .css_td:nth-child(3){width: 90px;}
+    #GBJ_record_list .css_td:nth-child(4){width: 150px;}
+    #GBJ_record_list .css_td:nth-child(5){width: 280px;}
+    #GBJ_last_ten{position: fixed; top: 480px; left: 380px; color: #4a150f; font-size: 20px; font-family: 'LanTingChungHei'}
+  </style>
+  <div id="GBJ_record_panel">
+    <img id="GBJ_record_board" src="@/../../../../assets/game/baccarat/all_image/board_record.png">
+    <img id="GBJ_record_cancel" class="btn_close" src="@/../../../../assets/game/baccarat/all_image/btn_cancel.png">
+    <div id="css_tableTitle">
+      <div class="css_tr">
+        <div class="css_td"><img src="@/../../../../assets/game/baccarat/all_image/record_text_1.png"></div>
+        <div class="css_td"><img src="@/../../../../assets/game/baccarat/all_image/record_text_2.png"></div>
+        <div class="css_td"><img src="@/../../../../assets/game/baccarat/all_image/record_text_3.png"></div>
+        <div class="css_td"><img src="@/../../../../assets/game/baccarat/all_image/record_text_4.png"></div>
+        <div class="css_td"><img src="@/../../../../assets/game/baccarat/all_image/record_text_5.png"></div>
+      </div>
+    </div>
+    <div id="GBJ_record_list_container">
+      <div id="GBJ_record_list">
+        <!-- record list template -->
+        <!-- <div class="css_tr">
+          <div class="css_td">1</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td green">-6,500</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div> -->
+      </div>
+    </div>
+    <div id="GBJ_last_ten">展示最近10条游戏记录</div>
+  </div>
+  <!-- end record -->
+
+  <!-- start help -->
+  <style>
+    #GBJ_help_panel { display: none;}
+    #GBJ_help_board { position: fixed; top: 0px; left: 0px;}
+    #GBJ_help_cancel{ position: fixed; top: 45px; left: 895px; cursor: pointer;}
+    #GBJ_help_content { position: fixed; top: 110px; left: 50px; width: 875px; height: 415px; overflow-y: auto;}
+    .GBJ_help_title { color:#ffda45; font-family: 'LanTingChungHei'; font-size: 36px; line-height: 50px; }
+    .GBJ_help_content { color:#ffffff; font-family: 'LanTingChungHei'; font-size: 24px; line-height: 40px; }
+    .GBJ_help_content table { border-collapse: collapse; }
+    .GBJ_help_content table, td { border: 3px solid #d1a619; text-align: center; }
+    .GBJ_help_content tr:first-child td { background-color:darkgoldenrod;}
+    .GBJ_help_content .tdWidth400 td { width: 400px;}
+  </style>
+  <div id="GBJ_help_panel">
+    <img id="GBJ_help_board" src="@/../../../../assets/game/baccarat/all_image/board_help.png">
+    <img id="GBJ_help_cancel" class="btn_close" src="@/../../../../assets/game/baccarat/all_image/btn_cancel.png">
+    <!-- tab image -->
+
+    <div id="GBJ_help_content">
+      <div class="GBJ_help_title">一、玩法</div>
+      <div class="GBJ_help_content">1.本游戏採用8副牌(不含大小鬼，每副牌52张)合计416张。</div>
+      <div class="GBJ_help_content">2.庄闲各先派两张牌，"闲家"先发，如第一轮未分出胜负再按"牌例"进行补牌。</div>
+      <div class="GBJ_help_content">3.每方最多再发1张牌(补牌)，谁最接近9点即为胜方，而相同点数字即和局。</div>
+      <div class="GBJ_help_content">　</div>
+      <div class="GBJ_help_title">二、咪牌规则</div>
+      <div class="GBJ_help_content">1.押注庄、闲下注点的玩家均可以参与咪牌，只押注和、庄对、闲对的玩家不可以咪牌。</div>
+      <div class="GBJ_help_content">2.同时押注庄闲下注点时，只能咪押注金额多的一方。如果庄闲押注金客相同，只能咪庄家牌。</div>
+      <div class="GBJ_help_content">3.咪牌期与补牌期均为闲家先咪牌，庄家后咪牌。</div>
+      <div class="GBJ_help_content">4.所有玩家咪牌完成则进入下一阶段。超时未咪牌，系统自动翻牌。</div>
+      <div class="GBJ_help_content">　</div>
+      <div class="GBJ_help_title">三、补牌规则</div>
+      <div class="GBJ_help_content">闲家：</div>
+      <div class="GBJ_help_content">
+        <table class="tdWidth400">
+          <tr><td>起手牌点数总和</td><td>补牌规则</td></tr>
+          <tr><td>0</td><td>须补牌</td></tr>
+          <tr><td>1</td><td>须补牌</td></tr>
+          <tr><td>2</td><td>须补牌</td></tr>
+          <tr><td>3</td><td>须补牌</td></tr>
+          <tr><td>4</td><td>须补牌</td></tr>
+          <tr><td>5</td><td>须补牌</td></tr>
+          <tr><td>6</td><td>不须补牌</td></tr>
+          <tr><td>7</td><td>不须补牌</td></tr>
+          <tr><td>8</td><td>天生赢家</td></tr>
+          <tr><td>9</td><td>天生赢家</td></tr>
+        </table>
+      </div>
+      <div class="GBJ_help_content">(先判断闲家是否需要补牌)</div>
+      <div class="GBJ_help_content">庄家：</div>
+      <div class="GBJ_help_content">
+        <table class="tdWidth400">
+          <tr><td>起手牌点数总和</td><td>补牌规则</td></tr>
+          <tr><td>0</td><td>须补牌</td></tr>
+          <tr><td>1</td><td>须补牌</td></tr>
+          <tr><td>2</td><td>须补牌</td></tr>
+          <tr><td>3</td><td>当闲家补得第三张牌是8，<br>不须补牌；其余则须补牌</td></tr>
+          <tr><td>4</td><td>当闲家补得第三张牌是0.1.8.9，<br>不须补牌；其余则须补牌</td></tr>
+          <tr><td>5</td><td>当闲家补得第三张牌是0.1.2.3.8.9，<br>不须补牌；其余则须补牌</td></tr>
+          <tr><td>6</td><td>当闲家补得第三张牌是0.1.2.3.4.5.8.9，<br>不须补牌；其余则须补牌</td></tr>
+          <tr><td>7</td><td>不须补牌</td></tr>
+          <tr><td>8</td><td>天生赢家</td></tr>
+          <tr><td>9</td><td>天生赢家</td></tr>
+        </table>
+      </div>
+      <div class="GBJ_help_content">(闲家起手牌点数为6点或7点，闲家不须补牌，此条件下庄家起手牌点数为5或5以下，庄家必须补第三张牌)</div>
+      <div class="GBJ_help_content">　</div>
+      <div class="GBJ_help_title">四、赔付</div>
+      <div class="GBJ_help_content">
+        <table>
+          <tr><td style="width:150px">投注点</td><td style="width:150px">赔付倍数</td><td style="width:500px">获胜条件</td></tr>
+          <tr><td>庄</td><td>1赔1.95</td><td>"庄"下注点的牌面点数大于"闲"下注点</td></tr>
+          <tr><td>闲</td><td>1赔2</td><td>"闲"下注点的牌面点数大于"庄"下注点</td></tr>
+          <tr><td>和</td><td>1赔9</td><td>"庄"、"闲"下注点的牌面点数相同</td></tr>
+          <tr><td>庄对</td><td>1赔12</td><td>指庄的起手2张牌相同</td></tr>
+          <tr><td>闲对</td><td>1赔12</td><td>指闲的起手2张牌相同</td></tr>
+        </table>
+      </div>		
+      <div class="GBJ_help_content">>>和局时，"庄、闲"的下注将退回，且不计有效投注</div>
+      <div class="GBJ_help_content">>>同时押注"庄、闲"或者"庄、闲、和"，在这几个下注点不计算有效投注</div>
+      <div class="GBJ_help_content">>>其他情况有效下注金额等于实际下注金额</div>
+      <div class="GBJ_help_content">>>本游戏不抽水</div>
+      <div class="GBJ_help_content">　</div>
+      <div class="GBJ_help_title">五、限红</div>
+      <div class="GBJ_help_content">不同房间不同下注点，每局下注范围不同，如下图：</div>
+      <div class="GBJ_help_content">
+        <table>
+          <tr>
+            <td style="width:160px">房间类型</td>
+            <td style="width:160px">体验房</td>
+            <td style="width:160px">初级房</td>
+            <td style="width:160px">中级房</td>
+            <td style="width:160px">高级房</td>
+          </tr>
+          <tr><td>庄</td><td>4~250</td><td>40~2500</td><td>200~10000</td><td>500~30000</td></tr>
+          <tr><td>闲</td><td>4~250</td><td>40~2500</td><td>200~10000</td><td>500~30000</td></tr>
+          <tr><td>和</td><td>4~250</td><td>40~1500</td><td>200~3000</td><td>500~30000</td></tr>
+          <tr><td>庄对</td><td>4~250</td><td>40~1000</td><td>200~2500</td><td>500~3500</td></tr>
+          <tr><td>闲对</td><td>4~250</td><td>40~1000</td><td>200~2500</td><td>500~3500</td></tr>
+        </table>
+      </div>
+      <div class="GBJ_help_content">　</div>
+      <div class="GBJ_help_title">六、关于我们</div>
+      <div class="GBJ_help_content">各位玩家您好：</div>
+      <div class="GBJ_help_content">WWDZ棋牌自上线以来，得到广大玩家的厚爱与支持，我们向您表示衷心的感谢。</div>
+      <div class="GBJ_help_content">　</div>
+      
+    </div>
+  </div>
+  <!-- end help -->
+
+  <!-- start feedback -->
+  <style>
+    #GBJ_feedback_panel { display: none;}
+    #GBJ_feedback_board { position: fixed; top: 0px; left: 0px;}
+    #GBJ_feedback_cancel{ position: fixed; top: 45px; left: 895px; cursor: pointer;}
+    #GBJ_feedback_ok { position: fixed; top: 460px; left: 400px; cursor: pointer;}
+    #GBJ_feedback_content { position: fixed; top: 120px; left: 60px; width: 850px; height: 320px; background: transparent; color: #FFFFFF; border: none; font-family: 'LanTingChungHei'; font-size: 32px; line-height: 50px; }
+  </style>
+  <div id="GBJ_feedback_panel">
+    <img id="GBJ_feedback_board" src="@/../../../../assets/game/baccarat/all_image/board_feedback.png">
+    <img id="GBJ_feedback_cancel" class="btn_close" src="@/../../../../assets/game/baccarat/all_image/btn_cancel.png">
+    <img id="GBJ_feedback_ok" src="@/../../../../assets/game/baccarat/all_image/btn_ok.png">
+    <textarea id="GBJ_feedback_content" placeholder="您对我们游戏的建议和吐槽都可以在这裡告诉我们噢~如果游戏中遇到了任何问题，请联系网站人工客服协助解决，谢谢您的支持~(10-60个字符)"></textarea>
+  </div>
+  <!-- end feedback -->
+
+  <!-- start setting -->
+  <style>
+    #GBJ_setting_panel { display: none;}
+    #GBJ_setting_board { position: fixed; top: 0px; left: 0px;}
+    #GBJ_setting_cancel{ position: fixed; top: 45px; left: 895px; cursor: pointer; }
+    #GBJ_setting_music_icon { position: fixed; top: 180px; left: 120px;}
+    #GBJ_setting_effect_icon { position: fixed; top: 280px; left: 120px;}
+    #GBJ_setting_music_text { position: fixed; top: 190px; left: 200px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GBJ_setting_effect_text { position: fixed; top: 290px; left: 200px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GBJ_setting_music_bg { position: fixed; top: 205px; left: 300px;}
+    #GBJ_setting_effect_bg { position: fixed; top: 305px; left: 300px;}
+    #GBJ_setting_music_bar { position: fixed; top: 205px; left: 300px; width: 550px; height: 20px; background: url('@/../../../../assets/game/baccarat/all_image/setting_bar2.png') no-repeat; }
+    #GBJ_setting_effect_bar { position: fixed; top: 305px; left: 300px; width: 550px; height: 20px; background: url('@/../../../../assets/game/baccarat/all_image/setting_bar2.png') no-repeat; }
+    #GBJ_setting_music_value { position: fixed; top: 185px; left: 275px; cursor: pointer;}
+    #GBJ_setting_effect_value { position: fixed; top: 285px; left: 275px; cursor: pointer;}
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 600px;
+    }
+
+    input[type=range]:focus {
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 47px;
+      width: 50px;
+      background-color: transparent;
+      background-image: url('@/../../../../assets/game/baccarat/all_image/setting_spot.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    
+    #GBJ_setting_music_switch_text { position: fixed; top: 390px; left: 270px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GBJ_setting_effect_switch_text { position: fixed; top: 390px; left: 600px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GBJ_setting_music_switch { position: fixed; top: 440px; left: 275px; width: 120px; height: 50px; cursor: pointer;}
+    #GBJ_setting_effect_switch { position: fixed; top: 440px; left: 605px; width: 120px; height: 50px; cursor: pointer;}
+    .switch_off {
+      background-image: 
+        url('@/../../../../assets/game/baccarat/all_image/setting_spot.png'), 
+        url('@/../../../../assets/game/baccarat/all_image/setting_2.png');
+      background-position: -8px 0px, 0px 7px ;
+      background-repeat: no-repeat, no-repeat;
+    }
+    .switch_on {
+      background-image: 
+        url('@/../../../../assets/game/baccarat/all_image/setting_spot.png'), 
+        url('@/../../../../assets/game/baccarat/all_image/setting_1.png');
+      background-position: 77px 0px, 0px 7px ;
+      background-repeat: no-repeat, no-repeat;
+    }
+
+  </style>
+  <div id="GBJ_setting_panel">
+    <img id="GBJ_setting_board" src="@/../../../../assets/game/baccarat/all_image/board_setting.png">
+    <img id="GBJ_setting_cancel" class="btn_close" src="@/../../../../assets/game/baccarat/all_image/btn_cancel.png">
+    
+    <img id="GBJ_setting_music_icon" src="@/../../../../assets/game/baccarat/all_image/setting_music.png">
+    <img id="GBJ_setting_effect_icon" src="@/../../../../assets/game/baccarat/all_image/setting_volume.png">
+    <div id="GBJ_setting_music_text">音乐</div>
+    <div id="GBJ_setting_effect_text">音效</div>
+    <img id="GBJ_setting_music_bg" src="@/../../../../assets/game/baccarat/all_image/setting_bar1.png">
+    <img id="GBJ_setting_effect_bg" src="@/../../../../assets/game/baccarat/all_image/setting_bar1.png">
+    <div id="GBJ_setting_music_bar"></div>
+    <div id="GBJ_setting_effect_bar"></div>
+    <input id="GBJ_setting_music_value" type="range" min="0" max="100" step="1" value="100">
+    <input id="GBJ_setting_effect_value" type="range" min="0" max="100" step="1" value="100">
+
+    <div id="GBJ_setting_music_switch_text">音乐开关</div>
+    <div id="GBJ_setting_effect_switch_text">音效开关</div>
+    <div id="GBJ_setting_music_switch" class="switch_on"></div>
+    <div id="GBJ_setting_effect_switch" class="switch_off"></div>
+  </div>
+  <!-- end setting -->
+
+</body>
+</html>

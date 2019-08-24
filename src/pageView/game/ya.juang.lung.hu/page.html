@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>.</title>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {font-family: 'LanTingChungHei'; src: url('@/../../../../font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+    body{margin: 0;padding: 0; scrollbar-width: none; -ms-overflow-style: none;}
+    ::-webkit-scrollbar {width: 0px;background: transparent; scrollbar-width: none; }
+    textarea:focus, input:focus { outline: none; }
+    textarea, input { background: transparent; border: none; }
+    .red{color: #ff0000;}
+    .green{color: #00ff00;}
+    ::-webkit-input-placeholder { color: #e46f2173; }
+    :-ms-input-placeholder { color: #e46f2173;}
+    ::placeholder { color: #e46f2173;}
+  </style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <!-- start record -->
+  <style>
+    #GLH_record_panel{display: none;}
+    #GLH_record_board{position: fixed; top: 0px; left: 0px;}
+    #GLH_record_cancel{position: fixed; top: 22px; left: 830px; cursor: pointer;}
+    #GLH_record_list_container {position: fixed;top: 170px; left: 30px; height: 360px; width: 880px;overflow-y: auto;}
+    .css_tr {display: table-row;}
+    .css_td {display: table-cell;}
+    
+    #css_tableTitle {position: fixed; top: 120px; left: 30px; display:table; text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse; font-size: 32px;line-height: 50px; width: 880px; color: #c0acff;}
+    #css_tableTitle .css_td:nth-child(1){width: 80px; }
+    #css_tableTitle .css_td:nth-child(2){width: 300px; }
+    #css_tableTitle .css_td:nth-child(3){width: 90px; }
+    #css_tableTitle .css_td:nth-child(4){width: 150px; }
+    #css_tableTitle .css_td:nth-child(5){width: 260px; }
+
+    #GLH_record_list {display:table;text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse;font-size: 20px; line-height: 50px; width: 880px; color: #FFFFFF;}
+    #GLH_record_list .css_td,#css_tableTitle .css_td{text-align: center;}
+    #GLH_record_list .css_td:nth-child(1){width: 80px;}
+    #GLH_record_list .css_td:nth-child(2){width: 300px;}
+    #GLH_record_list .css_td:nth-child(3){width: 90px;}
+    #GLH_record_list .css_td:nth-child(4){width: 150px;}
+    #GLH_record_list .css_td:nth-child(5){width: 260px;}
+    #GLH_last_ten{position: fixed; top: 480px; left: 380px; color: #4a150f; font-size: 20px; font-family: 'LanTingChungHei'}
+  </style>
+  <div id="GLH_record_panel">
+    <img id="GLH_record_board" src="@/../../../../assets/game/ya.juang.lung.hu/menu/bg-record.png">
+    <img id="GLH_record_cancel" class="btn_close" src="@/../../../../assets/game/ya.juang.lung.hu/menu/close.png">
+    <div id="css_tableTitle">
+      <div class="css_tr">
+        <div class="css_td">序号</div>
+        <div class="css_td">牌局编号</div>
+        <div class="css_td">房间</div>
+        <div class="css_td">盈利</div>
+        <div class="css_td">结束时间</div>
+      </div>
+    </div>
+    <div id="GLH_record_list_container">
+      <div id="GLH_record_list">
+        <!-- record list template -->
+        <!-- <div class="css_tr">
+          <div class="css_td">1</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td green">-6,500</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- end record -->
+
+  <!-- start help -->
+  <style>
+    #GLH_help_panel { display: none;}
+    #GLH_help_board { position: fixed; top: 0px; left: 0px;}
+    #GLH_help_cancel{ position: fixed; top: 22px; left: 830px; cursor: pointer;}
+    #GLH_help_content { position: fixed; top: 140px; left: 50px; width: 875px; height: 425px; overflow-y: auto;}
+    .GLH_help_title { color:#ffda45; font-family: 'LanTingChungHei'; font-size: 36px; line-height: 50px; }
+    .GLH_help_content { color:#ffffff; font-family: 'LanTingChungHei'; font-size: 24px; line-height: 40px; }
+    .GLH_help_content table { border-collapse: collapse; }
+    .GLH_help_content table, td { border: 3px solid #d1a619; text-align: center; }
+    .GLH_help_content tr:first-child td { background-color:darkgoldenrod;}
+    .GLH_help_content .tdWidth400 td { width: 400px;}
+  </style>
+  <div id="GLH_help_panel">
+    <img id="GLH_help_board" src="@/../../../../assets/game/ya.juang.lung.hu/menu/bg-help.png">
+    <img id="GLH_help_cancel" class="btn_close" src="@/../../../../assets/game/ya.juang.lung.hu/menu/close.png">
+    <!-- tab image -->
+
+    <div id="GLH_help_content">
+      <div class="GLH_help_title">一、玩法</div>
+      <div class="GLH_help_content">1.本游戏採用8副牌(不含大小鬼)合计416张</div>
+      <div class="GLH_help_content">2.牌面的大小先比点数，K为最大牌，A为最小，其中从2到10牌面就为对应点数，并且10<J<Q<K。相同点数比花色，黑>红>梅>方。点数和花色均相同即为"和"</div>
+      <div class="GLH_help_content">3.每靴牌随机使用416张之中的一部分</div>
+      <div class="GLH_help_content">4.下注中状态时点击下注区域即可下注</div>
+      <div class="GLH_help_content">　</div>
+
+      <div class="GLH_help_title">二、赔率</div>
+      <div class="GLH_help_content">
+        <table>
+          <tr><td style="width:150px">投注点</td><td style="width:150px">赔付倍数</td><td style="width:500px">获胜条件</td></tr>
+          <tr><td>龙</td><td>2</td><td>"龙"下注点的牌大于"虎"下注点的牌</td></tr>
+          <tr><td>虎</td><td>2</td><td>"虎"下注点的牌大于"龙"下注点的牌</td></tr>
+          <tr><td>和</td><td>20</td><td>"龙"，"虎"下注点的牌点数和花色均相同</td></tr>
+        </table>
+      </div>
+      <div class="GLH_help_content">　</div>
+
+      <div class="GLH_help_title">三、限红</div>
+      <div class="GLH_help_content">不同房间不同下注点，每局下注范围不同，如下图：</div>
+      <div class="GLH_help_content">
+        <table>
+          <tr>
+            <td style="width:200px">房间类型</td>
+            <td style="width:200px">龙</td>
+            <td style="width:200px">虎</td>
+            <td style="width:200px">和</td>
+          </tr>
+          <tr><td>体验房</td><td>4~250</td><td>4~250</td><td>4~250</td></tr>
+          <tr><td>初级房</td><td>40~2500</td><td>40~2500</td><td>40~500</td></tr>
+          <tr><td>中级房</td><td>200~10000</td><td>200~10000</td><td>200~1000</td></tr>
+          <tr><td>高级房</td><td>500~30000</td><td>500~30000</td><td>500~1500</td></tr>
+        </table>
+      </div>
+      <div class="GLH_help_content">注：限红指此下注点单局单个玩家下注金额之和的范围</div>
+      <div class="GLH_help_content">　</div>
+
+      <div class="GLH_help_title">四、赔付</div>	
+      <div class="GLH_help_content">1.按照赔率进行赔付，不抽水</div>
+      <div class="GLH_help_content">2.玩家同时下注"龙，虎"时，此局玩家这2个下注点不计算有效投注</div>
+      <div class="GLH_help_content">3.开"和"时：龙虎下注点通杀且计有效投注</div>
+      <div class="GLH_help_content">4.其他情况有效下注金额等于实际下注金额</div>
+      <div class="GLH_help_content">　</div>
+
+      <div class="GLH_help_title">五、关于我们</div>
+      <div class="GLH_help_content">各位玩家您好：</div>
+      <div class="GLH_help_content">WWDZ棋牌自上线以来，得到广大玩家的厚爱与支持，我们向您表示衷心的感谢。</div>
+      <div class="GLH_help_content">　</div>
+      
+    </div>
+  </div>
+  <!-- end help -->
+
+  <!-- start feedback -->
+  <style>
+    #GLH_feedback_panel { display: none;}
+    #GLH_feedback_board { position: fixed; top: 0px; left: 0px;}
+    #GLH_feedback_cancel{ position: fixed; top: 22px; left: 830px; cursor: pointer;}
+    #GLH_feedback_ok { position: fixed; top: 490px; left: 370px; cursor: pointer;}
+    #GLH_feedback_content { position: fixed; top: 120px; left: 45px; width: 850px; height: 320px; background: transparent; color: #FFFFFF; border: none; font-family: 'LanTingChungHei'; font-size: 32px; line-height: 50px; }
+  </style>
+  <div id="GLH_feedback_panel">
+    <img id="GLH_feedback_board" src="@/../../../../assets/game/ya.juang.lung.hu/menu/bg-feedback.png">
+    <img id="GLH_feedback_cancel" class="btn_close" src="@/../../../../assets/game/ya.juang.lung.hu/menu/close.png">
+    <img id="GLH_feedback_ok" src="@/../../../../assets/game/ya.juang.lung.hu/menu/button-sure.png">
+    <textarea id="GLH_feedback_content" placeholder="您对我们游戏的建议和吐槽都可以在这裡告诉我们噢~如果游戏中遇到了任何问题，请联系网站人工客服协助解决，谢谢您的支持~(10-60个字符)"></textarea>
+  </div>
+  <!-- end feedback -->
+
+  <!-- start setting -->
+  <style>
+    #GLH_setting_panel { display: none;}
+    #GLH_setting_board { position: fixed; top: 0px; left: 0px;}
+    #GLH_setting_cancel{ position: fixed; top: 22px; left: 830px; cursor: pointer; }
+
+    #GLH_setting_music_icon { position: fixed; top: 180px; left: 60px;}
+    #GLH_setting_effect_icon { position: fixed; top: 320px; left: 60px;}
+    #GLH_setting_music_text { position: fixed; top: 190px; left: 160px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GLH_setting_effect_text { position: fixed; top: 330px; left: 160px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GLH_setting_music_bg { position: fixed; top: 205px; left: 280px;}
+    #GLH_setting_effect_bg { position: fixed; top: 345px; left: 280px;}
+    #GLH_setting_music_bar { position: fixed; top: 205px; left: 280px; width: 580px; height: 20px; background: url('@/../../../../assets/game/ya.juang.lung.hu/menu/config-value-fore.png') no-repeat; }
+    #GLH_setting_effect_bar { position: fixed; top: 345px; left: 280px; width: 580px; height: 20px; background: url('@/../../../../assets/game/ya.juang.lung.hu/menu/config-value-fore.png') no-repeat; }
+    #GLH_setting_music_value { position: fixed; top: 185px; left: 255px; cursor: pointer;}
+    #GLH_setting_effect_value { position: fixed; top: 325px; left: 255px; cursor: pointer;}
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 600px;
+    }
+
+    input[type=range]:focus {
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 49px;
+      width: 49px;
+      background-color: transparent;
+      background-image: url('@/../../../../assets/game/ya.juang.lung.hu/menu/config-value-icon.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    
+    #GLH_setting_music_switch_text { position: fixed; left: 220px; top: 480px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GLH_setting_effect_switch_text { position: fixed; left: 600px; top: 480px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GLH_setting_music_switch { position: fixed; left: 205px; top: 520px; width: 176px; height: 50px; cursor: pointer;}
+    #GLH_setting_effect_switch { position: fixed; left: 585px; top: 520px; width: 176px; height: 50px; cursor: pointer;}
+    .switch_off {
+      background-image: url('@/../../../../assets/game/ya.juang.lung.hu/menu/music-off.png');
+      background-repeat: no-repeat;
+    }
+    .switch_on {
+      background-image: url('@/../../../../assets/game/ya.juang.lung.hu/menu/music-on.png');
+      background-repeat: no-repeat;
+    }
+
+  </style>
+  <div id="GLH_setting_panel">
+    <img id="GLH_setting_board" src="@/../../../../assets/game/ya.juang.lung.hu/menu/bg-config.png">
+    <img id="GLH_setting_cancel" class="btn_close" src="@/../../../../assets/game/ya.juang.lung.hu/menu/close.png">
+    
+    <img id="GLH_setting_music_icon" src="@/../../../../assets/game/ya.juang.lung.hu/menu/sound-effect-icon.png">
+    <img id="GLH_setting_effect_icon" src="@/../../../../assets/game/ya.juang.lung.hu/menu/music-icon.png">
+    <div id="GLH_setting_music_text">音乐</div>
+    <div id="GLH_setting_effect_text">音效</div>
+    <img id="GLH_setting_music_bg" src="@/../../../../assets/game/ya.juang.lung.hu/menu/config-value-bar.png">
+    <img id="GLH_setting_effect_bg" src="@/../../../../assets/game/ya.juang.lung.hu/menu/config-value-bar.png">
+    <div id="GLH_setting_music_bar"></div>
+    <div id="GLH_setting_effect_bar"></div>
+    <input id="GLH_setting_music_value" type="range" min="0" max="100" step="1" value="100">
+    <input id="GLH_setting_effect_value" type="range" min="0" max="100" step="1" value="100">
+
+    <div id="GLH_setting_music_switch_text">音乐开关</div>
+    <div id="GLH_setting_effect_switch_text">音效开关</div>
+    <div id="GLH_setting_music_switch" class="switch_on"></div>
+    <div id="GLH_setting_effect_switch" class="switch_off"></div>
+  </div>
+  <!-- end setting -->
+
+</body>
+</html>

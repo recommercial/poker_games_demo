@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {font-family: 'LanTingChungHei'; src: url('@/../../../../font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+    body{margin: 0;padding: 0;}
+    #bai_ren_bg{position: fixed;}
+    #how_to_play{position: fixed; color: #fdddd3; font-size: 24px;top: 140px;left: 70px; font-family: 'LanTingChungHei';width: 830px;}
+    #how_to_play .title{color: #ff7049; font-size: 28px;}
+    #card_combination{position: fixed; color: #fdddd3; font-size: 24px;top: 290px;left: 70px;width: 830px; font-family: 'LanTingChungHei';}
+    #card_combination .title{color: #ff7049; font-size: 28px;}
+    .title{margin-bottom: 10px;}
+    ul{margin: 0;}
+  </style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <img id="bai_ren_bg" src="@/../../../../assets/hall/bai.ren.niou.niou/board_help.png">
+  <div id="how_to_play">
+    <div class="title">玩法:</div>
+    <ul>
+      <li>游戏用牌为一副排除大小王以外, 共计52张。</li>
+      <li>闲家所有下注点只和庄家互比, 闲家之间不互比。</li>
+      <li>本游戏共4个下注点, 天, 地, 玄, 黄, 均可在下注状态时进行下注。</li>
+    </ul>
+  </div>
+  <div id="card_combination">
+      <div class="title">牌型:</div>
+      <ul>
+        <li>牌面: 10, J, Q, K的点数都算作10, 其他牌按牌面数字计算。</li>
+        <li>没牛: 5张牌中任意3张牌的点数之和都不为10的整数倍。</li>
+        <li>有牛: 5张牌中有3张牌的点数之和为10的整数倍, 另外2张牌的牌面之和不为10的整数倍, 则这2张点数之和的个位数即为牛几。</li>
+        <li>牛牛: 5张牌中有3张牌的点数之和为10的整数倍, 且另外2张牌的点数相加也为10的整数倍。</li>
+      </ul>
+    </div>
+</body>
+</html>

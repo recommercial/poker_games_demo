@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body{margin: 0;padding: 0;}
+  /* GameMessage */
+  #events_popup01{position: fixed;}
+  #game_close{position: fixed;top: 30px;left: 1660px;cursor: pointer;}
+  #events_tab_01{position: fixed;top: 85px;left: 800px;cursor: pointer;}
+  #events_tab_02_hover{position: fixed;top: 85px;left: 1080px;}
+  #events_nav_top{position: fixed;top: 175px;left: 27px;}
+  /* #events2_nav_01{cursor: pointer;position: fixed;top: 204px;left: 27px;}
+  #events_nav2_02_hover{position: fixed;top: 314px;left: 27px;} */
+  #events_nav_03{position: fixed;top: 424px;left: 27px;cursor: pointer;}
+  .events_icon_newMessage{position: absolute;left: 355px;top:30px;}
+  #events_icon_newMessage2{position: fixed;top: 345px;left: 395px;}
+  .content{position: fixed;top: 220px;left: 510px;font-size: 36px;width: 1065px;padding: 55px;line-height: 58px;}
+  .content .title{font-family: 'LanTingChungHei';color: #f3ccb8;}
+  .content p{margin: 0;}
+  #game_content .content{font-family: 'LanTingChungHei';color: #FFFFFF;margin-bottom: 60px;}
+  #game_container{position: fixed; left:32px; top:205px; height:550px; width:450px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+  .gameWay {color: #a49a74; font-size: 36px; background: url('@../../../../assets/recharge/pay_nav_04_bg.png'); height: 80px; width: 420px; font-weight: bold; text-align: center; padding-top: 30px; letter-spacing: 3px;}
+  .gameWay:hover,.popularWay.active{background: url('@../../../../assets/recharge/pay_nav_01_hover_bg.png');color: #4f3e27;}
+  .gameWay {color: #a49a74; font-size: 36px; background: url('@../../../../assets/recharge/pay_nav_04_bg.png'); height: 80px; width: 420px; font-weight: bold; text-align: center; padding-top: 30px; letter-spacing: 3px;}
+    ::-webkit-scrollbar {width: 0px;  /* Remove scrollbar space */background: transparent;  /* Optional: just make scrollbar invisible */}
+  /* PopularMessage */
+  #events_popup01{position: fixed;}
+  #popular_close{position: fixed;top: 30px;left: 1660px;cursor: pointer;}
+  #events_tab_01_hover{position: fixed;top: 85px;left: 800px;}
+  #events_tab_02{position: fixed;top: 85px;left: 1080px;cursor: pointer;}
+  #events_nav_top{position: fixed;top: 175px;left: 27px;}
+  #events_nav_01{position: fixed;top: 204px;left: 27px;}
+  #events_nav_02{position: fixed;top: 314px;left: 27px;cursor: pointer;}
+  #events_nav_03{position: fixed;top: 424px;left: 27px;cursor: pointer;}
+  #events_banner01{position: fixed;top: 201px;left: 473px; display: none;}
+  #popular_msg{position: fixed;top: 220px;left: 510px;font-size: 36px;width: 1065px;padding: 55px;line-height: 58px; display: none}
+  #popular_msg .title{font-family: 'LanTingChungHei';color: #f3ccb8;}
+  #popular_msg p,#game_content p{margin: 0;}
+  #popular_msg .content{font-family: 'LanTingChungHei';color: #FFFFFF;margin-bottom: 60px;}
+  #popular_container{position: fixed; left:32px; top:205px; height:550px; width:450px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+  .popularWay {color: #a49a74; font-size: 36px; background: url('@../../../../assets/recharge/pay_nav_04_bg.png'); height: 80px; width: 420px; font-weight: bold; text-align: center; padding-top: 30px; letter-spacing: 3px;}
+  .popularWay:hover, .popularWay.active {background: url('@../../../../assets/recharge/pay_nav_01_hover_bg.png');color: #4f3e27;}
+   /*show message*/
+#show_label {
+    position: fixed; left: 102px; top: 212px; width: 792px; height: 100px; text-align: center; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+#show_img {
+    position: fixed; left: 0px; top: 20px; 
+}
+#show_close {
+    position: fixed; left: 930px; top: 0px;
+}
+#show_btn {
+    position: fixed; left: 360px; top: 310px; 
+}
+@font-face {
+    font-family: 'LanTingChungHei';
+    src: url('@../../../../font/LanTingChungHei.ttf') format("truetype"); font-display:swap;
+}
+.loadFont {
+    font-family: 'LanTingChungHei';
+    position: absolute;
+}
+</style>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <div class="loadFont">.</div>
+  <div id="popular_message" style="display:none;">
+      <img id="events_popup01" src="@/../../../assets/lobby/bulletin/events_popup01.png">
+      <img id="popular_close" src="@/../../../assets/lobby/bulletin/icon_close.png">
+    
+      <img id="events_tab_01_hover" src="@/../../../assets/lobby/bulletin/events_tab_01_hover.png">
+      <img id="events_tab_02" src="@/../../../assets/lobby/bulletin/events_tab_02.png">
+    
+      <img id="events_nav_top" src="@/../../../assets/lobby/bulletin/events_nav_top.png">
+      <div id="popular_container"></div>
+
+    
+      <img id="events_banner01" src="@/../../../assets/lobby/bulletin/events_banner01.png">
+      <div id="popular_msg">
+    </div>
+  </div>
+  <div id="game_message" style="display:none;">
+    <img id="events_popup01" src="@/../../../assets/lobby/bulletin/events_popup01.png">
+    <img id="game_close" src="@/../../../assets/lobby/bulletin/icon_close.png">
+
+    <img id="events_tab_01" src="@/../../../assets/lobby/bulletin/events_tab_01.png">
+    <img id="events_tab_02_hover" src="@/../../../assets/lobby/bulletin/events_tab_02_hover.png">
+    
+    <img id="events_nav_top" src="@/../../../assets/lobby/bulletin/events_nav_top.png">
+    <div id="game_container"></div>
+  
+
+    <div id="game_content">
+      
+  </div>
+  </div>
+
+  <div id="show_message" style="display: none;">
+    <img id="show_img" src="@../../../../assets/iframeuser/user_popup02.png">
+    <img id="show_close" src="@../../../../assets/iframeuser/icon_close.png">
+    <label id="show_label"></label>
+    <img id="show_btn" src="@../../../../assets/iframeuser/user_icon_confirm02.png">
+</div>
+</body>
+</html>

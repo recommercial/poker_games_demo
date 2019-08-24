@@ -1,0 +1,344 @@
+<html>
+    <head>
+        <!-- simple keyboard and cursor -->
+        <link rel="stylesheet" href="/src/assets/simple-keyboard/css/keyboard-customer.css">
+        <link rel="stylesheet" href="/src/assets/simple-keyboard/css/simple-keyboard.css">
+    </head>
+	<style>
+        /* login form */
+		#login_bg {position: fixed;top: 100px;}
+		#login_close {background-size: 100%;position: fixed;top: 85px;left: 1255px;cursor: pointer;}
+		#login_head {background-size: 100%;position: fixed;top: 10px;left: 280px;}
+		#input_login_bg1 {background-size: 100%;position: fixed;top: 250px;left: 140px;}
+		#input_login_bg2 {background-size: 100%;position: fixed;top: 420px;left: 140px;}
+        #loginErrMsg {position: fixed;top: 560px;left: 423px;font-size: 36px;}
+		#login_btn1 {background-size: 100%;position: fixed;top: 550px;left: 1025px;cursor: pointer;}
+		#login_btn2 {background-size: 100%;position: fixed;top: 650px;left: 413px;cursor: pointer;}
+		#login_btn3 {background-size: 100%;position: fixed;top: 650px;left: 700px;cursor: pointer;}
+        label {padding-top: 25;display: block;color: #c7af7a;font-size: 36px;font-family: 'LanTingChungHei';text-align: center;position: relative;float: left;}
+		#inputArea input{border: 0 none;border-radius: 5px;font-size: 30px;color: white;outline: none;background: transparent; border: none;}
+        input{width: 770px;height: 110px; border: 0 none;border-radius: 5px; font-size: 36px;color: #FFFFFF;outline: none;font-family: 'LanTingChungHei';background: transparent; border: none;}
+        #main {left: calc(50% - 840px);}
+		#login_account{padding-top: 25;display: block;color: #c7af7a;font-size: 36px;font-family: 'LanTingChungHei';text-align: center;position: fixed;top: 256px;left: 250px;}
+		#login_input{position: fixed;top: 250px;left: 480px;width: 740px;height: 108px;}
+		#login_pw{padding-top: 25;display: block;color: #c7af7a;font-size: 36px;font-family: 'LanTingChungHei';text-align: center;position: fixed;top: 426px;left: 250px;}
+		#login_input_pw{position: fixed;top: 420px;left: 480px;width: 740px;height: 108px;}
+
+        /*register form*/
+        #register_account_bg_img{position: fixed;top: 100px;}
+        #register_close{background-size: 100%;position: fixed;top: 85px;left: 1255px;cursor: pointer;}
+        #register_head{background-size: 100%;position: fixed;top: 10px;left: 280px;} /*div2*/
+        #register_input_bg1{background-size: 100%;position: fixed;top: 255px;left: 140px;}
+        #register_input_bg2{background-size: 100%;position: fixed;top: 390px;left: 140px;}
+        #register_input_bg3{background-size: 100%;position: fixed;top: 540px;left: 140px;}
+        #register_input_bg4{background-size: 100%;position: fixed;top: 690px;left: 140px;}
+        #register_code{background-size: 100%;position: fixed;top: 386px;left: 910px;cursor: pointer;}
+        #registerErrMsg{position: fixed;top: 48%;left: 25%;font-size: 25px;}
+        #register_btn{background-size: 100%;position: fixed;top: 815px;left: 542px;border: none;cursor: pointer;}
+        .register_lab1{position: fixed;top: 262px;left: 187px;}
+        .register_lab2{position: fixed;top: 399px;left: 235px;}
+        .register_lab3{position: fixed;top: 549px;left: 250px;}
+        .register_lab4{position: fixed;top: 700px;left: 215px;}
+        #register_txt1{position: fixed;top: 255px;left: 460px;}
+        #register_txt2{position: fixed;top: 390px;width: 430px;left: 460px;}
+        #register_txt3{position: fixed;top: 540px;left: 460px;}
+        #register_txt4{position: fixed;top: 690px;left: 460px;}
+        /* forgetpassword form */
+        #forget_close {background-size: 100%;position: fixed;top: 80px;left: 1254px;cursor: pointer;}
+        #forget_head {background-size: 100%;position: fixed;top: 10px;left: 280px;}
+        #forget_input_bg1 {background-size: 100%;position: fixed;top: 210px;left: 136px;}
+        #forget_input_bg2 {background-size: 100%;position: fixed;top: 345px;left: 136px;}
+        #forget_input_bg3 {background-size: 100%;position: fixed;top: 480px;left: 136px;}
+        #forget_input_bg4 {background-size: 100%;position: fixed;top: 615px;left: 136px;}
+        #forget_code {background-size: 100%;position: fixed;top: 340px;left: 905px;cursor: pointer;}
+        #forget_btn {background-size: 100%;position: fixed;top: 820px;left: 508px;cursor: pointer;border: none;}
+        p{color: #c7af7a;font-size: 36px;font-family: 'LanTingChungHei';position: fixed;top: 720px;left: 390px;}
+        #forget_lab1 {position: fixed;top: 214px;left: 183px;}
+        #forget_lab2 {position: fixed;top: 349px;left: 233px;}
+        #forget_lab3 {position: fixed;top: 489px;left: 249px;}
+        #forget_lab4 {position: fixed;top: 625px;left: 215px;}
+        #forget_txt1 {position: fixed;top: 205px;left: 445px;}
+        #forget_txt2 {position: fixed;top: 340px;left: 445px;}
+        #forget_txt3 {position: fixed;top: 478px;left: 445px;}
+        #forget_txt4 {position: fixed;top: 615px;left: 445px;}
+        #forgetErrMsg{position: fixed;top: 810px;left: 160px;font-size: 36px;}
+        .mobile {padding-top: 5;background-color: transparent;border: 0 none;-webkit-border-radius: 5px;border-radius: 5px;font-size: 30px;color: white;}
+        .verifity {padding-top: 5;background-color: transparent;border: 0 none;width: 430px;-webkit-border-radius: 5px;border-radius: 5px;font-size: 30px;color: white;}
+   
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+			-webkit-transition-delay: 99999s;
+			-o-transition-delay: 99999s;
+			transition-delay: 99999s;
+			-webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+			-o-transition: color 99999s ease-out, background-color 99999s ease-out;
+			transition: color 99999s ease-out, background-color 99999s ease-out;
+		}
+        
+		input{
+			font-family: 'LanTingChungHei';
+		}
+		@font-face {
+				font-family: 'LanTingChungHei';
+				src: url('/src/font/LanTingChungHei.ttf') format("truetype"); font-display:swap;
+		}
+		::-webkit-input-placeholder { /* Edge */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+		input::-moz-placeholder  { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+
+		::placeholder {
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+
+        /*simple keyboard start*/
+        #mobile_Keyboard{
+            display: none;
+        }
+        .simple-keyboard {
+            max-width: 1850px;
+        }
+        #WaterPipe{
+            display: none;
+            color: #acacac;
+            position: fixed;
+            font-size: 60px;
+            top: 260px;
+            left: 480px;
+            animation-name: cursor;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cursor {
+            from {opacity:0;}
+            to {opacity:1;}
+        }
+        /*simple keyboard end*/
+        .loadFont {
+            font-family: 'LanTingChungHei';
+            position: absolute;
+        }
+	</style>
+
+    <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+            <div class="loadFont">.</div>
+            <div id="login_from" style="display: none">
+                    <img id="login_bg" src="/src/assets/login/account_bg.png">
+                    <img id="login_close" src="/src/assets/login/icon_close.png">
+                    <img id="login_head" src="/src/assets/login/account_heading_002.png">
+                    <img id="input_login_bg1" src="/src/assets/login/account_input_bg_01.png">
+                    <img id="input_login_bg2" src="/src/assets/login/account_input_bg_01.png">
+                    <img id="login_btn1" src="/src/assets/login/icon_forgetPassWord.png">
+                    <img id="login_btn2" src="/src/assets/login/icon_login.png">
+                    <img id="login_btn3" src="/src/assets/login/icon_register.png">
+    
+                    <div id="inputArea">
+                    <label id="login_account">账号</label>
+                    <input id="login_input" class="visual-input" autocomplete="off" type="text" placeholder="请输入4-16位英文或数字组合">
+                    <label id="login_pw">密码</label>
+                    <input id="login_input_pw" class="visual-input" autocomplete="off" type="password" placeholder="请输入6-16位英文 | 数字 | 点 | 下划线组合">
+                    <div id="WaterPipe">|</div>
+                  </div>
+                  <div id="loginErrMsg" style="color: red"></div>
+                  <div id="mobile_Keyboard">
+                        <div class="simple-keyboard"></div>
+                    </div>
+            </div>
+    
+            <div id="register_from" style="display: none">
+                    <img id="register_account_bg_img" src="/src/assets/login/account_bg.png">
+                    <img id="register_close" src="/src/assets/login/icon_close.png">
+                    <img id="register_input_bg1" src="/src/assets/login/account_input_bg_01.png">
+                    <img id="register_input_bg2" src="/src/assets/login/account_input_bg_02.png">
+                    <img id="register_input_bg3" src="/src/assets/login/account_input_bg_01.png">
+                    <img id="register_input_bg4" src="/src/assets/login/account_input_bg_01.png">
+                    <img id="register_head" src="/src/assets/login/account_heading_001.png">
+                    <img id="register_code" src="/src/assets/login/icon_verifyCode.png">
+                    <img id="register_btn" src="/src/assets/login/icon_register.png">
+                    <div><label class="register_lab1">手机号(账号)</label>
+                        <input class="mobile visual-input" id="register_txt1" autocomplete="off" type="text" placeholder="请输入大陆地区手机号">
+                        <label class="register_lab2">验证码</label>
+                        <input class="verifity visual-input" id="register_txt2" autocomplete="off" type="text" placeholder="验证码">
+                        <label class="register_lab3">密码</label>
+                        <input class="mobile visual-input" id="register_txt3" autocomplete="off" type="password" placeholder="请输入6-16位英文|数字|点|下划线组合">
+                        <label class="register_lab4">确认密码</label>
+                        <input class="mobile visual-input" id="register_txt4" autocomplete="off" type="password" placeholder="请再次输入密码">
+                    </div>
+                    <div id="registerErrMsg" style="color: red"></div>
+    
+            </div>
+    
+            <div id="forget_from" style="display: none">
+                    <img src="/src/assets/login/account_bg.png" style="position: fixed; top: 100px;">
+                    <img id="forget_close" src="/src/assets/login/icon_close.png">
+                    <img id="forget_input_bg1" src="/src/assets/login/account_input_bg_01.png">
+                    <img id="forget_input_bg2" src="/src/assets/login/account_input_bg_02.png">
+                    <img id="forget_input_bg3" src="/src/assets/login/account_input_bg_01.png">
+                    <img id="forget_input_bg4" src="/src/assets/login/account_input_bg_01.png">
+                    <img id="forget_btn" src="/src/assets/login/icon_resetPassWord.png">
+                    <img id="forget_head" src="/src/assets/login/account_heading_003.png">
+                    <img id="forget_code" src="/src/assets/login/icon_verifyCode.png">
+                
+                    <label id="forget_lab1">手机号(帐号)</label>
+                    <input autocomplete="off" type="text" id="forget_txt1" class="mobile visual-input" placeholder="请输入大陆地区手机号">
+                    <label id="forget_lab2">验证玛</label>
+                    <input autocomplete="off" type="text" id="forget_txt2" class="verifity visual-input" placeholder="验证码">
+                    <label id="forget_lab3">密码</label>
+                    <input autocomplete="off" type="password" id="forget_txt3" class="mobile visual-input" placeholder="请输入6-16位英文|数字|点|下划线组合">
+                    <label id="forget_lab4">确认密码</label>
+                    <input autocomplete="off" type="password" id="forget_txt4" class="mobile visual-input" placeholder="请再次输入密码">
+                    <p>
+                        提示: 手机号次您找回密码的凭证
+                    </p>
+                    <div id="forgetErrMsg" style="color: red"></div>
+            </div>
+            <!-- simple keyboard start -->
+            <div id="mobile_Keyboard">
+                <div class="simple-keyboard"></div>
+            </div>
+            <div id="WaterPipe">|</div><!-- simple keyboard cursor -->   
+            <!-- simple keyboard end -->
+    </body>
+    <script src="/src/assets/simple-keyboard/js/Keyboard.min.js"></script>
+    <script>
+        //  simple keyboard and cursor
+        let selectedInput;
+        let Keyboard = window.SimpleKeyboard.default;
+        let keyboard = new Keyboard({
+            onChange: input => onChange(input),
+            onKeyPress: button => onKeyPress(button),
+            layout: {
+                default: [
+                "` 1 2 3 4 5 6 7 8 9 0 - = {bksp}",
+                "{tab} q w e r t y u i o p [ ] \\",
+                "{lock} a s d f g h j k l ; ' {enter}",
+                "{shift} z x c v b n m , . / {shift}",
+                ".com @ {space} {close}"
+                ],
+                shift: [
+                "~ ! @ # $ % ^ & * ( ) _ + {bksp}",
+                "{tab} Q W E R T Y U I O P { } |",
+                '{lock} A S D F G H J K L : " {enter}',
+                "{shift} Z X C V B N M < > ? {shift}",
+                ".com @ {space} {close}"
+                ]
+            },
+            display: {
+                "{bksp}": "backspace ⌫",
+                "{tab}": "tab ⇥",
+                "{lock}": "caps lock ⇪",
+                "{enter}": "enter ↵",
+                "{shift}": "shift ⇧",
+                "{space}": " ",
+                "{close}": "close Ⓧ",
+            }
+        });
+    
+        document.querySelectorAll(".visual-input").forEach(input => {
+            input.addEventListener("focus", onInputFocus);
+            // Optional: Use if you want to track input changes
+            // made without simple-keyboard
+            input.addEventListener("input", onInputChange);
+        });
+
+        document.addEventListener("pointerup", onInputBlur);
+    
+        function onInputBlur(event) {
+            // console.log(event)
+            let cond = !(hasClass(event.srcElement, 'visual-input') || hasClass(event.srcElement, 'hg-button'));
+            if(cond){
+                document.getElementById('mobile_Keyboard').style.display = 'none';
+                document.getElementById('WaterPipe').style.display = 'none';
+            }
+        }
+
+        function hasClass(element, className) {
+            return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+        }
+
+        function onInputFocus(event) {
+            selectedInput = `#${event.target.id}`;
+            keyboard.setOptions({
+            inputName: event.target.id
+            });
+        }
+    
+        function onInputChange(event) {
+            keyboard.setInput(event.target.value, event.target.id);
+        }
+    
+        function onChange(input) {
+            // console.log("Input changed", input);
+            let currntInput = document.querySelector(selectedInput || ".visual-input");
+            currntInput.value = input
+            let WaterPipe = document.getElementById('WaterPipe');
+        }
+    
+        function onKeyPress(button) {
+            // console.log("Button pressed", button);
+            if(button === '{enter}' || button === '{close}'){
+                document.getElementById('mobile_Keyboard').style.display = 'none';
+                document.getElementById('WaterPipe').style.display = 'none';
+            }
+    
+            /**
+             * Shift functionality
+             */
+            if (button === "{lock}" || button === "{shift}") handleShiftButton();
+        }
+    
+        function handleShiftButton() {
+            let currentLayout = keyboard.options.layoutName;
+            let shiftToggle = currentLayout === "default" ? "shift" : "default";
+    
+            keyboard.setOptions({
+            layoutName: shiftToggle
+            });
+        }
+    
+        function inputFocus(vm) {
+            let WaterPipe = document.getElementById('WaterPipe');
+            let visibleInputValue = vm.value;
+            let currntInpur = document.querySelector(selectedInput || ".visual-input");
+            WaterPipe.style.display = 'block';
+            // vm_input = vm;
+            WaterPipe.style.top = vm.offsetTop+10;
+            WaterPipe.style.left = vm.offsetLeft;
+            // console.log(vm.offsetTop)
+            document.getElementById('mobile_Keyboard').style.display = 'block';
+            document.getElementById('mobile_Keyboard').style.position = 'fixed';
+            document.getElementById('mobile_Keyboard').style.top = '540px';
+            document.getElementById('mobile_Keyboard').style.left = '20px';
+            document.getElementById('mobile_Keyboard').style.width = '1280px';
+            document.getElementById('mobile_Keyboard').style.height = 'auto';
+        }
+    
+        // start virtual keyboard. 
+        // window.onload = function () {
+        //         let isMobile = false;
+        //         (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) isMobile = true;})(navigator.userAgent||navigator.vendor||window.opera);
+        //         if(isMobile === true){
+        //             document.querySelectorAll(".visual-input").forEach(input => {
+        //                 input.setAttributeNode(document.createAttribute("readonly"))
+        //                 input.setAttribute('onfocus','inputFocus(this)')
+        //             });
+        //         }
+        // }
+    </script>
+</html>

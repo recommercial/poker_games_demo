@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>.</title>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {font-family: 'LanTingChungHei'; src: url('@/../../../../font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+    body{margin: 0;padding: 0; scrollbar-width: none; -ms-overflow-style: none;}
+    ::-webkit-scrollbar {width: 0px;background: transparent; scrollbar-width: none; }
+    textarea:focus, input:focus { outline: none; }
+    textarea, input { background: transparent; border: none; }
+    .red{color: #ff0000;}
+    .green{color: #00ff00;}
+    ::-webkit-input-placeholder { color: #e46f2173; }
+    :-ms-input-placeholder { color: #e46f2173;}
+    ::placeholder { color: #e46f2173;}
+  </style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <!-- start record -->
+  <style>
+    #GBR_record_panel{display: none;}
+    #GBR_record_board{position: fixed; top: 0px; left: 0px;}
+    #GBR_record_cancel{position: fixed; top: 70px; left: 810px; cursor: pointer;}
+    #GBR_record_list_container {position: fixed;top: 190px; left: 50px; height: 340px; width: 890px;overflow-y: auto;}
+    .css_tr {display: table-row;}
+    .css_td {display: table-cell;}
+    
+    #css_tableTitle {position: fixed; top: 140px; left: 50px; display:table; text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse; font-size: 32px;line-height: 50px; width: 890px; color: #c0acff;}
+    #css_tableTitle .css_td:nth-child(1){width: 80px; }
+    #css_tableTitle .css_td:nth-child(2){width: 310px; }
+    #css_tableTitle .css_td:nth-child(3){width: 90px; }
+    #css_tableTitle .css_td:nth-child(4){width: 150px; }
+    #css_tableTitle .css_td:nth-child(5){width: 260px; }
+
+    #GBR_record_list {display:table;text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse;font-size: 20px; line-height: 50px; width: 890px; color: #FFFFFF;}
+    #GBR_record_list .css_td,#css_tableTitle .css_td{text-align: center;}
+    #GBR_record_list .css_td:nth-child(1){width: 80px;}
+    #GBR_record_list .css_td:nth-child(2){width: 310px;}
+    #GBR_record_list .css_td:nth-child(3){width: 90px;}
+    #GBR_record_list .css_td:nth-child(4){width: 150px;}
+    #GBR_record_list .css_td:nth-child(5){width: 260px;}
+    #GBR_last_ten{position: fixed; top: 480px; left: 380px; color: #4a150f; font-size: 20px; font-family: 'LanTingChungHei'}
+  </style>
+  <div id="GBR_record_panel">
+    <img id="GBR_record_board" src="@/../../../../assets/game/bai.ren.niou.niou/board_record.png">
+    <img id="GBR_record_cancel" class="btn_close" src="@/../../../../assets/game/bai.ren.niou.niou/btn_cancel.png">
+    <div id="css_tableTitle">
+      <div class="css_tr">
+        <div class="css_td">序号</div>
+        <div class="css_td">牌局编号</div>
+        <div class="css_td">房间</div>
+        <div class="css_td">盈利</div>
+        <div class="css_td">结束时间</div>
+      </div>
+    </div>
+    <div id="GBR_record_list_container">
+      <div id="GBR_record_list">
+        <!-- record list template -->
+        <!-- <div class="css_tr">
+          <div class="css_td">1</div>
+          <div class="css_td">50-15538304-518614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td green">-6,500</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- end record -->
+
+  <!-- start help -->
+  <style>
+    #GBR_help_panel { display: none;}
+    #GBR_help_board { position: fixed; top: 0px; left: 0px;}
+    #GBR_help_cancel{ position: fixed; top: 70px; left: 810px; cursor: pointer; }
+    #GBR_help_content { position: fixed; top: 150px; left: 60px; width: 875px; height: 380px; overflow-y: auto;}
+    .GBR_help_title { color:#ffda45; font-family: 'LanTingChungHei'; font-size: 36px; line-height: 50px; }
+    .GBR_help_content { color:#ffffff; font-family: 'LanTingChungHei'; font-size: 24px; line-height: 40px; }
+    .GBR_help_content table { border-collapse: collapse; }
+    .GBR_help_content table, td { border: 3px solid #d1a619; text-align: center; }
+    .GBR_help_content tr:first-child td { background-color:darkgoldenrod;}
+    .GBR_help_content .tdWidth400 td { width: 400px;}
+  </style>
+  <div id="GBR_help_panel">
+    <img id="GBR_help_board" src="@/../../../../assets/game/bai.ren.niou.niou/board_help.png">
+    <img id="GBR_help_cancel" class="btn_close" src="@/../../../../assets/game/bai.ren.niou.niou/btn_cancel.png">
+    <!-- tab image -->
+
+    <div id="GBR_help_content">
+      <div class="GBR_help_title">一、玩法</div>
+      <div class="GBR_help_content">游戏用牌为一副牌除大小王以外，共计52张。</div>
+      <div class="GBR_help_content">闲家所有下注点只和庄家互比，闲家之间不互比本游戏一共4个下注点，</div>
+      <div class="GBR_help_content">天、地、玄、黄，均可在下注状态时进行下注</div>
+      <div class="GBR_help_content">　</div>
+
+      <div class="GBR_help_title">二、牌型</div>
+      <div class="GBR_help_content">牌面：10,J,Q,K的点数都算作10,其他牌按牌面数字计算。</div>
+      <div class="GBR_help_content">没牛：5张牌中任意3张牌的点数之和都不为10的整数倍。</div>
+      <div class="GBR_help_content">有牛：5张牌中有3张牌点数之和为10的整数倍，另外2张牌的牌面之和不为10的整数倍，则这2张点数之和的个位数即为牛几。</div>
+      <div class="GBR_help_content">牛牛：5张牌中有3张牌点数之和为10的整数倍，且另外2张牌的点数相加也为10的整数倍。</div>
+      <div class="GBR_help_content">四花牛：5张牌中有4张牌为花牌(J,Q,K)中的任意牌，且第5张牌为10。</div>
+      <div class="GBR_help_content">五花牛：5张牌为花牌(J,Q,K)中的任意牌。</div>
+      <div class="GBR_help_content">四炸：5张牌中有4张牌相同，第5张随意。</div>
+      <div class="GBR_help_content">五小牛：5张牌的点数都小于5，且点数之和小于等于10。</div>
+      <div class="GBR_help_content">　</div>
+
+      <div class="GBR_help_title">三、牌型比较</div>
+      <div class="GBR_help_content">牌型大小比较：五小牛>四炸>五花牛>四花牛>牛牛>牛九>牛八>牛七>牛六>牛五>牛四>牛三>牛二>牛一>没牛。</div>
+      <div class="GBR_help_content">炸弹之间大小比较：比较四炸的大小。</div>
+      <div class="GBR_help_content">其他同牌型之间大小：比大牌的点数(K>Q>J>10>9>8>7>6>5>4>3>2>A)；最大牌的点数相同，比较最大牌花色(黑桃>红桃>梅花>方块)</div>
+      <div class="GBR_help_content">　</div>
+
+      <div class="GBR_help_title">四、赔率</div>
+      <div class="GBR_help_content">没牛--牛六　　　　　1倍</div>
+      <div class="GBR_help_content">牛七--牛九　　　　　2倍</div>
+      <div class="GBR_help_content">牛牛--五小牛　　　　3倍</div>
+      <div class="GBR_help_content">　</div>
+
+      <div class="GBR_help_title">五、限红：</div>
+      <div class="GBR_help_content">
+        <table>
+          <tr>
+            <td style="width:200px">房间类型</td>
+            <td style="width:200px">天</td>
+            <td style="width:200px">地</td>
+            <td style="width:200px">玄</td>
+            <td style="width:200px">黄</td>
+          </tr>
+          <tr><td>体验房</td><td>2~200</td><td>2~200</td><td>2~200</td><td>2~200</td></tr>
+          <tr><td>初级房</td><td>10~1000</td><td>10~1000</td><td>10~1000</td><td>10~1000</td></tr>
+          <tr><td>中级房</td><td>50~5000</td><td>50~5000</td><td>50~5000</td><td>50~5000</td></tr>
+          <tr><td>高级房</td><td>200~20000</td><td>200~20000</td><td>200~20000</td><td>200~20000</td></tr>
+        </table>
+      </div>
+      <div class="GBR_help_content">注：单个下注点下注金额之和的范围</div>
+      <div class="GBR_help_content">　</div>
+      
+      <div class="GBR_help_title">六、赔付</div>
+      <div class="GBR_help_content">抽水为5%，按照单个下注区域单独抽水。</div>
+      <div class="GBR_help_content">下注后在没结算前无法退出游戏，请耐心等待本局游戏结束。</div>
+      <div class="GBR_help_content">注：当下注游戏币超过身上携带游戏币的1/3时，将无法下注。</div>
+      <div class="GBR_help_content">　</div>
+
+      <div class="GBR_help_title">七、关于我们</div>
+      <div class="GBR_help_content">各位玩家您好：</div>
+      <div class="GBR_help_content">WWDZ棋牌自上线以来，得到广大玩家的厚爱与支持，我们向您表示衷心的感谢。</div>
+      <div class="GBR_help_content">　</div>
+      
+    </div>
+  </div>
+  <!-- end help -->
+
+  <!-- start feedback -->
+  <style>
+    #GBR_feedback_panel { display: none;}
+    #GBR_feedback_board { position: fixed; top: 0px; left: 0px;}
+    #GBR_feedback_cancel{ position: fixed; top: 70px; left: 810px; cursor: pointer; }
+    #GBR_feedback_ok { position: fixed; top: 475px; left: 410px; cursor: pointer;}
+    #GBR_feedback_content { position: fixed; top: 140px; left: 60px; width: 875px; height: 300px; background: transparent; color: #FFFFFF; border: none; font-family: 'LanTingChungHei'; font-size: 32px; line-height: 50px; }
+  </style>
+  <div id="GBR_feedback_panel">
+    <img id="GBR_feedback_board" src="@/../../../../assets/game/bai.ren.niou.niou/board_feedback.png">
+    <img id="GBR_feedback_cancel" class="btn_close" src="@/../../../../assets/game/bai.ren.niou.niou/btn_cancel.png">
+    <img id="GBR_feedback_ok" src="@/../../../../assets/game/bai.ren.niou.niou/btn_3.png">
+    <textarea id="GBR_feedback_content" placeholder="您对我们游戏的建议和吐槽都可以在这裡告诉我们噢~如果游戏中遇到了任何问题，请联系网站人工客服协助解决，谢谢您的支持~(10-60个字符)"></textarea>
+  </div>
+  <!-- end feedback -->
+
+  <!-- start setting -->
+  <style>
+    #GBR_setting_panel { display: none;}
+    #GBR_setting_board { position: fixed; top: 0px; left: 0px;}
+    #GBR_setting_cancel{ position: fixed; top: 70px; left: 810px; cursor: pointer; }
+
+    #GBR_setting_music_icon { position: fixed; top: 200px; left: 120px;}
+    #GBR_setting_effect_icon { position: fixed; top: 300px; left: 120px;}
+    #GBR_setting_music_text { position: fixed; top: 210px; left: 200px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GBR_setting_effect_text { position: fixed; top: 310px; left: 200px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GBR_setting_music_bg { position: fixed; top: 225px; left: 300px;}
+    #GBR_setting_effect_bg { position: fixed; top: 325px; left: 300px;}
+    #GBR_setting_music_bar { position: fixed; top: 225px; left: 300px; width: 550px; height: 20px; background: url('@/../../../../assets/game/bai.ren.niou.niou/setting_bar2.png') no-repeat; }
+    #GBR_setting_effect_bar { position: fixed; top: 325px; left: 300px; width: 550px; height: 20px; background: url('@/../../../../assets/game/bai.ren.niou.niou/setting_bar2.png') no-repeat; }
+    #GBR_setting_music_value { position: fixed; top: 205px; left: 275px; cursor: pointer;}
+    #GBR_setting_effect_value { position: fixed; top: 305px; left: 275px; cursor: pointer;}
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 600px;
+    }
+
+    input[type=range]:focus {
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 47px;
+      width: 50px;
+      background-color: transparent;
+      background-image: url('@/../../../../assets/game/bai.ren.niou.niou/setting_spot.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    
+
+    #GBR_setting_music_switch_text { position: fixed; top: 420px; left: 270px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GBR_setting_effect_switch_text { position: fixed; top: 420px; left: 600px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GBR_setting_music_switch { position: fixed; left: 275px; top: 470px; width: 120px; height: 70px; cursor: pointer;}
+    #GBR_setting_effect_switch { position: fixed; left: 605px; top: 470px; width: 120px; height: 70px; cursor: pointer;}
+    .switch_off {
+      background-image: 
+        url('@/../../../../assets/game/bai.ren.niou.niou/setting_spot.png'), 
+        url('@/../../../../assets/game/bai.ren.niou.niou/setting_2.png');
+      background-position: -8px 0px, 0px 7px ;
+      background-repeat: no-repeat, no-repeat;
+    }
+    .switch_on {
+      background-image: 
+        url('@/../../../../assets/game/bai.ren.niou.niou/setting_spot.png'), 
+        url('@/../../../../assets/game/bai.ren.niou.niou/setting_1.png');
+      background-position: 77px 0px, 0px 7px ;
+      background-repeat: no-repeat, no-repeat;
+    }
+
+  </style>
+  <div id="GBR_setting_panel">
+    <img id="GBR_setting_board" src="@/../../../../assets/game/bai.ren.niou.niou/board_setting.png">
+    <img id="GBR_setting_cancel" class="btn_close" src="@/../../../../assets/game/bai.ren.niou.niou/btn_cancel.png">
+    
+    <img id="GBR_setting_music_icon" src="@/../../../../assets/game/bai.ren.niou.niou/setting_music.png">
+    <img id="GBR_setting_effect_icon" src="@/../../../../assets/game/bai.ren.niou.niou/setting_volume.png">
+    <div id="GBR_setting_music_text">音乐</div>
+    <div id="GBR_setting_effect_text">音效</div>
+    <img id="GBR_setting_music_bg" src="@/../../../../assets/game/bai.ren.niou.niou/setting_bar1.png">
+    <img id="GBR_setting_effect_bg" src="@/../../../../assets/game/bai.ren.niou.niou/setting_bar1.png">
+    <div id="GBR_setting_music_bar"></div>
+    <div id="GBR_setting_effect_bar"></div>
+    <input id="GBR_setting_music_value" type="range" min="0" max="100" step="1" value="100">
+    <input id="GBR_setting_effect_value" type="range" min="0" max="100" step="1" value="100">
+
+    <div id="GBR_setting_music_switch_text">音乐开关</div>
+    <div id="GBR_setting_effect_switch_text">音效开关</div>
+    <div id="GBR_setting_music_switch" class="switch_on"></div>
+    <div id="GBR_setting_effect_switch" class="switch_off"></div>
+  </div>
+  <!-- end setting -->
+
+</body>
+</html>

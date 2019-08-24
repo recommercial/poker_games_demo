@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+ 
+/* basic */
+#user_popup01 {
+    position: fixed; left: 0px; top: 0px; 
+}
+#icon_close {
+    position: fixed; left: 1340px; top: 30px; 
+}
+#user_tab_01 {
+    position: fixed; left: 160px; top: 100px; 
+}
+#user_tab_02 {
+    position: fixed; left: 440px; top: 100px;  
+}
+#user_tab_03 {
+    position: fixed; left: 710px; top: 100px; 
+}
+#user_tab_04 {
+    position: fixed; left: 980px; top: 100px; 
+}
+#user_avatar {
+    position: fixed; left: 170px; top: 240px; 
+}
+#change_avatar {
+    position: fixed; left: 175px; top: 450px; 
+}
+#user_input_01 {
+    position: fixed; left: 110px; top: 560px; 
+}
+#copy {
+    position: fixed; left: 1065px; top: 255px; 
+}
+#copyIsCopyed {
+    position: fixed; left: 1295px; top: 275px; color: #ffffff; font-family: 'LanTingChungHei'; font-size: 30px; display:none;
+}
+#click_accountIsCopyed{
+    position: fixed; left: 1295px; top: 245px; color: #ffffff; font-family: 'LanTingChungHei'; font-size: 30px; display:none;
+}
+#edit {
+    position: fixed; left: 1065px; top: 347px; 
+}
+#login_key {
+    position: fixed; left: 400px; top: 730px; 
+}
+#security_key {
+    position: fixed; left: 750px; top: 730px; 
+}
+
+#label_account {
+    position: fixed; left: 540px; top: 275px; width: 460px; font-size: 40px; color: #ffffff
+}
+#label_nickname {
+    position: fixed; left: 540px; top: 360px; width: 460px; font-size: 40px; color: #ffffff
+}
+#label_title {
+    position: fixed; left: 540px; top: 450px; width: 460px; font-size: 40px; color: #ffffff
+}
+#label_wallet {
+    position: fixed; left: 400px; top: 592px; width: 250px; font-size: 40px; color: #a49a74
+}
+#label_points {
+    position: fixed; left: 1000px; top: 592px; width: 250px; font-size: 40px; color: #a49a74
+}
+
+
+
+#root_account {
+    position: fixed; left: 420px; top: 275px; width: 100px; font-size: 40px; color:#a49a74
+}
+#head_nickname {
+    position: fixed; left: 420px; top: 360px; width: 100px; font-size: 40px; color: #a49a74
+}
+#head_title {
+    position: fixed; left: 420px; top: 450px; width: 100px; font-size: 40px; color: #a49a74
+}
+
+#head_wallet {
+    position: fixed; left: 220px; top: 590px; width: 190px; font-size: 40px; color: #c7af7a
+}
+#head_points {
+    position: fixed; left: 820px; top: 590px; width: 190px; font-size: 40px; color: #c7af7a
+}
+
+#copy_line {
+    position: fixed; left: 390px; top: 335px; width:885px; border-bottom: 1px solid rgb(219, 167, 34)
+}
+#edit_line {
+    position: fixed; left: 390px; top: 425px; width:885px; border-bottom: 1px solid rgb(219, 167, 34)
+}
+
+#root { margin: 0; padding: 0; height: 100%; width: 100%;}
+.for_data {
+    position: fixed; left: 0px; top: 0px; display: none;
+}
+
+/*user info*/
+#user_close { position: fixed; left: 1340px; top: 30px; }
+#user_tab_01 { position: fixed; left: 160px; top: 100px; }
+#user_tab_02 { position: fixed; left: 440px; top: 100px;  }
+#user_tab_03 { position: fixed; left: 710px; top: 100px; }
+#user_tab_04 { position: fixed; left: 980px; top: 100px; }
+#click_account { position: fixed; left: 1040px; top: 230px; }
+#click_name { position: fixed; left: 1040px; top: 360px; }
+#click_birthday { position: fixed; left: 1040px; top: 480px; }
+#click_phonenumber { position: fixed; left: 1040px; top: 600px; }
+#click_email { position: fixed; left: 1040px; top: 720px; }
+#click_defaultcard { position: fixed; left: 1040px; top: 840px; }
+
+#input_account { position: fixed; left: 480px; top: 210px; width: 530px; height: 110px; }
+#input_name { position: fixed; left: 480px; top: 340px; width: 530px; height: 110px; }
+#input_birthday { position: fixed; left: 480px; top: 460px; width: 530px; height: 110px; }
+#input_phonenumber { position: fixed; left: 480px; top: 580px; width: 530px; height: 110px; }
+#input_email { position: fixed; left: 480px; top: 700px; width: 530px; height: 110px; }
+#input_defaultcard { position: fixed; left: 480px; top: 820px; width: 530px; height: 110px; }
+
+
+#bg_img { position: fixed; left: 0px; top: 0px; }
+#input_user_01 { position: fixed; left: 130px; top: 210px; }
+#input_user_02 { position: fixed; left: 130px; top: 340px; }
+#input_user_03 { position: fixed; left: 130px; top: 460px; }
+#input_user_04 { position: fixed; left: 130px; top: 580px; }
+#input_user_05 { position: fixed; left: 130px; top: 700px; }
+#input_user_06 { position: fixed; left: 130px; top: 820px; }
+#head_account {
+    position: fixed; left: 275px; top: 242px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#head_name {
+    position: fixed; left: 275px; top: 372px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#head_birthday {
+    position: fixed; left: 275px; top: 492px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#head_phonenumber {
+    position: fixed; left: 275px; top: 610px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#head_email {
+    position: fixed; left: 275px; top: 730px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#head_defaultcard {
+    position: fixed; left: 220px; top: 850px; width: 250px; font-size: 36px; color: #c7af7a
+}
+textarea, input { background: transparent; border: none; color: #ffffff; font-size: 36px; }
+textarea:focus, input:focus { outline: none; }
+#root { margin: 0; padding: 0; height: 100%; width: 100%;}
+/* bank */
+#icon_close { position: fixed; left: 1340px; top: 30px; }
+#add { position: fixed; left: 570px; top: 860px; }
+#user_tab_01 { position: fixed; left: 160px; top: 100px; }
+#user_tab_02 { position: fixed; left: 440px; top: 100px;  }
+#user_tab_03 { position: fixed; left: 710px; top: 100px; }
+#user_tab_04 { position: fixed; left: 980px; top: 100px; }
+#click_edit_01 { position: fixed; left: 920px; top: 230px; }
+#click_edit_02 { position: fixed; left: 920px; top: 350px; }
+#click_edit_03 { position: fixed; left: 920px; top: 470px; }
+#click_edit_04 { position: fixed; left: 920px; top: 590px; }
+#click_edit_05 { position: fixed; left: 920px; top: 710px; }
+#click_delete_01 { position: fixed; left: 1110px; top: 230px; }
+#click_delete_02 { position: fixed; left: 1110px; top: 350px; }
+#click_delete_03 { position: fixed; left: 1110px; top: 470px; }
+#click_delete_04 { position: fixed; left: 1110px; top: 590px; }
+#click_delete_05 { position: fixed; left: 1110px; top: 710px; }
+
+#input_01 { position: fixed; left: 420px; top: 210px; width: 530px; height: 110px; }
+#input_02 { position: fixed; left: 420px; top: 330px; width: 530px; height: 110px; }
+#input_03 { position: fixed; left: 420px; top: 450px; width: 530px; height: 110px; }
+#input_04 { position: fixed; left: 420px; top: 570px; width: 530px; height: 110px; }
+#input_05 { position: fixed; left: 420px; top: 690px; width: 530px; height: 110px; }
+#bg_img { position: fixed; left: 0px; top: 0px; }
+#input_bank_01 { position: fixed; left: 105px; top: 210px; }
+#input_bank_02 { position: fixed; left: 105px; top: 330px; }
+#input_bank_03 { position: fixed; left: 105px; top: 450px; }
+#input_bank_04 { position: fixed; left: 105px; top: 570px; }
+#input_bank_05 { position: fixed; left: 105px; top: 690px; }
+#bank_01 { position: fixed; left: 150px; top: 240px; width: 230px; font-size: 36px; color: #c7af7a }
+#bank_02 { position: fixed; left: 150px; top: 360px; width: 230px; font-size: 36px; color: #c7af7a }
+#bank_03 { position: fixed; left: 150px; top: 480px; width: 230px; font-size: 36px; color: #c7af7a }
+#bank_04 { position: fixed; left: 150px; top: 600px; width: 230px; font-size: 36px; color: #c7af7a }
+#bank_05 { position: fixed; left: 150px; top: 720px; width: 230px; font-size: 36px; color: #c7af7a }
+#bank_infinite{position: fixed; left:110px; top:225px; height:630px; width:1200px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+.bankWay {  background: url('@../../../../assets/iframeuser/user_input_10.png') no-repeat; height: 100px; width: 1200px; padding-top: 30px; letter-spacing: 3px;}
+
+::-webkit-scrollbar {
+        width: 0px;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+
+
+textarea, input { background: transparent; border: none; color: #ffffff; font-size: 36px; }
+textarea:focus, input:focus { outline: none; }
+
+/*setting */
+#icon_close { position: fixed; left: 1340px; top: 30px; }
+#basic_switch_account { position: fixed; left: 570px; top: 750px;cursor: pointer; }
+#user_tab_01 { position: fixed; left: 160px; top: 100px; }
+#user_tab_02 { position: fixed; left: 440px; top: 100px;  }
+#user_tab_03 { position: fixed; left: 710px; top: 100px; }
+#user_tab_04 { position: fixed; left: 980px; top: 100px; }
+
+#basic_switch_off { position: fixed; left: 420px; top: 600px; width: 240px; height: 70px; cursor: pointer;}
+#basic_switch_on { position: fixed; left: 1010px; top: 600px; width: 240px; height: 70px; cursor: pointer;}
+.switch_off {
+	background-image: 
+		url(@../../../../assets/iframeuser//user_music_switch_btn.png), 
+		url(@../../../../assets/iframeuser//user_music_switch_off.png);
+	background-position: -8px -10px, top left ;
+	background-repeat: no-repeat, no-repeat;
+}
+.switch_on {
+	background-image: 
+		url(@../../../../assets/iframeuser//user_music_switch_btn.png), 
+		url(@../../../../assets/iframeuser//user_music_switch_on.png);
+	background-position: 88px -10px, top left ;
+	background-repeat: no-repeat, no-repeat;
+}
+
+#bg_img { position: fixed; left: 0px; top: 0px; }
+#basic_music_input { position: fixed; left: 100px; top: 255px; }
+#basic_voice_input { position: fixed; left: 100px; top: 415px; }
+#basic_contral_btns_bg { position: fixed; left: 100px; top: 577px; }
+#basic_music { position: fixed; left: 190px; top: 282px; width: 230px; font-size: 52px; color: #c7af7a }
+#basic_voice { position: fixed; left: 190px; top: 440px; width: 230px; font-size: 52px; color: #c7af7a }
+#basic_music_toggle { position: fixed; left: 150px; top: 600px; width: 230px; font-size: 52px; color: #c7af7a }
+#basic_voice_toggle { position: fixed; left: 770px; top: 600px; width: 230px; font-size: 52px; color: #c7af7a }
+#basic_user_voiceBar_bg{position: fixed; top:300px;left: 400px;}
+#basic_user_musicBar_bg{position: fixed; top:460px;left: 400px;}
+#basic_user_voiceBar{position: fixed; top:300px;left: 400px; background: url('@../../../../assets/iframeuser/user_volumeBar.png') no-repeat; width:800px;height: 26px;}
+#basic_user_musicBar{position: fixed; top:460px;left: 400px; background: url('@../../../../assets/iframeuser/user_volumeBar.png') no-repeat; width:800px;height: 26px;}
+#basic_music_icon{position: fixed; top:280px;left: 400px;cursor: pointer;}
+#basic_voice_icon{position: fixed; top:440px;left: 400px;cursor: pointer;}
+/*avatar change */
+#avatar_close {
+    position: fixed; left: 1470px; top: 0px; 
+}
+#avatar_save {
+    position: fixed; left: 650px; top: 690px; 
+}
+#pick_avatar {
+    position: fixed; left: 650px; top: 690px; display: none;
+}
+
+#male {
+    position: fixed; left: 610px; top: 170px; 
+}
+#female {
+    position: fixed; left: 810px; top: 170px; 
+}
+#avatar_01 {
+    position: fixed; left: 92px; top: 254px; 
+}
+#avatar_02 {
+    position: fixed; left: 323px; top: 254px; 
+}
+#avatar_03 {
+    position: fixed; left: 554px; top: 254px; 
+}
+#avatar_04 {
+    position: fixed; left: 785px; top: 254px; 
+}
+#avatar_05 {
+    position: fixed; left: 1016px; top: 254px; 
+}
+#avatar_06 {
+    position: fixed; left: 1247px; top: 254px; 
+}
+#avatar_07 {
+    position: fixed; left: 92px; top: 468px; 
+}
+#avatar_08 {
+    position: fixed; left: 323px; top: 468px; 
+}
+#avatar_09 {
+    position: fixed; left: 554px; top: 468px; 
+}
+#avatar_10 {
+    position: fixed; left: 785px; top: 468px; 
+}
+#avatar_11 {
+    position: fixed; left: 1016px; top: 468px; 
+}
+#avatar_12 {
+    position: fixed; left: 1247px; top: 468px; 
+}
+
+
+#avatar_bg_img {
+    position: fixed; left: 0px; top: 20px; 
+}
+#label_male {
+    position: fixed; left: 680px; top: 174px; font-weight: bold; width: 100px; font-size: 48px; color:#a49a74
+}
+#label_female {
+    position: fixed; left: 880px; top: 174px; font-weight: bold; width: 100px; font-size: 48px; color:#a49a74
+}
+
+/*change name*/
+#change_name_edit {
+    position: fixed; left: 200px; top: 200px; 
+}
+#name_close {
+    position: absolute; left: 930px; top: 0px; 
+}
+#name_save {
+    position: absolute; left: 380px; top: 360px; 
+}
+#user_name {
+    position: absolute; left: 102px; top: 212px; width: 792px; height: 100px; text-align: center; font-weight: bold; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+#name_err_msg {
+    position: absolute; left: 102px; top: 322px; width: 292px; height: 100px; text-align: center;  color: red; font-size: 36px;
+}
+
+#name_bg_img {
+    position: absolute; left: 0px; top: 20px; 
+}
+#user_title {
+    position: absolute; left: 340px; top: 62px; 
+}
+#user_input_02 {
+    position: absolute; left: 100px; top: 210px; 
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+/*password change */
+#change_password_login {
+    position: fixed; left: 100px; top: 200px; 
+}
+#pass_close {
+    position: absolute; left: 1160px; top: -40px; 
+}
+#pass_save {
+    position: absolute; left: 480px; top: 590px; 
+}
+#input_password {
+    position: absolute; left: 370px; top: 200px; width: 780px; height: 110px; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+#input_newpassword {
+    position: absolute; left: 370px; top: 330px; width: 780px; height: 110px; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+#input_confirmpassword {
+    position: absolute; left: 370px; top: 460px; width: 780px; height: 110px; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+#password_err_msg {
+    position: absolute; left: 80px; top: 570px; width: 340px; height: 110px;  font-size: 36px;
+}
+
+
+#bg_img {
+    position: fixed; left: 0px; top: 20px; 
+}
+#pass_title {
+    position: absolute; left: 370px; top: 62px; 
+}
+#pass_bg_01 {
+    position: absolute; left: 50px; top: 200px; 
+}
+#pass_bg_02 {
+    position: absolute; left: 50px; top: 330px; 
+}
+#pass_bg_03 {
+    position: absolute; left: 50px; top: 460px; 
+}
+
+#head_password {
+    position: absolute; left: 120px; top: 230px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#head_newpassword {
+    position: absolute; left: 142px; top: 362px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#head_confirmpassword {
+    position: absolute; left: 120px; top: 494px; width: 250px; font-size: 36px; color: #c7af7a
+}
+
+/* change secrue */
+#change_password_secrue {
+    position: fixed; left: 100px; top: 250px;
+}
+
+#secrue_close {
+    position: absolute; left: 1160px; top: -40px; 
+}
+#secrue_save {
+    position: absolute; left: 480px; top: 360px; 
+}
+#input_secrue_password {
+    position: absolute; left: 370px; top: 200px; width: 780px; height: 110px; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+
+#secrue_err_msg {
+    position: absolute; left: 10px; top: 320px; width: 1200px; height: auto;  font-size: 36px; text-align: center;
+}
+#secrue_img {
+    position: absolute; left: 0px; top: 20px; 
+}
+#secrue_title {
+    position: absolute; left: 370px; top: 62px; 
+}
+#secrue_bg_01 {
+    position: absolute; left: 50px; top: 200px; 
+}
+
+#secrue_password {
+    position: absolute; left: 120px; top: 230px; width: 250px; font-size: 36px; color: #c7af7a
+}
+
+/*real name */
+#real_name_edit{
+    position: fixed; left: 200px; top: 200px;
+}
+#real_close {
+    position: absolute; left: 930px; top: 0px; 
+}
+#real_save {
+    position: absolute; left: 380px; top: 360px; 
+}
+#real_name {
+    position: absolute; left: 102px; top: 212px; width: 792px; height: 100px; text-align: center; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+
+#real_err_msg {
+    position: absolute; left: -140px; top: 322px; width: 792px; text-align: center; color: red; font-size: 36px;
+}
+#real_img {
+    position: absolute; left: 0px; top: 20px; 
+}
+#real_title {
+    position: absolute; left: 340px; top: 62px; 
+}
+#real_input_02 {
+    position: absolute; left: 100px; top: 210px; 
+}
+
+/*birthday set*/
+#set_birthday {
+    position: fixed; left: 200px; top: 200px; 
+}
+#birthday_close {
+    position: absolute; left: 930px; top: 0px; 
+}
+#birthday_save {
+    position: absolute; left: 380px; top: 360px; 
+}
+#birthday {
+    position: absolute; left: 102px; top: 212px; width: 792px; height: 100px; text-align: center; color: #ffffff; font-size: 36px; border: none;
+}
+
+#birthday_img {
+    position: absolute; left: 0px; top: 20px; 
+}
+#birthday_title {
+    position: absolute; left: 340px; top: 62px; 
+}
+#birthday_input_02 {
+    position: absolute; left: 100px; top: 210px; 
+}
+
+/* bind phonenumber */
+#bind_phone_number {
+    position: fixed; left: 100px; top: 100px; 
+}
+#phone_close {
+    position: absolute; left: 1160px; top: 0px; 
+}
+#phone_save {
+    position: absolute; left: 480px; top: 590px; 
+}
+#get_confirmnumber {
+    position: absolute; left: 830px; top: 450px; 
+}
+
+#phone_err_msg {
+    position: absolute; left: 590px; top: 360px; width: 792px; text-align: center; color: red; font-size: 30px;
+}
+#capchaCode_err_msg {
+    position: absolute; left: 340px; top: 490px; width: 722px; text-align: center; color: red; font-size: 30px;
+}
+
+#input_phone_account {
+    position: absolute; left: 370px; top: 200px; width: 780px; height: 110px; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+#input_phone_phonenumber {
+    position: absolute; left: 370px; top: 330px; width: 780px; height: 110px; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+#input_phone_confirmnumber {
+    position: absolute; left: 370px; top: 460px; width: 450px; height: 110px; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+
+
+#phone_img {
+    position: absolute; left: 0px; top: 20px; 
+}
+#phone_title {
+    position: absolute; left: 410px; top: 62px; 
+}
+#phone_bg_01 {
+    position: absolute; left: 50px; top: 200px; 
+}
+#phone_bg_02 {
+    position: absolute; left: 50px; top: 330px; 
+}
+#phone_bg_03 {
+    position: absolute; left: 50px; top: 460px; 
+}
+
+#phone_account {
+    position: absolute; left: 154px; top: 230px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#phone_phonenumber {
+    position: absolute; left: 140px; top: 362px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#phone_confirmnumber {
+    position: absolute; left: 140px; top: 494px; width: 250px; font-size: 36px; color: #c7af7a
+}
+
+/*bind email*/
+#bind_email {
+    position: fixed; left: 100px; top: 150px; 
+}
+#email_close {
+    position: absolute; left: 1160px; top: 0px; 
+}
+#email_save {
+    position: absolute; left: 480px; top: 455px; 
+}
+
+
+#input_email_account {
+    position: absolute; left: 370px; top: 200px; width: 780px; height: 110px; 
+}
+#input_email_phonenumber {
+    position: absolute; left: 370px; top: 330px; width: 780px; height: 110px; 
+}
+
+#email_err_msg {
+    position: absolute; left: 910px; top: 360px;font-size: 36px; color:red; width:250px;
+}
+
+
+#email_img {
+    position: absolute; left: 0px; top: 20px; 
+}
+#email_bg_01 {
+    position: absolute; left: 50px; top: 200px; 
+}
+#email_bg_02 {
+    position: absolute; left: 50px; top: 330px; 
+}
+#email_account {
+    position: absolute; left: 154px; top: 230px; width: 250px; font-size: 36px; color: #c7af7a
+}
+#email_phonenumber {
+    position: absolute; left: 154px; top: 362px; width: 250px; font-size: 36px; color:#c7af7a
+}
+
+/* bind bank card */
+#bind_bank_card {
+    position: fixed; left: 0px; top: 30px; 
+}
+#bank_card_close {
+    position: absolute; left: 1470px; top: -30px; 
+}
+#bank_card_save {
+    position: absolute; left: 650px; top: 720px; display: none;
+}
+#bank_card_update {
+    position: absolute; left: 650px; top: 720px; display: none;
+}
+#input_bank_card_name {
+    position: absolute; left: 370px; top: 200px; width: 380px; height: 110px; 
+}
+#input_bank_card_cardnumber {
+    position: absolute; left: 370px; top: 460px; width: 1100px; height: 110px; 
+}
+#bank_card_select_bank {
+    position: absolute; left: 1070px; top: 200px; width: 380px; height: 110px; color:#FFFFFF; background-color:transparent;border:0px; font-size: 36px;
+}
+
+#bank_err_msg{
+    position: absolute; left: 1090px; top: 490px; width: 340px; height: 110px;  font-size: 36px;
+}
+#bank_err_msg_name{
+    position: absolute; left: 510px; top: 230px; width: 340px; height: 110px;  font-size: 36px;
+}
+.selectcard option.bank_card_op{font-size: 18px; background: #5c5c5c;font-family: 'LanTingChungHei';}
+.selectcard option.bank_card_op{font-size: 18px; background: #5c5c5c;font-family: 'LanTingChungHei';}
+#bank_card_select_region {
+    position: absolute; left: 370px; top: 330px; width: 280px; height: 110px;  color:#FFFFFF; background-color:transparent;border:0px; font-size: 36px;
+}
+#bank_card_select_area {
+    position: absolute; left: 860px; top: 330px; width: 400px; height: 110px;  color:#FFFFFF; background-color:transparent;border:0px; font-size: 36px;
+}
+
+#check_default {
+    display: none;
+}
+input[type=checkbox] + label {
+
+    background:url("@../../../../assets/iframeuser/icon_input_checkbox.png") no-repeat;
+    display: inline-block;
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 610px;
+    left: 360px;
+}
+
+input[type=checkbox]:checked + label {
+    background:url("@../../../../assets/iframeuser/icon_input_checkbox_checked.png") no-repeat;
+    display: inline-block;
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 610px;
+    left: 360px;
+}
+
+#bank_cardimg {
+    position: absolute; left: 0px; top: 20px; 
+}
+#bank_card_title {
+    position: absolute; left: 570px; top: 62px; 
+}
+#bank_card_bg_01 {
+    position: absolute; left: 780px; top: 200px; 
+}
+#bank_card_bg_02 {
+    position: absolute; left: 50px; top: 200px; 
+}
+#bank_card_bg_03 {
+    position: absolute; left: 50px; top: 330px; 
+}
+#bank_card_bg_04 {
+    position: absolute; left: 50px; top: 460px; 
+}
+#bank_card_bg_05 {
+    position: absolute; left: 50px; top: 590px; 
+}
+
+#bank_card_name {
+    position: absolute; left: 142px; top: 230px; width: 200px; font-size: 36px; color: #c7af7a
+}
+#bank_card_bank {
+    position: absolute; left: 850px; top: 230px; width: 200px; font-size: 36px; color: #c7af7a
+}
+#bank_card_area {
+    position: absolute; left: 120px; top: 360px; width: 200px; font-size: 36px; color: #c7af7a
+}
+#bank_card_cardnumber {
+    position: absolute; left: 120px; top: 490px; width: 200px; font-size: 36px; color: #c7af7a
+}
+#bank_card_default {
+    position: absolute; left: 120px; top: 620px; width: 200px; font-size: 36px; color: #c7af7a
+}
+
+
+/*delete bank card*/
+#delete_bank_card {
+    position: fixed; left: 200px; top: 200px; 
+}
+#delete_close {
+    position: absolute; left: 930px; top: 0px; 
+}
+#delete_save {
+    position: absolute; left: 245px; top: 360px; 
+}
+#delete_cancel {
+    position: absolute; left: 510px; top: 360px; 
+}
+#delete_card_name {
+    position: absolute; left: 102px; top: 212px; width: 792px; height: 100px; text-align: center; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+
+
+#delete_img {
+    position: absolute; left: 0px; top: 20px; 
+}
+#delete_title {
+    position: absolute; left: 300px; top: 62px; 
+}
+#delete_input_02 {
+    position: absolute; left: 100px; top: 210px; 
+}
+
+#delete_name {
+    position: absolute; left: 110px; top: 210px; text-align: center; font-size: 60px; padding-top: 20px;
+}
+
+/*show message*/
+#show_label {
+    position: fixed; left: 312px; top: 372px; width: 732px; height: 100px; text-align: center; color: #ffffff; font-size: 36px; background: transparent; border: none;
+}
+#show_img {
+    position: fixed; left: 200px; top: 220px; 
+}
+#show_close {
+    position: fixed; left: 1130px; top: 200px;
+}
+#show_btn {
+    position: fixed; left: 570px; top: 520px; 
+}
+
+#root { margin: 0; padding: 0; height: 100%; width: 100%;}
+.for_data { position: fixed; left: 0px; top: 0px; display: none;}
+.radio_image { position: fixed; left: 0px; top: 0px; display: none;}
+textarea:focus, input:focus{ outline: none; }
+
+textarea, input,select { background: transparent; border: none; color: #ffffff; font-size: 36px; outline:none;}
+textarea:focus, input:focus { outline: none; }
+
+.usercontent {display: none;padding: 6px 12px;}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width:800px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 76px;
+  width: 74px;
+  background-color: transparent;
+  background-image: url('@../../../../assets/iframeuser/user_volume_icon.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+			-webkit-transition-delay: 99999s;
+			-o-transition-delay: 99999s;
+			transition-delay: 99999s;
+			-webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+			-o-transition: color 99999s ease-out, background-color 99999s ease-out;
+			transition: color 99999s ease-out, background-color 99999s ease-out;
+		}
+        
+		input{
+			font-family: 'LanTingHei';
+		}
+		@font-face {
+				font-family: 'LanTingHei';
+				src: url('/src/font/LanTingHei.ttf') format("truetype"); font-display:swap;
+		}
+		::-webkit-input-placeholder { /* Edge */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+		input::-moz-placeholder  { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+
+		::placeholder {
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+        select { 
+            -webkit-appearance: none; /*Chrome*/
+            -moz-appearance: none; /*FF*/
+            appearance: none;/*CSS3*/
+            background: url('/src/assets/recharge/icon_input_select.png') no-repeat;
+            background-position: calc(100% - 20px) center;
+        }
+
+        select::-ms-expand {
+        display: none; /*IE*/
+        }
+/*****/
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#datepicker-frame {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 8px 0 black;
+    color: #333333;
+    font: 16px Tahoma;
+}
+
+#datepicker-frame table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#datepicker-frame .day td,
+#datepicker-frame .day th {
+    width: calc(400px / 7 - 2px);
+    height: calc(400px / 8 - 2px);
+    border-radius: 4px;
+    text-align: center;
+}
+
+#datepicker-frame .month td,
+#datepicker-frame .month th {
+    width: calc(400px / 4 - 2px);
+    height: calc(400px / 4 - 2px);
+    border-radius: 4px;
+    text-align: center;
+}
+
+#datepicker-frame .disabled {
+    color: #c8c8c8;
+}
+
+#datepicker-frame .today {
+    background-color: #a0a0ff;
+    color: white;
+}
+
+#datepicker-frame td:not(.disabled):not(.today):hover {
+    background-color: #d0d0d0;
+}
+
+#datepicker-frame .pointer {
+    cursor: pointer;
+}
+div,select,option{
+    font-family: 'LanTingChungHei';
+}
+@font-face{
+    font-family: 'LanTingChungHei';
+    src: url('/src/font/LanTingChungHei.ttf') format("truetype"); font-display:swap;
+}
+.loadFont {
+    font-family: 'LanTingChungHei';
+    position: absolute;
+}
+</style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+        <div class="loadFont">.</div>
+        <img id="user_popup01" src="@../../../../assets/iframeuser/user_popup01.png">
+
+        <img id="user_close" name="user_close" src="@../../../../assets/iframeuser/icon_close.png">
+
+        <img id="user_tab_01" class="tablinks" src="@../../../../assets/iframeuser/user_tab_01_hover.png">
+        <img id="user_tab_02" class="tablinks" src="@../../../../assets/iframeuser/user_tab_02.png">
+        <img id="user_tab_03" class="tablinks" src="@../../../../assets/iframeuser/user_tab_03.png">
+        <img id="user_tab_04" class="tablinks" src="@../../../../assets/iframeuser/user_tab_04.png">
+<div id="root" class="usercontent">
+    <!-- display only -->
+	
+	
+	<img id="user_input_01" src="@../../../../assets/iframeuser/user_input_01.png">
+    <div id="copy_line"></div>
+    <div id="edit_line"></div>
+	
+    <img id="user_avatar" src="@../../../../assets/iframeuser/user_avatar_men_05.png">
+    <img id="change_avatar" src="@../../../../assets/iframeuser/user_icon_replace.png">
+    <img id="copy" src="@../../../../assets/iframeuser/user_icon_copy.png">
+    <span id="copyIsCopyed">已复制</span>
+    <img id="edit" src="@../../../../assets/iframeuser/user_icon_edit01.png">
+    <img id="login_key" src="@../../../../assets/iframeuser/user_icon_loginKey.png">
+    <img id="security_key" src="@../../../../assets/iframeuser/user_icon_securityKey.png">
+	
+
+    <div id="label_account">162680162680</div>
+    <div id="label_nickname">惊奇队长</div>
+    <div id="label_title">惊奇队长</div>
+    <div id="root_account">帐号:</div>
+    <div id="head_nickname">昵称:</div>
+    <div id="head_title">头衔:</div>
+
+    <div id="label_wallet">50000000.15</div>
+    <div id="label_points">65600000</div>
+    <div id="head_wallet">我的钱包:</div>
+    <div id="head_points">我的积分:</div>
+
+
+</div>
+<div id="user_info" class="usercontent">
+     <!-- display only -->
+     <img id="input_user_01" src="@../../../../assets/iframeuser/user_input_04.png">
+     <img id="input_user_02" src="@../../../../assets/iframeuser/user_input_04.png">
+     <img id="input_user_03" src="@../../../../assets/iframeuser/user_input_04.png">
+     <img id="input_user_04" src="@../../../../assets/iframeuser/user_input_04.png">
+     <img id="input_user_05" src="@../../../../assets/iframeuser/user_input_04.png">
+     <img id="input_user_06" src="@../../../../assets/iframeuser/user_input_04.png">
+     <div id="head_account">帐 号</div>
+     <div id="head_name">姓 名</div>
+     <div id="head_birthday">生 日</div>
+     <div id="head_phonenumber">手 机</div>
+     <div id="head_email">邮 箱</div>
+     <div id="head_defaultcard">默认银行卡</div>
+ 
+     <!-- click -->
+     
+     <img id="click_account" src="@../../../../assets/iframeuser/user_icon_copy.png">
+     <span id="click_accountIsCopyed">已复制</span>
+     <img id="click_name" src="@../../../../assets/iframeuser/user_icon_edit01.png">
+     <img id="click_birthday" src="@../../../../assets/iframeuser/user_icon_edit01.png">
+     <img id="click_phonenumber" src="@../../../../assets/iframeuser/user_icon_edit01.png">
+     <img id="click_email" src="@../../../../assets/iframeuser/user_icon_binding.png">
+     <img id="click_defaultcard" src="@../../../../assets/iframeuser/user_icon_binding.png">
+ 
+     <!-- input -->
+     <input id="input_account" type="text"  placeholder="" readonly>
+     <input id="input_name" type="text"  placeholder="" readonly>
+     <input id="input_birthday" type="text"  placeholder="" readonly>
+     <input id="input_phonenumber" type="text"  placeholder="" readonly>
+     <input id="input_email" type="text"  placeholder="" readonly>
+     <input id="input_defaultcard" type="text" value="" placeholder="" readonly>
+
+</div>
+
+<div id="bank" class="usercontent">
+        <!-- <img id="input_bank_01" src="@../../../../assets/iframeuser/user_input_10.png">
+        <img id="input_bank_02" src="@../../../../assets/iframeuser/user_input_10.png">
+        <img id="input_bank_03" src="@../../../../assets/iframeuser/user_input_10.png">
+        <img id="input_bank_04" src="@../../../../assets/iframeuser/user_input_10.png">
+        <img id="input_bank_05" src="@../../../../assets/iframeuser/user_input_10.png">
+        <div id="bank_01"></div>
+        <div id="bank_02"></div>
+        <div id="bank_03"></div>
+        <div id="bank_04"></div>
+        <div id="bank_05"></div> -->
+        <div id="bank_infinite"></div>
+
+        <!-- click -->
+        <img id="add" src="@../../../../assets/iframeuser/user_icon_addBank.png">
+      
+    
+        <!-- <img id="click_edit_01" src="@../../../../assets/iframeuser//user_icon_edit02.png">
+        <img id="click_edit_02" src="@../../../../assets/iframeuser//user_icon_edit02.png">
+        <img id="click_edit_03" src="@../../../../assets/iframeuser//user_icon_edit02.png">
+        <img id="click_edit_04" src="@../../../../assets/iframeuser//user_icon_edit02.png">
+        <img id="click_edit_05" src="@../../../../assets/iframeuser//user_icon_edit02.png">
+        <img id="click_delete_01" src="@../../../../assets/iframeuser//user_icon_delete.png">
+        <img id="click_delete_02" src="@../../../../assets/iframeuser//user_icon_delete.png">
+        <img id="click_delete_03" src="@../../../../assets/iframeuser//user_icon_delete.png">
+        <img id="click_delete_04" src="@../../../../assets/iframeuser//user_icon_delete.png">
+        <img id="click_delete_05" src="@../../../../assets/iframeuser//user_icon_delete.png"> -->
+    
+        <!-- input -->
+        <!-- <input id="input_01" type="text"  placeholder="" readonly>
+        <input id="input_02" type="text"  placeholder="" readonly>
+        <input id="input_03" type="text"  placeholder="" readonly>
+        <input id="input_04" type="text"  placeholder="" readonly>
+        <input id="input_05" type="text"  placeholder="" readonly> -->
+</div>
+
+<div id="setting" class="usercontent">
+     <!-- display only -->
+     <img id="basic_music_input" src="@../../../../assets/iframeuser/user_input_11.png">
+     <img id="basic_user_voiceBar_bg" src="@../../../../assets/iframeuser/user_volumeBar_bg.png">
+     <img id="basic_user_musicBar_bg" src="@../../../../assets/iframeuser/user_volumeBar_bg.png">
+     <img id="basic_voice_input" src="@../../../../assets/iframeuser/user_input_11.png">
+     <div id="basic_user_voiceBar"></div>
+     <div id="basic_user_musicBar"></div>
+     <input id="basic_music_icon" type="range" min="0" max="100" step="1" value="100">
+     <input id="basic_voice_icon" type="range" min="0" max="100" step="1" value="100">
+     <img id="basic_contral_btns_bg" src="@../../../../assets/iframeuser/user_input_12.png">
+     <div id="basic_music">音 乐</div>
+     <div id="basic_voice">音 效</div>
+     <div id="basic_music_toggle">音乐开关</div>
+     <div id="basic_voice_toggle">音效开关</div>
+ 
+     <!-- click -->
+     <img id="basic_switch_account" src="@../../../../assets/iframeuser/user_icon_accoundSwitch.png">
+     
+     <div id="basic_switch_off" class="switch_on"></div>
+     <div id="basic_switch_on" class="switch_on"></div>
+</div>
+
+<div id="change_avatar_type" style="display: none;">
+        <!-- display only -->
+        <img id="avatar_bg_img" src="@../../../../assets/iframeuser/user_popup03.png">
+        <div id="label_male">男</div>
+        <div id="label_female">女</div>
+        
+        <!-- click -->
+        <img id="avatar_close" src="@../../../../assets/iframeuser/icon_close.png">
+        <img id="avatar_save" src="@../../../../assets/iframeuser/user_icon_save.png">
+    
+        <!-- input -->
+        <img id="male" src="@../../../../assets/iframeuser/icon_input_radio.png">
+        <img id="female" src="@../../../../assets/iframeuser/icon_input_radio_checked.png">
+
+ 
+        <!-- choice -->
+        <img id="avatar_01" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_01.png">
+        <img id="avatar_02" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_02.png">
+        <img id="avatar_03" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_03.png">
+        <img id="avatar_04" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_04.png">
+        <img id="avatar_05" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_05.png">
+        <img id="avatar_06" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_06.png">
+        <img id="avatar_07" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_07.png">
+        <img id="avatar_08" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_08.png">
+        <img id="avatar_09" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_09.png">
+        <img id="avatar_10" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_10.png">
+        <img id="avatar_11" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_11.png">
+        <img id="avatar_12" class="choice_avatar" src="@../../../../assets/iframeuser/user_avatar_12.png">
+
+        <img id="pick_avatar" src="@../../../../assets/iframeuser/user_icon_pick.png">
+    </div>
+    <div id="change_name_edit" style="display: none;">
+           <!-- display only -->
+            <img id="name_bg_img" src="@../../../../assets/iframeuser/user_popup02.png">
+            <img id="user_title" src="@../../../../assets/iframeuser/user_title_01.png">
+            <img id="user_input_02" src="@../../../../assets/iframeuser/user_input_02.png">
+            
+            <!-- click -->
+            <img id="name_close" src="@../../../../assets/iframeuser/icon_close.png">
+            <img id="name_save" src="@../../../../assets/iframeuser/user_icon_save.png">
+
+            <!-- input -->
+            <input id="user_name" type="text" autocomplete="off">
+            <label id="name_err_msg"></label>
+    </div>
+
+    <div id="change_password_login" style="display: none; position:fixed; ">
+            <img id="password_bg_img" src="@../../../../assets/iframeuser/user_popup04.png">
+            <img id="pass_title" src="@../../../../assets/iframeuser/user_title_02.png">
+            <img id="pass_bg_01" src="@../../../../assets/iframeuser/user_input_03.png">
+            <img id="pass_bg_02" src="@../../../../assets/iframeuser/user_input_03.png">
+            <img id="pass_bg_03" src="@../../../../assets/iframeuser/user_input_03.png">
+            <div id="head_password">原始密码</div>
+            <div id="head_newpassword">新密码</div>
+            <div id="head_confirmpassword">确认密码</div>
+            
+            <!-- click -->
+            <img id="pass_close" src="@../../../../assets/iframeuser/icon_close.png">
+            <img id="pass_save" src="@../../../../assets/iframeuser/user_icon_confirm01.png">
+        
+            <!-- input -->
+            <input id="input_password" autocomplete="off" type="password" placeholder="请输入原始密码">
+            <input id="input_newpassword"  autocomplete="off" type="password" placeholder="请输入6-16位英文|数字|点|下划线组合">
+            <input id="input_confirmpassword" autocomplete="off" type="password" placeholder="请再次输入密码">
+            <label id="password_err_msg"></label>
+    </div>
+    <div id="change_password_secrue" style="display: none; position:fixed;">
+        <!-- display only -->
+        <img id="secure_img" src="@../../../../assets/iframeuser/user_popup05.png">
+        <img id="secrue_bg_01" src="@../../../../assets/iframeuser/user_input_03.png">
+        <div id="secrue_password">安全密码</div>
+        
+        <!-- click -->
+        <img id="secrue_close" src="@../../../../assets/iframeuser/icon_close.png">
+        <img id="secrue_save" src="@../../../../assets/iframeuser/user_icon_confirm01.png">
+
+        <!-- input -->
+        <input id="input_secrue_password" type="password" autocomplete="off" placeholder="请输入6-16位英文|数字|点|下划线组合">
+        <label id="secrue_err_msg"></label>
+
+    </div>
+    <div id="real_name_edit" style="display: none;">
+          <!-- display only -->
+        <img id="real_img" src="@../../../../assets/iframeuser/user_popup02.png">
+        <img id="real_title" src="@../../../../assets/iframeuser/user_title_04.png">
+        <img id="real_input_02" src="@../../../../assets/iframeuser/user_input_02.png">
+        
+        <!-- click -->
+        <img id="real_close" src="@../../../../assets/iframeuser/icon_close.png">
+        <img id="real_save" src="@../../../../assets/iframeuser/user_icon_save.png">
+
+        <!-- input -->
+        <input id="real_name" type="text" placeholder="请填写真实姓名,设定后不允许修改">
+        <label id="real_err_msg"></label>
+    </div>
+
+    <div id="set_birthday" style="display: none;">
+         <!-- display only -->
+        <img id="birthday_img" src="@../../../../assets/iframeuser/user_popup02.png">
+        <img id="birthday_title" src="@../../../../assets/iframeuser/user_title_05.png">
+        <img id="birtyday_input_02" src="@../../../../assets/iframeuser/user_input_02.png">
+        
+        <!-- click -->
+        <img id="birthday_close" src="@../../../../assets/iframeuser/icon_close.png">
+        <img id="birthday_save" src="@../../../../assets/iframeuser/user_icon_save.png">
+
+        <!-- input -->
+        <!-- <input id="birthday" type="date" autocomplete="off" placeholder="2001年1月23日"> -->
+        <input id="birthday" readonly type="text"  autocomplete="off" placeholder="2001年1月23日">
+    </div>
+    <div id="bind_phone_number" style="display: none;">
+            <img id="phone_img" src="@../../../../assets/iframeuser/user_popup04.png">
+            <img id="phone_title" src="@../../../../assets/iframeuser/user_title_06.png">
+            <img id="phone_bg_01" src="@../../../../assets/iframeuser/user_input_03.png">
+            <img id="phone_bg_02" src="@../../../../assets/iframeuser/user_input_03.png">
+            <img id="phone_bg_03" src="@../../../../assets/iframeuser/user_input_05.png">
+            <div id="phone_account">账 号</div>
+            <div id="phone_phonenumber">手机号</div>
+            <div id="phone_confirmnumber">验证码</div>
+            
+            <!-- click -->
+            <img id="phone_close" src="@../../../../assets/iframeuser/icon_close.png">
+            <img id="phone_save" src="@../../../../assets/iframeuser/user_icon_confirm02.png">
+            <img id="get_confirmnumber" src="@../../../../assets/iframeuser/user_icon_getOTP.png">
+            <label id="phone_err_msg"></label>
+            <label id="capchaCode_err_msg"></label>
+            <!-- input -->
+            <input id="input_phone_account" type="text" readonly>
+            <input id="input_phone_phonenumber" maxlength="11" autocomplete="off" type="text" placeholder="请输入大陆地区手机号">
+            <input id="input_phone_confirmnumber" maxlength="11" autocomplete="off" type="text" placeholder="请输入验证码">
+    </div>
+    <div id="bind_email" style="display: none;">
+            <!-- display only -->
+        <img id="email_img" src="@../../../../assets/iframeuser/user_popup06.png">
+        <img id="email_bg_01" src="@../../../../assets/iframeuser/user_input_03.png">
+        <img id="email_bg_02" src="@../../../../assets/iframeuser/user_input_03.png">
+        <div id="email_account">账 号</div>
+        <div id="email_phonenumber">邮 箱</div>
+        
+        <!-- click -->
+        <img id="email_close" src="@../../../../assets/iframeuser/icon_close.png">
+        <img id="email_save" src="@../../../../assets/iframeuser/user_icon_confirm02.png">
+
+        <!-- input -->
+        <input id="input_email_account" type="text"  readonly>
+        <input id="input_email_phonenumber" type="text" autocomplete="off"  placeholder="请输入邮箱">
+        <label id="email_err_msg"></label>
+    </div>
+    <div id="bind_bank_card" style="display: none; position:fixed;">
+        <!-- display only -->
+            <img id="bank_card_img" src="@../../../../assets/iframeuser/user_popup07.png">
+            <img id="bank_card_title" src="@../../../../assets/iframeuser/user_title_07.png">
+            <img id="bank_card_bg_01" src="@../../../../assets/iframeuser/user_input_06.png">
+            <img id="bank_card_bg_02" src="@../../../../assets/iframeuser/user_input_07.png">
+            <img id="bank_card_bg_03" src="@../../../../assets/iframeuser/user_input_08.png">
+            <img id="bank_card_bg_04" src="@../../../../assets/iframeuser/user_input_08.png">
+            <img id="bank_card_bg_05" src="@../../../../assets/iframeuser/user_input_09.png">
+            <div id="bank_card_name">姓 名</div>
+            <div id="bank_card_bank">开户银行</div>
+            <div id="bank_card_area">开户地区</div>
+            <div id="bank_card_cardnumber">银行卡号</div>
+            <div id="bank_card_default">设置默认</div>
+            
+            <!-- click -->
+            <img id="bank_card_close" src="@../../../../assets/iframeuser/icon_close.png">
+            <img id="bank_card_save" src="@../../../../assets/iframeuser/user_icon_confirm02.png">
+            <img id="bank_card_update" src="@../../../../assets/iframeuser/user_icon_confirm02.png">
+
+            <!-- input -->
+            <input id="input_bank_card_name" type="text" placeholder="请输入姓名">
+            <input id="input_bank_card_cardnumber" type="text" placeholder="请输入银行卡号">
+            <select id="bank_card_select_bank" class="selectcard">
+            </select>
+            <select id="bank_card_select_area" class="selectcard">
+            </select>
+            <select id="bank_card_select_region" class="selectcard">
+            </select>
+            <input type="hidden" id="bank_card_id">
+            <label id="bank_err_msg"></label>
+            <label id="bank_err_msg_name"></label>
+            
+            <!-- check -->
+            <input type="checkbox" id="check_default" value="true"/> <label for="check_default"></label>
+    </div>
+    <div id="delete_bank_card" style="display: none;">
+            <img id="delete_img" src="@../../../../assets/iframeuser/user_popup02.png">
+            <img id="delete_title" src="@../../../../assets/iframeuser/user_title_09.png">
+            <img id="delete_input_02" src="@../../../../assets/iframeuser/user_input_02.png">
+            
+            <!-- click -->
+            <img id="delete_close" src="@../../../../assets/iframeuser/icon_close.png">
+            <img id="delete_save" src="@../../../../assets/iframeuser/user_icon_confirm02.png">
+            <img id="delete_cancel" src="@../../../../assets/iframeuser/user_icon_cancel.png">
+        
+            <!-- input -->
+            <input id="delete_name" type="text" readonly>
+    </div>
+
+    <div id="show_message" style="display: none;">
+            <img id="show_img" src="@../../../../assets/iframeuser/user_popup02.png">
+            <img id="show_close" src="@../../../../assets/iframeuser/icon_close.png">
+            <label id="show_label"></label>
+            <img id="show_btn" src="@../../../../assets/iframeuser/user_icon_confirm02.png">
+    </div>
+
+
+
+<!-- for-data -->
+<img id="avatar_woman_01" class="for_data" src="@../../../../assets/iframeuser/user_avatar_01.png">
+<img id="avatar_woman_02" class="for_data" src="@../../../../assets/iframeuser/user_avatar_02.png">
+<img id="avatar_woman_03" class="for_data" src="@../../../../assets/iframeuser/user_avatar_03.png">
+<img id="avatar_woman_04" class="for_data" src="@../../../../assets/iframeuser/user_avatar_04.png">
+<img id="avatar_woman_05" class="for_data" src="@../../../../assets/iframeuser/user_avatar_05.png">
+<img id="avatar_woman_06" class="for_data" src="@../../../../assets/iframeuser/user_avatar_06.png">
+<img id="avatar_woman_07" class="for_data" src="@../../../../assets/iframeuser/user_avatar_07.png">
+<img id="avatar_woman_08" class="for_data" src="@../../../../assets/iframeuser/user_avatar_08.png">
+<img id="avatar_woman_09" class="for_data" src="@../../../../assets/iframeuser/user_avatar_09.png">
+<img id="avatar_woman_10" class="for_data" src="@../../../../assets/iframeuser/user_avatar_10.png">
+<img id="avatar_woman_11" class="for_data" src="@../../../../assets/iframeuser/user_avatar_11.png">
+<img id="avatar_woman_12" class="for_data" src="@../../../../assets/iframeuser/user_avatar_12.png">
+<img id="avatar_man_01" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_01.png">
+<img id="avatar_man_02" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_02.png">
+<img id="avatar_man_03" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_03.png">
+<img id="avatar_man_04" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_04.png">
+<img id="avatar_man_05" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_05.png">
+<img id="avatar_man_06" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_06.png">
+<img id="avatar_man_07" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_07.png">
+<img id="avatar_man_08" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_08.png">
+<img id="avatar_man_09" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_09.png">
+<img id="avatar_man_10" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_10.png">
+<img id="avatar_man_11" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_11.png">
+<img id="avatar_man_12" class="for_data" src="@../../../../assets/iframeuser/user_avatar_men_12.png">
+
+<img id="radio_no" class="radio_image" src="@../../../../assets/iframeuser/icon_input_radio.png">
+<img id="radio_yes" class="radio_image" src="@../../../../assets/iframeuser/icon_input_radio_checked.png">
+
+<img id="pick_avatar" src="@../../../../assets/iframeuser/user_icon_pick.png">
+</body>
+</html>
+<script>
+// GLOBAL CONSTANTS
+const SECOND = 1000;
+const MINUTE = SECOND * 60;
+const HOUR = MINUTE * 60;
+const DAY = HOUR * 24;
+const WEEK = DAY * 7;
+
+const weekdays = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"];
+const months = ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"];
+
+
+// PROTOTYPES
+Date.prototype.getWeekNumber = function () {
+    var d = new Date(Date.UTC(this.getFullYear(), this.getMonth(), this.getDate()));
+    var dayNum = d.getUTCDay() || 7;
+    d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+    var yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+};
+
+// DATEPICKER
+class Datepicker {
+    constructor(host, s) {
+        const t = this;
+        t.host = host;
+        t.frame = document.createElement("div");
+        t.frame.id = "datepicker-frame";
+        t.frame.className = "noselect";
+        
+        t.table = document.createElement("table");
+        t.frame.append(t.table);
+        
+        // Run config if settings present
+        if (s) t.config(s); 
+        
+        // Show conditions
+        window.onresize = () => { if (t.display_state) show(true); }; // to update screen position
+        document.addEventListener("click", e => {
+            if (
+                e.target == document.getElementById("birthday") &&
+                !document.getElementById("datepicker-frame")
+            ) {
+                t.load("day"); // Start date when opening
+                show(true);
+            }
+            else if (
+                document.getElementById("datepicker-frame") != null &&
+                !e.path.includes(document.getElementById("datepicker-frame"))
+            ) show(false);
+        });
+        
+        // Load
+        t.load = function (n) {
+            while (t.table.firstChild) t.table.removeChild(t.table.firstChild);
+            t.table.className = n;
+            // If data is month
+            if (n == "day") {
+                // Row 1 [Prev, Month and year, Next]
+                const row1 = document.createElement("tr");
+                t.table.append(row1);
+                
+                // Prev
+                const prev = document.createElement("th");
+                row1.append(prev);
+                prev.innerHTML = "<<";
+                if (t.firstdate == undefined || (
+                    t.date.getMonth() > t.firstdate.getMonth() ||
+                    t.date.getFullYear() > t.firstdate.getFullYear())
+                ) {
+                    prev.className = "pointer";
+                    prev.onclick = () => {
+                        t.date = new Date(t.date.getFullYear(), t.date.getMonth() - 1, 1);
+                        t.load("day");
+                    };
+                } else prev.className = "disabled";
+
+                // month and year
+                const head = document.createElement("th");
+                row1.append(head);
+                head.colSpan = 5;
+                head.innerHTML = months[t.date.getMonth()] + " " + t.date.getFullYear();
+                head.onclick = () => {
+                    t.load("month");
+                };
+                head.className = "pointer";
+    
+                // Next
+                const next = document.createElement("th");
+                row1.append(next);
+                next.innerHTML = ">>";
+                if (t.lastdate == undefined || (
+                    t.date.getMonth() < t.lastdate.getMonth() ||
+                    t.date.getFullYear() < t.lastdate.getFullYear())
+                ) {
+                    next.className = "pointer";
+                    next.onclick = () => {
+                        t.date = new Date(t.date.getFullYear(), t.date.getMonth() + 1, 1);
+                        t.load("day");
+                    };
+                } else next.className = "disabled";
+
+                // Row 2 [Weekdays]
+                const row2 = document.createElement("tr");
+                t.table.append(row2);
+                for (let day = 0; day < 7; day++) {
+                    const cell = document.createElement("th");
+                    cell.innerHTML = weekdays[day];
+                    row2.append(cell);
+                }
+    
+                // Dates
+                const first_day_in_month = new Date(t.date.getFullYear(), t.date.getMonth(), 1);
+                let index = 1 - (first_day_in_month.getDay() || 7);
+                for (let y = 0; y < 6; y++) {
+                    const tr = document.createElement("tr");
+                    t.table.append(tr);
+                    for (let x = 0; x < 7; x++) {
+                        const day = new Date(first_day_in_month.getTime() + DAY * index);
+                        
+                        const td = document.createElement("td");
+                        tr.append(td);
+                        td.innerHTML = day.getDate();
+                        
+
+                        if (
+                            day.getMonth() == t.date.getMonth() && 
+                            t.disableddays(day) && 
+                            (t.firstdate == undefined ? true : (day.getMonth() == t.firstdate.getMonth() ? (day.getFullYear() == t.firstdate.getFullYear() ? day.getDate() >= t.firstdate.getDate() : true) : true)) &&
+                            (t.lastdate == undefined ? true : (day.getMonth() == t.lastdate.getMonth() ? (day.getFullYear() == t.lastdate.getFullYear() ?day.getDate() <= t.lastdate.getDate() : true) : true))
+                        ) {
+                            td.className = "pointer";
+                            td.onclick = () => {
+                                t.setDate(day);
+                                show(false);
+                            };
+                        } else {
+                            if(day > new Date()){
+                                td.className = "disabled";
+                            }else{
+                                td.className = " ";
+                                td.onclick = () => {
+                                    t.setDate(day);
+                                    show(false);
+                                };
+                            }
+                        }                        
+                        td.className += day.toDateString() == new Date().toDateString() ? " today" : "";
+    
+                        index++;
+                    }
+                }
+            }
+            
+            // If data is year
+            else if (n == "month") {
+                // Row 1 [Prev, Year, Next]
+                const row = document.createElement("tr");
+                t.table.append(row);
+                
+                // Prev
+                const prev = document.createElement("th");
+                row.append(prev);
+                prev.innerHTML = "<<";
+                if (t.firstdate == undefined || (
+                    t.date.getFullYear() > t.firstdate.getFullYear())
+                ) {
+                    prev.className = "pointer";
+                    prev.onclick = () => {
+                        t.date = new Date(t.date.getFullYear() - 1, 1, 1);
+                        t.load("month");
+                    };
+                } else prev.className = "disabled";
+
+                // Year
+                const head = document.createElement("th");
+                row.append(head);
+                head.colSpan = 2;
+                head.innerHTML = t.date.getFullYear();
+        
+                // Next
+                const next = document.createElement("th");
+                row.append(next);
+                next.innerHTML = ">>";
+                if (t.lastdate == undefined || (
+                    t.date.getFullYear() < t.lastdate.getFullYear())
+                ) {
+                    next.className = "pointer";
+                    next.onclick = () => {
+                        t.date = new Date(t.date.getFullYear() + 1, 1, 1);
+                        t.load("month");
+                    };
+                } else next.className = "disabled";
+
+                // Months
+                for (let y = 0; y < 3; y++) {
+                    const row = document.createElement("tr");
+                    t.table.append(row);
+                    for (let x = 0; x < 4; x++) {
+                        const index = y * 4 + x;
+                        const day = new Date(t.date.getFullYear(), index, 1);
+                        
+                        const cell = document.createElement("td");
+                        row.append(cell);
+                        cell.innerHTML = months[index];
+                        
+                        if (
+                            (t.firstdate != undefined ? day.getTime() >= new Date(t.firstdate).setDate(1) : true) &&
+                            (t.lastdate != undefined ? day.getTime() <= new Date(t.lastdate).setDate(1) : true)
+                        ) {
+                            cell.className = "pointer";
+                            cell.onclick = () => {
+                                t.date = new Date(t.date.getFullYear(), index, 1);
+                                t.load("day");
+                            };
+                        } else cell.className = "disabled";
+                    }
+                }
+            }
+        };
+        
+        const show = function (bool) {
+            if (bool) {
+                const rect = t.host.getBoundingClientRect();
+                const x = (rect.left + rect.right) / 2;
+                const y = rect.bottom - rect.top + document.documentElement.scrollTop;
+                t.frame.style.setProperty("top", y + 408 + "px");//y=102   510px
+                t.frame.style.setProperty("left", x - 188 + "px");//x=698  510px
+                // t.frame.style.setProperty("top", y + 20 + "px");
+                // t.frame.style.setProperty("left", x - 152 + "px");
+                
+                document.body.append(t.frame);
+            }
+            else if (!bool) document.getElementById("datepicker-frame").remove();
+        };
+    }
+    
+    config(s) {
+
+        this.firstdate = s.firstdate || this.firstdate;
+        this.lastdate = s.lastdate || this.lastdate;
+        this.disableddays = s.disableddays || this.disableddays || ((day) => { 
+            if(day > new Date()){
+                return false
+            }
+            return true; 
+        });
+        this.format = s.format || this.format || ((d) => { return d; });
+
+        if (typeof this.firstdate != "object" && this.firstdate != undefined) console.error("firstdate is not of type Object");
+        else if (typeof this.lastdate != "object" && this.lastdate != undefined) console.error("lastdate is not of type Object");
+        else if (typeof this.disableddays != "function") console.error("disableddays is not of type function");
+        else if (typeof this.format != "function") console.error("format is not of type function");
+
+        const d = new Date();
+        let date = d;
+        while (!this.disableddays(date)) {
+            date = this.firstdate && this.lastdate ? (
+                d.getTime() >= this.firstdate.getTime() && d.getTime() <= this.lastdate.getTime() ? d : this.firstdate
+            ) : this.firstdate ? (
+                d.getTime() >= this.firstdate.getTime() ? d : this.firstdate
+            ) : this.lastdate ? (
+                d.getTime() <= this.lastdate.getTime() ? d : this.lastdate
+            ) : d;
+            d.setTime(d.getTime() + DAY);
+        }
+        this.date = this.date || date;
+        this.host.value = this.format(this.date);
+    }
+    
+    getDate() {
+        return this.date;
+    }
+    
+    setDate(date) {
+        if (date < this.firstdate || date > this.lastdate) return;
+        if (!this.disableddays(date)) {
+            date = new Date(date.getTime() + DAY);
+            this.setDate(date);
+            return;
+        }
+        this.date = date;
+        this.host.value = this.format(date);
+        if(typeof this.host.onchange == "function") this.host.onchange();
+    }
+}
+</script>
+<script>
+const d = new Datepicker(document.getElementById("birthday"));
+d.config({
+    firstdate: new Date(1900, 0, 9),
+    lastdate: new Date(),
+    // disableddays: d => {return(d.getDay() > 0 && d.getDay() < 6)},
+    format: d => {return(d.getFullYear() +" / "+(d.getMonth()+1) + " / " + d.getDate())}
+});
+
+let dom = {};
+dom.show_message = document.getElementById('show_message');
+dom.bind_bank_card = document.getElementById('bind_bank_card');
+dom.change_name_edit = document.getElementById('change_name_edit');
+dom.change_password_login = document.getElementById('change_password_login');
+dom.change_password_secrue = document.getElementById('change_password_secrue');
+dom.real_name_edit = document.getElementById('real_name_edit');
+dom.set_birthday = document.getElementById('set_birthday');
+dom.bind_phone_number = document.getElementById('bind_phone_number');
+dom.bind_email = document.getElementById('bind_email');
+dom.delete_bank_card = document.getElementById('delete_bank_card');
+
+document.getElementById('show_close').addEventListener("click",()=> {
+    dom.show_message.style.display = 'none';
+    dom.bind_bank_card.style.display = 'none';
+    dom.change_name_edit.style.display = 'none';
+    dom.change_password_login.style.display = 'none';
+    dom.change_password_secrue.style.display = 'none';
+    dom.real_name_edit.style.display = 'none';
+    dom.set_birthday.style.display = 'none';
+    dom.bind_phone_number.style.display = 'none';
+    dom.bind_email.style.display = 'none';
+    dom.delete_bank_card.style.display = 'none';
+});
+document.getElementById('show_btn').addEventListener("click",()=> {
+    dom.show_message.style.display = 'none';
+    dom.bind_bank_card.style.display = 'none';
+    dom.change_name_edit.style.display = 'none';
+    dom.change_password_login.style.display = 'none';
+    dom.change_password_secrue.style.display = 'none';
+    dom.real_name_edit.style.display = 'none';
+    dom.set_birthday.style.display = 'none';
+    dom.bind_phone_number.style.display = 'none';
+    dom.bind_email.style.display = 'none';
+    dom.delete_bank_card.style.display = 'none';
+});
+</script>

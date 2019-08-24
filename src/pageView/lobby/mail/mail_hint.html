@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  #close_btn{
+    position: fixed;
+    top: 0px;
+    left: 950px;
+    cursor: pointer;
+  }
+  #mail_mask02,#mail_popup03{
+    position: fixed;
+  }
+  #mail_popup03{
+    top: 30px;
+  }
+  #mail_input_01{
+    position: fixed;
+    top: 210px;
+    left: 110px;
+  }
+  #mail_icon_confirm{
+    position: fixed;
+    top: 370px;
+    left: 510px;
+    cursor: pointer;
+  }
+  #mail_icon_cancel{
+    position: fixed;
+    top: 370px;
+    left: 250px;
+    cursor: pointer;
+  }
+  #confirm_msg{
+    position: fixed;
+    top: 240px;
+    left: 320px;
+    color: #FFFFFF;
+    font-family: 'LanTingHei';
+    font-size: 40px;
+  }
+  @font-face {
+      font-family: 'LanTingHei';
+      src: url('@../../../../../font/LanTingHei.ttf');
+  }
+</style>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <img id="mail_mask02" src="@/../../../../assets/lobby/mail/mail_mask02.png">
+  <img id="mail_popup03" src="@/../../../../assets/lobby/mail/mail_popup03.png">
+  <img id="close_btn" src="@/../../../../assets/lobby/mail/icon_close.png">
+  <img id="mail_input_01" src="@/../../../../assets/lobby/mail/mail_input_01.png">
+  <img id="mail_icon_confirm" src="@/../../../../assets/lobby/mail/mail_icon_confirm.png">
+  <img id="mail_icon_cancel" src="@/../../../../assets/lobby/mail/mail_icon_cancel.png">
+
+  <label id="confirm_msg">确定要删除该邮件吗?</label>
+</body>
+</html>

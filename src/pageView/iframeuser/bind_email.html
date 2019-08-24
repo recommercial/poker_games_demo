@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+#icon_close {
+    position: fixed; left: 1160px; top: 0px; 
+}
+#save {
+    position: fixed; left: 480px; top: 455px; 
+}
+
+
+#input_account {
+    position: fixed; left: 370px; top: 200px; width: 780px; height: 110px; 
+}
+#input_phonenumber {
+    position: fixed; left: 370px; top: 330px; width: 780px; height: 110px; 
+}
+
+
+#bg_img {
+    position: fixed; left: 0px; top: 20px; 
+}
+#input_bg_01 {
+    position: fixed; left: 50px; top: 200px; 
+}
+#input_bg_02 {
+    position: fixed; left: 50px; top: 330px; 
+}
+#head_account {
+    position: fixed; left: 154px; top: 230px; width: 250px; font-size: 36px; color: #F3DB46
+}
+#head_phonenumber {
+    position: fixed; left: 154px; top: 362px; width: 250px; font-size: 36px; color: #F3DB46
+}
+
+
+textarea, input { background: transparent; border: none; color: #ffffff; font-size: 36px; }
+textarea:focus, input:focus{
+    outline: none;
+}
+</style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <!-- display only -->
+    <img id="bg_img" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_popup06.png">
+    <img id="input_bg_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_03.png">
+	<img id="input_bg_02" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_03.png">
+	<div id="head_account">账 号</div>
+	<div id="head_phonenumber">邮 箱</div>
+    
+    <!-- click -->
+    <img id="icon_close" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_close.png">
+    <img id="save" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_confirm02.png">
+
+    <!-- input -->
+    <input id="input_account" type="text" value="live0006" readonly>
+	<input id="input_phonenumber" type="text" value="dingding@qq.com" placeholder="请输入大陆地区手机号">
+
+</body>
+</html>

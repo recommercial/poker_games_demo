@@ -1,0 +1,786 @@
+<html>
+   <style>
+       #icon_close{
+            background:url(@/../../../assets/recharge/icon_close.png) no-repeat;
+            background-size: 100%;
+            position: fixed;
+            top: 30px;
+            left: 1660px;
+            cursor: pointer;
+       }
+        #img1{
+            position: fixed;
+            top: 230px;
+            left:79px;
+        }
+
+        #img2{
+            width: 1575px;
+            position: fixed;
+            top: 394px;
+            left: 78px;
+        }
+        
+
+        #img3{
+            width: 1575px;
+            position: fixed;
+            top: 477px;
+            left: 78px;
+        }
+
+        #img4{
+            width: 1575px;
+            position: fixed;
+            top: 560px;
+            left: 78px;
+        }
+        #img5{
+            position: fixed;
+            top: 643px;
+            left: 78px;
+            width: 1575px;
+        }
+        #img6{
+            width: 1575px;
+            position: fixed;
+            top: 726px;
+            left: 78px;
+        }
+        #img7{
+            position: fixed;
+            top: 78%;
+            left:4.1%;
+        }
+     
+
+
+        #lab1{
+            position: fixed;
+            top: 74px;
+            left: 750px;
+            text-align: center;
+
+            font-size: 56px;
+            color: #ffefb5;
+            font-family: 'LanTingChungHei';
+
+
+        }
+
+        #lab2{
+            position: fixed;
+            top: 175px;
+            left: 190px;
+            text-align: center;
+
+            font-size: 36px;
+            color: #f3ccb8 ;
+            font-family: 'LanTingHei';
+
+        }
+
+        #lab3{
+            position: fixed;
+            top: 740px;
+            left: 115px;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'LanTingHei';
+            color: #a3c1f8;
+
+        }
+
+        #lab4{
+            position: fixed;
+            top: 740px;
+            left:260px;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'LanTingHei';
+            color: #f75050;
+
+        }
+
+
+        #lab5{
+            position: fixed;
+            top: 780px;
+            left:113px;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'LanTingHei';
+            color: #a3c1f8;
+
+        }
+
+        #lab6{
+            position: fixed;
+            top: 780px;
+            left:285px;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'LanTingHei';
+            color: #9fca52;
+
+        }
+
+        #lab7{
+            position: fixed;
+            top: 820px;
+            left: 113px;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'LanTingHei';
+            color: #f75050;
+
+        }
+
+        #lab8{
+            position: fixed;
+            top: 815px;
+            left: 1070px;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'LanTingHei';
+            color: #acacac;
+
+        }
+
+        #payment01{
+            position: fixed;
+            top: 877px;
+            left: 600px;
+            cursor: pointer;
+        }
+        #btn2{
+            position: fixed;
+            top: 877px;
+            left: 920px;
+            cursor: pointer;
+        }
+        @font-face {
+            font-family: 'LanTingChungHei';
+            src: url('@../../../../font/LanTingChungHei.ttf');
+		}
+        @font-face {
+            font-family: 'LanTingHei';
+            src: url('@../../../../font/LanTingHei.ttf');
+		}
+        @font-face {
+            font-family: 'ArialRegular';
+            src: url('@../../../../font/ArialRegular.ttf');
+		}
+   </style>
+   <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+        <img src="@/../../../assets/recharge/pay_popup08.png" style="position:fixed;">
+        <img id="img1" src="@/../../../assets/recharge/pay_form_audit_header.png">
+        <img id="icon_close" src="@/../../../assets/recharge/icon_close.png">
+        <img id="img2" src="@/../../../assets/recharge/pay_form_audit_data01.png">
+        <img id="img3" src="@/../../../assets/recharge/pay_form_audit_data01.png">
+        <img id="img4" src="@/../../../assets/recharge/pay_form_audit_data01.png">
+        <img id="img5" src="@/../../../assets/recharge/pay_form_audit_data01.png">
+        <img id="img6" src="@/../../../assets/recharge/pay_form_audit_data02.png">
+        
+        <img id="payment01" src="@/../../../assets/recharge/icon_withdrawal02.png">
+        <img id="btn2" src="@/../../../assets/recharge/icon_withdrawal03.png">
+        <input id="pay1" type="hidden">
+        <input id="pay2" type="hidden">
+        <input id="pay3" type="hidden">
+        <input id="pay4" type="hidden">
+        <input id="pay5" type="hidden">
+        <input id="pay6" type="hidden">
+        <input id="pay7" type="hidden">
+        <input id="title1" type="hidden">
+        <input id="title2" type="hidden">
+        <input id="title3" type="hidden">
+        <input id="title4" type="hidden">
+
+        <label id="lab1">提款稽核</label>
+        <label id="lab2">live006稽核 : 自出款后第一次存款开始, 总有效投注 : 2006 ( 即所有项目的有效投注 )</label>
+        <label id="lab3">优惠稽核 :</label>
+        <label id="lab4">未通过, 需扣除优惠金额500</label>
+        <label id="lab5">常态性稽核 :</label>
+        <label id="lab6">通过, 不需扣除常态稽核手续费</label>
+        <label id="lab7">优惠稽核 + 常态性稽核共需扣除 500</label>
+        <label id="lab8">此次出款稽核時間 : 2018-11-05 01:53:18</label>
+
+
+
+        
+
+
+
+
+    </body>
+<script>
+
+ 
+    window.onload = function(){
+           
+    
+            for(let i = 1; i< 5;i++){
+                var elem1 = document.createElement('label');
+                let base;
+                let time ;
+                switch(i){
+                    case 1:{
+                        base = 415;
+                        time = "2019/3/2 17:05:15";
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        time = "2019/3/2 17:05:16";
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        time = "2019/3/2 17:05:17";
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        time = "2019/3/2 17:05:18";
+                        break;
+                    }
+
+                }
+                elem1.innerHTML = time;
+                elem1.style.position = "fixed";
+                elem1.style.top = base + "px";
+                elem1.style.left = "105px";
+                elem1.style.color = "#FFFFFF";
+                elem1.style.fontSize = "36px";
+                elem1.style.fontFamily = 'ArialRegular';
+                elem1.style.textAlign = "center";
+                elem1.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem1);
+            }
+
+
+            for(let i = 1; i< 5;i++){
+                var elem2 = document.createElement('label');
+                let base;
+                let leftBase;
+                let money;
+                switch(i){
+                    case 1:{
+                        base = 415;
+                        money = "0";
+                        leftBase = 482;
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        money = "100";
+                        leftBase = 462;
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        money = "100";
+                        leftBase = 462;
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        money = "0";
+                        leftBase = 482;
+                        break;
+                    }
+                   
+                }
+                elem2.innerHTML = money;
+                elem2.style.position = "fixed";
+                elem2.style.top = base + "px";
+                elem2.style.left = leftBase + "px";
+                elem2.style.color = "#FFFFFF";
+                elem2.style.fontSize = "36px";
+                elem2.style.fontFamily = 'ArialRegular';
+                elem2.style.textAlign = "center";
+                elem2.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem2);
+            }
+
+            for(let i = 1; i< 5;i++){
+                var elem3 = document.createElement('label');
+                let base;
+                let bank;
+                let leftBase;
+                switch(i){
+                    case 1:{
+                        base = 415;
+                        leftBase = 614;
+                        bank = "500";
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        bank = "0";
+                        leftBase = 632;
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        leftBase = 632;
+                        bank = "0";
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        leftBase = 610;
+                        bank = "100";
+                        break;
+                    }
+                    
+
+                }
+                elem3.innerHTML = bank;
+                elem3.style.position = "fixed";
+                elem3.style.top = base + "px";
+                elem3.style.left = leftBase + "px";
+                elem3.style.color = "#FFFFFF";
+                elem3.style.fontSize = "36px";
+                elem3.style.fontFamily = 'ArialRegular';
+                elem3.style.textAlign = "center";
+                elem3.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem3);
+            }
+
+            for(let i = 1; i< 5;i++){
+                var elem4 = document.createElement('label');
+                let base;
+                let status;
+                let leftBase;
+                switch(i){
+                    case 1:{
+                        base = 415;
+                        status = "0";
+                        leftBase = 800;
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        status = "600";
+                        leftBase = 782;
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        status = "500";
+                        leftBase = 782;
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        status = "1100";
+                        leftBase = 773;
+                        break;
+                    }
+                
+
+                }
+                elem4.innerHTML = status;
+                elem4.style.position = "fixed";
+                elem4.style.top = base + "px";
+                elem4.style.left = leftBase + "px";
+                elem4.style.color = "#FFFFFF";
+                elem4.style.fontSize = "36px";
+                elem4.style.fontFamily = 'ArialRegular';
+                elem4.style.textAlign = "center";
+                elem4.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem4);
+            }
+
+
+            
+            for(let i = 1; i< 5;i++){
+                var elem5 = document.createElement('label');
+                let base;
+                let offer1;
+                let leftBase;
+                let font;
+                switch(i){
+                    case 1:{
+                        base = 415;
+                        offer1 = "2000";
+                        leftBase = 942;
+                        font = 'ArialRegular';
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        offer1 = "-";
+                        leftBase = 967;
+                        font = 'LanTingHei';
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        offer1 = "-";
+                        leftBase = 967;
+                        font = 'LanTingHei';
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        offer1 = "500";
+                        leftBase = 950;
+                        font = 'ArialRegular';
+                        break;
+                    }
+                  
+                }
+                elem5.innerHTML = offer1;
+                elem5.style.position = "fixed";
+                elem5.style.top = base + "px";
+                elem5.style.left = leftBase + "px";
+                elem5.style.color = "#FFFFFF";
+                elem5.style.fontSize = "36px";
+                elem5.style.fontFamily = font;
+                elem5.style.textAlign = "center";
+                elem5.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem5);
+            }
+
+
+            for(let i = 1; i< 5;i++){
+                var elem6 = document.createElement('label');
+                let base;
+                let flag;
+                let color = "white";
+                let leftBase;
+                let font;
+                switch(i){
+                 
+                    case 1:{
+                        base = 415;
+                        flag = "否";
+                        font = "LanTingHei";
+                        color = "#f75050";
+                        leftBase = 1078;
+                        break;
+                    }
+                    case 2:{
+                        base = 490;
+                        color = "#FFFFFF";
+                        flag = "-";
+                        font = "LanTingHei";
+                        leftBase = 1088;
+                        break;
+                    }
+                    case 3:{
+                        base = 573;
+                        flag = "-";
+                        color = "#FFFFFF";
+                        font = "LanTingHei";
+                        leftBase = 1088;
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        flag = "是";
+                        font = "LanTingHei";
+                        leftBase = 1078;
+                        color= "#9fca52";
+                        break;
+                    }
+
+                }
+                elem6.innerHTML = flag;
+                elem6.style.position = "fixed";
+                elem6.style.top = base + "px";
+                elem6.style.left = leftBase + "px";
+                elem6.style.color = color;
+                elem6.style.fontSize = "36px";
+                elem6.style.textAlign = "center";
+                elem6.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem6);
+            }
+
+            for(let i = 1; i< 5;i++){
+                var elem7 = document.createElement('label');
+                let base;
+                let flag;
+                let leftBase;
+               
+                switch(i){
+                 
+                    case 1:{
+                        base = 415;
+                        flag = "500";
+                        leftBase = 1168;
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        flag = "0";
+                        leftBase = 1188;
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        flag = "0";
+                        leftBase = 1188;
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        leftBase = 1188;
+                        flag = "0";
+                        break;
+                    }
+
+                }
+                elem7.innerHTML = flag;
+                elem7.style.position = "fixed";
+                elem7.style.top = base + "px";
+                elem7.style.left = leftBase + "px";
+                elem7.style.color = "#FFFFFF";
+                elem7.style.fontSize = "36px";
+                elem7.style.fontFamily = 'ArialRegular';
+                elem7.style.textAlign = "center";
+                elem7.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem7);
+            }
+
+            for(let i = 1; i< 5;i++){
+                var elem8 = document.createElement('label');
+                let base;
+                let offer2;
+                let leftBase;
+                let font;
+               
+                switch(i){
+                 
+                    case 1:{
+                        base = 415;
+                        offer2 = "-";
+                        leftBase = 1306;
+                        font = 'LanTingHei';
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        offer2 = "100";
+                        leftBase = 1288;
+                        font = 'ArialRegular';
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        offer2 = "100";
+                        leftBase = 1288;
+                        font = 'ArialRegular';
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        offer2 = "-";
+                        leftBase = 1306;
+                        font = 'LanTingHei';
+                        break;
+                    }
+
+                }
+                elem8.innerHTML = offer2;
+                elem8.style.position = "fixed";
+                elem8.style.top = base + "px";
+                elem8.style.left = leftBase + "px";
+                elem8.style.color = "#FFFFFF";
+                elem8.style.fontSize = "36px";
+                elem8.style.fontFamily = font;
+                elem8.style.textAlign = "center";
+                elem8.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem8);
+            }
+
+            for(let i = 1; i< 5;i++){
+                var elem9 = document.createElement('label');
+                let base;
+                let Amount;
+                let leftBase;
+                let font;
+                switch(i){
+                 
+                    case 1:{
+                        base = 415;
+                        Amount = "-";
+                        leftBase = 1418;
+                        font = 'LanTingHei';
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        Amount = "10";
+                        leftBase = 1409;
+                        font = 'ArialRegular';
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        Amount = "10";
+                        leftBase = 1409;
+                        font = 'ArialRegular';
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        Amount = "-";
+                        leftBase = 1418;
+                        font = 'LanTingHei';
+                        break;
+                    }
+
+                }
+                elem9.innerHTML = Amount;
+                elem9.style.position = "fixed";
+                elem9.style.top = base + "px";
+                elem9.style.left = leftBase + "px";
+                elem9.style.color = "#FFFFFF";
+                elem9.style.fontSize = "36px";
+                elem9.style.fontFamily = font;
+                elem9.style.textAlign = "center";
+                elem9.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem9);
+            }
+
+            for(let i = 1; i< 5;i++){
+                var elem10 = document.createElement('label');
+                let base;
+                let pass;
+                let leftBase;
+                let color;
+                switch(i){
+                 
+                    case 1:{
+                        base = 415;
+                        pass = "-";
+                        leftBase = 1508;
+                        color = "#FFFFFF";
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        pass = "是";
+                        leftBase = 1502;
+                        color = "#9fca52";
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        pass = "是";
+                        leftBase = 1502;
+                        color = "#9fca52";
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        pass = "-";
+                        leftBase = 1508;
+                        color = "#FFFFFF";
+                        break;
+                        
+                    }
+
+                }
+                elem10.innerHTML = pass;
+                elem10.style.position = "fixed";
+                elem10.style.top = base + "px";
+                elem10.style.left = leftBase + "px";
+                elem10.style.color = color;
+                elem10.style.fontSize = "36px";
+                elem10.style.fontFamily = 'LanTingHei';
+                elem10.style.textAlign = "center";
+                elem10.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem10);
+            }
+
+            for(let i = 1; i< 5;i++){
+                var elem11 = document.createElement('label');
+                let base;
+                let deduction;
+                let leftBase;
+                switch(i){
+                 
+                    case 1:{
+                        base = 415;
+                        deduction = "0";
+                        leftBase = 1598;
+                        break;
+                    }
+                    case 2:{
+                        base = 495;
+                        deduction = "0";
+                        leftBase = 1598;
+                        break;
+                    }
+                    case 3:{
+                        base = 579;
+                        deduction = "0";
+                        leftBase = 1598;
+                        break;
+                    }
+                    case 4:{
+                        base = 663;
+                        deduction = "0";
+                        leftBase = 1598;
+                        break;
+                    }
+
+                }
+                elem11.innerHTML = deduction;
+                elem11.style.position = "fixed";
+                elem11.style.top = base + "px";
+                elem11.style.left = leftBase + "px";
+                elem11.style.color = "#FFFFFF";
+                elem11.style.fontSize = "36px";
+                elem11.style.fontFamily = 'ArialRegular';
+                elem11.style.textAlign = "center";
+                elem11.style.lineHeight = "1.3";
+                
+                
+
+                document.getElementsByTagName('body')[0].appendChild(elem11);
+            }
+
+            
+            
+    }
+            
+
+</script>
+   
+
+</html>

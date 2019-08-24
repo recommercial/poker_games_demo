@@ -1,0 +1,162 @@
+<html>
+	<style>
+		#register1_bg_img{
+			position: fixed;
+			top: 100px;
+		}
+		#register1_close{
+			background-size: 100%;
+			position: fixed;
+			top: 85px;
+			left: 1255px;
+			cursor: pointer;
+		}
+		#register1_account_heading{
+			background-size: 100%;
+			position: fixed;
+			top: 10px;
+			left: 280px;
+		}
+		#register1_account{
+			background-size: 100%;
+			position: fixed;
+			top: 255px;
+			left: 140px;
+		}
+		#register1_password{
+			background-size: 100%;
+			position: fixed;
+			top: 395px;
+			left: 140px;
+		}
+		#register1_CheckedPassword{
+			background-size: 100%;
+			position: fixed;
+			top: 535px;
+			left: 140px;
+
+		}
+		#register1_submit{
+			background-size: 100%;
+			position: fixed;
+			top: 750px;
+			left: 560px;
+			cursor: pointer;
+		}
+		#register1_inputArea .lab3{
+			position: fixed;
+			top: 262px;
+			left: 250px;
+		}
+		#register1_inputArea .txt3{
+			position: fixed;
+			top: 253px;
+    	left: 450px;
+		}
+		#register1_inputArea .lab4{
+			position: fixed;
+			top: 403px;
+			left: 250px;
+		}
+		#register1_inputArea .pass3{
+			position: fixed;
+			top: 393px;
+			left: 450px;
+		}
+		#register1_inputArea .lab5{
+			position: fixed;
+			top: 545px;
+			left: 220px;
+		}
+		#register1_inputArea .newPass4{
+			position: fixed;
+			top: 534px;
+			left: 450px;
+		}
+		#myErrorMessage{
+			position: fixed;
+			top: 670px;
+			left: 428px;
+			font-size: 25px;
+			display: none;
+		}
+		label {
+			padding-top: 25;
+			display: block;
+			color: #c7af7a;
+			font-size: 36px;
+			font-family: 'LanTingHei';
+			text-align: center;
+			position: relative;
+			float: left;
+		}
+
+		input{
+			width: 770px;
+			height: 110px;
+			border: 0 none;
+			border-radius: 5px;
+			font-size: 36px;
+			color: #FFFFFF;
+			outline: none;
+			font-family: 'LanTingHei';
+			background: transparent; border: none;
+		}
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+			-webkit-transition-delay: 99999s;
+			-o-transition-delay: 99999s;
+			transition-delay: 99999s;
+			-webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+			-o-transition: color 99999s ease-out, background-color 99999s ease-out;
+			transition: color 99999s ease-out, background-color 99999s ease-out;
+		}
+		@font-face {
+				font-family: 'LanTingHei';
+				src: url('@../../../../font/LanTingHei.ttf');
+		}
+		::-webkit-input-placeholder { /* Edge */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+
+		::placeholder {
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+		::-moz-placeholder  { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-size: 36px;
+			font-weight: 100;
+		}
+	</style>
+	<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+		<img id="register1_bg_img" src="@../../../../assets/login/account_bg.png">
+		<img id="register1_close" src="@../../../../assets/login/icon_close.png">
+		<img id="register1_account_heading" src="@../../../../assets/login/account_heading_001.png">
+		<img id="register1_account" src="@../../../../assets/login/account_input_bg_01.png">
+		<img id="register1_password" src="@../../../../assets/login/account_input_bg_01.png">
+		<img id="register1_CheckedPassword" src="@../../../../assets/login/account_input_bg_01.png">
+		<img id="register1_submit" src="@../../../../assets/login/icon_register.png">
+
+		<div id="register1_inputArea">
+			<label class="lab3">账号</label>
+			<input class="txt3" autocomplete="off" type="text" placeholder="请输入4-16位英文或数字组合">
+			<label class="lab4">密码</label>
+			<input class="pass3" autocomplete="off" type="password" placeholder="请输入6-16位英文 | 数字 | 点 | 下划线组合">
+			<label class="lab5">确认密码</label>
+			<input class="newPass4" autocomplete="off" type="password" placeholder="请再次输入密码">
+		</div>
+		<div id="myErrorMessage" style="color: red">账号或密码错误</div>
+	</body>
+</html>

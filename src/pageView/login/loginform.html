@@ -1,0 +1,148 @@
+
+<html>
+    <style>
+        #div1{
+         background:url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_new/account/icon_close.png) no-repeat;
+             background-size: 100%;
+             position: absolute;
+             top: 8%;
+             left: 79%;
+             height:50px;
+             width:50px;
+        }
+        #div2{
+             background:url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_new/account/account_heading_002.png) no-repeat;
+             background-size: 100%;
+             position: absolute;
+             top: -1%;
+             left: 19%;
+             height:50%;
+             width:50%;
+         }
+         #div3{
+             background:url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_new/account/account_input_bg_01.png) no-repeat;
+             background-size: 100%;
+             position: absolute;
+             top: 25%;
+             left: 13%;
+             height:60%;
+             width:60%;
+         }
+ 
+         #div4{
+             background:url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_new/account/account_input_bg_01.png) no-repeat;
+             background-size: 100%;
+             position: absolute;
+             top: 38%;
+             left: 13%;
+             height:60%;
+             width:60%;
+         }
+         #myErrorMessage{
+             position: absolute;
+             top: 48%;
+             left: 25%;
+             height:10%;
+             width:100%;
+             font-size: 25px;
+         }
+ 
+         #btn1{
+             background:url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_new/account/icon_forgetPassWord.png) no-repeat;
+             background-size: 100%;
+             position: absolute;
+             top: 48%;
+             left: 63%;
+             height:10%;
+             width:10%;
+         }
+ 
+         #btn2{
+             background:url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_new/account/icon_login.png) no-repeat;
+             background-size: 100%;
+             position: absolute;
+             top: 60%;
+             left: 28%;
+             height:13%;
+             width:13%;
+         }
+ 
+         #btn3{
+             background:url(https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_new/account/icon_register.png) no-repeat;
+             background-size: 100%;
+             position: absolute;
+             top: 60%;
+             left: 43%;
+             height:13%;
+             width:13%;
+         }
+ 
+         label{
+             padding-top: 25;
+             font-weight: bold;
+             display: block;
+             color: goldenrod;
+             width: 28%;
+             height: 11%;
+             font-size: 30px;
+             text-align:center;
+             position: relative;
+             float: left;
+         }
+         input {
+                 background-color:transparent; 
+                 border:0 none;
+                 width:72%;
+                 height:13%;
+                 cursor:pointer;
+                 -webkit-border-radius: 5px;
+                 border-radius: 5px;
+                 font-size: 30px;
+                 color: white;
+         }
+ 
+         #iframe1{
+             width: 100%;
+         }
+         #main{
+            left:calc(50% - 840px);
+            width:1680px;
+            height: 980px;
+         }
+         textarea:focus, input:focus { outline: none; }
+
+         body{opacity: 0; transition-duration: 0.5s}body.active{opacity: 1}
+         body.unactive{opacity: 0.2}
+        
+    </style>
+    
+     <body style="background:url('https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_new/account/account_bg.png') no-repeat;background-size:76% 85%; background-position: 88px 90px;">
+         <div id="main">
+        <div id=div1></div>
+         <div id="div2"></div>
+         <div id="div3">
+             <label id="lab3" >帳號</label>
+             <input id="txt3" type="text" placeholder="请输入4-16位英文或数字组合">
+         </div>
+         <div id="div4">
+                 <label id="lab3">密碼</label>
+                 <input id="pass3" type="password" placeholder="请输入6-16位英文|数字|点|下划线组合">
+             </div>
+             <div id="myErrorMessage" style="color: red"></div>
+             <input id="btn1" type="button">
+             <input id="btn2" type="button">
+             <input id="btn3" type="button">
+        </div>
+     </body>
+     <script>
+            window.onload = function(){
+                document.body.classList.add("active");
+            }
+            window.onunload = function(){
+                document.body.classList.add("unactive");
+            }
+            
+    </script>
+    
+ 
+ </html>

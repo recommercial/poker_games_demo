@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    #mail_bg,#mail_mail_mask01{
+      position: fixed;
+    }
+    #close_btn{
+      position: fixed;
+      top: 30px;
+      left: 1350px;
+      cursor: pointer;
+    }
+    #row1{
+      position: fixed;
+      top: 210px;
+      left: 30px;
+    }
+    #row1_mail_img_unread{
+      position: fixed;
+      top: 258px;
+      left: 90px;
+    }
+    #row1_mail_icon_detail{
+      position: fixed;
+      top: 253px;
+      left: 1060px;
+      cursor:pointer;
+    }
+    #row2{
+      position: fixed;
+      top: 390px;
+      left: 30px;
+    }
+    #row2_mail_img_read{
+      position: fixed;
+      top: 432px;
+      left: 90px;
+    }
+    #row2_mail_icon_detail{
+      position: fixed;
+      top: 432px;
+      left: 1060px;
+      cursor:pointer;
+    }
+    #row3{
+      position: fixed;
+      top: 570px;
+      left: 30px;
+    }
+    #row3_mail_img_read{
+      position: fixed;
+      top: 612px;
+      left: 90px;
+    }
+    #row3_mail_icon_detail{
+      position: fixed;
+      top: 612px;
+      left: 1060px;
+      cursor:pointer;
+    }
+    #row4{
+      position: fixed;
+      top: 750px;
+      left: 30px;
+    }
+    #row4_mail_img_read{
+      position: fixed;
+      top: 792px;
+      left: 90px;
+    }
+    #row4_mail_icon_detail{
+      position: fixed;
+      top: 792px;
+      left: 1060px;
+      cursor:pointer;
+    }
+
+
+    #row1_message{
+      position: fixed;
+      top: 245px;
+      left: 200px;
+    }
+    #row2_message{
+      position: fixed;
+      top: 430px;
+      left: 200px;
+    }
+    #row3_message{
+      position: fixed;
+      top: 610px;
+      left: 200px;
+    }
+    #row4_message{
+      position: fixed;
+      top: 790px;
+      left: 200px;
+    }
+    #row1_message div,
+    #row2_message div,
+    #row3_message div,
+    #row4_message div{
+      margin-top:5px;
+      color: #FFFFFF;
+      font-size: 30px;
+      font-family: 'ArialRegular';
+    }
+    .title{
+      color: #c7af7a;
+      font-size: 42px;
+      font-family: 'LanTingChungHei';
+    }
+    .message{
+      margin-left:15px;
+      color: #FFFFFF;
+      font-size: 36px;
+      font-family: 'LanTingHei';
+    }
+    .time{
+     
+    }
+    @font-face {
+        font-family: 'LanTingChungHei';
+        src: url('@../../../../../font/LanTingChungHei.ttf');
+    }
+    @font-face {
+        font-family: 'LanTingHei';
+        src: url('@../../../../../font/LanTingHei.ttf');
+    }
+    @font-face {
+        font-family: 'ArialRegular';
+        src: url('@../../../../../font/ArialRegular.ttf');
+    }
+  </style>
+  <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <img id="mail_mail_mask01" src="@/../../../../assets/lobby/mail/mail_mask01.png">
+    <img id="mail_bg" src="@/../../../../assets/lobby/mail/mail_popup01.png">
+    <img id="close_btn" src="@/../../../../assets/lobby/mail/icon_close.png">
+    <img id="row1" src="@/../../../../assets/lobby/mail/mail_box01.png">
+    <img id="row1_mail_img_unread" src="@/../../../../assets/lobby/mail/mail_img_unread.png">
+    <img id="row1_mail_icon_detail" src="@/../../../../assets/lobby/mail/mail_icon_detail.png">
+    <span id="row1_message">
+      <span class="title">【系统消息】</span>
+      <span class="message">充值公告</span>
+      <div class="time">2019/01/02 12:50</div>
+    </span>
+    
+    <img id="row2" src="@/../../../../assets/lobby/mail/mail_box01.png">
+    <img id="row2_mail_img_read" src="@/../../../../assets/lobby/mail/mail_img_read.png">
+    <img id="row2_mail_icon_detail" src="@/../../../../assets/lobby/mail/mail_icon_detail.png">
+    <span id="row2_message">
+      <span class="title">【系统消息】</span>
+      <span class="message"><<游戏一>> 上线啦!</span>
+      <div class="time">2019/02/02 12:50</div>
+    </span>
+    
+    <img id="row3" src="@/../../../../assets/lobby/mail/mail_box01.png">
+    <img id="row3_mail_img_read" src="@/../../../../assets/lobby/mail/mail_img_read.png">
+    <img id="row3_mail_icon_detail" src="@/../../../../assets/lobby/mail/mail_icon_detail.png">
+    <span id="row3_message">
+      <span class="title">【系统消息】</span>
+      <span class="message"><<游戏二>> 上线啦!</span>
+      <div class="time">2019/03/02 12:50</div>
+    </span>
+    
+    <img id="row4" src="@/../../../../assets/lobby/mail/mail_box01.png">
+    <img id="row4_mail_img_read" src="@/../../../../assets/lobby/mail/mail_img_read.png">
+    <img id="row4_mail_icon_detail" src="@/../../../../assets/lobby/mail/mail_icon_detail.png">
+    <span id="row4_message">
+        <span class="title">【系统消息】</span>
+        <span class="message"><<游戏三>> 上线啦!</span>
+        <div class="time">2019/04/02 12:50</div>
+      </span>
+  </body>
+</html>

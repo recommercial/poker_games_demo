@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hall.bai.ren.niou.niou.record</title>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {font-family: 'LanTingChungHei'; src: url('@/../../../../font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+    body{margin: 0;padding: 0;}
+    #bai_ren_bg{position: fixed;}
+    #bai_ren_close{position: fixed;top: 100px;left: 910px;cursor: pointer;}
+    #box_extract {position: fixed;top: 185px;left: 105px;height: 330px;width: 860px;overflow-y: auto;}
+    .css_tr {display: table-row;}
+    .css_td {display: table-cell;width: 450px;height: 82px;line-height: 82px;}
+    #css_tableTitle {position: fixed;top: 120px;left: 105px;display:table;text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse;font-size: 24px;line-height: 60px;width: 785px;color: #ffcabd;}
+    #bai_ren_css_table {display:table;text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse;font-size: 24px;line-height: 60px;width: 785px;color: #FFFFFF;}
+    #bai_ren_css_table .css_td,#css_tableTitle .css_td{text-align: center;}
+    #bai_ren_css_table .css_td:nth-child(1){width: 80px;font-size: 24px;color:  #ebbd87;}
+    #bai_ren_css_table .css_td:nth-child(2){width: 280px;font-size: 18px;color:  #ffe073;}
+    #bai_ren_css_table .css_td:nth-child(3){width: 80px;font-size: 22px;color: #ebbd87;}
+    #bai_ren_css_table .css_td:nth-child(4){width: 100px;font-size: 22px;}
+    #bai_ren_css_table .css_td:nth-child(5){width: 200px;font-size: 18px;color:  #ebbd87;}
+    #css_tableTitle .css_td:nth-child(1){width: 80px;}
+    #css_tableTitle .css_td:nth-child(2){width: 280px;}
+    #css_tableTitle .css_td:nth-child(3){width: 80px;}
+    #css_tableTitle .css_td:nth-child(4){width: 100px;}
+    #css_tableTitle .css_td:nth-child(5){width: 200px;}
+    .red{color: #dd1515;}
+    .green{color: #399c53;}
+    #bai_ren_hint_extract{position: fixed; top: 520px;left: 400px;color: #ac756d;font-size: 22px;font-family: 'LanTingChungHei'}
+  </style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <img id="bai_ren_bg" src="@/../../../../assets/hall/bai.ren.niou.niou/board_record.png">
+  <img id="bai_ren_close" src="@/../../../../assets/hall/bai.ren.niou.niou/btn_cancel.png">
+  <div id="css_tableTitle">
+    <div class="css_tr">
+      <div class="css_td">序号</div>
+      <div class="css_td">牌局编号</div>
+      <div class="css_td">房间</div>
+      <div class="css_td">盈利</div>
+      <div class="css_td">结束时间</div>
+    </div>
+  </div>
+  <div id="box_extract">
+    <div id="bai_ren_css_table">
+      <div class="css_tr">
+        <div class="css_td">1</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td green">-6,500</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">2</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td red">+6,500</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">3</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td green">-6,500</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">4</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td green">-6,500</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">5</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td red">0</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">5</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td red">0</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">5</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td red">0</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">5</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td red">0</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">5</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td red">0</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+      <div class="css_tr">
+        <div class="css_td">5</div>
+        <div class="css_td">50-1553830964-51348614-1</div>
+        <div class="css_td">高级房</div>
+        <div class="css_td red">0</div>
+        <div class="css_td">2019-03-29 11:43:11</div>
+      </div>
+    </div>
+  </div>
+  <div id="bai_ren_hint_extract">最多保存10條紀錄</div>
+</body>
+</html>

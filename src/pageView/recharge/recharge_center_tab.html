@@ -1,0 +1,652 @@
+<html>
+<style>
+    /*LanTingChungHei.ttf 蘭亭中黑*/
+    @font-face {font-family: 'LanTingChungHei';src: url('/src/font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+
+
+
+    select{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+    #icon_close {background-size: 100%;position: fixed;top: 40px;left: 1655px;cursor: pointer;}
+    #recharge_top_img {background-size: 100%;position: fixed;top: 82px;left: 30px;}
+    /* recharge center */
+    /* jerry fixed start */
+    #recharge_icon {width:420; height: 80px; cursor: pointer;left: 32px;background: url('@../../../../assets/recharge/pay_nav_04_bg.png')no-repeat;font-family: 'LanTingChungHei'; text-align: center; padding-top: 30px; letter-spacing: 3px; color: #a49a74; font-size: 36px;}
+    #recharge_icon.active {background: url('@../../../../assets/recharge/pay_nav_01_hover_bg.png')no-repeat; color: #4f3e27;}
+    #fast_icon.active {background: url('@../../../../assets/recharge/pay_nav_02_hover.png')no-repeat; color: #4f3e27;}
+    #fast_icon {cursor: pointer;position: fixed;top: 324px;left: 32px;width: 420px;height: 110px;background: url("@../../../../assets/recharge/pay_nav_02.png") no-repeat;}
+    /* jerry fixed end */
+    /* #recharge_amount3 {cursor: pointer;position: fixed;top: 434px;left: 32px;}
+    #recharge_amount4 {cursor: pointer;position: fixed;top: 544px;left: 32px;}
+    #recharge_amount5 {cursor: pointer;position: fixed;top: 654px;left: 32px;}
+    #recharge_amount6 {cursor: pointer;position: fixed;top: 764px;left: 32px;}
+    #recharge_amount7 {cursor: pointer;position: fixed;top: 874px;left: 32px;}
+    #recharge_amount8 {position: fixed;top: 89.5%;left: 32px;}
+    #recharge_amount9 {position: fixed;top: 96.5%;left: 32px;}
+    #recharge_amount10 {position: fixed;top: 106%;left: 32px;} */
+    /* jerry fixed start */
+    #recharge_icon:hover {background: url('@../../../../assets/recharge/pay_nav_01_hover_bg.png')no-repeat; color: #4f3e27;}
+    #fast_icon:hover {background: url('@../../../../assets/recharge/pay_nav_02_hover.png')no-repeat;}
+    /* jerry fixed end */
+    #rechargeBtn {cursor: pointer;position: fixed;top: 90px;left: 326px;}
+    #withdrawalBtn {cursor: pointer;position: fixed;top: 90px;left: 606px;}
+    #recordBtn {cursor: pointer;position: fixed;top: 90px;left: 876px;}
+    #financialBtn {cursor: pointer;position: fixed;top: 90px;left: 1146px;}
+    #img1 {position: fixed;top: 250px;left: 521px;}
+    #img2 {position: fixed;top: 250px;left: 1490px;}
+    #refresh {cursor: pointer;position: fixed;top: 405px;left: 535px;}
+    #refreshLeft {cursor: pointer;position: fixed;top: 405px;left: 535px;}
+    #wechat1 {cursor: pointer;position: fixed;top: 470px;left: 535px;}
+    #wechat2 {cursor: pointer;position: fixed;top: 470px;left: 910px;}
+    #wechat3 {cursor: pointer;position: fixed;top: 470px;left: 1285px;}
+    #wechat4 {cursor: pointer;position: fixed;top: 720px;left: 535px;}
+    #wechat5 {cursor: pointer;position: fixed;top: 720px;left: 910px;}
+    #wechat6 {cursor: pointer;position: fixed;top: 720px;left: 1285px;}
+    /* #lab1 {position: fixed;top: 510px;left: 585px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #lab2 {position: fixed;top: 510px;left: 960px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #lab3 {position: fixed;top: 510px;left: 1335px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #lab4 {position: fixed;top: 760px;left: 585px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #lab5 {position: fixed;top: 760px;left: 960px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #lab6 {position: fixed;top: 760px;left: 1335px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #labLeft1 {position: fixed;top: 510px;left: 585px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #labLeft2 {position: fixed;top: 510px;left: 960px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #labLeft3 {position: fixed;top: 510px;left: 1335px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #labLeft4 {position: fixed;top: 760px;left: 585px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #labLeft5 {position: fixed;top: 760px;left: 960px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;}
+    #labLeft6 {position: fixed;top: 760px;left: 1335px;text-align: center;font-size: 30;color: aliceblue;letter-spacing: 3;} */
+    .wechat_content{font-family: 'LanTingChungHei';}
+    #recharge_infinite{position: fixed; left:520px; top:460px; height:500px; width:1160px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+    .rechargeWay {  height: 235px; width: 1160px;  padding-top: 10px;}
+    #recharge_left_infinite{position: fixed; left:520px; top:460px; height:500px; width:1160px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+    .rechargeLeftWay {  height: 235px; width: 1160px;  padding-top: 10px;}
+    /*withdrawal center */
+    #pay1 {cursor: pointer;position: fixed;top: 233px;left: 32px;}
+    #pay2 {cursor: pointer;position: fixed;top: 324px;left: 32px;}
+    #pay3 {cursor: pointer;position: fixed;top: 434px;left: 32px;}
+    #pay4 {cursor: pointer;position: fixed;top: 544px;left: 32px;}
+    #pay5 {cursor: pointer;position: fixed;top: 654px;left: 32px;}
+    #pay6 {cursor: pointer;position: fixed;top: 764px;left: 32px;}
+    #pay7 {cursor: pointer;position: fixed;top: 874px;left: 32px;}
+    #withdrawalImg1 {position: fixed;left: 740px;top: 260px;}
+    #withdrawalImg2 {position: fixed;left: 720px;top: 470px;}
+    #withdrawalLab1 {position: fixed;left: 860px;top: 290px;color:#fbe9ca; font-size: 40px; font-family: 'LanTingChungHei';}
+    #withdrawalLab3 {position: fixed;left: 1060px;top: 290px;color:#fbe9ca; font-size: 40px;font-family: 'LanTingChungHei';}
+    #withdrawalLab2 {position: fixed;left: 790px;top: 505px; color:#c7af7a; font-size: 36px;font-family: 'LanTingChungHei';}
+    #withdrawalAmount{position: fixed;left:1020px; top: 470px; font-size: 36px;color: #FFFFFF; background: none; border: none; outline: none; font-family: 'LanTingChungHei';height: 110px;}
+    #subPaymentFromBankCard {position: fixed;left: 910px;top: 620px;}
+    #withdrawalErrMsg {position: fixed;left: 920px;top: 585px; color:red; font-size: 36px;font-family: 'LanTingChungHei';}
+    /*recharge record */
+    #rechargeImg1 {position: fixed;left: 80px;top: 340px;}
+    #rechargeImg2 {position: fixed;left: 80px;top: 420px;}
+    #rechargeImg3 {position: fixed;left: 80px;top: 500px;}
+    #rechargeImg4 {position: fixed;left: 80px;top: 580px;}
+    #rechargeImg5 {position: fixed;left: 80px;top: 660px;}
+    #rechargeImg6 {position: fixed;left: 80px;top: 740px;}
+    #rechargeImg7 {position: fixed;left: 80px;top: 820px;}
+    #rechargeRecord {position: fixed;left: 497px;top: 250px;}
+    #withdrawalRecord {position: fixed;left: 846px;top: 250px;}
+    #rechargeRecordOnline {position: fixed;left: 268px;top: 250px;}
+    #withdrawalRecordOnline {position: fixed;left: 1200px;top: 250px;}
+    #recordCheck1{position: fixed;left: 1440px;top: 428px;}
+    #recordCheck2{position: fixed;left: 1440px;top: 594px;}
+    .recharge_record_num{ font-family: 'LanTingChungHei';}
+    .recharge_record_word{font-family: 'LanTingChungHei';}
+    #record_infinite{position: fixed; left:80px; top:420px; height:460px; width:1580px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+    .recordlWay {  background: url('@../../../../assets/recharge/pay_form_addCredit_data01.png') no-repeat; height: 75px; width: 1580px;  padding-top: 10px; letter-spacing: 2px;}
+    #record_infinite_inner{position: fixed; left:80px; top:420px; height:460px; width:1580px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+    /* financial */
+    #financialTime {position: fixed;left: 247px;top: 248px;}
+    #financialType {position: fixed;left: 1388px;top: 248px;}
+    #financialImg1 {position: fixed;left: 82px;top: 336px;}
+    #financialImg2 {position: fixed;left: 82px;top: 416px;}
+    #financialImg3 {position: fixed;left: 82px;top: 496px;}
+    #financialImg4 {position: fixed;left: 82px;top: 576px;}
+    #financialImg5 {position: fixed;left: 82px;top: 656px;}
+    #financialImg6 {position: fixed;left: 82px;top: 736px;}
+    #timeLab {position: fixed;left: 82px;top: 258px; font-size: 36px; color:#FFFFFF; text-align: center; line-height: 1.3; letter-spacing: 3;}
+    #typeLab {position: fixed;left: 1300px;top: 258px; font-size: 36px; color:#FFFFFF; text-align: center; line-height: 1.3; letter-spacing: 3;}
+    #timecontent {position: fixed;left: 310px;top: 258px;font-size: 36px; color:#FFFFFF; border:none;width:300px;letter-spacing: 3; font-family: 'LanTingChungHei';  background-color: transparent; padding: 5px 0 0 80px;}
+    #typecontent {position: fixed;left: 1410px;top: 258px;font-size: 36px; color:#FFFFFF; border:none;text-align: center; line-height: 1.3; letter-spacing: 3; font-family: 'LanTingChungHei'; background-color: transparent; padding: 5px 0 0 20px;}
+    .tabcontent option.timecontent_op{font-size: 18px; background: #5c5c5c;font-family: 'LanTingChungHei';}
+    .tabcontent option.typecontent_op{font-size: 18px; background: #5c5c5c;font-family: 'LanTingChungHei';}
+    #financial_infinite{position: fixed; left:80px; top:420px; height:460px; width:1580px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+    .financialWay { position:relative; left:2px; background: url('@../../../../assets/recharge/pay_form_dealing_data01.png') no-repeat; height: 75px; width: 1580px;  padding-top: 10px; letter-spacing: 2px;}
+   /*withdrawal record */
+    #withdrawalInnerImg1 {position: fixed;left: 80px;top: 340px;}
+    #withdrawalInnerImg2 {position: fixed;left: 80px;top: 420px;}
+    #withdrawalInnerImg3 {position: fixed;left: 80px;top: 500px;}
+    #withdrawalInnerImg4 {position: fixed;left: 80px;top: 580px;}
+    #withdrawalInnerImg5 {position: fixed;left: 80px;top: 660px;}
+    #withdrawalInnerImg6 {position: fixed;left: 80px;top: 740px;}
+    #withdrawalInnerImg7 {position: fixed;left: 80px;top: 820px;}
+    #rechargeRecordInnder {position: fixed;left: 497px;top: 250px;}
+    #withdrawalRecordInner {position: fixed;left: 846px;top: 250px;}
+    #rechargeRecordOnlineInner {position: fixed;left: 268px;top: 250px;}
+    #withdrawalRecordOnlineInner {position: fixed;left: 1200px;top: 250px;}
+    #withdrawal_infinite{position: fixed; left:80px; top:420px; height:460px; width:1580px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+    .withdrawallWay {  background: url('@../../../../assets/recharge/pay_form_withdrawal_data01.png') no-repeat; height: 75px; width: 1580px;  padding-top: 10px; letter-spacing: 2px;}
+
+    /*** left banner css ***/
+    /* left fast recharge */
+        #fastBanner {position: fixed;left: 521px;top: 250px;}
+        #fastService {position: fixed;left: 1492px;top: 244px;}
+        #fastRechargeInfo {position: fixed;left: 521px;top: 448px;}
+        #fastRechargeIn {position: fixed;left: 890px;top: 448px;}
+        #fastCopy {position: fixed;left: 1388px;top: 466px;}
+        #fastRechargeBtn {position: fixed;left: 1070px;top: 750px; width: 390px; height: 140px;}
+        #fastId {position: fixed;left: 1010px;top: 486px; font-size:34px; color:#FFFFFF; font-family: 'LanTingChungHei';background-color: transparent;border: none;}
+        #fastId_placeholder{font-family: 'LanTingChungHei';font-size: 34px;color: #fbe9ca;left: 930px;position: fixed;top: 485px;}
+        #fastConfrim1 {position: fixed;left: 986px;top: 586px;font-size: 60px; color:#FFFFFF; font-family: 'LanTingChungHei';}
+        #fastConfrim2 {position: fixed;left: 1086px;top: 666px; font-size: 60px; color:#FFFFFF;font-family: 'LanTingChungHei';}
+        #rechargeType_isCopy{position: fixed;left: 1440px;top: 403px; font-size:34px; color:#FFFFFF; font-family: 'LanTingChungHei'; display: none;}
+       
+    /* left company recharge */
+        #company_banner {position: fixed;left: 520px;top: 250px;}
+        #company_service {position: fixed;left: 1480px;top: 250px;}
+        #company_submit {position: fixed;left: 480px;top: 430px;}
+        #company_img1 {position: fixed;left: 520px;top: 490px;}
+        #company_img2 {position: fixed;left: 520px;top: 580px;}
+        #company_img3 {position: fixed;left: 520px;top: 670px;}
+        #company_img4 {position: fixed;left: 520px;top: 760px;}
+        #company_review {position: fixed;left: 900px;top: 840px;}
+        #company_lab1 {position: fixed;left: 590px;top: 505px; font-size: 36px; color:#c7af7a;font-family: 'LanTingChungHei';}
+        #company_lab2 {position: fixed;left: 590px;top: 595px;font-size: 36px; color:#c7af7a;font-family: 'LanTingChungHei';}
+        #company_lab3 {position: fixed;left: 590px;top: 685px; font-size: 36px; color:#c7af7a;font-family: 'LanTingChungHei';}
+        #company_lab4 {position: fixed;left: 590px;top: 775px; font-size:36px; color:#c7af7a;font-family: 'LanTingChungHei';}
+        #company_name {position: fixed;left: 845px;top: 595px;font-size: 36px; color:#FFFFFF; background-color:transparent;border:0px;font-family: 'LanTingChungHei';}
+        #company_amount {position: fixed;left: 845px;top: 777px; font-size: 36px; color:#FFFFFF; background-color:transparent;border:0px;font-family: 'LanTingChungHei';}
+        #company_type {position: fixed;left: 845px;top: 510px;font-size: 36px; color:#FFFFFF;background-color:transparent;border:0px; font-family: 'LanTingChungHei';width: 730px;}
+        #company_bank .bank ,#company_bank .wechat, #company_bank .alipay  {position: fixed;left: 845px;top: 685px; font-size: 36px; color:#FFFFFF;background-color:transparent;border:0px; font-family: 'LanTingChungHei';width: 730px;}
+        #company_bank .wechat, #company_bank .alipay { display: none;}
+        #bank_icon{position: fixed;left: 1145px;top: 692px;}
+        #type_icon{position: fixed;left: 965px;top: 522px;}
+        #company_type_name_msg{position: fixed;left: 1220px;top: 595px; font-size: 36px; font-family: 'LanTingChungHei';}
+        #company_type_money_msg{position: fixed;left: 1220px;top: 775px; font-size: 36px; font-family: 'LanTingChungHei';}
+        #company_type_wechat_msg,#company_type_alipay_msg{position: fixed;left: 1350px;top: 690px; font-size: 36px; font-family: 'LanTingChungHei';}
+        #company_type_msg{position: fixed;left: 520px;top: 850px; font-size: 36px; font-family: 'LanTingChungHei';}
+        .leftcontent option.company_type_op{font-size: 18px; background: #5c5c5c;font-family: 'LanTingChungHei';}
+        .leftcontent option.company_bank_op{font-size: 18px; background: #5c5c5c;font-family: 'LanTingChungHei';}
+
+        /* bank despoit*/
+        #deposit_img{position: fixed;left: 480px;top: 260px;}
+        #deposit_back{position: fixed;left: 1380px;top: 240px;}
+
+      
+        /* #bank_lab1{position: fixed;left: 560px;top: 380px; font-size: 36px; color:#c7af7a;font-family: 'LanTingChungHei';}
+        #bank_lab2{position: fixed;left: 560px;top: 550px;font-size: 36px; color:#c7af7a;font-family: 'LanTingChungHei';}
+        #bank_lab3{position: fixed;left: 560px;top: 740px; font-size:36px; color:#c7af7a;font-family: 'LanTingChungHei';}
+        #base_img1{position: fixed;left: 530px;top: 350px;}
+        #base_img2{position: fixed;left: 530px;top: 520px;}
+        #base_img3{position: fixed;left: 530px;top: 690px;}
+        #account_lab1{position: fixed;left: 560px;top: 440px;}
+        #account_lab2{position: fixed;left: 560px;top: 610px;} */
+        #deposit_infinite{position: fixed; left:520px; top:350px; height:580px; width:1160px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+        .depositWay {  background: url('@../../../../assets/recharge/pay_input_004.png') no-repeat; height: 165px; width: 1160px;  padding-top: 10px; letter-spacing: 3px;}
+    
+    /* bank transfr */
+        #bank_transfer_close{background-size: 100%;position: fixed;top: 30px;left: 1760px;cursor: pointer;}
+        #bank_transfer_base{background-size: 100%;position: fixed;top: 330px;left: 80px;}
+        #bank_transfer_lab1{position: fixed;top: 110px;left: 802px;text-align: center;letter-spacing: 3;color: #ffefb5;font-family: 'LanTingChungHei';font-size: 56px;}
+        #bank_transfer_lab2{position: fixed;top: 250px;left: 380px;letter-spacing: 3;color: #f3ccb8;font-family: 'LanTingChungHei';font-size: 42px;}
+        #bank_transfer_lab3{position: fixed;top: 950px;left: 500px;text-align: center;letter-spacing: 3;color: #ffefb5;font-family: 'LanTingChungHei';font-size: 36px;}
+        #bank_transfer_lab4{position: fixed;top: 450px;left:123px;text-align: center;color: #c7af7a;letter-spacing: 3;font-family: 'LanTingChungHei';font-size: 36px;}
+        #bank_transfer_lab5{position: fixed;top: 520px;left: 105px;text-align: center;color: #c7af7a;letter-spacing: 3;font-family: 'LanTingChungHei';font-size: 36px;}
+        #bank_transfer_lab6{position: fixed;top: 593px;left:83px;text-align: center;color: #c7af7a;letter-spacing: 3;font-family: 'LanTingChungHei';font-size: 36px;width: 233px;}
+        #bank_transfer_lab7{position: fixed;top: 665px;left:123px;text-align: center;color: #c7af7a;letter-spacing: 3;font-family: 'LanTingChungHei';font-size: 36px;}
+        #bank_transfer_lab8{position: fixed;top: 450px;left: 1010px;text-align: center;letter-spacing: 3;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;}
+        #bank_transfer_lab9{position: fixed;top: 520px;left: 990px;text-align: center;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+        #bank_transfer_lab10{position: fixed;top: 593px;left: 990px;text-align: center;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+        #bank_transfer_lab11{position: fixed;top: 665px;left: 990px;text-align: center;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+        #bankTransfer_tutorial{position: fixed;top: 820px;left: 620px;cursor: pointer;}
+        #iKnow1{    position: fixed;top: 820px;left: 940px;cursor: pointer;}
+        #icon_copy02_1{position: fixed;top: 435px;left: 1630px;cursor: pointer;}
+        #icon_copy02_2{position: fixed;top: 505px;left: 1630px;cursor: pointer;}
+        #icon_copy02_3{position: fixed;top: 578px;left: 1630px;cursor: pointer;}
+        #icon_copy02_4{position: fixed;top: 649px;left: 1630px;cursor: pointer;}
+        #bank_transfer_isCopyed_1{position: fixed;top: 450px;left: 1540px;display: none; font-size: 30px; color:#FFFFFF;}
+        #bank_transfer_isCopyed_2{position: fixed;top: 520px;left: 1540px;display: none; font-size: 30px; color:#FFFFFF;}
+        #bank_transfer_isCopyed_3{position: fixed;top: 593px;left: 1540px;display: none; font-size: 30px; color:#FFFFFF;}
+        #bank_transfer_isCopyed_4{position: fixed;top: 664px;left: 1540px;display: none; font-size: 30px; color:#FFFFFF;}
+    /*wechat transfer */
+        #wechat_transfer_close{background-size: 100%;position: fixed;top: 30px;left: 1760px;cursor: pointer;}
+        #wechat_transfer_base{background-size: 100%;position: fixed;top: 330px;left: 80px;}
+        #wechat_transfer_q{background-size: 100%;position: fixed;top: 425px;left: 1330px;}
+        #wechat_transfer_lab1{position: fixed;top: 110px;left: 800px;text-align: center;letter-spacing: 3;color: #ffefb5;font-family: 'LanTingChungHei';font-size: 56px;}
+        #wechat_transfer_lab2{position: fixed;top: 250px;left: 400px;letter-spacing: 3;color: #f3ccb8;font-family: 'LanTingChungHei';font-size: 42px;}
+        #wechat_transfer_lab3{position: fixed;top: 950px;left: 490px;text-align: center;letter-spacing: 3;color: #ffefb5;font-family: 'LanTingChungHei';font-size: 36px;}
+        #wechat_transfer_lab4{position: fixed;top: 443px;left:124px;text-align: center;color: #c7af7a;letter-spacing: 3;font-family: 'LanTingChungHei';font-size: 36px;}
+        #wechat_transfer_lab5{position: fixed;top: 510px;left: 105px;text-align: center;color: #c7af7a;letter-spacing: 3;font-family: 'LanTingChungHei';font-size: 36px;}
+        #wechat_transfer_lab6{position: fixed;top: 575px;left:124px;text-align: center;color: #c7af7a;letter-spacing: 3;font-family: 'LanTingChungHei';font-size: 36px;}
+        #wechat_transfer_lab7{position: fixed;top: 640px;left:124px;text-align: center;color: #c7af7a;letter-spacing: 3;font-family: 'LanTingChungHei';font-size: 36px;}
+        #wechat_transfer_lab8{position: fixed;top: 510px;left: 1025px;text-align: center;letter-spacing: 3;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;}
+        #wechatTransfer1{position: fixed;top: 820px;left: 620px;cursor: pointer;}
+        #wKnow1{    position: fixed;top: 820px;left: 930px;cursor: pointer;}
+    /* withdrawal audit */
+        #withdrawal_close{background:url(@/../../../assets/recharge/icon_close.png) no-repeat;background-size: 100%;position: fixed;top: 30px;left: 1660px;cursor: pointer;}
+        #withdrawal_img1{position: fixed;top: 230px;left: 79px;}
+        #withdrawal_img2{width: 1575px;position: fixed;top: 394px;left: 78px;}
+        #withdrawal_img3{width: 1575px;position: fixed;top: 477px;left: 78px;}
+        #withdrawal_img4{width: 1575px;position: fixed;top: 560px;left: 78px;}
+        #withdrawal_img5{width: 1575px;position: fixed;top: 643px;left: 78px;}
+        #withdrawal_img6{width: 1575px;position: fixed;top: 726px;left: 78px;}
+        #withdrawal_lab1{position: fixed;top: 74px;left: 750px;text-align: center;color: #ffefb5;font-family: 'LanTingChungHei';font-size: 56px;}
+        #withdrawal_lab2{position: fixed;top: 175px;left: 56px;text-align: center;color: #f3ccb8;font-family: 'LanTingChungHei';font-size: 36px;     width: 1630px;}
+        #withdrawal_lab3{position: fixed;top: 740px;left: 115px;text-align: center;color: #a3c1f8;font-family: 'LanTingChungHei';font-size: 28px;}
+        #withdrawal_lab4{position: fixed;top: 740px;left: 260px;text-align: center;color: #f75050;font-family: 'LanTingChungHei';font-size: 28px;}
+        #withdrawal_lab5{position: fixed;top: 780px;left: 113px;text-align: center;color: #a3c1f8;font-family: 'LanTingChungHei';font-size: 28px;}
+        #withdrawal_lab6{position: fixed;top: 780px;left:285px;text-align: center;color: #9fca52;font-family: 'LanTingChungHei';font-size: 28px;}
+        #withdrawal_lab7{position: fixed;top: 820px;left:113px;text-align: center;color: #f75050;font-family: 'LanTingChungHei';font-size: 28px;}
+        #withdrawal_lab8{position: fixed;top: 815px;left: 1070px;text-align: center;color: #acacac;font-family: 'LanTingChungHei';font-size: 28px;}
+        #withdrawal_btn1{position: fixed;top: 877px;left: 600px;cursor: pointer;}
+        #withdrawal_btn2{position: fixed;top: 877px;left: 920px;cursor: pointer;}
+        #withdrawal_infinite_audit{position: fixed; left:80px; top:395px; height:335px; width:1570px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+        .withdrawalAduitWay {  background: url('@/../../../assets/recharge/pay_form_audit_data01.png') no-repeat; height: 75px; width: 1570px;  padding-top: 10px; word-break: break-all;}
+    /*withdrawal message */
+        #withdrawal_message_close{background-size: 100%;position: fixed;top: 30px;left: 1650px;cursor: pointer;}
+        #withdrawal_submit{position: fixed;top: 840px;left: 710px;}
+        #withdrawal_safe{position: fixed;top: 630px;left: 870px;background: transparent;border: none;outline: none;width: 300px;height: 110px;font-size: 36px; color: #FFFFFF; font-family: 'LanTingChungHei';}
+        #message_lab1{position: fixed;top: 105px;left: 700px;text-align: center;color: #ffefb5;font-family: 'LanTingChungHei';font-size: 56px;}
+        #message_lab2{position: fixed;top: 260px;left: 340px;text-align: center;color: #f3ccb8;font-family: 'LanTingChungHei';font-size: 42px;}
+        #message_lab3{position: fixed;top: 560px;left: 55px;text-align: center;color: #FFFFFF;;font-family: 'LanTingChungHei';font-size: 40px; width: 1630px;}
+        #message_lab4{position: fixed;top: 665px;left: 640px;text-align: center;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;}
+    /* whechat popup */
+    #copyWechat{position:fixed;top: 472px;left: 1315px;cursor: pointer;}
+    #proxy_lab1{position:fixed;top: 395px;left: 630px;font-family: 'LanTingChungHei';font-size: 40px;color:  #FFFFFF;}
+    #proxy_lab2{position:fixed;top: 480px;left: 650px; height:110px; width:620px; font-size: 36px; background-color: transparent;border: none;outline: none; color:#FFFFFF; font-family: 'LanTingChungHei';}
+    #proxy_lab3{position:fixed;top: 670px;left: 500px;font-family: 'LanTingChungHei';font-size: 36px; line-height: 56px; color:  #f3ccb8;}
+    #proxy_lab4{position:fixed;top: 730px;left: 500px;font-family: 'LanTingChungHei';font-size: 36px;line-height: 56px; color:  #f3ccb8;}
+    #copyIsWechat {position: fixed; left: 1515px; top: 415px; color: #ffffff; font-size: 30px; display:none;}
+    /*show transfer small*/
+        #bank_transfer_small1{position: fixed;top: 490px;left: 510px;text-align: center;letter-spacing: 3;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;}
+        #bank_transfer_small2{position: fixed;top: 555px;left: 490px;text-align: center;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+        #bank_transfer_small3{position: fixed;top: 623px;left: 490px;text-align: center;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+        #bank_transfer_small4{position: fixed;top: 683px;left: 490px;text-align: center;color: #c7af7a;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+        #bank_transfer_name{position: fixed;top: 490px;left: 720px;text-align: center;color: #FFFFFF;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+        #bank_transfer_bankname{position: fixed;top: 555px;left: 720px;text-align: center;color: #FFFFFF;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+        #bank_transfer_info{position: fixed;top: 623px;left: 720px;text-align: center;color: #FFFFFF;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+        #bank_transfer_cardnumber{position: fixed;top: 683px;left: 720px;text-align: center;color: #FFFFFF;font-family: 'LanTingChungHei';font-size: 36px;letter-spacing: 3;}
+    /*show message dialog*/
+    #show_msg{position: fixed; top:350px; left: 380px; height:550px; width:1000px; background: url('@../../../../assets/recharge/popup00.png') no-repeat; display: none;}
+    #show_labe1{position: fixed ; width:1000px;font-size:36px;text-align: center; top:500px; left: 380px; font-family: 'LanTingChungHei'; color:#FFFFFF}
+    #show_btn{position: fixed ;  top:650px; left: 740px;}
+    #close_amount{position: fixed ;  top:330px; left: 1310px;}
+
+    /* Style the tab content */
+    .tabcontent {display: none;padding: 6px 12px;}
+    .tabrecordcontent {display: none;padding: 6px 12px;}
+    .leftcontent{display: none;padding: 6px 12px;}
+
+    /* scrollbar */
+    /* #container1{left:28px;top:50px;height:100%; width:450px ;overflow: hidden;}
+    #container2{position: fixed; overflow-y: scroll;} */
+    #container2{position: fixed; left:32px; top:231px; height:770px; width:450px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+    #container2 .menu_item{width: 300px;display: inline-block;text-align: left;position: relative;left: 60px; top: 5px;}
+    .payWay {color: #a49a74; font-size: 36px; background: url('@../../../../assets/recharge/pay_nav_04_bg.png'); height: 80px; width: 420px;  text-align: center; padding-top: 30px; letter-spacing: 3px;}
+    /* jerry fixed start */
+    .payWay.active{background: url('@../../../../assets/recharge/pay_nav_01_hover_bg.png'); color:#4f3e27;}
+    .payWay:hover{background: url('@../../../../assets/recharge/pay_nav_01_hover_bg.png'); color:#4f3e27;}
+    /* jerry fixed end */
+    ::-webkit-scrollbar {
+        width: 0px;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+
+    #rechargeType_infinite{position: fixed; left:480px; top:560px; height:260px; width:1180px; overflow: auto;  -ms-overflow-style: none; overflow: -moz-scrollbars-none;-webkit-overflow-scrolling: touch; /* Lets it scroll lazy */}
+    .rechargeTypeWay { height: 120px; width: 1180px;  padding-top: 10px; letter-spacing: 3px;}
+
+    input:-webkit-autofill,input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,input:-webkit-autofill:active {-webkit-transition-delay: 99999s;-o-transition-delay: 99999s;transition-delay: 99999s;-webkit-transition: color 99999s ease-out, background-color 99999s ease-out;-o-transition: color 99999s ease-out, background-color 99999s ease-out;transition: color 99999s ease-out, background-color 99999s ease-out;}
+	::-webkit-input-placeholder { /* Edge */font-size: 36px;color: #acacac;font-family: 'LanTingChungHei';}
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */font-size: 36px;color: #acacac;font-family: 'LanTingChungHei';}
+	input::-moz-placeholder  { /* Internet Explorer 10-11 */font-size: 36px;color: #acacac;font-family: 'LanTingChungHei';}
+	::placeholder {font-size: 36px;color: #acacac;font-family: 'LanTingChungHei';}
+    textarea:focus, input:focus, select:focus { outline: none; }
+    
+    select { 
+        -webkit-appearance: none; /*Chrome*/
+        -moz-appearance: none; /*FF*/
+        appearance: none;/*CSS3*/
+    }
+
+    select::-ms-expand {
+    display: none; /*IE*/
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    
+    .loadFont {
+        font-family: 'LanTingChungHei';
+        position: absolute;
+    }
+</style>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <div class="loadFont">.</div>
+    <div id="rechargeContener">
+        <img src="@../../../../assets/recharge/pay_popup01.png" style="position:fixed;" id="bkImg">
+        <img id="recharge_top_img" src="@../../../../assets/recharge/pay_nav_top.png">
+        <img id="icon_close"src="@../../../../assets/recharge/icon_close.png">
+        <img id="rechargeBtn" class="tablinks" src="@../../../../assets/recharge/pay_tab_01_hover.png" >
+        <img id="withdrawalBtn" class="tablinks" src="@../../../../assets/recharge/pay_tab_02.png" >
+        <img id="recordBtn" class="tablinks" src="@../../../../assets/recharge/pay_tab_03.png" >
+        <img id="financialBtn" class="tablinks" src="@../../../../assets/recharge/pay_tab_04.png" >
+            <!-- <div id="container1">
+                    <div id="recharge_icon" class="leftlinks"></div> -->
+                    <!-- jerry fixed start -->
+                    <!-- <div id="fast_icon" class="leftlinks"></div> -->
+                    <!-- jerry fixed end -->
+                    
+
+            <div id="container2"></div>
+        <!-- </div> -->
+        <div id="recharge" class="tabcontent">
+        
+            <img id="img1" src="@../../../../assets/recharge/pay_banner_01.png">
+            <img id="img2" src="@../../../../assets/recharge/icon_complain.png">
+            <img id="refresh" src="@../../../../assets/recharge/icon_refresh.png">
+            <div id="recharge_infinite"></div>
+        </div>
+        <div id="withdrawal" class="tabcontent">
+            <img id="pay1" src="@../../../../assets/recharge/pay_nav_withdrawal_01_hover.png">
+            <img id="withdrawalImg1" src="@../../../../assets/recharge/pay_input_006.png">
+            <img id="withdrawalImg2" src="@../../../../assets/recharge/pay_input_005.png">
+            <input id="subPaymentFromBankCard" type="image" src="@../../../../assets/recharge/icon_withdrawal01.png">
+            <labe1 id="withdrawalLab1">当前金额 : </labe1>
+            <labe1 id="withdrawalLab3"></labe1>
+            <labe1 id="withdrawalLab2">提款金额</labe1>
+            <input id="withdrawalAmount" type="text" value="" autocomplete="off">
+            <label id="withdrawalErrMsg"></label>
+        </div>
+        <div id="record" class="tabcontent">
+            <img id="rechargeImg1" src="@../../../../assets/recharge/pay_form_addCredit_header.png">
+            <img id="rechargeRecordOnline" src="@../../../../assets/recharge/pay_tab_record_left.png">
+            <img id="withdrawalRecordOnline" src="@../../../../assets/recharge/pay_tab_record_right.png">
+            <img id="rechargeRecord" class="innerlinks" src="@../../../../assets/recharge/pay_tab_record_01_hover.png" >
+            <img id="withdrawalRecord" class="innerlinks" type="image" src="@../../../../assets/recharge/pay_tab_record_02.png" >
+            <div id="record_infinite"></div>
+
+        </div>
+        <div id="financial" class="tabcontent">
+            <img id="financialImg1" src="@../../../../assets/recharge/pay_form_dealing_header.png">
+            <img id="financialTime" src="@../../../../assets/recharge/pay_select_time.png">
+            <img id="financialType" src="@../../../../assets/recharge/pay_select_type.png">
+            <label id="timeLab" >交易时间</label>
+            <label id="typeLab" >类型</label>
+            <input type="hidden" name="currntPage" id="financial_currntPage">
+            <select id="timecontent"></select>
+            <select id="typecontent"></select>
+            <!--financial infinite -->
+            <div id="financial_infinite"></div>
+            
+        </div>
+        <!-- recharge record inner -->
+        <div id="recordinner" class="tabrecordcontent">
+                <img id="rechargeImg1" src="@../../../../assets/recharge/pay_form_addCredit_header.png">
+            
+                <img id="rechargeRecordOnline" src="@../../../../assets/recharge/pay_tab_record_left.png">
+                <img id="withdrawalRecordOnline" src="@../../../../assets/recharge/pay_tab_record_right.png">
+                <img id="rechargeRecord"  src="@../../../../assets/recharge/pay_tab_record_01_hover.png" >
+                <img id="withdrawalRecord" type="image" src="@../../../../assets/recharge/pay_tab_record_02.png" >
+                <div id="record_infinite_inner"></div>
+
+            </div>
+        <div id="withdrawalinner" class="tabrecordcontent">
+                    <img id="withdrawalInnerImg1" src="@../../../../assets/recharge/pay_form_withdrawal_header.png">
+                    <!-- <img id="withdrawalInnerImg2" src="@../../../../assets/recharge/pay_form_withdrawal_data01.png"> -->
+                    
+                    <img id="rechargeRecordOnline" src="@../../../../assets/recharge/pay_tab_record_left.png">
+                    <img id="withdrawalRecordOnline" src="@../../../../assets/recharge/pay_tab_record_right.png">
+                    <img id="rechargeRecordInnder"  src="@../../../../assets/recharge/pay_tab_record_01.png" >
+                    <img id="withdrawalRecordInner" type="image" src="@../../../../assets/recharge/pay_tab_record_02_hover.png">
+                    <div id="withdrawal_infinite"></div>
+        </div>
+        <!-- recharge view left -->
+        <!-- <div id="rechargeType1" class="leftcontent">
+            
+                <img id="img1" src="@../../../../assets/recharge/pay_banner_01.png">
+                <img id="img2" src="@../../../../assets/recharge/icon_complain.png">
+                <img id="refreshLeft" src="@../../../../assets/recharge/icon_refresh.png">
+                <div id="recharge_left_infinite"></div> 
+
+        </div>-->
+        <div id="rechargeType2" class="leftcontent">
+                <img id="fastBanner" src="@../../../../assets/recharge/pay_banner_01.png">
+                <img id="fastService" src="@../../../../assets/recharge/icon_service.png">
+                <img id="fastRechargeInfo" src="@../../../../assets/recharge/pay_pic_001.png">
+                <img id="fastRechargeIn" src="@../../../../assets/recharge/pay_input_002.png">
+                <input id="fastCopy" type="image" src="@../../../../assets/recharge/icon_copy01.png">
+                <img id="fastRechargeBtn" src="@../../../../assets/recharge/icon_addCredit01.png">
+                <!-- <labe1 id="fastId">ID : live006</labe1>  -->
+                <span id="fastId_placeholder">ID : </span>
+                <input id="fastId" type="text" placeholder="ID : " value="live006">
+                <labe1 id="fastConfrim1">请认准官方充值网址</labe1>
+                <labe1 id="fastConfrim2">678888zf.com</labe1>
+                <span id="rechargeType_isCopy">已复制</span>
+
+        </div>
+
+        <div id="rechargeType_companyDeposit" class="leftcontent">
+                <img id="company_banner" src="@../../../../assets/recharge/pay_banner_03.png">
+                <img id="company_service" src="@../../../../assets/recharge/icon_service.png">
+                <img id="company_submit" src="@../../../../assets/recharge/pay_title_01.png">
+                <img id="company_img1" src="@../../../../assets/recharge/pay_input_003.png">
+                <img id="company_img2" src="@../../../../assets/recharge/pay_input_003.png">
+                <img id="company_img3" src="@../../../../assets/recharge/pay_input_003.png">
+                <img id="company_img4" src="@../../../../assets/recharge/pay_input_003.png">
+                <img id="company_review"  src="@../../../../assets/recharge/icon_orderConfirm.png">
+                <label id="company_lab1">付款方式</label>
+                <label id="company_lab2">付款人姓名</label>
+                <label id="company_lab3">付款银行</label>
+                <label id="company_lab4">付款金额</label>
+                <input id="company_name" autocomplete="off" type="text" placeholder="请填写付款人真实姓名">
+                <input id="company_amount" autocomplete="off" type="text" placeholder="请填写付款金额">
+
+                <select id="company_type">
+                    <option value="1" selected="selected" class="company_type_op">银行卡</option>
+                    <option value="2" class="company_type_op">微信</option>
+                    <option value="3" class="company_type_op">支付宝</option>
+                </select>
+                <div id="company_bank">
+                        <select class="bank"></select>
+                        <input type="text" value="" placeholder="请填写付款人微信号" class="wechat">
+                        <input type="text" value="" placeholder="请填写付款人支付宝账号" class="alipay">
+                </div>
+                <label id="company_type_msg"></label>
+                <label id="company_type_name_msg"></label>
+                <label id="company_type_money_msg"></label>
+                <label id="company_type_wechat_msg"></label>
+                <label id="company_type_alipay_msg"></label>
+                <img id="bank_icon" src="@../../../../assets/recharge/icon_input_select.png">
+                <img id="type_icon" src="@../../../../assets/recharge/icon_input_select.png">
+
+
+
+        </div>
+
+        <div id="bank_deposit" style="display:none;">
+            <img id="deposit_img" src="@../../../../assets/recharge/pay_title_02.png">
+            <img id="deposit_back" src="@../../../../assets/recharge/icon_back01.png">
+            <div id="deposit_infinite"></div>
+        </div>
+        <div id="bank_transfer" style="display:none;">
+            <img src="@/../../../assets/recharge/pay_popup05 (2).png" style="position: fixed;">
+            <img id="bank_transfer_close" src="@/../../../assets/recharge/icon_close.png">
+            <img id="bank_transfer_base" src="@/../../../assets/recharge/pay_box_02.png">
+            <img id="bankTransfer_tutorial" src="@/../../../assets/recharge/icon_tutorial.png">
+            <img id="iKnow1" src="@/../../../assets/recharge/icon_gotit.png">
+            <span id="bank_transfer_isCopyed_1">已复制</span>
+            <span id="bank_transfer_isCopyed_2">已复制</span>
+            <span id="bank_transfer_isCopyed_3">已复制</span>
+            <span id="bank_transfer_isCopyed_4">已复制</span>
+            
+            <label id="bank_transfer_lab1">等待转帐</label>
+            <label id="bank_transfer_lab2">注: 请问以下帐户转帐付款, 审核通过充值奖自动到帐.</label>
+            <label id="bank_transfer_lab3">关闭本弹窗后 "充值记录" 页面可再次查看收款帐户</label>
+            <label id="bank_transfer_lab4">付款方式</label>
+            <label id="bank_transfer_lab5">付款人姓名</label>
+            <label id="bank_transfer_lab6">付款银行</label>
+            <label id="bank_transfer_lab7">付款金额</label>
+            <span id="offical_receipt_info">
+                <img id="icon_copy02_1" src="@/../../../assets/recharge/icon_copy02.png">
+                <img id="icon_copy02_2" src="@/../../../assets/recharge/icon_copy02.png">
+                <img id="icon_copy02_3" src="@/../../../assets/recharge/icon_copy02.png">
+                <img id="icon_copy02_4" src="@/../../../assets/recharge/icon_copy02.png">
+                <label id="bank_transfer_lab8">收款人</label>
+                <label id="bank_transfer_lab9">收款银行</label>
+                <label id="bank_transfer_lab10">汇款资讯</label>
+                <label id="bank_transfer_lab11">收款卡号</label>
+            </span>
+            <span id="offical_QRcode_info"></span>
+            <div id="bank_receipt_info"></div>
+        </div>
+
+        <div id="wechat_transfer" style="display:none;">
+            <img src="@/../../../assets/recharge/pay_popup05.png" style="position: fixed;">
+            <img id="wechat_transfer_close" src="@/../../../assets/recharge/icon_close.png">
+            <img id="wechat_transfer_base" src="@/../../../assets/recharge/pay_box_03.png">
+            <img id="wechat_transfer_q" src="@/../../../assets/recharge/pay_QRCode_300x300.png">
+            <img id="wechatTransfer1" src="@/../../../assets/recharge/icon_tutorial.png">
+            <img id="wKnow1" src="@/../../../assets/recharge/icon_gotit.png">
+
+            
+            <label id="wechat_transfer_lab1">等待转帐</label>
+            <label id="wechat_transfer_lab2">注: 请问以下帐户转帐付款, 审核通过充值奖自动到帐.</label>
+            <label id="wechat_transfer_lab3">关闭本弹窗后 "充值记录" 页面可再次查看收款帐户</label>
+            <label id="wechat_transfer_lab4">付款方式</label>
+            <label id="wechat_transfer_lab5">付款人姓名</label>
+            <label id="wechat_transfer_lab6">付款银行</label>
+            <label id="wechat_transfer_lab7">付款金额</label>
+            <label id="wechat_transfer_lab8">请使用<br>微信扫码付款</label>
+        </div>
+
+
+        <div id="withdrawal_audit" style="display:none;">
+            <img src="@/../../../assets/recharge/pay_popup08.png" style="position:fixed;">
+            <img id="withdrawal_img1" src="@/../../../assets/recharge/pay_form_audit_header.png">
+            <img id="withdrawal_close" src="@/../../../assets/recharge/icon_close.png">
+            <div id="withdrawal_infinite_audit"></div>
+            <!-- <img id="withdrawal_img2" src="@/../../../assets/recharge/pay_form_audit_data01.png">
+            <img id="withdrawal_img3" src="@/../../../assets/recharge/pay_form_audit_data01.png">
+            <img id="withdrawal_img4" src="@/../../../assets/recharge/pay_form_audit_data01.png">
+            <img id="withdrawal_img5" src="@/../../../assets/recharge/pay_form_audit_data01.png">
+            <img id="withdrawal_img6" src="@/../../../assets/recharge/pay_form_audit_data02.png"> -->
+            
+            <img id="withdrawal_btn1" src="@/../../../assets/recharge/icon_withdrawal02.png">
+            <img id="withdrawal_btn2" src="@/../../../assets/recharge/icon_withdrawal03.png">
+        
+            <label id="withdrawal_lab1">提款稽核</label>
+            <label id="withdrawal_lab2"></label>
+            <label id="withdrawal_lab3">优惠稽核 :</label>
+            <label id="withdrawal_lab4"></label>
+            <label id="withdrawal_lab5">常态性稽核 :</label>
+            <label id="withdrawal_lab6">通过, 不需扣除常态稽核手续费</label>
+            <label id="withdrawal_lab7"></label>
+            <label id="withdrawal_lab8"></label>
+        </div>
+
+        <div id="withdrawal_message" style="display:none;">
+            <img src="@/../../../assets/recharge/pay_popup09.png" style="position: fixed;">
+            <img id="withdrawal_message_close" src="@/../../../assets/recharge/icon_close.png">
+            <img src="@/../../../assets/recharge/pay_form_orderMessage.png" style="position: fixed; top: 350px; left: 335px;">
+            <img src="@/../../../assets/recharge/pay_input_007.png" style="position: fixed; top: 630px; left: 575px;">
+            <img id="withdrawal_submit" src="@/../../../assets/recharge/icon_withdrawal01.png">
+            <input id="withdrawal_safe" autocomplete="off" type="password" placeholder="安全密码">
+
+            <label id="message_lab1">提交订单信息</label>
+            <label id="message_lab2">提款3-5分钟到账, 提款前请确认绑定的银行帐号准确无误</label>
+            <label id="message_lab3">银行帐户 : 工商银行-河北沧州-62222****011</label>
+            <label id="message_lab4">安全密码</label>
+        </div>
+
+        <div id="wehcat_popup" style="display:none;">
+                <!-- <img src="@/../../../assets/recharge/pay_mask01.png" style="position:fixed;"> -->
+                <img src="@/../../../assets/recharge/pay_popup02.png"  style="position:fixed; top:200px; left: 200px;">
+                <img src="@/../../../assets/recharge/pay_input_001.png" style="position:fixed;top: 480px;left: 375px;">
+                <img id="copyWechat" src="@/../../../assets/recharge/icon_copy_weixin.png">
+                <img id="close_wechat" src="@/../../../assets/recharge/icon_close.png" style="cursor: pointer;position: fixed;top: 170px;left: 1660px;">
+                
+                <label id="proxy_lab1">秒秒微充-支持微信. 支付宝. 银行卡.</label>
+                <input autocomplete="off" type="text" id="proxy_lab2">
+                <label id="proxy_lab3">举点击按钮系统会帮助您复制代理的微信号, 请你打开微信,</label>
+                <label id="proxy_lab4">添加好友时长按屏幕粘贴即可, 加完好友10秒内帮您完成充值</label>
+                <span id="copyIsWechat">已复制</span>
+
+
+        </div>
+        <div id="transfer_bank" style="display:none">
+            <!-- <img src="@/../../../assets/recharge/pay_mask01.png" style="position:fixed;"> -->
+            <img src="@/../../../assets/recharge/bank_transfer_01.png" style="position: fixed; left: 450px; top: 380px;">
+            <img id="close_bank_small" src="@/../../../assets/recharge/icon_close.png" style="cursor: pointer;position: fixed;top: 360px;left: 1200px;">
+            <div id="bank_transfer_qrCodeArea" style="display:none">
+                <div style="position: absolute;color: #c7af7a;font-size: 30px;top: 595px;left: 530px;font-family: 'LanTingChungHei';">
+                    二维码
+                </div>
+                <img id="bank_transfer_qrCode" src=" " style="position: fixed;top: 472px;left: 820px;">
+            </div>
+            <div id="bank_transfer_infoArea">
+                <label id="bank_transfer_small1">收款人</label>
+                <label id="bank_transfer_small2">收款银行</label>
+                <label id="bank_transfer_small3">汇款资讯</label>
+                <label id="bank_transfer_small4">收款卡号</label>
+                <label id="bank_transfer_name"></label>
+                <label id="bank_transfer_bankname"></label>
+                <label id="bank_transfer_info"></label>
+                <label id="bank_transfer_cardnumber"></label>
+            </div>
+        </div>
+
+        <div id="show_msg">
+            <label id="show_labe1"></label>
+            <img id="show_btn" src="@../../../../assets/recharge/icon_confirm00.png">
+            <img id="close_amount" src="@../../../../assets/recharge/icon_close.png">
+        </div>
+    </div>
+    <div id="rechargePopup"></div>
+</body>
+</html>
+<script>
+document.getElementById('company_type').addEventListener('change',()=>{
+    document.querySelector('#company_type_msg').textContent = '';
+    document.querySelector('#company_type_name_msg').textContent = '';
+    document.querySelector('#company_type_money_msg').textContent = '';
+    document.querySelector('#company_type_wechat_msg').textContent = '';
+    document.querySelector('#company_type_alipay_msg').textContent = '';
+    
+    document.querySelector('#company_name').value = '';
+    document.querySelector('#company_amount').value = '';
+    document.querySelector('#company_bank .wechat').value = '';
+    document.querySelector('#company_bank .alipay').value = '';
+    document.querySelector('#company_bank .bank').value = '1';
+
+    if(document.getElementById('company_type').value === '1'){
+        document.getElementById('company_lab3').textContent = '付款银行';
+        document.getElementById('bank_transfer_lab6').textContent = '付款银行';
+        document.querySelector('.bank').style.display = 'block';
+        document.querySelector('.wechat').style.display = 'none';
+        document.querySelector('.alipay').style.display = 'none';
+        document.querySelector('#bank_icon').style.display = 'block';
+    }
+    if(document.getElementById('company_type').value === '2'){
+        document.getElementById('company_lab3').textContent = '付款微信';
+        document.getElementById('bank_transfer_lab6').textContent = '付款微信';
+        document.querySelector('.bank').style.display = 'none';
+        document.querySelector('.wechat').style.display = 'block';
+        document.querySelector('.alipay').style.display = 'none';
+        document.querySelector('#bank_icon').style.display = 'none';
+    }
+    if(document.getElementById('company_type').value === '3'){
+        document.getElementById('company_lab3').textContent = '付款支付宝';
+        document.getElementById('bank_transfer_lab6').textContent = '付款支付宝';
+        document.querySelector('.bank').style.display = 'none';
+        document.querySelector('.wechat').style.display = 'none';
+        document.querySelector('.alipay').style.display = 'block';
+        document.querySelector('#bank_icon').style.display = 'none';
+    }
+})
+document.getElementById('close_bank_small').addEventListener('click',()=>{
+    document.getElementById('transfer_bank').style.display = 'none';
+})
+
+</script>

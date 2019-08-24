@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    label{
+      color: whitesmoke;
+      font-size: 30px;
+      position: fixed;
+    }
+    #name{
+      top: 35px;
+      left: 230px;
+    }
+    #money{
+      top: 82px;
+      left: 290px;
+    }
+
+    #div1{
+      position: fixed;
+      background-size: 100%;
+    }
+    #div2{
+      position: fixed;
+    }
+    #div3{
+      position: fixed;
+      left: 755px;
+      top: 3px;
+    }
+    #div4{
+      position: fixed;
+      left: 1435px;
+      top: 3px;
+      cursor: pointer;
+    }
+    #div5{
+      position: fixed;
+      left: 1600px;
+      top: 3px;
+      cursor: pointer;
+    }
+    #div6{
+      position: fixed;
+      left: 1765px;
+      top: 3px;
+      cursor: pointer;
+    }
+    #div7{
+      position: fixed;
+      left: 228px;
+      top: 80px;
+    }
+    #div8{
+      position: fixed;
+      left: 70px;
+      top: 15px;
+      width: 110px;
+    }
+    #div9{
+      position: fixed;
+      left: 555px;
+      top: 110px;
+    }
+    #div10{
+      position: fixed;
+      left: 105px;
+      top: 200px;
+    }
+    #div11{
+      position: fixed;
+      left: 1585px;
+      top: 110px;
+      cursor: pointer;
+    }
+    #div12{
+      position: fixed;
+      left: 740px;
+      top: 185px;
+    }
+    #div13{
+      position: fixed;
+      left: 757px;
+      top: 200px;
+    }
+    #div14{
+      position: fixed;
+      left: 1014px;
+      top: 200px;
+      cursor: pointer;
+    }
+    #div15{
+      position: fixed;
+      left: 1260px;
+      top: 200px;
+      cursor: pointer;
+    }
+    #div16{
+      position: fixed;
+      left: 1506px;
+      top: 200px;
+      cursor: pointer;
+    }
+    #div17{
+      position: fixed;
+      left: 760px;
+      top: 300px;
+    }
+    #div17_1{
+      position:fixed;
+      top: 320px;
+      left: 1610px;
+      color: orange;
+    }
+    #div17_2{
+      position:fixed;
+      top: 365px;
+      left: 1595px;
+      color: orange;
+    }
+    #div17_3{
+      position: fixed;
+      left: 1577px;
+      top: 409px;
+      cursor: pointer;
+    }
+    #div18{
+      position: fixed;
+      left: 760px;
+      top: 490px;
+    }
+    #div18_1{
+      position:fixed;
+      top: 510px;
+      left: 1610px;
+      color: orange;
+    }
+    #div18_2{
+      position:fixed;
+      top: 555px;
+      left: 1596px;
+      color: orange;
+    }
+    #div18_3{
+      position: fixed;
+      left: 1577px;
+      top: 599px;
+      cursor: pointer;
+    }
+    #div19{
+      position: fixed;
+      left: 760px;
+      top: 680px;
+    }
+    #div19_1{
+      position:fixed;
+      top: 700px;
+      left: 1610px;
+      color: orange;
+    }
+    #div19_2{
+      position:fixed;
+      top: 745px;
+      left: 1596px;
+      color: orange;
+    }
+    #div19_3{
+      position: fixed;
+      left: 1577px;
+      top: 789px;
+      cursor: pointer;
+    }
+    #div20{
+      position: fixed;
+      left: 760px;
+      top: 870px;
+    }
+    #div20_1{
+      position:fixed;
+      top: 890px;
+      left: 1610px;
+      color: orange;
+    }
+    #div20_2{
+      position:fixed;
+      top: 935px;
+      left: 1596px;
+      color: orange;
+    }
+    #div20_3{
+      position: fixed;
+      left: 1577px;
+      top: 979px;
+      cursor: pointer;
+    }
+    #div21{
+      position: fixed;
+      left: 765px ;
+      top: 305px;
+    }
+    #div22{
+      position: fixed;
+      left: 793px;
+      top: 305px;
+    }
+    #div23{
+      position: fixed;
+      left: 819px;
+      top: 305px;
+    }
+    #div24{
+      position: fixed;
+      left: 846px;
+      top: 305px;
+    }
+  </style>
+  <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <img id="div1" src="@../../../../assets/game/baccarat/room_select/bg.png">
+    <img id="div2" src="@../../../../assets/game/baccarat/room_select/header_bg.png">
+    <img id="div3" src="@../../../../assets/game/baccarat/room_select/logo.png">
+
+    <img id="div4" src="@../../../../assets/game/baccarat/room_select/btn_info.png">
+    <img id="div5" src="@../../../../assets/game/baccarat/room_select/btn_record.png">
+    <img id="div6" src="@../../../../assets/game/baccarat/room_select/btn_return.png">
+    
+    <img id="div7" src="@../../../../assets/game/baccarat/room_select/icon_money.png">
+    <img id="div8" src="@../../../../assets/avatar/user_avatar_01.png">
+    <img id="div9" src="@../../../../assets/game/baccarat/room_select/speaker.png">
+    <img id="div10" src="@../../../../assets/game/baccarat/room_select/model.png">
+    <img id="div11" src="@../../../../assets/game/baccarat/room_select/btn_change.png">
+    
+    <img id="div12" src="@../../../../assets/game/baccarat/room_select/board_bg.png">
+    <img id="div13" src="@../../../../assets/game/baccarat/room_select/btn_room1_selected.png">
+    <img id="div14" src="@../../../../assets/game/baccarat/room_select/btn_room2.png">
+    <img id="div15" src="@../../../../assets/game/baccarat/room_select/btn_room3.png">
+    <img id="div16" src="@../../../../assets/game/baccarat/room_select/btn_room4.png">
+
+    <img id="div17" src="@../../../../assets/game/baccarat/room_select/board.png">
+    <label id="div17_1">
+        派奖中 0
+    </label>
+    <label id="div17_2">
+        限额: 4-250
+    </label>
+    <img id="div17_3" src="@../../../../assets/game/baccarat/room_select/btn_into.png">
+    <img id="div18" src="@../../../../assets/game/baccarat/room_select/board.png">
+    <label id="div18_1">
+        派奖中 0
+    </label>
+    <label id="div18_2">
+        限额: 4-250
+    </label>
+    <img id="div18_3" src="@../../../../assets/game/baccarat/room_select/btn_into.png">
+    <img id="div19" src="@../../../../assets/game/baccarat/room_select/board.png">
+    <label id="div19_1">
+        派奖中 0
+    </label>
+    <label id="div19_2">
+        限额: 4-250
+    </label>
+    <img id="div19_3" src="@../../../../assets/game/baccarat/room_select/btn_into.png">
+    <img id="div20" src="@../../../../assets/game/baccarat/room_select/board.png">
+    <label id="div20_1">
+        派奖中 0
+    </label>
+    <label id="div20_2">
+        限额: 4-250
+    </label>
+    <img id="div20_3" src="@../../../../assets/game/baccarat/room_select/btn_into.png">
+    
+    <img id="div21" src="@../../../../assets/game/baccarat/room_select/circle_r.png">
+    <img id="div22" src="@../../../../assets/game/baccarat/room_select/circle_b_1.png">
+    <img id="div23" src="@../../../../assets/game/baccarat/room_select/circle_r_1.png">
+    <img id="div24" src="@../../../../assets/game/baccarat/room_select/circle_b.png">
+    
+    <label id="name">
+        GUEST1322
+    </label>
+    <label id="money">
+        1,234,567,890
+    </label>
+  </body>
+
+</html>

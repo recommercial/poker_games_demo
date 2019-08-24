@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>.</title>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {font-family: 'LanTingChungHei'; src: url('@/../../../../font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+    body{margin: 0;padding: 0;}
+    /* help start */
+    #hall_bai_ren_help{display: none;}
+    #bai_ren_board_help_bg{position: fixed;}
+    #bai_ren_help_close{position: fixed;top: 100px;left: 910px;cursor: pointer;}
+    #how_to_play{position: fixed; color: #fdddd3; font-size: 24px;top: 140px;left: 70px; font-family: 'LanTingChungHei';width: 830px;}
+    #how_to_play .title{color: #ff7049; font-size: 28px;}
+    #card_combination{position: fixed; color: #fdddd3; font-size: 24px;top: 290px;left: 70px;width: 830px; font-family: 'LanTingChungHei';}
+    #card_combination .title{color: #ff7049; font-size: 28px;}
+    .title{margin-bottom: 10px;}
+    ul{margin: 0;}
+
+    /* record start */
+    #hall_bai_ren_record{display: none;}
+    #bai_ren_board_record_bg{position: fixed;}
+    #bai_ren_record_close{position: fixed;top: 100px;left: 910px;cursor: pointer;}
+    #box_extract {position: fixed;top: 185px;left: 105px;height: 330px;width: 860px;overflow-y: auto;scrollbar-width: none;}
+    .css_tr {display: table-row;}
+    .css_td {display: table-cell;width: 450px;height: 82px;line-height: 82px;}
+    #css_tableTitle {position: fixed;top: 120px;left: 105px;display:table;text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse;font-size: 24px;line-height: 60px;width: 785px;color: #ffcabd;}
+    #bai_ren_css_table {display:table;text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse;font-size: 24px;line-height: 60px;width: 785px;color: #FFFFFF;}
+    #bai_ren_css_table .css_td,#css_tableTitle .css_td{text-align: center;}
+    #bai_ren_css_table .css_td:nth-child(1){width: 80px;font-size: 24px;color:  #ebbd87;}
+    #bai_ren_css_table .css_td:nth-child(2){width: 280px;font-size: 18px;color:  #ffe073;}
+    #bai_ren_css_table .css_td:nth-child(3){width: 80px;font-size: 22px;color: #ebbd87;}
+    #bai_ren_css_table .css_td:nth-child(4){width: 100px;font-size: 22px;}
+    #bai_ren_css_table .css_td:nth-child(5){width: 200px;font-size: 18px;color:  #ebbd87;}
+    #css_tableTitle .css_td:nth-child(1){width: 80px;}
+    #css_tableTitle .css_td:nth-child(2){width: 280px;}
+    #css_tableTitle .css_td:nth-child(3){width: 80px;}
+    #css_tableTitle .css_td:nth-child(4){width: 100px;}
+    #css_tableTitle .css_td:nth-child(5){width: 200px;}
+    .red{color: #dd1515;}
+    .green{color: #399c53;}
+    #bai_ren_hint_extract{position: fixed; top: 530px;left: 400px;color: #ac756d;font-size: 24px;font-family: 'LanTingChungHei'}
+    ::-webkit-scrollbar {
+        width: 0px;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+        scrollbar-width: none;
+    }
+  </style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <div id="hall_bai_ren_help">
+      <img id="bai_ren_board_help_bg" src="@/../../../../assets/hall/bai.ren.niou.niou/board_help.png">
+      <img id="bai_ren_help_close" class="btn_close" src="@/../../../../assets/hall/bai.ren.niou.niou/btn_cancel.png">
+      <div id="how_to_play">
+        <div class="title">玩法:</div>
+        <ul>
+          <li>游戏用牌为一副排除大小王以外, 共计52张。</li>
+          <li>闲家所有下注点只和庄家互比, 闲家之间不互比。</li>
+          <li>本游戏共4个下注点, 天, 地, 玄, 黄, 均可在下注状态时进行下注。</li>
+        </ul>
+      </div>
+      <div id="card_combination">
+        <div class="title">牌型:</div>
+        <ul>
+          <li>牌面: 10, J, Q, K的点数都算作10, 其他牌按牌面数字计算。</li>
+          <li>没牛: 5张牌中任意3张牌的点数之和都不为10的整数倍。</li>
+          <li>有牛: 5张牌中有3张牌的点数之和为10的整数倍, 另外2张牌的牌面之和不为10的整数倍, 则这2张点数之和的个位数即为牛几。</li>
+          <li>牛牛: 5张牌中有3张牌的点数之和为10的整数倍, 且另外2张牌的点数相加也为10的整数倍。</li>
+        </ul>
+      </div>
+  </div>
+  <div id="hall_bai_ren_record">
+    <img id="bai_ren_board_record_bg" src="@/../../../../assets/hall/bai.ren.niou.niou/board_record.png">
+    <img id="bai_ren_record_close" class="btn_close" src="@/../../../../assets/hall/bai.ren.niou.niou/btn_cancel.png">
+    <div id="css_tableTitle">
+      <div class="css_tr">
+        <div class="css_td">序号</div>
+        <div class="css_td">牌局编号</div>
+        <div class="css_td">房间</div>
+        <div class="css_td">盈利</div>
+        <div class="css_td">结束时间</div>
+      </div>
+    </div>
+    <div id="box_extract">
+      <div id="bai_ren_css_table">
+        <div class="css_tr">
+          <div class="css_td">1</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td green">-6,500</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">2</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td red">+6,500</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">3</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td green">-6,500</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">4</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td green">-6,500</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">5</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td red">0</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">5</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td red">0</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">5</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td red">0</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">5</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td red">0</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">5</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td red">0</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+        <div class="css_tr">
+          <div class="css_td">5</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td red">0</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div>
+      </div>
+    </div>
+    <div id="bai_ren_hint_extract">最多保存10條紀錄</div>
+  </div>
+</body>
+</html>

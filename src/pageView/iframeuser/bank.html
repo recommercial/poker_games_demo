@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #icon_close { position: fixed; left: 1340px; top: 30px; }
+        #add { position: fixed; left: 570px; top: 830px; }
+        #user_tab_01 { position: fixed; left: 160px; top: 100px; }
+        #user_tab_02 { position: fixed; left: 440px; top: 100px;  }
+        #user_tab_03 { position: fixed; left: 710px; top: 100px; }
+        #user_tab_04 { position: fixed; left: 980px; top: 100px; }
+        #click_edit_01 { position: fixed; left: 920px; top: 230px; }
+        #click_edit_02 { position: fixed; left: 920px; top: 350px; }
+        #click_edit_03 { position: fixed; left: 920px; top: 470px; }
+        #click_edit_04 { position: fixed; left: 920px; top: 590px; }
+        #click_edit_05 { position: fixed; left: 920px; top: 710px; }
+        #click_delete_01 { position: fixed; left: 1110px; top: 230px; }
+        #click_delete_02 { position: fixed; left: 1110px; top: 350px; }
+        #click_delete_03 { position: fixed; left: 1110px; top: 470px; }
+        #click_delete_04 { position: fixed; left: 1110px; top: 590px; }
+        #click_delete_05 { position: fixed; left: 1110px; top: 710px; }
+
+        #input_01 { position: fixed; left: 420px; top: 210px; width: 530px; height: 110px; }
+        #input_02 { position: fixed; left: 420px; top: 330px; width: 530px; height: 110px; }
+        #input_03 { position: fixed; left: 420px; top: 450px; width: 530px; height: 110px; }
+        #input_04 { position: fixed; left: 420px; top: 570px; width: 530px; height: 110px; }
+        #input_05 { position: fixed; left: 420px; top: 690px; width: 530px; height: 110px; }
+        #bg_img { position: fixed; left: 0px; top: 0px; }
+        #input_bg_01 { position: fixed; left: 105px; top: 210px; }
+        #input_bg_02 { position: fixed; left: 105px; top: 330px; }
+        #input_bg_03 { position: fixed; left: 105px; top: 450px; }
+        #input_bg_04 { position: fixed; left: 105px; top: 570px; }
+        #input_bg_05 { position: fixed; left: 105px; top: 690px; }
+        #head_01 { position: fixed; left: 190px; top: 240px; width: 230px; font-size: 36px; color: #F3DB46 }
+        #head_02 { position: fixed; left: 190px; top: 360px; width: 230px; font-size: 36px; color: #F3DB46 }
+        #head_03 { position: fixed; left: 190px; top: 480px; width: 230px; font-size: 36px; color: #F3DB46 }
+        #head_04 { position: fixed; left: 190px; top: 600px; width: 230px; font-size: 36px; color: #F3DB46 }
+        #head_05 { position: fixed; left: 190px; top: 720px; width: 230px; font-size: 36px; color: #F3DB46 }
+
+        textarea, input { background: transparent; border: none; color: #ffffff; font-size: 36px; }
+        textarea:focus, input:focus { outline: none; }
+    </style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <!-- display only -->
+    <img id="bg_img" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_popup01.png">
+    <img id="input_bg_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_10.png">
+    <img id="input_bg_02" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_10.png">
+    <img id="input_bg_03" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_10.png">
+    <img id="input_bg_04" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_10.png">
+    <img id="input_bg_05" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_10.png">
+    <div id="head_01">银行卡1</div>
+    <div id="head_02">银行卡2</div>
+    <div id="head_03">银行卡3</div>
+    <div id="head_04">银行卡4</div>
+    <div id="head_05">银行卡5</div>
+
+    <!-- click -->
+    <img id="icon_close" name="icon_close" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_close.png">
+	<img id="add" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_addBank.png">
+    <img id="user_tab_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_01.png">
+    <img id="user_tab_02" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_02.png">
+    <img id="user_tab_03" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_03_hover.png">
+    <img id="user_tab_04" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_04.png">
+
+	<img id="click_edit_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_edit02.png">
+    <img id="click_edit_02" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_edit02.png">
+    <img id="click_edit_03" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_edit02.png">
+    <img id="click_edit_04" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_edit02.png">
+    <img id="click_edit_05" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_edit02.png">
+	<img id="click_delete_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_delete.png">
+    <img id="click_delete_02" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_delete.png">
+    <img id="click_delete_03" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_delete.png">
+    <img id="click_delete_04" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_delete.png">
+    <img id="click_delete_05" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_delete.png">
+
+    <!-- input -->
+	<input id="input_01" type="text" value="1234567890123456" placeholder="" readonly>
+	<input id="input_02" type="text" value="1234567890123456" placeholder="" readonly>
+	<input id="input_03" type="text" value="1234567890123456" placeholder="" readonly>
+	<input id="input_04" type="text" value="1234567890123456" placeholder="" readonly>
+	<input id="input_05" type="text" value="1234567890123456" placeholder="" readonly>
+	
+
+</body>
+</html>

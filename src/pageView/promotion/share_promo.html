@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  #promote_popup_share{
+    position: fixed;
+  }
+  #icon_close_share{
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    left: 1650px;
+  }
+  #promote_tab_01_share{
+    position: fixed;
+    top: 91px;
+    left: 497px;
+  }
+  #promote_tab_02_share{
+    cursor: pointer;
+    position: fixed;
+    top: 91px;
+    left: 797px;
+  }
+  #promote_tab_03_share{
+    cursor: pointer;
+    position: fixed;
+    top: 91px;
+    left: 1067px;
+  }
+  #promote_tab_04_share{
+    cursor: pointer;
+    position: fixed;
+    top: 91px;
+    left: 1337px;
+  }
+  #promote_form_header_share {
+    position: fixed;
+    top: 270px;
+    left: 70px;
+  }
+  #css_table {
+    display:table;
+    font-size: 35px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'LanTingHei';
+
+    position: fixed;
+    top: 400px;
+    left: 60px;
+  }
+  #title_share {
+    display:table;
+    font-size: 40px;
+    color: #e5b79f;
+    text-align: center;
+    font-family: 'LanTingHei';
+
+    position: fixed;
+    top: 270px;
+    left: 60px;
+  }
+  .css_tr {
+    display: table-row;
+  }
+  .css_tr:nth-child(even) {
+    background-image: url('@/../../../assets/promotion/promote_form_data_even.png');
+  }
+  .css_td {
+    display: table-cell;
+    width: 310px;
+    height: 108px;
+    line-height: 108px;
+  }
+  @font-face {font-family: 'LanTingHei'; src: url('@../../../../font/LanTingChungHei.ttf');}
+
+  #promote_QRCode_share{
+    position: fixed;
+    top: 235px;
+    left: 1385px;
+    cursor: pointer;
+  }
+  #promote_weibo_share{
+    position: fixed;
+    top: 513px;
+    left: 1357px;
+    cursor: pointer;
+  }
+  #promote_friend_share{
+    position: fixed;
+    top: 513px;
+    left: 1525px;
+    cursor: pointer;
+  }
+  #current_reward_share{
+    position: fixed;
+    top: 728px;
+    left: 1375px;
+    font-size: 38px;
+    color: #f7efd8;
+    width: 290px;
+    text-align: center;
+  }
+  #current_rewardTilte_share{
+    position: fixed;
+    top: 805px;
+    left: 1365px;
+    font-size: 38px;
+    color: #f7efd8;
+    font-family: 'LanTingHei';
+  }
+  #get_rewardNumber_share{
+    position: fixed;
+    top: 808px;
+    left: 1540px;
+    text-align: center;
+    font-size: 38px;
+    color: #f7efd8;
+    width: 155px;
+  }
+  #get_reward_share{
+    position: fixed;
+    top: 883px;
+    left: 1383px;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <img id="promote_popup_share" src="@../../../../assets/promotion/promote_popup01.png">
+  <img id="icon_close_share" src="@../../../../assets/promotion/icon_close.png">
+  <img id="promote_tab_01_share" src="@../../../../assets/promotion/promote_tab_01_hover.png">
+  <img id="promote_tab_02_share" src="@../../../../assets/promotion/promote_tab_02.png">
+  <img id="promote_tab_03_share" src="@../../../../assets/promotion/promote_tab_03.png">
+  <img id="promote_tab_04_share" src="@../../../../assets/promotion/promote_tab_04.png">
+  
+  <img id="promote_form_header_share" src="@../../../../assets/promotion/promote_form_header.png">
+  <div id="title_share">
+    <div class="css_tr">
+      <div class="css_td">昵称</div>
+      <div class="css_td">ID</div>
+      <div class="css_td">累计奖励</div>
+      <div class="css_td">可领取奖励</div>
+    </div>
+  </div>
+  <div id="css_table">
+    <div class="css_tr">
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+    </div>
+    <div class="css_tr">
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+    </div>
+    <div class="css_tr">
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+    </div>
+    <div class="css_tr">
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+    </div>
+    <div class="css_tr">
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+      <div class="css_td">123</div>
+      <div class="css_td">10000</div>
+    </div>
+  </div>
+  <img id="promote_QRCode_share" src="@../../../../assets/promotion/promote_QRCode_270x270.png">
+  <img id="promote_weibo_share" src="@../../../../assets/promotion/promote_icon_share01.png">
+  <img id="promote_friend_share" src="@../../../../assets/promotion/promote_icon_share02.png">
+  <span id="current_reward_share">0</span>
+  <span id="current_rewardTilte_share">可领奖励 : </span>
+  <span id="get_rewardNumber_share">0</span>
+  <img id="get_reward_share" src="@../../../../assets/promotion/promote_icon_get.png">
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+   body{
+      margin: 0;
+      padding: 0;
+    }
+  #mailDetail_bg, #mailDetail_mail_mask02{
+    position: fixed;
+
+  }
+  #mailDetail_bg{
+    top: 30px;
+  }
+  #close_btn{
+    position: fixed;
+    top: 0px;
+    left: 1240px;
+    cursor: pointer;
+  }
+  #mail_icon_delete{
+    position: fixed;
+    top: 690px;
+    left: 510px;
+    cursor: pointer;
+  }
+  #message{
+    position: fixed;
+    top: 210px;
+    left: 70px;
+    font-size: 34px;
+    color: whitesmoke;
+  }
+  .partOne{
+    width: 1190px;
+  }
+  .partTwo{
+    width: 1190px;
+    margin-top: 30px;
+  }
+  .title{
+    color: #c7af7a;
+    font-family: 'LanTingChungHei';
+    font-size: 40px;
+  }
+  .content{
+    line-height: 58px;
+    color: #FFFFFF;
+    font-family: 'LanTingHei';
+    font-size: 40px;
+  }
+  .vipRecharge{
+    color: #f3ccb8;
+    font-family: 'LanTingHei';
+    font-size: 40px;
+  }
+  @font-face {
+      font-family: 'LanTingChungHei';
+      src: url('@../../../../../font/LanTingChungHei.ttf');
+  }
+  @font-face {
+      font-family: 'LanTingHei';
+      src: url('@../../../../../font/LanTingHei.ttf');
+  }
+</style>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <img id="mailDetail_mail_mask02" src="@/../../../../assets/lobby/mail/mail_mask02.png">
+    <img id="mailDetail_bg" src="@/../../../../assets/lobby/mail/mail_popup02.png">
+    <img id="close_btn" src="@/../../../../assets/lobby/mail/icon_close.png">
+    <img id="mail_icon_delete" src="@/../../../../assets/lobby/mail/mail_icon_delete.png">
+    <div id="message">
+      <div class="partOne">
+          <span class="title">亲爱的玩家:</span>
+          <div class="content">
+            推荐您使用 <span class="vipRecharge">【VIP充值】</span>, VIP充值是官方为您制定的安全快捷充值方式, 3-5秒快速到账。
+          </div>
+      </div>
+      <div class="partTwo">
+          <span class="title">使用方法:</span>
+          <div class="content">
+            在游戏内添加官方认证的代理为信或QQ, 联系蛋里进行充值, 之职支付宝, 微信, QQ钱包, 云闪付, 网银转账等多种支付方式。客服24小时在线服务, 大额无忧, 秒充秒到!
+          </div>
+      </div>
+    </div>
+</body>
+</html>

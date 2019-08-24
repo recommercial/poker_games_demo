@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+   #fullSize_board{
+     position: fixed;
+   }
+   #btn_cancel{
+      position: fixed;
+      top: 40px;
+      left: 1633px;
+      cursor: pointer;
+   }
+   #border_red_1_table{
+      position: fixed;
+      top: 165px;
+      left: 184px;
+   }
+   #border_blue_3_table{
+      position: fixed;
+      top: 165px;
+      left: 224px;
+   }
+   #border_blue_1_table{
+      position: fixed;
+      top: 165px;
+      left: 264px;
+   }
+   #border_red_3_table{
+      position: fixed;
+      top: 165px;
+      left: 304px;
+   }
+   #border_blue_2_table{
+      position: fixed;
+      top: 424px;
+      left: 296px;
+   }
+   #border_red_2_table{
+      position: fixed;
+      top: 424px;
+      left: 321px;
+   }
+   #blue_s{
+      position: fixed;
+      top: 424px;
+      left: 675px;
+   }
+   #red_s{
+      position: fixed;
+      top: 424px;
+      left: 699px;
+   }
+   #slash_red_s{
+      position: fixed;
+      top: 397px;
+      left: 1227px;
+   }
+   #slash_blue_s{
+      position: fixed;
+      top: 397px;
+      left: 1251px;
+   }
+   #border_red_1{
+      position: fixed;
+      top: 578px;
+      left: 1420px;
+   }
+   #red_l{
+      position: fixed;
+      top: 578px;
+      left: 1470px;
+   }
+   #slash_red_m{
+      position: fixed;
+      top: 578px;
+      left: 1520px;
+   }
+   #border_blue_1{
+      position: fixed;
+      top: 635px;
+      left: 1420px;
+   }
+   #blue_l{
+      position: fixed;
+      top: 635px;
+      left: 1470px;
+   }
+   #slash_blue_m{
+      position: fixed;
+      top: 635px;
+      left: 1520px;
+   }
+   #circle_11_draw_m{
+      position: fixed;
+      top: 623px;
+      left: 153px;
+   }
+   #circle_9_draw_m{
+      position: fixed;
+      top: 623px;
+      left: 203px;
+   }
+   #circle_10_draw_m{
+      position: fixed;
+      top: 623px;
+      left: 252px;
+   }
+   #circle_3_draw_m{
+      position: fixed;
+      top: 623px;
+      left: 301px;
+   }
+   #circle_8_user_m{
+      position: fixed;
+      top: 674px;
+      left: 153px;
+   }
+   #circle_6_user_m{
+      position: fixed;
+      top: 674px;
+      left: 203px;
+   }
+   #circle_7_user_m{
+      position: fixed;
+      top: 674px;
+      left: 252px;
+   }
+   #circle_2_user_m{
+      position: fixed;
+      top: 674px;
+      left: 301px;
+   }
+   #circle_4_banker_m{
+      position: fixed;
+      top: 725px;
+      left: 203px;
+   }
+   #circle_5_banker_m{
+      position: fixed;
+      top: 725px;
+      left: 252px;
+   }
+   #circle_1_banker_m{
+      position: fixed;
+      top: 725px;
+      left: 301px;
+   }
+  </style>
+  <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <img id="fullSize_board" src="@../../../../assets/game/baccarat/all_image/fullSize_board.png">
+    <img id="btn_cancel" src="@../../../../assets/game/baccarat/all_image/btn_cancel.png">
+
+    <img id="border_red_1_table" src="@../../../../assets/game/baccarat/all_image/border_red_1.png">
+    <img id="border_blue_3_table" src="@../../../../assets/game/baccarat/all_image/border_blue_3.png">
+    <img id="border_blue_1_table" src="@../../../../assets/game/baccarat/all_image/border_blue_1.png">
+    <img id="border_red_3_table" src="@../../../../assets/game/baccarat/all_image/border_red_3.png">
+    <img id="border_blue_2_table" src="@../../../../assets/game/baccarat/all_image/border_blue_2.png">
+    <img id="border_red_2_table" src="@../../../../assets/game/baccarat/all_image/border_red_2.png">
+    <img id="blue_s" src="@../../../../assets/game/baccarat/all_image/blue_s.png">
+    <img id="red_s" src="@../../../../assets/game/baccarat/all_image/red_s.png">
+    <img id="slash_red_s" src="@../../../../assets/game/baccarat/all_image/slash_red_s.png">
+    <img id="slash_blue_s" src="@../../../../assets/game/baccarat/all_image/slash_blue_s.png">
+    <img id="border_red_1" src="@../../../../assets/game/baccarat/all_image/border_red_1.png">
+    <img id="red_l" src="@../../../../assets/game/baccarat/all_image/red_l.png">
+    <img id="slash_red_m" src="@../../../../assets/game/baccarat/all_image/slash_red_m.png">
+    <img id="border_blue_1" src="@../../../../assets/game/baccarat/all_image/border_blue_1.png">
+    <img id="blue_l" src="@../../../../assets/game/baccarat/all_image/blue_l.png">
+    <img id="slash_blue_m" src="@../../../../assets/game/baccarat/all_image/slash_blue_m.png">
+    <img id="circle_11_draw_m" src="@../../../../assets/game/baccarat/all_image/circle_11_draw_m.png">
+    <img id="circle_9_draw_m" src="@../../../../assets/game/baccarat/all_image/circle_9_draw_m.png">
+    <img id="circle_10_draw_m" src="@../../../../assets/game/baccarat/all_image/circle_10_draw_m.png">
+    <img id="circle_3_draw_m" src="@../../../../assets/game/baccarat/all_image/circle_3_draw_m.png">
+    <img id="circle_8_user_m" src="@../../../../assets/game/baccarat/all_image/circle_8_user_m.png">
+    <img id="circle_6_user_m" src="@../../../../assets/game/baccarat/all_image/circle_6_user_m.png">
+    <img id="circle_7_user_m" src="@../../../../assets/game/baccarat/all_image/circle_7_user_m.png">
+    <img id="circle_2_user_m" src="@../../../../assets/game/baccarat/all_image/circle_2_user_m.png">
+    <img id="circle_4_banker_m" src="@../../../../assets/game/baccarat/all_image/circle_4_banker_m.png">
+    <img id="circle_5_banker_m" src="@../../../../assets/game/baccarat/all_image/circle_5_banker_m.png">
+    <img id="circle_1_banker_m" src="@../../../../assets/game/baccarat/all_image/circle_1_banker_m.png">
+  </body>
+
+</html>

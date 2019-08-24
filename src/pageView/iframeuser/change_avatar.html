@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+#icon_close {
+    position: fixed; left: 1470px; top: 0px; 
+}
+#save {
+    position: fixed; left: 650px; top: 690px; 
+}
+#pick_avatar {
+    position: fixed; left: 650px; top: 690px; display: none;
+}
+
+#male {
+    position: fixed; left: 610px; top: 170px; 
+}
+#female {
+    position: fixed; left: 810px; top: 170px; 
+}
+#avatar_01 {
+    position: fixed; left: 92px; top: 254px; 
+}
+#avatar_02 {
+    position: fixed; left: 323px; top: 254px; 
+}
+#avatar_03 {
+    position: fixed; left: 554px; top: 254px; 
+}
+#avatar_04 {
+    position: fixed; left: 785px; top: 254px; 
+}
+#avatar_05 {
+    position: fixed; left: 1016px; top: 254px; 
+}
+#avatar_06 {
+    position: fixed; left: 1247px; top: 254px; 
+}
+#avatar_07 {
+    position: fixed; left: 92px; top: 468px; 
+}
+#avatar_08 {
+    position: fixed; left: 323px; top: 468px; 
+}
+#avatar_09 {
+    position: fixed; left: 554px; top: 468px; 
+}
+#avatar_10 {
+    position: fixed; left: 785px; top: 468px; 
+}
+#avatar_11 {
+    position: fixed; left: 1016px; top: 468px; 
+}
+#avatar_12 {
+    position: fixed; left: 1247px; top: 468px; 
+}
+
+
+#bg_img {
+    position: fixed; left: 0px; top: 20px; 
+}
+#label_male {
+    position: fixed; left: 680px; top: 174px;  width: 100px; font-size: 48px; color:#a49a74
+}
+#label_female {
+    position: fixed; left: 880px; top: 174px;  width: 100px; font-size: 48px; color:#a49a74
+}
+
+#root { margin: 0; padding: 0; height: 100%; width: 100%;}
+.for_data { position: fixed; left: 0px; top: 0px; display: none;}
+.radio_image { position: fixed; left: 0px; top: 0px; display: none;}
+textarea:focus, input:focus{ outline: none; }
+</style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+<div id="root">
+    <!-- display only -->
+    <img id="bg_img" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_popup03.png">
+    <div id="label_male">男</div>
+    <div id="label_female">女</div>
+    
+    <!-- click -->
+    <img id="icon_close" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_close.png">
+    <img id="save" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_save.png">
+
+    <!-- input -->
+    <img id="male" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_input_radio.png">
+    <img id="female" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_input_radio_checked.png">
+
+    <!-- choice -->
+    <img id="avatar_01" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_01.png">
+    <img id="avatar_02" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_02.png">
+    <img id="avatar_03" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_03.png">
+    <img id="avatar_04" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_04.png">
+    <img id="avatar_05" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_05.png">
+    <img id="avatar_06" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_06.png">
+    <img id="avatar_07" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_07.png">
+    <img id="avatar_08" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_08.png">
+    <img id="avatar_09" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_09.png">
+    <img id="avatar_10" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_10.png">
+    <img id="avatar_11" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_11.png">
+    <img id="avatar_12" class="choice_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_12.png">
+</div>
+
+<!-- for-data -->
+<img id="avatar_woman_01" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_01.png">
+<img id="avatar_woman_02" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_02.png">
+<img id="avatar_woman_03" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_03.png">
+<img id="avatar_woman_04" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_04.png">
+<img id="avatar_woman_05" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_05.png">
+<img id="avatar_woman_06" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_06.png">
+<img id="avatar_woman_07" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_07.png">
+<img id="avatar_woman_08" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_08.png">
+<img id="avatar_woman_09" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_09.png">
+<img id="avatar_woman_10" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_10.png">
+<img id="avatar_woman_11" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_11.png">
+<img id="avatar_woman_12" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_12.png">
+<img id="avatar_man_01" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_01.png">
+<img id="avatar_man_02" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_02.png">
+<img id="avatar_man_03" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_03.png">
+<img id="avatar_man_04" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_04.png">
+<img id="avatar_man_05" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_05.png">
+<img id="avatar_man_06" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_06.png">
+<img id="avatar_man_07" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_07.png">
+<img id="avatar_man_08" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_08.png">
+<img id="avatar_man_09" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_09.png">
+<img id="avatar_man_10" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_10.png">
+<img id="avatar_man_11" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_11.png">
+<img id="avatar_man_12" class="for_data" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/avatar/user_avatar_men_12.png">
+
+<img id="radio_no" class="radio_image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_input_radio.png">
+<img id="radio_yes" class="radio_image" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_input_radio_checked.png">
+
+<img id="pick_avatar" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_pick.png">
+</body>
+</html>

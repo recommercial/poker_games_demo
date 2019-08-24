@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>.</title>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {font-family: 'LanTingChungHei'; src: url('@/../../../../font/LanTingChungHei.ttf') format("truetype"); font-display:swap;}
+    body{margin: 0;padding: 0; scrollbar-width: none; -ms-overflow-style: none;}
+    ::-webkit-scrollbar {width: 0px;background: transparent; scrollbar-width: none; }
+    textarea:focus, input:focus { outline: none; }
+    textarea, input { background: transparent; border: none; }
+    .red{color: #ff0000;}
+    .green{color: #00ff00;}
+  </style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <!-- start record -->
+  <style>
+    #GCJ_record_panel{display: none;}
+    #GCJ_record_board{position: fixed; top: 0px; left: 0px;}
+    #GCJ_record_cancel{position: fixed; top: 15px; left: 1298px; cursor: pointer;}
+    #GCJ_record_list_container {position: fixed;top: 230px; left: 60px; height: 410px; width: 1340px;overflow-y: auto;}
+    .css_tr {display: table-row;}
+    .css_td {display: table-cell; width: 450px ;height: 82px; line-height: 82px;}
+    
+    #css_tableTitle {position: fixed; top: 128px; left: 60px; display:table; text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse; font-size: 32px;line-height: 60px; width: 1340px; color: #c0acff;}
+    #css_tableTitle .css_td:nth-child(1){width: 80px; }
+    #css_tableTitle .css_td:nth-child(2){width: 400px; }
+    #css_tableTitle .css_td:nth-child(3){width: 110px; }
+    #css_tableTitle .css_td:nth-child(4){width: 200px; }
+    #css_tableTitle .css_td:nth-child(5){width: 330px; }
+
+    #GCJ_record_list {display:table;text-align: center;cursor: pointer;font-family: 'LanTingChungHei';border-collapse: collapse;font-size: 24px;line-height: 60px; width: 1340px; color: #FFFFFF;}
+    #GCJ_record_list .css_td,#css_tableTitle .css_td{text-align: center;}
+    #GCJ_record_list .css_td:nth-child(1){width: 80px; font-size: 26px;}
+    #GCJ_record_list .css_td:nth-child(2){width: 400px; font-size: 26px;}
+    #GCJ_record_list .css_td:nth-child(3){width: 110px; font-size: 26px;}
+    #GCJ_record_list .css_td:nth-child(4){width: 200px; font-size: 26px;}
+    #GCJ_record_list .css_td:nth-child(5){width: 330px; font-size: 26px;}
+    #GCJ_last_ten{position: fixed; top: 665px; left: 580px; color: #c2cfff; font-size: 30px; font-family: 'LanTingChungHei'}
+  </style>
+  <div id="GCJ_record_panel">
+    <img id="GCJ_record_board" src="@/../../../../assets/game/chiang.juang.shiau.niou/board_record.png">
+    <img id="GCJ_record_cancel" class="btn_close" src="@/../../../../assets/game/chiang.juang.shiau.niou/btn_cancel.png">
+    <div id="css_tableTitle">
+      <div class="css_tr">
+        <div class="css_td">序号</div>
+        <div class="css_td">牌局编号</div>
+        <div class="css_td">房间</div>
+        <div class="css_td">盈利</div>
+        <div class="css_td">结束时间</div>
+      </div>
+    </div>
+    <div id="GCJ_record_list_container">
+      <div id="GCJ_record_list">
+        <!-- record list template -->
+        <!-- 
+          <div class="css_tr">
+          <div class="css_td">1</div>
+          <div class="css_td">50-1553830964-51348614-1</div>
+          <div class="css_td">高级房</div>
+          <div class="css_td green">-6,500</div>
+          <div class="css_td">2019-03-29 11:43:11</div>
+        </div> 
+        -->
+      </div>
+    </div>
+    <div id="GCJ_last_ten">展示最近10条游戏记录</div>
+  </div>
+  <!-- end record -->
+
+  <!-- start help -->
+  <style>
+    #GCJ_help_panel { display: none;}
+    #GCJ_help_board { position: fixed; top: 0px; left: 0px;}
+    #GCJ_help_cancel{position: fixed; top: 15px; left: 1298px; cursor: pointer;}
+    #GCJ_btn_help1 { position: fixed; top: 110px; left: 0px; }
+    #GCJ_btn_help2 { position: fixed; top: 230px; left: 0px; }
+    #GCJ_btn_help3 { position: fixed; top: 350px; left: 0px; }
+    #GCJ_btn_help4 { position: fixed; top: 470px; left: 0px; }
+    #GCJ_btn_help5 { position: fixed; top: 590px; left: 0px; }
+    .GCJ_help1_selected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help1_selected.png"); }
+    .GCJ_help2_selected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help2_selected.png"); }
+    .GCJ_help3_selected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help3_selected.png"); }
+    .GCJ_help4_selected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help4_selected.png"); }
+    .GCJ_help5_selected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help5_selected.png"); }
+    .GCJ_help1_unselected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help1.png"); }
+    .GCJ_help2_unselected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help2.png"); }
+    .GCJ_help3_unselected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help3.png"); }
+    .GCJ_help4_unselected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help4.png"); }
+    .GCJ_help5_unselected { content:url("@/../../../../assets/game/chiang.juang.shiau.niou/btn_help5.png"); }
+    #GCJ_help1_content { position: fixed; top: 140px; left: 400px; width: 920px; height: 550px; overflow-y: auto;}
+    #GCJ_help2_content { position: fixed; top: 140px; left: 400px; width: 920px; height: 550px; overflow-y: auto;}
+    #GCJ_help3_content { position: fixed; top: 140px; left: 400px; width: 920px; height: 550px; overflow-y: auto;}
+    #GCJ_help4_content { position: fixed; top: 140px; left: 400px; width: 920px; height: 550px; overflow-y: auto;}
+    #GCJ_help5_content { position: fixed; top: 140px; left: 400px; width: 920px; height: 550px; overflow-y: auto;}
+    .GCJ_help_title { color:#ffda45; font-family: 'LanTingChungHei'; font-size: 32px; line-height: 50px; }
+    .GCJ_help_content { color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px; line-height: 50px; }
+  </style>
+  <div id="GCJ_help_panel">
+    <img id="GCJ_help_board" src="@/../../../../assets/game/chiang.juang.shiau.niou/board_help.png">
+    <img id="GCJ_help_cancel" class="btn_close" src="@/../../../../assets/game/chiang.juang.shiau.niou/btn_cancel.png">
+    <!-- tab image -->
+    <img id="GCJ_btn_help1" class="GCJ_help1_selected">
+    <img id="GCJ_btn_help2" class="GCJ_help2_unselected">
+    <img id="GCJ_btn_help3" class="GCJ_help3_unselected">
+    <img id="GCJ_btn_help4" class="GCJ_help4_unselected">
+    <img id="GCJ_btn_help5" class="GCJ_help5_unselected">
+
+    <div id="GCJ_help1_content">
+      <div class="GCJ_help_title">定庄：</div>
+      <div class="GCJ_help_content">开局玩家开始抢庄家，抢庄倍数最高的玩家为本局庄家，抢庄倍数相同时由游戏概率决定。超时不抢庄，系统将自动执行操作。所有人都不抢庄，随机一名玩家作庄。</div>
+      <div class="GCJ_help_title">闲家：</div>
+      <div class="GCJ_help_content">定庄后，所有闲家开始选择下注倍数。携带游戏币越多，最大可下注倍数越大，超时不下注，系统自动下最小倍数。</div>
+      <div class="GCJ_help_title">开始发牌：</div>
+      <div class="GCJ_help_content">系统向每名玩家发五张手牌。</div>
+      <div class="GCJ_help_title">拼牌：</div>
+      <div class="GCJ_help_content">玩家拿到五张手牌后即开始拼牌。</div>
+      <div class="GCJ_help_title">比牌：</div>
+      <div class="GCJ_help_content">拼牌完成后，所有玩家亮出手牌。闲家只与庄家互比，闲家之间不互比。</div>
+      <div class="GCJ_help_title">结算公式：</div>
+      <div class="GCJ_help_content">A：房间底注</div>
+      <div class="GCJ_help_content">M：庄家牌型对应的倍数</div>
+      <div class="GCJ_help_content">N：闲家牌型对应的倍数</div>
+      <div class="GCJ_help_content">X：庄家抢庄倍数</div>
+      <div class="GCJ_help_content">Y：闲家下注倍数</div>
+      <div class="GCJ_help_content">庄家胜利所赢游戏币= A*M*X*Y-抽水</div>
+      <div class="GCJ_help_content">庄家失败所输游戏币= A*N*X*Y</div>
+      <div class="GCJ_help_content">闲家胜利所赢游戏币= A*N*X*Y-抽水</div>
+      <div class="GCJ_help_content">闲家失败所输游戏币= A*N*X*Y</div>
+      <div class="GCJ_help_title">防以小博大机制：</div>
+      <div class="GCJ_help_content">本局带入多少游戏币，本局最多输赢多少游戏币。比如您本局带入80，计算时你理论应得200。但假如您本局输了，最多只输80，为了公平起见，您本局最多也只能赢80，而不是200。</div>
+      <div class="GCJ_help_title">抽水：</div>
+      <div class="GCJ_help_content">赢家所赢的金额的5%</div>
+      <div class="GCJ_help_title">特殊情况：</div>
+      <div class="GCJ_help_content">如果出现庄家不够输的情况，按照各闲家理论盈利比例结算输赢。如果出现庄家不够输的情况，按照各闲家理论盈利比利结算输赢。比如庄家有100，一次性输完，A理论应该赢200，B理论应该赢200，C理论应该赢400，由于庄家不够输，按照ABC理论盈利占比，最终得出：</div>
+      <div class="GCJ_help_content">A实际盈利=200/(200+200+400)*100=25</div>
+      <div class="GCJ_help_content">B实际盈利=200/(200+200+400)*100=25</div>
+      <div class="GCJ_help_content">C实际盈利=400/(200+200+400)*100=50</div>
+    </div>
+    
+    <div id="GCJ_help2_content">
+      <div class="GCJ_help_title">牌面：</div>
+      <div class="GCJ_help_content">10,J,Q,K的点数都算作10,其他牌按牌面数字计算。</div>
+      <div class="GCJ_help_title">没牛：</div>
+      <div class="GCJ_help_content">5张牌中任意3张牌的点数之和都不为10的整数倍。</div>
+      <div class="GCJ_help_title">有牛：</div>
+      <div class="GCJ_help_content">5张牌中有3张牌点数之和为10的整数倍，另外2张牌的牌面之和不为10的整数倍,则这2张点数之和的个位数即为牛几。</div>
+      <div class="GCJ_help_title">牛牛：</div>
+      <div class="GCJ_help_content">5张牌中有3张牌点数之和为10的整数倍，且另外2张牌的点数相加也为10的整数倍。</div>
+      <div class="GCJ_help_title">四花牛：</div>
+      <div class="GCJ_help_content">5张牌中有4张牌为花牌(J,Q,K)中的任意牌，且第5张牌为10。</div>
+      <div class="GCJ_help_title">五花牛：</div>
+      <div class="GCJ_help_content">5张牌为花牌(J,Q,K)中的任意牌。</div>
+      <div class="GCJ_help_title">四炸：</div>
+      <div class="GCJ_help_content">5张牌中有4张牌相同，第5张随意。</div>
+      <div class="GCJ_help_title">五小牛：</div>
+      <div class="GCJ_help_content">5张牌的点数都小于5，且点数之和小于等于10。</div>
+    </div>
+    
+    <div id="GCJ_help3_content">
+      <div class="GCJ_help_title">牌型大小比较：</div>
+      <div class="GCJ_help_content">五小牛>四炸>五花牛>四花牛>牛牛>牛九>牛八>牛七>牛六>牛五>牛四>牛三>牛二>牛一>没牛。</div>
+      <div class="GCJ_help_title">炸弹之间大小比较：</div>
+      <div class="GCJ_help_content">比较四炸的大小。</div>
+      <div class="GCJ_help_title">其他同牌型之间大小：</div>
+      <div class="GCJ_help_content">比大牌的点数(K>Q>J>10>9>8>7>6>5>4>3>2>A)；最大牌的点数相同，比较最大牌花色(黑桃>红桃>梅花>方块)</div>
+    </div>
+   
+    <div id="GCJ_help4_content">
+      <div class="GCJ_help_content">五小牛　　　　　　　　4倍</div>
+      <div class="GCJ_help_content">四炸　　　　　　　　　4倍</div>
+      <div class="GCJ_help_content">五花牛　　　　　　　　4倍</div>
+      <div class="GCJ_help_content">四花牛　　　　　　　　4倍</div>
+      <div class="GCJ_help_content">牛牛　　　　　　　　　3倍</div>
+      <div class="GCJ_help_content">牛七 -- 牛九　　　　　2倍</div>
+      <div class="GCJ_help_content">牛一 -- 牛六　　　　　1倍</div>
+      <div class="GCJ_help_content">没牛　　　　　　　　　1倍</div>
+    </div>
+    
+    <div id="GCJ_help5_content">
+      <div class="GCJ_help_title">各位玩家您好：</div>
+      <div class="GCJ_help_content">WWDZ棋牌自上线以来，得到广大玩家的厚爱与支持，我们向您表示衷心的感谢。</div>
+    </div>
+  </div>
+  <!-- end help -->
+
+  <!-- start feedback -->
+  <style>
+    #GCJ_feedback_panel { display: none;}
+    #GCJ_feedback_board { position: fixed; top: 0px; left: 0px;}
+    #GCJ_feedback_cancel{ position: fixed; top: 15px; left: 1298px; cursor: pointer;}
+    #GCJ_feedback_ok { position: fixed; top: 625px; left: 565px; cursor: pointer;}
+    #GCJ_feedback_content { position: fixed; top: 140px; left: 30px; width: 1320px; height: 470px; background: transparent; color: #FFFFFF; border: none; font-family: 'LanTingChungHei'; font-size: 32px; line-height: 50px; }
+  </style>
+  <div id="GCJ_feedback_panel">
+    <img id="GCJ_feedback_board" src="@/../../../../assets/game/chiang.juang.shiau.niou/board_feedback.png">
+    <img id="GCJ_feedback_cancel" class="btn_close" src="@/../../../../assets/game/chiang.juang.shiau.niou/btn_cancel.png">
+    <img id="GCJ_feedback_ok" src="@/../../../../assets/game/chiang.juang.shiau.niou/btn.png">
+    <textarea id="GCJ_feedback_content" placeholder="您对我们游戏的建议和吐槽都可以在这裡告诉我们噢~如果游戏中遇到了任何问题，请联系网站人工客服协助解决，谢谢您的支持~(10-60个字符)"></textarea>
+  </div>
+  <!-- end feedback -->
+
+  <!-- start setting -->
+  <style>
+    #GCJ_setting_panel { display: none;}
+    #GCJ_setting_board { position: fixed; top: 0px; left: 0px;}
+    #GCJ_setting_cancel{ position: fixed; top:15px; left: 1298px; cursor: pointer; }
+    #GCJ_setting_music_icon { position: fixed; top: 180px; left: 120px;}
+    #GCJ_setting_effect_icon { position: fixed; top: 280px; left: 120px;}
+    #GCJ_setting_music_text { position: fixed; top: 220px; left: 120px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GCJ_setting_effect_text { position: fixed; top: 340px; left: 120px; color:#ffffff; font-family: 'LanTingChungHei'; font-size: 32px;}
+    #GCJ_setting_music_bg { position: fixed; top: 235px; left: 260px;}
+    #GCJ_setting_effect_bg { position: fixed; top: 355px; left: 260px;}
+    #GCJ_setting_music_bar { position: fixed; top: 235px; left: 260px; width: 1026px; height: 30px; background: url('@/../../../../assets/game/chiang.juang.shiau.niou/bar_2.png') no-repeat; }
+    #GCJ_setting_effect_bar { position: fixed; top: 355px; left: 260px; width: 1026px; height: 30px; background: url('@/../../../../assets/game/chiang.juang.shiau.niou/bar_2.png') no-repeat; }
+    #GCJ_setting_music_value { position: fixed; top: 206px; left: 245px; cursor: pointer;}
+    #GCJ_setting_effect_value { position: fixed; top: 326px; left: 245px; cursor: pointer;}
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 1056px;
+    }
+
+    input[type=range]:focus {
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 78px;
+      width: 78px;
+      background-color: transparent;
+      background-image: url('@/../../../../assets/game/chiang.juang.shiau.niou/circle_1.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    
+    #GCJ_setting_music_switch_text { position: fixed; top: 475px; left: 350px; }
+    #GCJ_setting_effect_switch_text { position: fixed; top: 475px; left: 875px; }
+    #GCJ_setting_music_switch { position: fixed; top: 540px; left: 325px; width: 232px; height: 78px; cursor: pointer;}
+    #GCJ_setting_effect_switch { position: fixed; top: 540px; left: 850px; width: 232px; height: 78px; cursor: pointer;}
+    .switch_off {
+      background-image: 
+        url('@/../../../../assets/game/chiang.juang.shiau.niou/circle_2.png'), 
+        url('@/../../../../assets/game/chiang.juang.shiau.niou/bar_3.png');
+      background-position: 0px 0px, 0px 0px ;
+      background-repeat: no-repeat, no-repeat;
+    }
+    .switch_on {
+      background-image: 
+        url('@/../../../../assets/game/chiang.juang.shiau.niou/circle_2.png'), 
+        url('@/../../../../assets/game/chiang.juang.shiau.niou/bar_4.png');
+      background-position: 158px 0px, 0px 0px ;
+      background-repeat: no-repeat, no-repeat;
+    }
+
+  </style>
+  <div id="GCJ_setting_panel">
+    <img id="GCJ_setting_board" src="@/../../../../assets/game/chiang.juang.shiau.niou/board_setting.png">
+    <img id="GCJ_setting_cancel" class="btn_close" src="@/../../../../assets/game/chiang.juang.shiau.niou/btn_cancel.png">
+    <!--
+    <img id="GCJ_setting_music_icon" src="@/../../../../assets/game/chiang.juang.shiau.niou/setting_music.png">
+    <img id="GCJ_setting_effect_icon" src="@/../../../../assets/game/chiang.juang.shiau.niou/setting_volume.png">
+    <div id="GCJ_setting_music_text">音乐</div>
+    <div id="GCJ_setting_effect_text">音效</div>
+    -->
+    <img id="GCJ_setting_music_text" src="@/../../../../assets/game/chiang.juang.shiau.niou/text_1.png">
+    <img id="GCJ_setting_effect_text" src="@/../../../../assets/game/chiang.juang.shiau.niou/text_2.png">
+
+    <img id="GCJ_setting_music_bg" src="@/../../../../assets/game/chiang.juang.shiau.niou/bar_1.png">
+    <img id="GCJ_setting_effect_bg" src="@/../../../../assets/game/chiang.juang.shiau.niou/bar_1.png">
+    <div id="GCJ_setting_music_bar"></div>
+    <div id="GCJ_setting_effect_bar"></div>
+    <input id="GCJ_setting_music_value" type="range" min="0" max="100" step="1" value="100">
+    <input id="GCJ_setting_effect_value" type="range" min="0" max="100" step="1" value="100">
+    <!--
+    <div id="GCJ_setting_music_switch_text">音乐开关</div>
+    <div id="GCJ_setting_effect_switch_text">音效开关</div>
+    -->
+    <img id="GCJ_setting_music_switch_text" src="@/../../../../assets/game/chiang.juang.shiau.niou/text_3.png">
+    <img id="GCJ_setting_effect_switch_text" src="@/../../../../assets/game/chiang.juang.shiau.niou/text_4.png">
+
+    <div id="GCJ_setting_music_switch" class="switch_on"></div>
+    <div id="GCJ_setting_effect_switch" class="switch_off"></div>
+  </div>
+  <!-- end setting -->
+
+</body>
+</html>

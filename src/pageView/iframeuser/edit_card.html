@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+#icon_close {
+    position: fixed; left: 1470px; top: 0px; 
+}
+#save {
+    position: fixed; left: 650px; top: 720px; 
+}
+#input_name {
+    position: fixed; left: 370px; top: 200px; width: 380px; height: 110px; 
+}
+#input_cardnumber {
+    position: fixed; left: 370px; top: 460px; width: 1100px; height: 110px; 
+}
+#select_bank {
+    position: fixed; left: 1070px; top: 200px; width: 380px; height: 110px; 
+}
+#select_area {
+    position: fixed; left: 370px; top: 330px; width: 280px; height: 110px; 
+}
+#select_region {
+    position: fixed; left: 860px; top: 330px; width: 400px; height: 110px; 
+}
+#check_default {
+    position: fixed; left: 370px; top: 610px;
+}
+
+
+#bg_img {
+    position: fixed; left: 0px; top: 20px; 
+}
+#user_title {
+    position: fixed; left: 570px; top: 62px; 
+}
+#input_bg_01 {
+    position: fixed; left: 780px; top: 200px; 
+}
+#input_bg_02 {
+    position: fixed; left: 50px; top: 200px; 
+}
+#input_bg_03 {
+    position: fixed; left: 50px; top: 330px; 
+}
+#input_bg_04 {
+    position: fixed; left: 50px; top: 460px; 
+}
+#input_bg_05 {
+    position: fixed; left: 50px; top: 590px; 
+}
+
+#head_name {
+    position: fixed; left: 142px; top: 230px; width: 200px; font-size: 36px; color: #F3DB46
+}
+#head_bank {
+    position: fixed; left: 850px; top: 230px; width: 200px; font-size: 36px; color: #F3DB46
+}
+#head_area {
+    position: fixed; left: 120px; top: 360px; width: 200px; font-size: 36px; color: #F3DB46
+}
+#head_cardnumber {
+    position: fixed; left: 120px; top: 490px; width: 200px; font-size: 36px; color: #F3DB46
+}
+#head_default {
+    position: fixed; left: 120px; top: 620px; width: 200px; font-size: 36px; color: #F3DB46
+}
+
+textarea, input, select { background: transparent; border: none; color: #ffffff; font-size: 36px; }
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+</style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <!-- display only -->
+    <img id="bg_img" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_popup07.png">
+    <img id="user_title" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_title_08.png">
+    <img id="input_bg_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_06.png">
+	<img id="input_bg_02" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_07.png">
+	<img id="input_bg_03" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_08.png">
+	<img id="input_bg_04" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_08.png">
+	<img id="input_bg_05" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_09.png">
+	<div id="head_name">姓 名</div>
+	<div id="head_bank">开户银行</div>
+	<div id="head_area">开户地区</div>
+	<div id="head_cardnumber">银行卡号</div>
+	<div id="head_default">设置默认</div>
+    
+    <!-- click -->
+    <img id="icon_close" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_close.png">
+    <img id="save" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_confirm01.png">
+
+    <!-- input -->
+    <input id="input_name" type="text" placeholder="请输入姓名" readonly>
+	<input id="input_cardnumber" type="text" placeholder="请输入银行卡号">
+	<select id="select_bank">
+		<option value="">中国银行</option>
+    </select>
+	<select id="select_area">
+        <option value="">湖北省</option>
+    </select>
+    <select id="select_region">
+        <option value="">湘西土家族苗族</option>
+    </select>
+	
+    <!-- check -->
+    <img id="check_default" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_input_checkbox_checked.png">
+	
+
+</body>
+</html>

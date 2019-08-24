@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  #How_To_Play_BG{
+    position: fixed;
+  }
+  #Close{
+    position: fixed;
+    top: 343px;
+    left: 1325px;
+    cursor: pointer;
+  }
+  #tellme{
+    color: #fdfddb;
+    font-family: 'HuaKangZhongHeiTi';
+    font-size: 26px;
+    position: fixed;
+    top: 400px;
+    left: 600px;
+    line-height: 50px;
+  }
+  .Row_Dot{
+    background:url('@../../../../assets/game/JhaJinHua/Row_Dot.png') no-repeat 0px 15px;
+    list-style: none;
+    padding-left: 40px;
+  }
+  @font-face {
+    font-family: 'HuaKangZhongHeiTi';
+    src: url('@../../../../font/HuaKangZhongHeiTi.ttc');
+  }
+  </style>
+  <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+    <img id="How_To_Play_BG" src="@../../../../assets/game/JhaJinHua/How_To_Play_BG.png">
+    <img id="Close" src="@../../../../assets/game/JhaJinHua/Close.png">
+    <div id="tellme">
+      <ui>
+        <li class="Row_Dot">大小 : 豹子>同花顺>金花>顺子>对子>高牌;特殊>AAA</li>
+        <li class="Row_Dot">豹子 (炸金花) : 三张点相同的牌。 例: AAA最大、222最小</li>
+        <li class="Row_Dot">同花顺 (顺金) : 花色相同的顺子。 例: AKQ最大、A23最小</li>
+        <li class="Row_Dot">金花 (皮色) : 花色相同, 非顺子。 例: AKJ最大、352最小</li>
+        <li class="Row_Dot">顺子 (拖拉机) : 花色不同的顺子。 例: AKQ最大、A23最小</li>
+        <li class="Row_Dot">对子: 两张点数相同的牌子。 例: AAK最大、223最小</li>
+        <li class="Row_Dot">高牌: 三张牌不组成任何类型的牌。 例: AKJ最大、352最小</li>
+      </ui>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  #agent_popup_01{
+    position: fixed;
+  }
+  #icon_close{
+    position: fixed;
+    top: 30px;
+    left: 1660px;
+    cursor: pointer;
+  }
+  #agent_QRCode_300x300{
+    position: fixed;
+    top: 280px;
+    left: 917px;
+    cursor: pointer;
+  }
+  #agent_icon_share01{
+    position: fixed;
+    top: 265px;
+    left: 1294px;
+    cursor: pointer;
+  }
+  #agent_icon_share02{
+    position: fixed;
+    top: 484px;
+    left: 1294px;
+    cursor: pointer;
+  }
+  #agent_icon_help{
+    position: fixed;
+    top: 737px;
+    left: 1267px;
+    cursor: pointer;
+  }
+  #agent_icon_getRecord{
+    position: fixed;
+    top: 737px;
+    left: 892px;
+    cursor: pointer;
+  }
+  #agent_tab_01_hover{
+    position: fixed;
+    top: 91px;
+    left: 494px;
+  }
+  #agent_tab_02{
+    position: fixed;
+    top: 91px;
+    left: 794px;
+    cursor: pointer;
+  }
+  #agent_tab_03{
+    position: fixed;
+    top: 91px;
+    left: 1064px;
+    cursor: pointer;
+  }
+  #agent_tab_04{
+    position: fixed;
+    top: 91px;
+    left: 1334px;
+    cursor: pointer;
+  }
+  @font-face {
+      font-family: 'SourceHanSansNormal';
+      src: url('@../../../../../font/SourceHanSansNormal.ttf');
+  }
+  @font-face {
+      font-family: 'LanTingChungHei';
+      src: url('@../../../../../font/LanTingChungHei.ttf');
+  }
+  @font-face {
+      font-family: 'ArialRegular';
+      src: url('@../../../../../font/ArialRegular.ttf');
+  }
+  #firstArea{
+    font-family:"SourceHanSansNormal";
+    font-size: 40px;
+    color: #fbe9ca;
+    width: 750px;
+    
+    position: fixed;
+    top: 256px;
+    left: 87px;
+  }
+  #firstArea div{
+    margin-bottom: 5px;
+  }
+  #firstArea .number{
+    font-family: "ArialRegular";
+    font-size: 40px;
+    color: #FFFFFF;
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: -10px;
+    float: right;
+  }
+  #seconedArea{
+    position: fixed;
+    font-family:"LanTingChungHei";
+    font-size: 36px;
+    color:#cfd9e8;
+  }
+  #seconedArea .history{
+    position: fixed;
+    top: 638px;
+    left: 177px;
+  }
+  #seconedArea .reward{
+    position: fixed;
+    top: 638px;
+    left: 537px;
+  }
+  #thirdArea{
+    position: fixed;
+    font-family:"ArialRegular";
+    font-size: 38px;
+    color:#f7efd8;
+  }
+  #thirdArea .history{
+    position: fixed;
+    top: 712px;
+    left: 135px;
+  }
+  #thirdArea .reward{
+    position: fixed;
+    top: 712px;
+    left: 505px;
+  }
+  #thirdArea .dolor{
+    font-family:"LanTingChungHei";
+    font-size: 34px;
+    color:#f7efd8;
+  }
+  #agent_icon_getGift{
+    position: fixed;
+    top: 817px;
+    left: 244px;
+    cursor: pointer;
+  }
+  #clickToBigSize{
+    position: fixed;
+    top: 611px;
+    left: 970px;
+
+    font-family: 'LanTingChungHei';
+    font-size: 34px;
+    color: #9e9597;
+  }
+</style>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+  <img id="agent_popup_01" src="@/../../../../assets/lobby/agent/agent_popup_01.png">
+  <img id="icon_close" src="@/../../../../assets/lobby/agent/icon_close.png">
+
+  <img id="agent_tab_01_hover" src="@/../../../../assets/lobby/agent/agent_tab_01_hover.png">
+  <img id="agent_tab_02" src="@/../../../../assets/lobby/agent/agent_tab_02.png">
+  <img id="agent_tab_03" src="@/../../../../assets/lobby/agent/agent_tab_03.png">
+  <img id="agent_tab_04" src="@/../../../../assets/lobby/agent/agent_tab_04.png">
+
+
+  <img id="agent_QRCode_300x300" src="@/../../../../assets/lobby/agent/agent_QRCode_300x300.png">
+  <img id="agent_icon_share01" src="@/../../../../assets/lobby/agent/agent_icon_share01.png">
+  <img id="agent_icon_share02" src="@/../../../../assets/lobby/agent/agent_icon_share02.png">
+  <img id="agent_icon_help" src="@/../../../../assets/lobby/agent/agent_icon_help.png">
+  <img id="agent_icon_getRecord" src="@/../../../../assets/lobby/agent/agent_icon_getRecord.png">
+
+  <img id="agent_icon_getGift" src="@/../../../../assets/lobby/agent/agent_icon_getGift.png">
+
+  <div id="clickToBigSize">
+    点击放大图片
+  </div>
+
+  <div id="firstArea">
+    <div id="yesterdayTotal">
+      <span>
+          昨日总奖励:
+      </span>
+      <span class="number">
+        0.00
+      </span>
+    </div>
+      <div id="childPeopleCount">
+        <span>
+            直属下级人数:
+        </span>
+        <span class="number">
+          0
+        </span>
+      </div>
+      <div id="otherPeopleCount">
+        <span>
+            其他下级人数:
+        </span>
+        <span class="number">
+          0
+        </span>
+      </div>
+      <div id="yesterdayChildPeopleReward">
+        <span>
+            昨日直属下级奖励:
+        </span>
+        <span class="number">
+          0.00
+        </span>
+      </div>
+      <div id="yesterdayOtherPeopleReward">
+        <span>
+            昨日其他下级奖励:
+        </span>
+        <span class="number">
+          0.00
+        </span>
+      </div>
+  </div>
+  <div id="seconedArea">
+    <div class="history">
+      历史总奖励
+    </div>
+    <div class="reward">
+      可领取奖励
+    </div>
+  </div>
+  <div id="thirdArea">
+    <div class="history">10000000.00<span class="dolor">元</span></div>
+    <div class="reward">10000000.00<span class="dolor">元</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<html>
+   <style>
+        #copyWechat{
+            position:fixed;
+            top: 472px;
+            left: 1315px;
+            cursor: pointer;
+        }
+        label,input{
+            position: fixed;
+            color: whitesmoke;
+            font-size: 48px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+        #lab1{
+            top: 395px;
+            left: 630px;
+            font-family: 'LanTingChungHei';
+            font-size: 40px;
+            color:  #FFFFFF;
+        }
+        #lab2{
+            top: 480px;
+            left: 650px;
+            height: 110px;
+            width: 620px;
+        }
+        #lab3{
+            top: 670px;
+            left: 500px;
+            font-size: 36px;
+            line-height: 56px;
+            color: #f3ccb8;
+            font-family: 'LanTingHei';
+        }     
+        #lab4{
+            top: 730px;
+            left: 500px;
+            font-size: 36px;
+            line-height: 56px;
+            color: #f3ccb8;
+            font-family: 'LanTingHei';
+        }
+        body{
+            margin: 0;
+            padding: 0;           
+        }
+        input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+			-webkit-transition-delay: 99999s;
+			-o-transition-delay: 99999s;
+			transition-delay: 99999s;
+			-webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+			-o-transition: color 99999s ease-out, background-color 99999s ease-out;
+			transition: color 99999s ease-out, background-color 99999s ease-out;
+		}
+        input{
+			font-family: 'ArialRegular';
+            font-size: 40px;
+            color:  #FFFFFF;
+		}
+		@font-face {
+				font-family: 'ArialRegular';
+				src: url('@../../../../font/ArialRegular.ttf');
+		}
+		@font-face {
+				font-family: 'LanTingChungHei';
+				src: url('@../../../../font/LanTingChungHei.ttf');
+		}
+		@font-face {
+				font-family: 'LanTingHei';
+				src: url('@../../../../font/LanTingHei.ttf');
+		}
+		::-webkit-input-placeholder { /* Edge */
+			color: #acacac ;
+			font-weight: 100;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+		}
+		input::-moz-placeholder  { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+		}
+
+		::placeholder {
+			color: #acacac ;
+			font-weight: 100;
+		}
+   </style>
+    <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+        <img src="@/../../../assets/recharge/pay_mask01.png" style="position:fixed;">
+        <img src="@/../../../assets/recharge/pay_popup02.png"  style="position:fixed; top:200px; left: 220px;">
+        <img src="@/../../../assets/recharge/pay_input_001.png" style="position:fixed;top: 480px;left: 375px;">
+        <img id="copyWechat" src="@/../../../assets/recharge/icon_copy_weixin.png">
+        <img src="@/../../../assets/recharge/icon_close.png" style="cursor: pointer;position: fixed;top: 170px;left: 1690px;">
+        
+        <label id="lab1">秒秒微充-支持微信. 支付宝. 银行卡.</label>
+        <input autocomplete="off" type="text" id="lab2" value="weixin-8">
+        <label id="lab3">举点击按钮系统会帮助您复制代理的微信号, 请你打开微信,</label>
+        <label id="lab4">添加好友时长按屏幕粘贴即可, 加完好友10秒内帮您完成充值</label>
+
+    </body>
+    <script>
+        window.onload = function(){
+  
+        }        
+    </script>
+</html>

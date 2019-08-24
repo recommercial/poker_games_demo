@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+#icon_close { position: fixed; left: 1340px; top: 30px; }
+#user_tab_01 { position: fixed; left: 160px; top: 100px; }
+#user_tab_02 { position: fixed; left: 440px; top: 100px;  }
+#user_tab_03 { position: fixed; left: 710px; top: 100px; }
+#user_tab_04 { position: fixed; left: 980px; top: 100px; }
+#click_account { position: fixed; left: 1040px; top: 230px; }
+#click_name { position: fixed; left: 1040px; top: 350px; }
+#click_birthday { position: fixed; left: 1040px; top: 470px; }
+#click_phonenumber { position: fixed; left: 1040px; top: 590px; }
+#click_email { position: fixed; left: 1040px; top: 710px; }
+#click_defaultcard { position: fixed; left: 1040px; top: 830px; }
+
+#input_account { position: fixed; left: 480px; top: 210px; width: 530px; height: 110px; }
+#input_name { position: fixed; left: 480px; top: 330px; width: 530px; height: 110px; }
+#input_birthday { position: fixed; left: 480px; top: 450px; width: 530px; height: 110px; }
+#input_phonenumber { position: fixed; left: 480px; top: 570px; width: 530px; height: 110px; }
+#input_email { position: fixed; left: 480px; top: 690px; width: 530px; height: 110px; }
+#input_defaultcard { position: fixed; left: 480px; top: 810px; width: 530px; height: 110px; }
+
+
+#bg_img { position: fixed; left: 0px; top: 0px; }
+#input_bg_01 { position: fixed; left: 130px; top: 210px; }
+#input_bg_02 { position: fixed; left: 130px; top: 330px; }
+#input_bg_03 { position: fixed; left: 130px; top: 450px; }
+#input_bg_04 { position: fixed; left: 130px; top: 570px; }
+#input_bg_05 { position: fixed; left: 130px; top: 690px; }
+#input_bg_06 { position: fixed; left: 130px; top: 810px; }
+#head_account {
+    position: fixed; left: 275px; top: 245px; width: 250px; font-size: 36px; color: #F3DB46
+}
+#head_name {
+    position: fixed; left: 275px; top: 365px; width: 250px; font-size: 36px; color: #F3DB46
+}
+#head_birthday {
+    position: fixed; left: 275px; top: 485px; width: 250px; font-size: 36px; color: #F3DB46
+}
+#head_phonenumber {
+    position: fixed; left: 275px; top: 605px; width: 250px; font-size: 36px; color: #F3DB46
+}
+#head_email {
+    position: fixed; left: 275px; top: 725px; width: 250px; font-size: 36px; color: #F3DB46
+}
+#head_defaultcard {
+    position: fixed; left: 220px; top: 845px; width: 250px; font-size: 36px; color: #F3DB46
+}
+textarea, input { background: transparent; border: none; color: #ffffff; font-size: 36px; }
+textarea:focus, input:focus { outline: none; }
+#root { margin: 0; padding: 0; height: 100%; width: 100%;}
+</style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+<div id="root">
+    <!-- display only -->
+    <img id="bg_img" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_popup01.png">
+    <img id="input_bg_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_04.png">
+    <img id="input_bg_02" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_04.png">
+    <img id="input_bg_03" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_04.png">
+    <img id="input_bg_04" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_04.png">
+    <img id="input_bg_05" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_04.png">
+    <img id="input_bg_06" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_input_04.png">
+    <div id="head_account">帐 号</div>
+    <div id="head_name">姓 名</div>
+    <div id="head_birthday">生 日</div>
+    <div id="head_phonenumber">手 机</div>
+    <div id="head_email">邮 箱</div>
+    <div id="head_defaultcard">默认银行卡</div>
+
+    <!-- click -->
+    <img id="icon_close" name="icon_close" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/icon_close.png">
+    <img id="user_tab_01" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_01.png">
+    <img id="user_tab_02" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_02_hover.png">
+    <img id="user_tab_03" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_03.png">
+    <img id="user_tab_04" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_tab_04.png">
+
+	<img id="click_account" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_copy.png">
+    <img id="click_name" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_edit01.png">
+    <img id="click_birthday" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_edit01.png">
+    <img id="click_phonenumber" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_binding.png">
+    <img id="click_email" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_binding.png">
+    <img id="click_defaultcard" src="https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/lobby_user/user_icon_binding.png">
+
+    <!-- input -->
+	<input id="input_account" type="text" value="" placeholder="" readonly>
+	<input id="input_name" type="text" value="" placeholder="" readonly>
+	<input id="input_birthday" type="text" value="" placeholder="" readonly>
+	<input id="input_phonenumber" type="text" value="" placeholder="" readonly>
+	<input id="input_email" type="text" value="" placeholder="" readonly>
+	<input id="input_defaultcard" type="text" value="" placeholder="" readonly>
+	
+</div>
+</body>
+</html>

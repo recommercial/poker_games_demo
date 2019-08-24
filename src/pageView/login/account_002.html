@@ -1,0 +1,215 @@
+<html>
+	<style>
+		#register2_bg_img{
+			position: fixed;
+			top: 100px;
+		}
+		#register2_close{
+			background-size: 100%;
+			position: fixed;
+			top: 85px;
+			left: 1255px;
+			cursor: pointer;
+		}
+		#register2_account_heading{
+			background-size: 100%;
+			position: fixed;
+			top: 10px;
+			left: 280px;
+		}
+		#register2_account{
+			background-size: 100%;
+			position: fixed;
+			top: 185px;
+			left: 140px;
+		}
+		#register2_password{
+			background-size: 100%;
+			position: fixed;
+			top: 590px;
+			left: 140px;
+		}
+		#register2_CheckedPassword{
+			background-size: 100%;
+			position: fixed;
+			top: 535px;
+			left: 140px;
+
+		}
+		#register2_phoneNumber{
+			position: fixed;
+			top: 320px;
+			background-size: 100%;
+			left: 140px;
+		}
+		#register2_captcha{
+			position: fixed;
+			top: 455px;
+			background-size: 100%;
+			left: 140px;
+		} 
+		#register2_newPassword{
+			position: fixed;
+			top: 725px;
+			background-size: 100%;
+			left: 140px;
+		}
+		#register2_getCaptcha{
+			position: fixed;
+			top: 450px;
+			background-size: 100%;
+			left: 910px;
+		}
+		#register2_submit{
+			background-size: 100%;
+			position: fixed;
+			top: 850px;
+			left: 545px;
+			cursor: pointer;
+		}
+		#register2_inputArea .lab3{
+			position: fixed;
+			top: 193px;
+			left: 250px;
+		}
+		#register2_inputArea .txt3{
+			position: fixed;
+			top: 183px;
+    		left: 450px;
+		}
+		#register2_inputArea .lab4{
+			position: fixed;
+      top: 593px;
+      left: 250px;
+		}
+		#register2_inputArea .pass3{
+			position: fixed;
+			top: 583px;
+			left: 450px;
+		}
+		#register2_inputArea .lab5{
+			position: fixed;
+      top: 734px;
+      left: 230px;
+		}
+		#register2_inputArea .txt6{
+			position: fixed;
+			top: 321px;
+    		left: 450px;
+		}
+		#register2_inputArea .lab6{
+			position: fixed;
+			top: 332px;
+			left: 230px;
+		}
+		#register2_inputArea .txt7{
+			position: fixed;
+			top: 450px;
+			left: 451px;
+			width: 440px;
+		}
+		#register2_inputArea .lab7{
+			position: fixed;
+			top: 462px;
+			left: 230px;
+		}
+		#register2_inputArea .newPass4{
+			position: fixed;
+			top: 724px;
+			left: 450px;
+		}
+		#myErrorMessage{
+			position: fixed;
+			top: 670px;
+			left: 428px;
+			font-size: 25px;
+			display: none;
+		}
+		label {	
+			padding-top: 25;
+			display: block;
+			color: #c7af7a;
+			font-size: 36px;
+			font-family: 'LanTingHei';
+			text-align: center;
+			position: relative;
+			float: left;
+		}
+
+		input{
+			width: 770px;
+			height: 110px;
+			border: 0 none;
+			cursor: pointer;
+			border-radius: 5px;
+			font-size: 36px;
+			color: #FFFFFF;
+			outline: none;
+			font-family: 'LanTingHei';
+			background: transparent; border: none;
+		}
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+			-webkit-transition-delay: 99999s;
+			-o-transition-delay: 99999s;
+			transition-delay: 99999s;
+			-webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+			-o-transition: color 99999s ease-out, background-color 99999s ease-out;
+			transition: color 99999s ease-out, background-color 99999s ease-out;
+		}
+		@font-face {
+				font-family: 'LanTingHei';
+				src: url('@../../../../font/LanTingHei.ttf');
+		}
+		::-webkit-input-placeholder { /* Edge */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+
+		::placeholder {
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+		::-moz-placeholder  { /* Internet Explorer 10-11 */
+			color: #acacac ;
+			font-weight: 100;
+			font-size: 36px;
+		}
+	</style>
+	<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+		<img id="register2_bg_img" src="@../../../../assets/login/account_bg.png">
+		<img id="register2_close" src="@../../../../assets/login/icon_close.png">
+		<img id="register2_account" src="@../../../../assets/login/account_input_bg_01.png">
+		<img id="register2_phoneNumber" src="@../../../../assets/login/account_input_bg_01.png">
+		<img id="register2_captcha" src="@../../../../assets/login/account_input_bg_02.png">
+		<img id="register2_password" src="@../../../../assets/login/account_input_bg_01.png">
+		<img id="register2_newPassword" src="@../../../../assets/login/account_input_bg_01.png">
+		<img id="register2_account_heading" src="@../../../../assets/login/account_heading_001.png">
+		<img id="register2_getCaptcha" src="@../../../../assets/login/icon_verifyCode.png">
+		<img id="register2_submit" src="@../../../../assets/login/icon_register.png">
+
+		<div id="register2_inputArea">
+			<label class="lab3">账号</label>
+			<input class="txt3" autocomplete="off" type="text" placeholder="请输入4-16位英文或数字组合">
+			<label class="lab6">手机号</label>
+			<input class="txt6" autocomplete="off" type="text" placeholder="请输入大陆地区手机号">
+			<label class="lab7">验证码</label>
+			<input class="txt7" autocomplete="off" type="text" placeholder="请输入验证码">
+			<label class="lab4">密码</label>
+			<input class="pass3" autocomplete="off" type="password" placeholder="请输入6-16位英文 | 数字 | 点 | 下划线组合">
+			<label class="lab5">新密码</label>
+			<input class="newPass4" autocomplete="off" type="password" placeholder="请再次输入密码">
+		</div>
+		<div id="myErrorMessage" style="color: red">账号或密码错误</div>
+	</body>
+</html>
