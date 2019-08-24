@@ -1,0 +1,88 @@
+{
+    "code": "0000",
+    "data": {
+        "images": {
+            "bg": {
+                "key": "bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "top_bg": {
+                "key": "top_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "header_bg": {
+                "key": "header_bg",
+                "x": 5,
+                "y": 5,
+                "add": true
+            },
+            "balance_bar": {
+                "key": "balance_bar",
+                "x": 90,
+                "y": 30,
+                "add": true           
+            },
+            "btn_home": {
+                "key": "btn_home",
+                "x": 160,
+                "y": 10,
+                "add": true
+            },
+            "btn_setup": {
+                "key": "btn_setup",
+                "x": 80,
+                "y": 10,
+                "add": true 
+            },
+            "btn_screen_max": {
+                "key": "btn_screen_max",
+                "x": 0,
+                "y": 10,
+                "add": true
+            },
+            "notice_bg": {
+                "key": "notice_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "com_logo": {
+                "key": "com_logo",
+                "x": 0,
+                "y": 15,
+                "add": true    
+            }
+            
+        },
+        "texts": {
+            "playerIdText": {
+                "text": "ID: Demo",
+                "x": 110,
+                "y": 15,
+                "style": {
+                    "fontSize": "20px",
+                    "fontFamily": "Arial",
+                    "color": "#CCCCCC",
+                    "align": "left"
+                },
+                "add": true
+            },
+            "balanceText": {
+                "text": "99,999,999,999",
+                "x": 135,
+                "y": 50,
+                "style": {
+                    "fontSize": "18px",
+                    "fontFamily": "Arial",
+                    "color": "yellow",
+                    "align": "left"
+                },
+                "add": true 
+            }
+        }
+    }
+}

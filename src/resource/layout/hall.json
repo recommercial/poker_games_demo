@@ -1,0 +1,185 @@
+{
+    "data": {
+        "images": {
+            "hall_bg": {
+                "key": "hall_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "top_bg": {
+                "key": "top_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "header_bg": {
+                "key": "header_bg",
+                "x": 5,
+                "y": 5,
+                "add": true
+            },
+            "balance_bar": {
+                "key": "balance_bar",
+                "x": 90,
+                "y": 30,
+                "add": true
+            },
+            "hall_back": {
+                "key": "hall_back",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+
+            "hall_level1": {
+                "key": "hall_level1",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level1_bg": {
+                "key": "hall_level1_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level1_frame": {
+                "key": "hall_level1_frame",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level2": {
+                "key": "hall_level2",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level2_bg": {
+                "key": "hall_level2_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level2_frame": {
+                "key": "hall_level2_frame",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level3": {
+                "key": "hall_level3",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level3_bg": {
+                "key": "hall_level3_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level3_frame": {
+                "key": "hall_level3_frame",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level4": {
+                "key": "hall_level4",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level4_bg": {
+                "key": "hall_level4_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level4_frame": {
+                "key": "hall_level4_frame",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level5": {
+                "key": "hall_level5",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level5_bg": {
+                "key": "hall_level5_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level5_frame": {
+                "key": "hall_level5_frame",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level6": {
+                "key": "hall_level6",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level6_bg": {
+                "key": "hall_level6_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            "hall_level6_frame": {
+                "key": "hall_level6_frame",
+                "x": 0,
+                "y": 0,
+                "add": true
+            }
+
+        },
+        "texts": {
+            "playerIdText": {
+                "text": "ID: Demo",
+                "x": 110,
+                "y": 15,
+                "style": {
+                    "fontSize": "20px",
+                    "fontFamily": "Arial",
+                    "color": "#CCCCCC",
+                    "align": "left"
+                },
+                "add": true
+            },
+            "balanceText": {
+                "text": "99,999,999,999",
+                "x": 135,
+                "y": 50,
+                "style": {
+                    "fontSize": "18px",
+                    "fontFamily": "Arial",
+                    "color": "yellow",
+                    "align": "left"
+                },
+                "add": true 
+            },
+            "gameName": {
+                "text": "99,999,999,999",
+                "x": 0,
+                "y": 0,
+                "style": {
+                    "fontSize": "64px",
+                    "fontFamily": "Arial",
+                    "color": "yellow"
+                },
+                "add": true 
+            }
+
+            
+        }
+    }
+}

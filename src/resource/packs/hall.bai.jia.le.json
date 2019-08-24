@@ -1,0 +1,40 @@
+{
+    "hall.bai.jia.le": {
+        "files": [
+            { "type": "image", "key": "HBJ_bg", "url":"./src/assets//hall/bai_jia_le/bg.png"},
+            { "type": "image", "key": "HBJ_header_bg", "url":"./src/assets//hall/bai_jia_le/header_bg.png"},
+            { "type": "image", "key": "HBJ_logo", "url":"./src/assets//hall/bai_jia_le/logo.png"},
+            { "type": "image", "key": "HBJ_btn_info", "url":"./src/assets//hall/bai_jia_le/btn_info.png"},
+            { "type": "image", "key": "HBJ_btn_record", "url":"./src/assets//hall/bai_jia_le/btn_record.png"},
+            { "type": "image", "key": "HBJ_btn_return", "url":"./src/assets//hall/bai_jia_le/btn_return.png"},
+            { "type": "image", "key": "HBJ_icon_money", "url":"./src/assets//hall/bai_jia_le/icon_money.png"},
+            { "type": "image", "key": "HBJ_speaker", "url":"./src/assets//hall/bai_jia_le/speaker.png"},
+            { "type": "image", "key": "HBJ_model", "url":"./src/assets//hall/bai_jia_le/model.png"},
+            { "type": "image", "key": "HBJ_btn_change", "url":"./src/assets//hall/bai_jia_le/btn_change.png"},
+            { "type": "image", "key": "HBJ_board_bg", "url":"./src/assets//hall/bai_jia_le/board_bg.png"},
+            { "type": "image", "key": "HBJ_btn_room1_selected", "url":"./src/assets//hall/bai_jia_le/btn_room1_selected.png"},
+            { "type": "image", "key": "HBJ_btn_room2_selected", "url":"./src/assets//hall/bai_jia_le/btn_room2_selected.png"},
+            { "type": "image", "key": "HBJ_btn_room3_selected", "url":"./src/assets//hall/bai_jia_le/btn_room3_selected.png"},
+            { "type": "image", "key": "HBJ_btn_room4_selected", "url":"./src/assets//hall/bai_jia_le/btn_room4_selected.png"},
+            { "type": "image", "key": "HBJ_btn_room1", "url":"./src/assets//hall/bai_jia_le/btn_room1.png"},
+            { "type": "image", "key": "HBJ_btn_room2", "url":"./src/assets//hall/bai_jia_le/btn_room2.png"},
+            { "type": "image", "key": "HBJ_btn_room3", "url":"./src/assets//hall/bai_jia_le/btn_room3.png"},
+            { "type": "image", "key": "HBJ_btn_room4", "url":"./src/assets//hall/bai_jia_le/btn_room4.png"},
+            { "type": "image", "key": "HBJ_board", "url":"./src/assets//hall/bai_jia_le/board.png"},
+            { "type": "image", "key": "HBJ_btn_into", "url":"./src/assets//hall/bai_jia_le/btn_into.png"},
+            { "type": "image", "key": "HBJ_circle_r", "url":"./src/assets//hall/bai_jia_le/circle_r.png"},
+            { "type": "image", "key": "HBJ_circle_b_1", "url":"./src/assets//hall/bai_jia_le/circle_b_1.png"},
+            { "type": "image", "key": "HBJ_circle_r_1", "url":"./src/assets//hall/bai_jia_le/circle_r_1.png"},
+            { "type": "image", "key": "HBJ_circle_b", "url":"./src/assets//hall/bai_jia_le/circle_b.png"},
+
+            { "type": "image", "key": "HBJ_board_record", "url":"./src/assets//hall/bai_jia_le/board_record.png"},
+            { "type": "image", "key": "HBJ_btn_cancel", "url":"./src/assets//hall/bai_jia_le/btn_cancel.png"},
+            { "type": "image", "key": "HBJ_record_text_1", "url":"./src/assets//hall/bai_jia_le/record_text_1.png"},
+            { "type": "image", "key": "HBJ_record_text_2", "url":"./src/assets//hall/bai_jia_le/record_text_2.png"},
+            { "type": "image", "key": "HBJ_record_text_3", "url":"./src/assets//hall/bai_jia_le/record_text_3.png"},
+            { "type": "image", "key": "HBJ_record_text_4", "url":"./src/assets//hall/bai_jia_le/record_text_4.png"},
+            { "type": "image", "key": "HBJ_record_text_5", "url":"./src/assets//hall/bai_jia_le/record_text_5.png"},
+            { "type": "image", "key": "HBJ_board_help", "url":"./src/assets//hall/bai_jia_le/board_help.png"}
+        ]
+    }
+}

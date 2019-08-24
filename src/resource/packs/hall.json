@@ -1,0 +1,108 @@
+{
+    "hall": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "hall_bg",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/nn_roomHallScene_bg.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_back",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/btn_back_bg.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level1",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_game_room_title1.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "hall_level1_bg",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic1.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level1_frame",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic1_2.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level2",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_game_room_title2.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "hall_level2_bg",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic2.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level2_frame",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic2_2.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level3",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_game_room_title3.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "hall_level3_bg",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic3.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level3_frame",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic3_2.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level4",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_game_room_title4.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "hall_level4_bg",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic4.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level4_frame",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic4_2.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level5",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_game_room_title5.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "hall_level5_bg",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic5.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level5_frame",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic5_2.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level6",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_game_room_title6.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "hall_level6_bg",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic6.png"
+            },
+            {
+                "type": "image",
+                "key":  "hall_level6_frame",
+                "url":  "https://s3-ap-southeast-1.amazonaws.com/pokerphotos/A0001/qznn_pic6_2.png"
+            }
+            
+            
+        ]
+    }
+}

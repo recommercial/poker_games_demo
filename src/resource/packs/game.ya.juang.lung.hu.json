@@ -1,0 +1,1094 @@
+{
+    "lung_hu_base": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "lung_hu_bg",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bg.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_table",
+                "url":  "./src/assets/game/ya.juang.lung.hu/table.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bet_start",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bet-start.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bet_stop",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bet-stop.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_clock",
+                "url":  "./src/assets/game/ya.juang.lung.hu/clock.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_card_box_left",
+                "url":  "./src/assets/game/ya.juang.lung.hu/card-box-left.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_card_box_right",
+                "url":  "./src/assets/game/ya.juang.lung.hu/card-box-right.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "betarea_dragon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/betarea-dragon.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "betarea_tie",
+                "url":  "./src/assets/game/ya.juang.lung.hu/betarea-tie.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "betarea_tiger",
+                "url":  "./src/assets/game/ya.juang.lung.hu/betarea-tiger.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_0",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_0.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_1",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_1.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_2.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_3.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_4.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_5.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_6.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_7.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_8.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_9.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_x",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_x.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_dragon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_dragon.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_tie",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_tie.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_bettimes_tiger",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bettimes_tiger.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_0",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_0.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_1",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_1.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_2.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_3.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_4.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_5.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_6.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_7.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_8.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_9.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_head",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_head.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "lung_hu_game_sn_tail",
+                "url":  "./src/assets/game/ya.juang.lung.hu/game_sn_tail.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "bet_battle",
+                "url":  "./src/assets/game/ya.juang.lung.hu/bet-battle.png"
+            }
+        ]
+    },
+
+    "lung_hu_big_history": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "lung_hu_bead_dragon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/bead-dragon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bead_tie",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/bead-tie.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bead_tiger",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/bead-tiger.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_big_circle_empty_blue",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/big-circle-empty-blue.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_big_circle_empty_red",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/big-circle-empty-red.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bigeye_circle_empty_blue",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/bigeye-circle-empty-blue.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bigeye_circle_empty_red",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/bigeye-circle-empty-red.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_big_history_bg",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/big-history-bg.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_next_circle_blue_dot",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/next-circle-blue-dot.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_next_circle_empty_blue",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/next-circle-empty-blue.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_next_circle_empty_red",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/next-circle-empty-red.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_next_circle-_red_dot",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/next-circle-red-dot.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_next_slash_blue",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/next-slash-blue.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_next_slash_red",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/next-slash-red.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_smalleye_circle_blue_dot",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/smalleye-circle-blue-dot.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_smalleye_circle_red_dot",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/smalleye-circle-red-dot.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_yayue_slash_blue",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/yayue-slash-blue.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_yayue_slash_red",
+                "url":  "./src/assets/game/ya.juang.lung.hu/big_history/yayue-slash-red.png"
+            }
+        ]
+    },
+
+    "lung_hu_chips": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_20",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-20.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_40",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-40.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_50",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-50.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_100",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-100.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_200",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-200.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_500",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-500.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_1000",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-1000.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_2000",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-2000.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_2500",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-2500.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_3000",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-3000.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_5000",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-5000.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_6000",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-6000.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_10000",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-10000.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_20000",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-20000.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_chip_shining",
+                "url":  "./src/assets/game/ya.juang.lung.hu/chips/chip-shining.png"
+            }
+        ]
+    },
+
+    "lung_hu_history": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "lung_hu_bar_bg",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/bar-bg.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bar_name_bg",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/bar-name-bg.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bar_summary",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/bar-summary.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_btn_all_down",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/btn-all-down.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_btn_all_up",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/btn-all-up.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_btn_bead_down",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/btn-bead-down.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_btn_bead_up",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/btn-bead-up.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_btn_big_down",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/btn-big-down.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_btn_big_up",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/btn-big-up.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_btn_chg_table",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/btn-chg-table.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_btn_chg_table_bg",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/btn-chg-table-bg.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_btn_scale_out",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/btn-scale-out.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_cell_all",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/cell-all.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_cell_bead",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/cell-bead.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_cell_big",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/cell-big.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_cell_chg_table",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/cell-chg-table.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_circle_blue_dot",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/circle-blue-dot.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_circle_dragon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/circle-dragon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_circle_empty_blue",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/circle-empty-blue.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_circle_empty_red",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/circle-empty-red.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_circle_red_dot",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/circle-red-dot.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_circle_tie",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/circle-tie.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_circle_tiger",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/circle-tiger.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_current_table",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/current-table.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_slash_blue",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/slash-blue.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_slash_red",
+                "url":  "./src/assets/game/ya.juang.lung.hu/history/slash-red.png"
+            }
+        ]
+    },
+
+    "lung_hu_menu": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "lung_hu_bet",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/bet.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bg_config",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/bg-config.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bg_feedback",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/bg-feedback.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bg_help",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/bg-help.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bg_player_list",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/bg-player-list.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bg_record",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/bg-record.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_bg_tip",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/bg-tip.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_button_players",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/button-players.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_button_sure",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/button-sure.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_close",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/close.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_coin",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/coin.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_config_value_bar",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/config-value-bar.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_config_value_fore",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/config-value-fore.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_config_value_icon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/config-value-icon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_menu",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/menu.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_menu_bg",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/menu-bg.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_menu_config",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/menu-config.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_menu_exit",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/menu-exit.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_menu_feedback",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/menu-feedback.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_menu_help",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/menu-help.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_menu_record",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/menu-record.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_music_icon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/music-icon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_music_off",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/music-off.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_music_on",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/music-on.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_1",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-1.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-2.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-3.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-5.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-6.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-7.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-8.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-9.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_11",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-11.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_12",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-12.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_13",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-13.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_14",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-14.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_15",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-15.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_16",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-16.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_17",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-17.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_18",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-18.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_19",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-19.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_rank_20",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/rank-20.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_sound_effect_icon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/sound-effect-icon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_sound_effect_off",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/sound-effect-off.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_sound_effect_on",
+                "url":  "./src/assets/game/ya.juang.lung.hu/menu/sound-effect-on.png"
+            }
+        ]
+    },
+
+    "lung_hu_pokers": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "B-1",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/B-1.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-A",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-A.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-2.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-3.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-5.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-6.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-7.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-8.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-9.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-J",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-J.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-Q",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-Q.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-K",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-K.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-A",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-A.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-2.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-3.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-5.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-6.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-7.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-8.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-9.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-J",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-J.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-Q",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-Q.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-K",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-K.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-A",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-A.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-2.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-3.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-5.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-6.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-7.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-8.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-9.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-J",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-J.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-Q",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-Q.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-K",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-K.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-A",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-A.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-2.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-3.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-5.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-6.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-7.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-8.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-9.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-J",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-J.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-Q",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-Q.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-K",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-K.png"
+            }
+        ]
+    },
+
+    "lung_hu_result": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "lung_hu_fire_dragon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/fire-dragon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_fire_tiger_left",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/fire-tiger-left.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_fire_tiger_right",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/fire-tiger-right.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_glow_border_dragon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/glow-border-dragon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_glow_border_tie",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/glow-border-tie.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_glow_border_tiger",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/glow-border-tiger.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_img_dragon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/img-dragon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_img_tiger",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/img-tiger.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_text_dragon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/text-dragon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_text_tiger",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/tex-tiger.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_text_tie",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/text-tie.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_win_dragon",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/win-dragon.png"
+            },
+            {
+                "type": "image",
+                "key":  "lung_hu_win_tiger",
+                "url":  "./src/assets/game/ya.juang.lung.hu/result/win-tiger.png"
+            }
+        ]
+    }
+
+
+
+}

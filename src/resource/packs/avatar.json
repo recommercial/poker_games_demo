@@ -1,0 +1,186 @@
+{
+    "avatar": {
+        "files": [
+            {
+                "type": "image",
+                "key": "Man-1",
+                "url": "./src/assets/avatar/man1.png"
+            },
+            {
+                "type": "image",
+                "key": "Man-2",
+                "url": "./src/assets/avatar/man2.png"
+            },
+            {
+                "type": "image",
+                "key": "Man-3",
+                "url": "./src/assets/avatar/man3.png"
+            },
+            {
+                "type": "image",
+                "key": "Man-4",
+                "url": "./src/assets/avatar/man4.png"
+            },
+            {
+                "type": "image",
+                "key": "Man-5",
+                "url": "./src/assets/avatar/man5.png"
+            },
+            {
+                "type": "image",
+                "key": "Woman-1",
+                "url": "./src/assets/avatar/women1.png"
+            },
+            {
+                "type": "image",
+                "key": "Woman-2",
+                "url": "./src/assets/avatar/women2.png"
+            },
+            {
+                "type": "image",
+                "key": "Woman-3",
+                "url": "./src/assets/avatar/women3.png"
+            },
+            {
+                "type": "image",
+                "key": "Woman-4",
+                "url": "./src/assets/avatar/women4.png"
+            },
+            {
+                "type": "image",
+                "key": "Woman-6",
+                "url": "./src/assets/avatar/women6.png"
+            },
+
+
+            {
+                "type": "image",
+                "key": "circle_woman_01",
+                "url": "./src/assets/avatar/user_avatar_01.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_02",
+                "url": "./src/assets/avatar/user_avatar_02.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_03",
+                "url": "./src/assets/avatar/user_avatar_03.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_04",
+                "url": "./src/assets/avatar/user_avatar_04.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_05",
+                "url": "./src/assets/avatar/user_avatar_05.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_06",
+                "url": "./src/assets/avatar/user_avatar_06.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_07",
+                "url": "./src/assets/avatar/user_avatar_07.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_08",
+                "url": "./src/assets/avatar/user_avatar_08.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_09",
+                "url": "./src/assets/avatar/user_avatar_09.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_10",
+                "url": "./src/assets/avatar/user_avatar_10.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_11",
+                "url": "./src/assets/avatar/user_avatar_11.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_woman_12",
+                "url": "./src/assets/avatar/user_avatar_12.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_01",
+                "url": "./src/assets/avatar/user_avatar_men_01.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_02",
+                "url": "./src/assets/avatar/user_avatar_men_02.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_03",
+                "url": "./src/assets/avatar/user_avatar_men_03.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_04",
+                "url": "./src/assets/avatar/user_avatar_men_04.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_05",
+                "url": "./src/assets/avatar/user_avatar_men_05.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_06",
+                "url": "./src/assets/avatar/user_avatar_men_06.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_07",
+                "url": "./src/assets/avatar/user_avatar_men_07.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_08",
+                "url": "./src/assets/avatar/user_avatar_men_08.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_09",
+                "url": "./src/assets/avatar/user_avatar_men_09.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_10",
+                "url": "./src/assets/avatar/user_avatar_men_10.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_11",
+                "url": "./src/assets/avatar/user_avatar_men_11.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_man_12",
+                "url": "./src/assets/avatar/user_avatar_men_12.png"
+            },
+            {
+                "type": "image",
+                "key": "circle_avatar_icon",
+                "url": "./src/assets/avatar/user_volume_icon.png"
+            }
+
+
+            
+        ]
+    }
+}

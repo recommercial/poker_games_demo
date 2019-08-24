@@ -1,0 +1,192 @@
+{
+    "new_lobby": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "bg",
+                "url":  "./src/assets/lobby/index/index_bg.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "header_bg",
+                "url":  "./src/assets/lobby/index/index_header_bg.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "icon_event_01",
+                "url":  "./src/assets/lobby/index/index_icon_event_01.png"
+            },
+            {
+                "type": "image",
+                "key":  "icon_event_02",
+                "url":  "./src/assets/lobby/index/index_icon_event_02.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "icon_event_03",
+                "url":  "./src/assets/lobby/index/index_icon_event_03.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "icon_game_01",
+                "url":  "./src/assets/lobby/index/index_icon_game_00.gif"
+            }, 
+            {
+                "type": "image",
+                "key":  "icon_game_02",
+                "url":  "./src/assets/lobby/index/index_icon_game_04.gif"
+            },
+            {
+                "type": "image",
+                "key":  "icon_game_03",
+                "url":  "./src/assets/lobby/index/index_icon_game_08.gif"
+            }, 
+            {
+                "type": "image",
+                "key":  "icon_game_04",
+                "url":  "./src/assets/lobby/index/index_icon_game_01.gif"
+            },
+            {
+                "type": "image",
+                "key":  "icon_game_05",
+                "url":  "./src/assets/lobby/index/index_icon_game_03.gif"
+            }, 
+            {
+                "type": "image",
+                "key":  "icon_game_06",
+                "url":  "./src/assets/lobby/index/index_icon_game_05.gif"
+            },
+            {
+                "type": "image",
+                "key":  "icon_game_07",
+                "url":  "./src/assets/lobby/index/index_icon_game_07.gif"
+            }, 
+            {
+                "type": "image",
+                "key":  "icon_game_08",
+                "url":  "./src/assets/lobby/index/index_icon_game_02.gif"
+            },
+            {
+                "type": "image",
+                "key":  "icon_game_09",
+                "url":  "./src/assets/lobby/index/index_icon_game_06.gif"
+            }, 
+            {
+                "type": "image",
+                "key":  "money_bg",
+                "url":  "./src/assets/lobby/index/index_money_bg.png"
+            },
+            {
+                "type": "image",
+                "key":  "add_money_icon",
+                "url":  "./src/assets/lobby/index/index_money_icon.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "nav_01",
+                "url":  "./src/assets/lobby/index/index_nav_01.png"
+            },
+            {
+                "type": "image",
+                "key":  "navHover_01",
+                "url":  "./src/assets/lobby/index/index_navHover_01.png"
+            }, 
+
+            {
+                "type": "image",
+                "key":  "nav_02",
+                "url":  "./src/assets/lobby/index/index_nav_02.png"
+            },
+            {
+                "type": "image",
+                "key":  "navHover_02",
+                "url":  "./src/assets/lobby/index/index_navHover_02.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "nav_03",
+                "url":  "./src/assets/lobby/index/index_nav_03.png"
+            },
+            {
+                "type": "image",
+                "key":  "navHover_03",
+                "url":  "./src/assets/lobby/index/index_navHover_03.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "nav_04",
+                "url":  "./src/assets/lobby/index/index_nav_04.png"
+            },
+            {
+                "type": "image",
+                "key":  "navHover_04",
+                "url":  "./src/assets/lobby/index/index_navHover_04.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "nav_05",
+                "url":  "./src/assets/lobby/index/index_nav_05.png"
+            },
+            {
+                "type": "image",
+                "key":  "navHover_05",
+                "url":  "./src/assets/lobby/index/index_navHover_05.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "nav_06",
+                "url":  "./src/assets/lobby/index/index_nav_06.png"
+            },
+            {
+                "type": "image",
+                "key":  "navHover_06",
+                "url":  "./src/assets/lobby/index/index_navHover_06.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "nav_07",
+                "url":  "./src/assets/lobby/index/index_nav_07.png"
+            },
+            {
+                "type": "image",
+                "key":  "navHover_07",
+                "url":  "./src/assets/lobby/index/index_navHover_07.png"
+            }, 
+            {
+                "type": "image",
+                "key":  "avatar_demo",
+                "url":  "./src/assets/lobby/index/index_user_img.png"
+            },
+            {
+                "type": "image",
+                "key":  "login_icon_01",
+                "url":  "./src/assets/lobby/login/login_icon_01.png"
+            },
+            {
+                "type": "image",
+                "key":  "login_icon_02",
+                "url":  "./src/assets/lobby/login/login_icon_02.png"
+            },
+            {
+                "type": "image",
+                "key":  "login_icon_03",
+                "url":  "./src/assets/lobby/login/login_icon_03.png"
+            },
+            {
+                "type": "image",
+                "key":  "customer_server",
+                "url":  "./src/assets/lobby/login/login_icon_customerService.png"
+            },
+            {
+                "type": "image",
+                "key":  "login_bg",
+                "url":  "./src/assets/loading/login_bg2.png"
+            },
+            { 
+                "type": "image", 
+                "key": "HBJ_speaker", 
+                "url":"./src/assets//hall/bai_jia_le/speaker.png"
+            }
+        ]
+    }
+}

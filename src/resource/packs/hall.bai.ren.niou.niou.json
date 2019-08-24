@@ -1,0 +1,35 @@
+{
+    "hall": {
+        "files": [
+            { "type": "image", "key": "HBR_avatar", "url":"./src/assets/avatar/user_avatar_01.png"},
+
+            { "type": "image", "key": "HBR_area_dee", "url":"./src/assets/hall/bai.ren.niou.niou/area_dee.png"},
+            { "type": "image", "key": "HBR_area_huang", "url":"./src/assets/hall/bai.ren.niou.niou/area_huang.png"},
+            { "type": "image", "key": "HBR_area_shuain", "url":"./src/assets/hall/bai.ren.niou.niou/area_shuain.png"},
+            { "type": "image", "key": "HBR_area_tian", "url":"./src/assets/hall/bai.ren.niou.niou/area_tian.png"},
+            { "type": "image", "key": "HBR_bg", "url":"./src/assets/hall/bai.ren.niou.niou/bg.png"},
+            { "type": "image", "key": "HBR_board_bg", "url":"./src/assets/hall/bai.ren.niou.niou/board_bg.png"},
+            { "type": "image", "key": "HBR_board_help", "url":"./src/assets/hall/bai.ren.niou.niou/board_help.png"},
+            { "type": "image", "key": "HBR_board_record", "url":"./src/assets/hall/bai.ren.niou.niou/board_record.png"},
+            { "type": "image", "key": "HBR_btn_back", "url":"./src/assets/hall/bai.ren.niou.niou/btn_back.png"},
+            { "type": "image", "key": "HBR_btn_cancel", "url":"./src/assets/hall/bai.ren.niou.niou/btn_cancel.png"},
+            { "type": "image", "key": "HBR_btn_help", "url":"./src/assets/hall/bai.ren.niou.niou/btn_help.png"},
+            { "type": "image", "key": "HBR_btn_record", "url":"./src/assets/hall/bai.ren.niou.niou/btn_record.png"},
+            { "type": "image", "key": "HBR_coin", "url":"./src/assets/hall/bai.ren.niou.niou/coin.png"},
+            { "type": "image", "key": "HBR_logo", "url":"./src/assets/hall/bai.ren.niou.niou/logo.png"},
+            { "type": "image", "key": "HBR_model", "url":"./src/assets/hall/bai.ren.niou.niou/model.png"},
+
+            { "type": "image", "key": "HBR_nav_bg", "url":"./src/assets/hall/bai.ren.niou.niou/nav_bg.png"},
+            { "type": "image", "key": "HBR_no", "url":"./src/assets/hall/bai.ren.niou.niou/no.png"},
+            { "type": "image", "key": "HBR_overlay", "url":"./src/assets/hall/bai.ren.niou.niou/overlay.png"},
+            { "type": "image", "key": "HBR_room_advanced", "url":"./src/assets/hall/bai.ren.niou.niou/room_advanced.png"},
+            { "type": "image", "key": "HBR_room_experience", "url":"./src/assets/hall/bai.ren.niou.niou/room_experience.png"},
+            { "type": "image", "key": "HBR_room_intermediate", "url":"./src/assets/hall/bai.ren.niou.niou/room_intermediate.png"},
+            { "type": "image", "key": "HBR_room_primary", "url":"./src/assets/hall/bai.ren.niou.niou/room_primary.png"},
+            { "type": "image", "key": "HBR_second_text", "url":"./src/assets/hall/bai.ren.niou.niou/second_text.png"},
+            { "type": "image", "key": "HBR_speaker", "url":"./src/assets/hall/bai.ren.niou.niou/speaker.png"},
+            { "type": "image", "key": "HBR_yes", "url":"./src/assets/hall/bai.ren.niou.niou/yes.png"}
+
+        ]
+    }
+}

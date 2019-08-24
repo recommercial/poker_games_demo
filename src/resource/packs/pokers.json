@@ -1,0 +1,272 @@
+{
+    "pokers": {
+        "files": [
+            {
+                "type": "image",
+                "key":  "B-1",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/B-1.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-A",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-A.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-2.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-3.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-5.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-6.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-7.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-8.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-9.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-J",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-J.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-Q",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-Q.png"
+            },
+            {
+                "type": "image",
+                "key":  "C-K",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/C-K.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-A",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-A.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-2.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-3.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-5.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-6.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-7.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-8.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-9.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-J",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-J.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-Q",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-Q.png"
+            },
+            {
+                "type": "image",
+                "key":  "D-K",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/D-K.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-A",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-A.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-2.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-3.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-5.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-6.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-7.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-8.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-9.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-J",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-J.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-Q",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-Q.png"
+            },
+            {
+                "type": "image",
+                "key":  "H-K",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/H-K.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-A",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-A.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-2",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-2.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-3",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-3.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-4",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-4.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-5",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-5.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-6",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-6.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-7",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-7.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-8",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-8.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-9",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-9.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-10",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-10.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-J",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-J.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-Q",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-Q.png"
+            },
+            {
+                "type": "image",
+                "key":  "S-K",
+                "url":  "./src/assets/game/ya.juang.lung.hu/pokers/S-K.png"
+            }
+        ]
+    }
+    
+}

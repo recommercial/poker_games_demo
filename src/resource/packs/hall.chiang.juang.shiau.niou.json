@@ -1,0 +1,39 @@
+{
+    "hall": {
+        "files": [
+            { "type": "image", "key": "HCJ_avatar", "url":"./src/assets/avatar/user_avatar_01.png"},
+
+            { "type": "image", "key": "HCJ_bg", "url":"./src/assets/hall/chiang_juang/bg.png"},
+            { "type": "image", "key": "HCJ_header_bg", "url":"./src/assets/hall/chiang_juang/header_bg.png"},
+            { "type": "image", "key": "HCJ_money", "url":"./src/assets/hall/chiang_juang/money.png"},
+            { "type": "image", "key": "HCJ_logo", "url":"./src/assets/hall/chiang_juang/logo.png"},
+            { "type": "image", "key": "HCJ_btn_help", "url":"./src/assets/hall/chiang_juang/btn_help.png"},
+            { "type": "image", "key": "HCJ_btn_record", "url":"./src/assets/hall/chiang_juang/btn_record.png"},
+            { "type": "image", "key": "HCJ_btn_back", "url":"./src/assets/hall/chiang_juang/btn_back.png"},
+            { "type": "image", "key": "HCJ_speaker", "url":"./src/assets/hall/chiang_juang/speaker.png"},
+            { "type": "image", "key": "HCJ_model", "url":"./src/assets/hall/chiang_juang/model.png"},
+            { "type": "image", "key": "HCJ_room_1", "url":"./src/assets/hall/chiang_juang/room_1.png"},
+            { "type": "image", "key": "HCJ_room_2", "url":"./src/assets/hall/chiang_juang/room_2.png"},
+            { "type": "image", "key": "HCJ_room_3", "url":"./src/assets/hall/chiang_juang/room_3.png"},
+            { "type": "image", "key": "HCJ_room_4", "url":"./src/assets/hall/chiang_juang/room_4.png"},
+            { "type": "image", "key": "HCJ_room_5", "url":"./src/assets/hall/chiang_juang/room_5.png"},
+            { "type": "image", "key": "HCJ_room_6", "url":"./src/assets/hall/chiang_juang/room_6.png"},
+
+            { "type": "image", "key": "HCJ_board_help", "url":"./src/assets/hall/chiang_juang/board_help.png"},
+            { "type": "image", "key": "HCJ_board_record", "url":"./src/assets/hall/chiang_juang/board_record.png"},
+            { "type": "image", "key": "HCJ_btn_cancel", "url":"./src/assets/hall/chiang_juang/btn_cancel.png"},
+            { "type": "image", "key": "HCJ_btn_help1", "url":"./src/assets/hall/chiang_juang/btn_help1.png"},
+            { "type": "image", "key": "HCJ_btn_help1_selected", "url":"./src/assets/hall/chiang_juang/btn_help1_selected.png"},
+            { "type": "image", "key": "HCJ_btn_help2", "url":"./src/assets/hall/chiang_juang/btn_help2.png"},
+            { "type": "image", "key": "HCJ_btn_help2_selected", "url":"./src/assets/hall/chiang_juang/btn_help2_selected.png"},
+            { "type": "image", "key": "HCJ_btn_help3", "url":"./src/assets/hall/chiang_juang/btn_help3.png"},
+            { "type": "image", "key": "HCJ_btn_help3_selected", "url":"./src/assets/hall/chiang_juang/btn_help3_selected.png"},
+            { "type": "image", "key": "HCJ_btn_help4", "url":"./src/assets/hall/chiang_juang/btn_help4.png"},
+            { "type": "image", "key": "HCJ_btn_help4_selected", "url":"./src/assets/hall/chiang_juang/btn_help4_selected.png"},
+            { "type": "image", "key": "HCJ_btn_help5", "url":"./src/assets/hall/chiang_juang/btn_help5.png"},
+            { "type": "image", "key": "HCJ_btn_help5_selected", "url":"./src/assets/hall/chiang_juang/btn_help5_selected.png"},
+            { "type": "image", "key": "HCJ_overly", "url":"./src/assets/hall/chiang_juang/overly.png"}
+
+        ]
+    }
+}

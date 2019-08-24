@@ -1,0 +1,57 @@
+{
+    "loading": {
+        "files": [
+            {
+                "type": "image",
+                "key": "loading_bg",
+                "url": "./src/assets/loading/loading_bg.png"
+            },
+            {
+                "type": "image",
+                "key": "loading_gf",
+                "url": "./src/assets/loading/loading_gf.png"
+            },
+            {
+                "type": "image",
+                "key": "loading_circle0",
+                "url": "./src/assets/loading/loading_circle0.png"
+            },
+            {
+                "type": "image",
+                "key": "loading_circle1",
+                "url": "./src/assets/loading/loading_circle1.png"
+            },
+            {
+                "type": "image",
+                "key": "loading_circle2",
+                "url": "./src/assets/loading/loading_circle2.png"
+            },
+            {
+                "type": "image",
+                "key": "loading_circle3",
+                "url": "./src/assets/loading/loading_circle3.png"
+            },
+            {
+                "type": "image",
+                "key": "loading_circle4",
+                "url": "./src/assets/loading/loading_circle4.png"
+            },
+            {
+                "type": "image",
+                "key": "loading_circle5",
+                "url": "./src/assets/loading/loading_circle5.png"
+            },
+            {
+                "type": "image",
+                "key": "loading_circle6",
+                "url": "./src/assets/loading/loading_circle6.png"
+            },
+            {
+                "type": "image",
+                "key": "loading_circle7",
+                "url": "./src/assets/loading/loading_circle7.png"
+            }
+            
+        ]
+    }
+}

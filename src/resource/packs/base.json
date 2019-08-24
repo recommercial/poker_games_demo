@@ -1,0 +1,269 @@
+{
+    "shiauniou": {
+        "files": [
+            {
+                "type": "image",
+                "key": "BG",
+                "url": "./src/assets/base/nn_game_bg.png"
+            },
+            {
+                "type": "image",
+                "key": "DESK",
+                "url": "./src/assets/base/qznn_game_desk.png"
+            },
+            {
+                "type": "image",
+                "key": "DESK_NORMAL",
+                "url": "./src/assets/base/qznn_game_desk_0.png"
+            },
+            {   "type": "image",
+                "key": "speaker",
+                "url":"./src/assets/hall/chiang_juang/speaker.png"
+            },
+            {
+                "type": "image",
+                "key": "TABLE_BG",
+                "url": "./src/assets/base/table_bg.png"
+            },
+            {
+                "type": "image",
+                "key": "TABLE_ROTATE_BG",
+                "url": "./src/assets/base/table_rotate_bg.png"
+            },
+            {
+                "type": "image",
+                "key": "TABLE",
+                "url": "./src/assets/base/table.png"
+            },
+
+
+            {
+                "type": "image",
+                "key": "GAME_NUMBER",
+                "url": "./src/assets/base/gameID.png"
+            },
+            {
+                "type": "image",
+                "key": "GAME_RETURN",
+                "url": "./src/assets/base/btn_back_bg.png"
+            },
+            {
+                "type": "image",
+                "key": "DIALOG_BG",
+                "url": "./src/assets/base/nn_bg1.png"
+            },
+            {
+                "type": "image",
+                "key": "DIALOG_TITLE",
+                "url": "./src/assets/base/nn_title_tips.png"
+            },
+            {
+                "type": "image",
+                "key": "DIALOG_CLOSE",
+                "url": "./src/assets/base/nn_close.png"
+            }
+        ]
+    },
+
+    "menu": {
+        "files": [
+            {
+                "type": "image",
+                "key": "MENU_ICON",
+                "url": "./src/assets/base/nn_btn_menu_normal.png"
+            },
+            {
+                "type": "image",
+                "key": "MENU_BG",
+                "url": "./src/assets/base/qznn_menu_bg.png"
+            },
+            {
+                "type": "image",
+                "key": "MENU_EXIT",
+                "url": "./src/assets/base/backButton.png"
+            },
+            {
+                "type": "image",
+                "key": "MENU_SETTING",
+                "url": "./src/assets/base/settingButton.png"
+            },
+            {
+                "type": "image",
+                "key": "MENU_RECORD",
+                "url": "./src/assets/base/gameRecordButton.png"
+            },
+            {
+                "type": "image",
+                "key": "MENU_TIMES",
+                "url": "./src/assets/base/nn_cardTypeButton.png"
+            },
+            {
+                "type": "image",
+                "key": "MENU_HELP",
+                "url": "./src/assets/base/nn_helpButton.png"
+            },
+            {
+                "type": "image",
+                "key": "MENU_FEEDBACK",
+                "url": "./src/assets/base/qznn_btn_fankui.png"
+            }
+        ]
+    },
+
+    "game": {
+        "files": [
+            {
+                "type": "image",
+                "key": "BUTTON_GOLD",
+                "url": "./src/assets/base/qznn_btn_beishu1.png"
+            },
+            {
+                "type": "image",
+                "key": "BUTTON_BLUE",
+                "url": "./src/assets/base/qznn_btn_beishu2.png"
+            },
+            {
+                "type": "image",
+                "key": "BUTTON_GREEN",
+                "url": "./src/assets/base/qznn_btn_buqiang.png"
+            },
+
+            {
+                "type": "image",
+                "key": "GAME_START",
+                "url": "./src/assets/base/nn_deal_2.png"
+            },
+            {
+                "type": "image",
+                "key": "GAME_START1",
+                "url": "./src/assets/base/start_03.png"
+            },
+
+            {
+                "type": "image",
+                "key": "BANKER_LOSE",
+                "url": "./src/assets/base/banker_lose.png"
+            },
+            {
+                "type": "image",
+                "key": "BANKER_WIN",
+                "url": "./src/assets/base/banker_win.png"
+            },
+            {
+                "type": "image",
+                "key": "STAGE_START_CHIP",
+                "url": "./src/assets/base/stage_chip.png"
+            },
+            {
+                "type": "image",
+                "key": "STAGE_STOP_CHIP",
+                "url": "./src/assets/base/stage_stop.png"
+            },
+
+            {
+                "type": "image",
+                "key": "COUNT_DOWN",
+                "url": "./src/assets/base/progressTimerFontBg.png"
+            },
+            {
+                "type": "image",
+                "key": "COUNT_DOWN1",
+                "url": "./src/assets/base/timer.png"
+            },
+
+            {
+                "type": "image",
+                "key": "DEALING_FRAME",
+                "url": "./src/assets/base/qznn_num_frame.png"
+            },
+            {
+                "type": "image",
+                "key": "GOLDEN_COIN",
+                "url": "./src/assets/base/cion_icon.png"
+            },
+
+            {
+                "type": "image",
+                "key": "CHIP_SM_STACK",
+                "url": "./src/assets/base/chip_sm_stack.png"
+            },
+
+            {
+                "type": "image",
+                "key": "CHIP_SM_YELLOW",
+                "url": "./src/assets/base/chip_sm1.png"
+            },
+            {
+                "type": "image",
+                "key": "CHIP_SM_BLUE",
+                "url": "./src/assets/base/chip_sm2.png"
+            },
+            {
+                "type": "image",
+                "key": "CHIP_SM_CYAN",
+                "url": "./src/assets/base/chip_sm3.png"
+            },
+            {
+                "type": "image",
+                "key": "CHIP_SM_PURPLE",
+                "url": "./src/assets/base/chip_sm4.png"
+            },
+            {
+                "type": "image",
+                "key": "CHIP_SM_GREEN",
+                "url": "./src/assets/base/chip_sm5.png"
+            },
+            {
+                "type": "image",
+                "key": "CHIP_SM_PINK",
+                "url": "./src/assets/base/chip_sm6.png"
+            },
+
+            {
+                "type": "image",
+                "key": "infoBackgroundTexture",
+                "url": "./src/assets/base/nn_person_info_bg.png"
+            },
+            {
+                "type": "image",
+                "key": "avatarNiuBorder",
+                "url": "./src/assets/base/nn_banker12.png"
+            },
+            {
+                "type": "image",
+                "key": "avatarNormalBorder",
+                "url": "./src/assets/base/nn_por_smallbg.png"
+            },
+            {
+                "type": "image",
+                "key": "WORD_BG",
+                "url": "./src/assets/base/userinfo_bg.png"
+            },
+            {
+                "type": "image",
+                "key": "YELLOW_GLOW",
+                "url": "./src/assets/base/yellow.png"
+            },
+            {
+                "type": "image",
+                "key": "CARDS_BOX",
+                "url": "./src/assets/base/cards_box.png"
+            },
+            {
+                "type": "image",
+                "key": "BETTING_CHIP_BG",
+                "url": "./src/assets/base/betting_chip_bg.png"
+            },
+            {
+                "type": "image",
+                "key": "BETTING_CHIP_BAR",
+                "url": "./src/assets/game/bai.ren.niou.niou/bar.png"
+            }
+            
+
+
+        ]
+
+
+    }
+}

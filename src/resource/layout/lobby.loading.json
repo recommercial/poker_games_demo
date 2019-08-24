@@ -1,0 +1,75 @@
+{
+    "code": "0000",
+    "data": {
+        "images": [
+            {
+                "key": "bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            {
+                "key": "top_bg",
+                "x": 0,
+                "y": 0,
+                "add": true
+            },
+            {
+                "key": "header_bg",
+                "x": 5,
+                "y": 5,
+                "add": true
+            },
+            {
+                "key": "balance_bar",
+                "x": 90,
+                "y": 30,
+                "add": true           
+            },
+            {
+                "key": "btn_home",
+                "x": 160,
+                "y": 10,
+                "add": true
+            },
+            {
+                "key": "btn_setup",
+                "x": 80,
+                "y": 10,
+                "add": true 
+            },
+            {
+                "key": "btn_screen_max",
+                "x": 0,
+                "y": 10,
+                "add": true
+            }
+        ],
+        "texts": [
+            {
+                "text": "999,999,999",
+                "x": 110,
+                "y": 15,
+                "style": {
+                    "fontSize": "20px",
+                    "fontFamily": "Arial",
+                    "color": "#CCCCCC",
+                    "align": "left"
+                },
+                "add": true
+            },
+            {
+                "text": "99,999,999,999",
+                "x": 135,
+                "y": 50,
+                "style": {
+                    "fontSize": "18px",
+                    "fontFamily": "Arial",
+                    "color": "yellow",
+                    "align": "left"
+                },
+                "add": true 
+            }
+        ]
+    }
+}
